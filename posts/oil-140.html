@@ -91,6 +91,18 @@ footer.site a{color:var(--ink-2)}
 .filters{display:flex;gap:8px;flex-wrap:wrap;margin:26px 0 8px}
 .filters button{font:500 12px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:8px 12px;cursor:pointer}
 .filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.feature{margin:30px 0 8px;display:grid;gap:14px}
+.feature .lab{font:500 12px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2)}
+.feature a.img{display:block}
+.feature a.img img{display:block;width:100%;height:auto;border:1px solid var(--rule);border-radius:8px;background:var(--surface)}
+.feature h2{font:800 clamp(26px,4.4vw,36px)/1.12 var(--display);letter-spacing:-.015em;margin:2px 0 0;text-wrap:balance}
+.feature h2 a{color:var(--ink);text-decoration:none}
+.feature h2 a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+.feature p{margin:0;color:var(--ink-2);font-size:17px;line-height:1.6}
+.feature .go{font:500 13px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em}
+.list-head{font:500 12px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2);margin:34px 0 0}
+.entry.thumb{grid-template-columns:92px 1fr 150px}
+.entry .th img{display:block;width:150px;height:auto;border:1px solid var(--rule);border-radius:5px;background:var(--surface)}
 .year{margin-top:26px}
 .year > .y{font:500 12.5px/1.4 var(--mono);color:var(--ink-2);letter-spacing:.06em;padding-bottom:8px;border-bottom:1px solid var(--rule)}
 .entry{display:grid;grid-template-columns:92px 1fr;gap:4px 18px;padding:18px 0;border-bottom:1px solid var(--rule)}
@@ -103,7 +115,8 @@ footer.site a{color:var(--ink-2)}
 .ledger-sum{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 22px}
 @media (max-width:560px){
   body{font-size:17px}
-  .entry{grid-template-columns:1fr}
+  .entry,.entry.thumb{grid-template-columns:1fr}
+  .entry .th{order:-1}.entry .th img{width:100%}
   .entry .d{padding-top:0}
   details.toc ol{columns:1}
   .pager{grid-template-columns:1fr}.pager .next{text-align:left}
