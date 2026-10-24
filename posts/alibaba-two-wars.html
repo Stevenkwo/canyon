@@ -1,0 +1,1146 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Alibaba Loses AI Money, and It Will Lose the War. Our Target: $69</title><meta name="claude:viewport-fit-sides" content="cover"><meta name="description" content="Two wars, one wallet. The market is paying a recovery multiple for a company whose core is shrinking, whose AI business loses money, and whose balance sheet just blinked."><meta property="og:title" content="Alibaba Loses AI Money, and It Will Lose the War. Our Target: $69"><meta property="og:description" content="Two wars, one wallet. The market is paying a recovery multiple for a company whose core is shrinking, whose AI business loses money, and whose balance sheet just blinked."><meta property="og:type" content="article"><meta property="og:image" content="https://stevenkwo.github.io/canyon/posts/alibaba-two-wars/cover.jpg"><script>(function(){try{var t=localStorage.getItem('canyon-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:wght@500;700;800&display=swap"><style>
+/* Layout: one 720px reading column for notes, the index and the ledger; wide tables scroll inside their own box. */
+:root{
+  --paper:#f7f6f2; --surface:#fdfcfa; --ink:#1b1c1e; --ink-2:#56575c; --rule:#e2e0da; --accent:#2b5fd9; --accent-ink:#ffffff;
+  --open:#7d5f0e; --open-bg:#f4ecd4; --met:#1d7148; --met-bg:#e0f0e7; --failed:#ad3127; --failed-bg:#f7e1dd; --held:#8a4510; --held-bg:#fae8d3;
+  --display:"Schibsted Grotesk","Helvetica Neue","PingFang SC","Noto Sans SC",Arial,sans-serif;
+  --body:-apple-system,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#131416; --surface:#1a1b1e; --ink:#e8e7e3; --ink-2:#a4a39e; --rule:#2c2d31; --accent:#82a6ff; --accent-ink:#0f1115;
+  --open:#e3c062; --open-bg:#2d2614; --met:#62cc95; --met-bg:#15281e; --failed:#ff8e81; --failed-bg:#321918; --held:#f1a65e; --held-bg:#33220f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#131416; --surface:#1a1b1e; --ink:#e8e7e3; --ink-2:#a4a39e; --rule:#2c2d31; --accent:#82a6ff; --accent-ink:#0f1115;
+  --open:#e3c062; --open-bg:#2d2614; --met:#62cc95; --met-bg:#15281e; --failed:#ff8e81; --failed-bg:#321918; --held:#f1a65e; --held-bg:#33220f; color-scheme:dark}
+[hidden]{display:none!important}
+img{max-width:100%;height:auto}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17.5px/1.72 var(--body)}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1px solid var(--rule)}
+.topbar .in{max-width:760px;margin:0 auto;padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.brand{font:800 21px/1 var(--display);color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.nav{display:flex;gap:16px;margin-left:auto;align-items:center;flex-wrap:wrap}
+.nav a,.nav button{font:500 12.5px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);text-decoration:none;background:none;border:0;padding:6px 0;cursor:pointer}
+.nav a[aria-current="page"]{color:var(--ink)}
+.nav button{border:1px solid var(--rule);border-radius:999px;padding:5px 10px}
+.wrap{max-width:760px;margin:0 auto;padding-block:28px 72px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.kicker{font:500 12.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);display:flex;gap:10px;flex-wrap:wrap}
+h1.title{font:800 clamp(28px,5vw,40px)/1.12 var(--display);letter-spacing:-.015em;margin:14px 0 14px;text-wrap:balance}
+.dek{font-size:19px;line-height:1.55;color:var(--ink-2);margin:0 0 22px;text-wrap:pretty}
+.cover{margin:0 0 10px}
+.cover img,figure img{display:block;width:100%;height:auto;border:1px solid var(--rule);border-radius:6px;background:var(--surface)}
+.origin{font:500 13px/1.5 var(--mono);color:var(--ink-2);margin:6px 0 26px}
+.banner{border:1px solid var(--held);background:var(--held-bg);color:var(--ink);border-radius:8px;padding:12px 14px;font-size:15px;line-height:1.55;margin:0 0 22px}
+.banner b{color:var(--held)}
+details.toc{border-block:1px solid var(--rule);padding-block:10px;margin:0 0 28px}
+details.toc summary{cursor:pointer;font:500 12.5px/1.6 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+details.toc ol{margin:10px 0 4px;padding-left:1.3em;font-size:15.5px;line-height:1.55;columns:2 260px;column-gap:28px}
+details.toc li{break-inside:avoid;margin:0 0 6px}
+article h2{font:700 25px/1.25 var(--display);letter-spacing:-.01em;margin:2.3em 0 .6em;text-wrap:balance;scroll-margin-top:72px}
+article h3{font:700 19.5px/1.3 var(--display);margin:1.8em 0 .5em;scroll-margin-top:72px}
+article h2 .anchor,article h3 .anchor{font:400 .7em/1 var(--mono);color:var(--ink-2);text-decoration:none;margin-left:.35em;opacity:0}
+article h2:hover .anchor,article h3:hover .anchor,.anchor:focus{opacity:1}
+article p{margin:0 0 1.05em}
+article ul,article ol{padding-left:1.35em;margin:0 0 1.1em}
+article li{margin:0 0 .45em}
+article em{color:var(--ink-2)}
+article strong{font-weight:650}
+article blockquote{margin:1.4em 0;padding-left:16px;border-left:3px solid var(--rule);color:var(--ink-2)}
+article hr{border:0;border-top:1px solid var(--rule);margin:2.4em 0}
+article code{font:14.5px var(--mono);background:var(--surface);border:1px solid var(--rule);border-radius:4px;padding:0 4px}
+figure{margin:1.6em 0}
+figcaption{font:500 12.5px/1.5 var(--mono);color:var(--ink-2);margin-top:8px}
+.table-wrap{overflow-x:auto;margin:1.3em 0 1.4em;border-block:1px solid var(--rule)}
+table{border-collapse:collapse;width:100%;font-size:14.5px;line-height:1.45;font-variant-numeric:tabular-nums}
+th{font:500 11.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--ink-2);text-align:left;padding:9px 10px;border-bottom:1px solid var(--rule);vertical-align:bottom}
+td{padding:8px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;white-space:nowrap}
+.section-label{font:500 12.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);margin:3em 0 .8em;padding-top:14px;border-top:1px solid var(--rule)}
+.tests{list-style:none;padding:0;margin:0}
+.tests li{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;padding:10px 0;border-bottom:1px solid var(--rule);font-size:15.5px;line-height:1.5}
+.tests li .meta{grid-column:2;font:500 12.5px/1.5 var(--mono);color:var(--ink-2)}
+.chip{font:500 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;border-radius:999px;padding:5px 8px;white-space:nowrap;align-self:start;margin-top:2px}
+.chip.open{color:var(--open);background:var(--open-bg)}.chip.met{color:var(--met);background:var(--met-bg)}
+.chip.failed{color:var(--failed);background:var(--failed-bg)}.chip.retired{color:var(--ink-2);background:var(--surface);border:1px solid var(--rule)}
+.chip.held{color:var(--held);background:var(--held-bg)}.chip.draft{color:var(--ink-2);background:var(--surface);border:1px solid var(--rule)}
+.box{border:1px solid var(--rule);background:var(--surface);border-radius:8px;padding:14px 16px;font-size:15.5px;line-height:1.6}
+.box .lab{font:500 11.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);display:block;margin-bottom:4px}
+.box.missing{border-color:var(--held);background:var(--held-bg)}
+.zh{font-size:16.5px;line-height:1.9}
+.zh p{margin:0 0 .9em}
+.fine{font-size:14px;line-height:1.6;color:var(--ink-2)}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px;padding-top:18px;border-top:1px solid var(--rule)}
+.pager a{text-decoration:none;color:var(--ink);font:700 16px/1.35 var(--display)}
+.pager span{display:block;font:500 11.5px/1.6 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+.pager .next{text-align:right}
+footer.site{max-width:760px;margin:0 auto;padding-block:22px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));border-top:1px solid var(--rule);font:500 12.5px/1.7 var(--mono);color:var(--ink-2);display:flex;gap:16px;flex-wrap:wrap}
+footer.site a{color:var(--ink-2)}
+/* hero: full-width canyon drawn in dots and lines (canvas, seeded, theme-aware) */
+.hero{position:relative;height:clamp(250px,36vw,440px);border-bottom:1px solid var(--rule);overflow:hidden;background:var(--paper)}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero-in{position:relative;max-width:760px;margin:0 auto;padding-block:clamp(20px,4.2vw,44px) 0;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.hero h1{font:800 clamp(46px,9.5vw,92px)/.92 var(--display);letter-spacing:-.04em;margin:0;color:var(--ink)}
+/* index */
+.masthead p{margin:0;color:var(--ink-2);font-size:18px;line-height:1.55;max-width:34em}
+.masthead p.zh-line{font-size:15.5px;margin-top:6px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:26px 0 8px}
+.filters button{font:500 12px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:8px 12px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.year{margin-top:26px}
+.year > .y{font:500 12.5px/1.4 var(--mono);color:var(--ink-2);letter-spacing:.06em;padding-bottom:8px;border-bottom:1px solid var(--rule)}
+.entry{display:grid;grid-template-columns:92px 1fr;gap:4px 18px;padding:18px 0;border-bottom:1px solid var(--rule)}
+.entry .d{font:500 13px/1.6 var(--mono);color:var(--ink-2);padding-top:3px}
+.entry .t{font:700 22px/1.25 var(--display);letter-spacing:-.01em;color:var(--ink);text-decoration:none;text-wrap:balance}
+.entry .t:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.entry .s{margin:6px 0 8px;color:var(--ink-2);font-size:15.5px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.entry .m{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font:500 12px/1.4 var(--mono);color:var(--ink-2)}
+.entry > div{min-width:0}
+.ledger-sum{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 22px}
+@media (max-width:560px){
+  body{font-size:17px}
+  .entry{grid-template-columns:1fr}
+  .entry .d{padding-top:0}
+  details.toc ol{columns:1}
+  .pager{grid-template-columns:1fr}.pager .next{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style><link rel="alternate" type="application/rss+xml" title="canyon" href="../feed.xml"></head><body><header class="topbar"><div class="in"><a class="brand" href="../index.html">canyon</a><nav class="nav" aria-label="Site"><a href="../index.html" aria-current="page">Notes</a><a href="../tests.html">Tests</a><a href="../about.html">About</a><a href="../feed.xml">RSS</a><button id="theme-btn" type="button">Auto</button></nav></div></header><main class="wrap"><article><div class="kicker"><span>Markets</span><span>Oct 22, 2026</span><span>43 min read</span></div><h1 class="title">Alibaba Loses AI Money, and It Will Lose the War. Our Target: $69</h1><p class="dek">Two wars, one wallet. The market is paying a recovery multiple for a company whose core is shrinking, whose AI business loses money, and whose balance sheet just blinked.</p><figure class="cover"><img src="alibaba-two-wars/cover.jpg" alt="Alibaba Group (BABA) research note cover"></figure><p class="origin">Also on X: <a href="https://x.com/stevenkwok20290/status/2113107041422311878">x.com/stevenkwok20290/status/2113107041422311878</a></p><details class="toc"><summary>Contents · 20 sections</summary><ol><li><a href="#our-view-in-one-page-target-69-and-a-65-chance-it-s-lower-in">Our view in one page: target $69, and a 65% chance it&#x27;s lower in a year</a></li><li><a href="#1-the-bull-pitch-is-a-year-out-of-date">1. The bull pitch is a year out of date</a></li><li><a href="#2-exhibit-a-cloud-growth-accelerating-profit-down-five-quart">2. Exhibit A: cloud growth accelerating, profit down five quarters straight</a></li><li><a href="#3-the-money-machine-is-shrinking-marketplace-revenue-down-7">3. The money machine is shrinking: marketplace revenue down 7%</a></li><li><a href="#4-the-delivery-war-rmb-86-billion-of-e-commerce-profit-gone-">4. The delivery war: RMB 86 billion of e-commerce profit gone in one year</a></li><li><a href="#5-alibaba-s-ai-lost-rmb-8-2-billion-last-quarter">5. Alibaba&#x27;s AI lost RMB 8.2 billion last quarter</a></li><li><a href="#6-the-bill-for-the-data-centers-hasn-t-arrived-yet">6. The bill for the data centers hasn&#x27;t arrived yet</a></li><li><a href="#7-outgunned-bytedance-and-tencent-each-earn-about-six-times-">7. Outgunned: ByteDance and Tencent each earn about six times as much</a></li><li><a href="#8-from-11-9-billion-of-buybacks-to-10-billion-of-new-shares">8. From $11.9 billion of buybacks to $10 billion of new shares</a></li><li><a href="#9-four-misses-in-a-row-and-the-street-still-wants-66">9. Four misses in a row, and the Street still wants +66%</a></li><li><a href="#10-not-cheap-33-9-times-what-alibaba-actually-earns">10. Not cheap: 33.9 times what Alibaba actually earns</a></li><li><a href="#11-we-have-seen-this-movie-baidu-went-all-in-ai-and-is-down-">11. We have seen this movie: Baidu went &amp;quot;All in AI&amp;quot; and is down 52%</a></li><li><a href="#12-fines-a-cayman-holding-company-and-a-board-you-don-t-cont">12. Fines, a Cayman holding company and a board you don&#x27;t control</a></li><li><a href="#13-eight-questions-management-should-answer">13. Eight questions management should answer</a></li><li><a href="#14-what-happens-next-results-around-november-24">14. What happens next: results around November 24</a></li><li><a href="#15-the-bull-case-and-why-we-don-t-buy-it">15. The bull case, and why we don&#x27;t buy it</a></li><li><a href="#16-eight-things-that-would-prove-us-wrong">16. Eight things that would prove us wrong</a></li><li><a href="#17-alibaba-is-not-going-to-zero-it-doesn-t-need-to">17. Alibaba is not going to zero. It doesn&#x27;t need to.</a></li><li><a href="#disclaimer">Disclaimer</a></li><li><a href="#sources">Sources</a></li></ol></details><p><em>October 22, 2026. Price referenced: US$104.41 per ADS (NYSE close, October 21, 2026). Written in the style of activist short research. Not affiliated with Citron Research or any other firm. Facts are sourced to company filings and named reports; opinions are labeled as opinions. See the disclosure section before relying on anything here.</em></p>
+<h2 id="our-view-in-one-page-target-69-and-a-65-chance-it-s-lower-in">Our view in one page: target $69, and a 65% chance it's lower in a year<a class="anchor" href="#our-view-in-one-page-target-69-and-a-65-chance-it-s-lower-in" aria-label="Link to this section">#</a></h2>
+<p>We believe Alibaba is the most expensive &quot;cheap&quot; stock in Chinese internet.</p>
+<p>On the numbers investors are told to watch, Alibaba looks like a turnaround. Revenue growth is back to 9%. Cloud revenue is growing 45%. AI-related product revenue has grown at triple digits for twelve straight quarters. The forward price-to-earnings ratio on consensus is 15.7 times, and the stock is down 37% in a year. That is the pitch.</p>
+<p>On the numbers that pay for the pitch, Alibaba is going the other way.</p>
+<ul>
+<li><strong>The core marketplace is shrinking.</strong> Customer management revenue, the take-rate engine that funded everything Alibaba ever built, fell 7% year over year in the June 2026 quarter, to RMB 82.5 billion. Management's preferred &quot;like-for-like&quot; figure, which strips out a merchant incentive program booked as contra revenue, grew 1%.</li>
+<li><strong>Profit has collapsed for a full year.</strong> Adjusted EBITA over the last four reported quarters was RMB 64.9 billion, down 61% from RMB 166.9 billion in the prior four. Non-GAAP net income fell 68%. Non-GAAP earnings per ADS fell from RMB 63.72 to RMB 20.59.</li>
+<li><strong>AI is a net loss-maker at Alibaba, not a profit engine.</strong> In the June quarter, the AI Cloud and Compute segment earned RMB 5.6 billion of adjusted EBITA. The new AI Labs and Applications segment lost RMB 13.9 billion. Together, the two segments Alibaba itself labels as AI lost RMB 8.2 billion in a single quarter before counting the capital spent to build them.</li>
+<li><strong>The cash engine has stalled.</strong> Free cash flow over the last four quarters was negative RMB 72.5 billion. A year earlier it was positive RMB 37.7 billion. Operating cash flow nearly halved. June-quarter capex was RMB 67.7 billion, up 75%. Annualized, that pace is 3.4 times trailing operating cash flow.</li>
+<li><strong>The capital return story has reversed.</strong> In fiscal 2025 Alibaba bought back US$11.9 billion of stock and cut its share count by 5.1%. In fiscal 2026 it bought back about US$1.0 billion. In August 2026 it sold 710 million new shares in an HK$80 billion placing at HK$112.70, about US$116 per ADS. The stock now trades below the price at which the company just sold it.</li>
+<li><strong>The estimate keeps not showing up.</strong> Alibaba has missed consensus non-GAAP EPS four quarters in a row, by 25%, 35%, 89% and 21%. Consensus for the September quarter still assumes EPS of RMB 10.96 per ADS, 29% above the June quarter. Consensus for fiscal 2027 assumes 66% growth.</li>
+<li><strong>It is outgunned.</strong> ByteDance reportedly earned about US$42 billion in 2025 and was weighing as much as US$70 billion of 2026 AI capex. Tencent's trailing non-IFRS net profit is roughly US$42 billion. Alibaba's is about US$7 billion. ByteDance's Doubao has 2.3 times Qwen's monthly users. DeepSeek gives its frontier model away under an MIT license.</li>
+</ul>
+<p><strong>Reasons, target, probability, expected value.</strong> We value Alibaba on fiscal 2028 (year to March 2028) non-GAAP EPS under four scenarios, using multiples anchored to Alibaba's own five-year range. Our probabilities are subjective and stated so they can be argued with.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>Scenario</th>
+  <th class="num">FY28 non-GAAP EPS per ADS</th>
+  <th class="num">Multiple</th>
+  <th class="num">Value per ADS</th>
+  <th class="num">vs. US$104.41</th>
+  <th class="num">Probability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Bear: two wars, no ceasefire</td>
+  <td class="num">RMB 30</td>
+  <td class="num">9x</td>
+  <td class="num">US$40</td>
+  <td class="num">-61%</td>
+  <td class="num">25%</td>
+</tr>
+<tr>
+  <td>Base: slow, expensive repair</td>
+  <td class="num">RMB 42</td>
+  <td class="num">11x</td>
+  <td class="num">US$69</td>
+  <td class="num">-34%</td>
+  <td class="num">40%</td>
+</tr>
+<tr>
+  <td>Street: consensus delivered</td>
+  <td class="num">RMB 62</td>
+  <td class="num">12x</td>
+  <td class="num">US$111</td>
+  <td class="num">+7%</td>
+  <td class="num">25%</td>
+</tr>
+<tr>
+  <td>Bull: AI winner re-rating</td>
+  <td class="num">RMB 72</td>
+  <td class="num">16x</td>
+  <td class="num">US$172</td>
+  <td class="num">+65%</td>
+  <td class="num">10%</td>
+</tr>
+<tr>
+  <td><strong>Probability-weighted</strong></td>
+  <td class="num"></td>
+  <td class="num"></td>
+  <td class="num"><strong>US$83</strong></td>
+  <td class="num"><strong>-21%</strong></td>
+  <td class="num"></td>
+</tr>
+</tbody>
+</table></div>
+<figure><img src="alibaba-two-wars/exhibit-1.png" alt="Exhibit 1. Scenario values per ADS, fiscal 2028" loading="lazy"><figcaption>Exhibit 1. Scenario values per ADS, fiscal 2028</figcaption></figure>
+<p>Our 12-month base-case target is <strong>US$69</strong>. Our probability-weighted value is <strong>US$83</strong>, 21% below the current price. We assign a 65% probability that the shares are lower in twelve months. The 10% bull case is a 65% loss for anyone short, which is why this is a sizing problem as much as a thesis.</p>
+<h2 id="1-the-bull-pitch-is-a-year-out-of-date">1. The bull pitch is a year out of date<a class="anchor" href="#1-the-bull-pitch-is-a-year-out-of-date" aria-label="Link to this section">#</a></h2>
+<p>Every Alibaba bull case in 2026 has the same shape. It goes like this.</p>
+<p>The e-commerce business is a cash cow that has stabilized. The quick commerce war with Meituan and JD.com is a temporary investment that is already improving. Alibaba Cloud is the number one cloud provider in China, it is growing at 45%, and its margins are expanding. Qwen is a world-class model family. The stock is down from US$178 in October 2025, it trades at a mid-teens forward multiple, and China tech has been hated long enough. Buy the AI winner at a value price.</p>
+<p>We think each sentence of that pitch is either incomplete or already out of date.</p>
+<p>The cash cow is shrinking in the line item that matters most. The quick commerce &quot;investment&quot; has consumed most of a year of China e-commerce profits. Alibaba Cloud is growing, but the group's AI businesses lose more than the cloud earns. Qwen is excellent and is competing against a free, MIT-licensed DeepSeek and against ByteDance's distribution machine. And the mid-teens forward multiple only exists if consensus estimates that have been wrong four times in a row are right the fifth time.</p>
+<p>The rest of this report walks through the filings. We use Alibaba's own numbers wherever possible: the quarterly results furnished to the SEC on Form 6-K, the August 2026 placing announcements, and the company's annual results. Where we rely on reporting about private competitors, we say so.</p>
+<h2 id="2-exhibit-a-cloud-growth-accelerating-profit-down-five-quart">2. Exhibit A: cloud growth accelerating, profit down five quarters straight<a class="anchor" href="#2-exhibit-a-cloud-growth-accelerating-profit-down-five-quart" aria-label="Link to this section">#</a></h2>
+<p>The table below is taken from Alibaba's quarterly results announcements. Figures are in RMB billions except EPS, which is RMB per ADS on a non-GAAP diluted basis. &quot;Consensus&quot; is the pre-report consensus compiled by Yahoo Finance.</p>
+<p><strong>Exhibit 2. Quarterly results, June 2025 to June 2026</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>Quarter ended</th>
+  <th class="num">Revenue</th>
+  <th class="num">YoY</th>
+  <th class="num">Cloud revenue</th>
+  <th class="num">Cloud YoY</th>
+  <th class="num">Adjusted EBITA</th>
+  <th class="num">EBITA YoY</th>
+  <th class="num">EBITA margin</th>
+  <th class="num">Non-GAAP EPS</th>
+  <th class="num">Consensus</th>
+  <th class="num">Free cash flow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Jun 2025</td>
+  <td class="num">247.7</td>
+  <td class="num">+2%</td>
+  <td class="num">33.4</td>
+  <td class="num">+26%</td>
+  <td class="num">38.8</td>
+  <td class="num">-14%</td>
+  <td class="num">16%</td>
+  <td class="num">14.75</td>
+  <td class="num">15.47</td>
+  <td class="num">-18.8</td>
+</tr>
+<tr>
+  <td>Sep 2025</td>
+  <td class="num">247.8</td>
+  <td class="num">+5%</td>
+  <td class="num">39.8</td>
+  <td class="num">+34%</td>
+  <td class="num">9.1</td>
+  <td class="num">-78%</td>
+  <td class="num">4%</td>
+  <td class="num">4.36</td>
+  <td class="num">5.78</td>
+  <td class="num">-21.8</td>
+</tr>
+<tr>
+  <td>Dec 2025</td>
+  <td class="num">284.8</td>
+  <td class="num">+2%</td>
+  <td class="num">43.3</td>
+  <td class="num">+36%</td>
+  <td class="num">23.4</td>
+  <td class="num">-57%</td>
+  <td class="num">8%</td>
+  <td class="num">7.09</td>
+  <td class="num">10.94</td>
+  <td class="num">+11.3</td>
+</tr>
+<tr>
+  <td>Mar 2026</td>
+  <td class="num">243.4</td>
+  <td class="num">+3%</td>
+  <td class="num">41.6</td>
+  <td class="num">+38%</td>
+  <td class="num">5.1</td>
+  <td class="num">-84%</td>
+  <td class="num">2%</td>
+  <td class="num">0.62</td>
+  <td class="num">5.74</td>
+  <td class="num">-17.3</td>
+</tr>
+<tr>
+  <td>Jun 2026</td>
+  <td class="num">269.0</td>
+  <td class="num">+9%</td>
+  <td class="num">48.4</td>
+  <td class="num">+45%</td>
+  <td class="num">27.3</td>
+  <td class="num">-30%</td>
+  <td class="num">10%</td>
+  <td class="num">8.52</td>
+  <td class="num">10.76</td>
+  <td class="num">-44.7</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Sources: Alibaba Group 6-K results announcements for the quarters ended June 30, 2025 (0001104659-25-085638), September 30, 2025 (0001104659-25-115949), December 31, 2025 (0001104659-26-032060), March 31, 2026 (0001104659-26-060224) and June 30, 2026 (0001104659-26-099220). June 2026 cloud revenue is the new &quot;AI Cloud and Compute Services&quot; segment, which combines Cloud Intelligence and T-Head; growth is on the restated base.</em></p>
+<p>Read the table left to right and you see the bull case. Revenue growth improved from 2% to 9%. Cloud growth accelerated every single quarter, from 26% to 45%.</p>
+<p>Read it right to left and you see the problem. Adjusted EBITA fell in every one of the five quarters, by as much as 84%. EBITA margin went from 16% to as low as 2% and is now 10%. Non-GAAP EPS missed the consensus every quarter after June 2025. Free cash flow was negative in four of the five quarters, and the most recent quarter was the worst of the five.</p>
+<p>Put the trailing twelve months next to the twelve months before them:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>Last four quarters vs. prior four</th>
+  <th class="num">Prior four quarters</th>
+  <th class="num">Last four quarters</th>
+  <th class="num">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Revenue (RMB bn)</td>
+  <td class="num">n/a</td>
+  <td class="num">1,045.0</td>
+  <td class="num"></td>
+</tr>
+<tr>
+  <td>Adjusted EBITA (RMB bn)</td>
+  <td class="num">166.9</td>
+  <td class="num">64.9</td>
+  <td class="num">-61%</td>
+</tr>
+<tr>
+  <td>Non-GAAP net income (RMB bn)</td>
+  <td class="num">150.9</td>
+  <td class="num">47.9</td>
+  <td class="num">-68%</td>
+</tr>
+<tr>
+  <td>Non-GAAP EPS per ADS (RMB)</td>
+  <td class="num">63.72</td>
+  <td class="num">20.59</td>
+  <td class="num">-68%</td>
+</tr>
+<tr>
+  <td>Operating cash flow (RMB bn)</td>
+  <td class="num">150.5</td>
+  <td class="num">78.5</td>
+  <td class="num">-48%</td>
+</tr>
+<tr>
+  <td>Free cash flow (RMB bn)</td>
+  <td class="num">+37.7</td>
+  <td class="num">-72.5</td>
+  <td class="num">swing of -110</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Prior four quarters: September 2024 to June 2025. Last four: September 2025 to June 2026. Computed from the quarterly figures reported in the same 6-K announcements.</em></p>
+<figure><img src="alibaba-two-wars/exhibit-3.png" alt="Exhibit 3. Profit and cash flow: last four quarters vs. the prior four" loading="lazy"><figcaption>Exhibit 3. Profit and cash flow: last four quarters vs. the prior four</figcaption></figure>
+<p>This is not a company in a soft patch. This is a company that has given up roughly two-thirds of its earnings power and more than RMB 110 billion of annual free cash flow in one year, while telling investors that the businesses responsible are investments.</p>
+<p>Investments are supposed to pay back. The rest of this report asks when, and with what.</p>
+<h2 id="3-the-money-machine-is-shrinking-marketplace-revenue-down-7">3. The money machine is shrinking: marketplace revenue down 7%<a class="anchor" href="#3-the-money-machine-is-shrinking-marketplace-revenue-down-7" aria-label="Link to this section">#</a></h2>
+<p>Alibaba's economic engine was never really &quot;e-commerce.&quot; It was customer management revenue: the advertising and commissions merchants pay to be seen by Taobao and Tmall shoppers. CMR is high-margin, recurring, and it scaled with China's consumer economy for two decades. It funded the cloud, the logistics network, the international bets, the acquisitions and the buybacks.</p>
+<p>In the June 2026 quarter, CMR fell 7% year over year, from RMB 89.2 billion to RMB 82.5 billion.</p>
+<p>Alibaba's explanation is that a new merchant program is booked as &quot;contra revenue,&quot; meaning the incentives Alibaba pays merchants are netted against the revenue it collects from them. Strip that out, the company says, and CMR &quot;on a like-for-like basis would have grown by 1% year-over-year.&quot; The same paragraph of the results announcement adds that &quot;the slow-down in revenue growth was primarily due to weaker transaction activities.&quot;</p>
+<p>We want to be precise about what that means, because it is the most important sentence in the filing.</p>
+<p>First, the reported number is the real number. Contra revenue is money Alibaba does not get to keep. A merchant subsidy that reduces revenue is a subsidy, whatever the program is called.</p>
+<p>Second, the like-for-like number is the generous number, and even the generous number is 1%. One year earlier, CMR was growing 10%. In the December 2025 quarter it grew 1%, and management attributed that to &quot;weaker transaction activities and phase-out of the impact of software service fee.&quot; In the March 2026 quarter, like-for-like growth was 8%. In June it was back to 1%.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>Quarter</th>
+  <th class="num">CMR growth as presented</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Jun 2025</td>
+  <td class="num">+10%</td>
+</tr>
+<tr>
+  <td>Sep 2025</td>
+  <td class="num">+10%</td>
+</tr>
+<tr>
+  <td>Dec 2025</td>
+  <td class="num">+1%</td>
+</tr>
+<tr>
+  <td>Mar 2026</td>
+  <td class="num">+8% like-for-like</td>
+</tr>
+<tr>
+  <td>Jun 2026</td>
+  <td class="num">-7% reported, +1% like-for-like</td>
+</tr>
+</tbody>
+</table></div>
+<figure><img src="alibaba-two-wars/exhibit-4.png" alt="Exhibit 4. Customer management revenue growth, year over year" loading="lazy"><figcaption>Exhibit 4. Customer management revenue growth, year over year</figcaption></figure>
+<p>Third, the cost line tells you who is paying for this. In the June 2026 quarter, cost of revenue rose to 61.8% of revenue from 55.1% a year earlier. Alibaba attributes the increase to a higher mix of cloud and technology revenue &quot;as well as the contra revenue impact from the new business development program.&quot; Group gross margin, in other words, fell from about 44.9% to about 38.2% in a year.</p>
+<p>The like-for-like framing asks investors to look through a program that both shrinks reported revenue and raises the cost ratio. We think investors should do the opposite. When a dominant marketplace has to pay merchants to stay and still shows 1% growth on its own preferred measure, the market is telling you something about competitive position. PDD, Douyin e-commerce and JD.com did not stop competing because Alibaba changed how it books its incentives.</p>
+<p>There is a second-order problem. CMR is the profit pool that is supposed to fund the AI war. If the profit pool is flat in a good quarter and shrinking in a reported one, the AI war has to be funded from somewhere else. In August 2026, Alibaba showed us where.</p>
+<h2 id="4-the-delivery-war-rmb-86-billion-of-e-commerce-profit-gone-">4. The delivery war: RMB 86 billion of e-commerce profit gone in one year<a class="anchor" href="#4-the-delivery-war-rmb-86-billion-of-e-commerce-profit-gone-" aria-label="Link to this section">#</a></h2>
+<p>In 2025, Alibaba entered an all-out subsidy war in instant retail and food delivery against Meituan and JD.com, primarily through Taobao Instant Commerce. The cost of that decision is visible in a single line: adjusted EBITA of the Alibaba China E-commerce Group.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>Quarter</th>
+  <th class="num">China E-commerce Group adjusted EBITA</th>
+  <th class="num">YoY</th>
+  <th>Company's stated reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Jun 2025</td>
+  <td class="num">RMB 38.4 bn</td>
+  <td class="num">-21%</td>
+  <td>investment in Taobao Instant Commerce, user experience, user acquisition and technology</td>
+</tr>
+<tr>
+  <td>Sep 2025</td>
+  <td class="num">RMB 10.5 bn</td>
+  <td class="num">-76%</td>
+  <td>investment in quick commerce, user experiences and technology</td>
+</tr>
+<tr>
+  <td>Dec 2025</td>
+  <td class="num">RMB 34.6 bn</td>
+  <td class="num">-43%</td>
+  <td>investment in quick commerce, user experiences and technology</td>
+</tr>
+<tr>
+  <td>Mar 2026</td>
+  <td class="num">RMB 24.0 bn</td>
+  <td class="num">-40%</td>
+  <td>investment in quick commerce, user experiences and technology</td>
+</tr>
+<tr>
+  <td>FY2026 total</td>
+  <td class="num">RMB 107.5 bn</td>
+  <td class="num">-44%</td>
+  <td>vs. RMB 193.2 bn in FY2025</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Source: Alibaba 6-K results announcements, segment adjusted EBITA discussions.</em></p>
+<figure><img src="alibaba-two-wars/exhibit-5.png" alt="Exhibit 5. China E-commerce Group adjusted EBITA" loading="lazy"><figcaption>Exhibit 5. China E-commerce Group adjusted EBITA</figcaption></figure>
+<p>Alibaba's China e-commerce business earned RMB 193.2 billion of adjusted EBITA in fiscal 2025. In fiscal 2026 it earned RMB 107.5 billion. That is RMB 85.7 billion of profit, in one year, spent to defend and extend a position in a category where Meituan already had the scale and the riders.</p>
+<p>Bulls point out that the war is easing. In the June 2026 quarter, under a brand-new segment structure, the combined Alibaba E-commerce Group earned RMB 39.7 billion of adjusted EBITA, down only 1% from the restated prior-year figure. China Quick Commerce revenue grew 45% to RMB 53.3 billion, and the company says Taobao Instant Commerce &quot;continued to improve its unit economics quarter-over-quarter.&quot;</p>
+<p>We take the improvement at face value and still see three problems.</p>
+<p><strong>The comparison base is already damaged.</strong> Flat year over year against a June 2025 quarter that was itself down 21% is not a recovery. It is a new, lower plateau.</p>
+<p><strong>The segment just changed shape.</strong> The June 2026 &quot;Alibaba E-commerce Group&quot; combines China e-commerce, international digital commerce and Freshippo. International commerce swung from losses of RMB 15.1 billion in fiscal 2025 to losses of RMB 2.1 billion in fiscal 2026 as AliExpress cut costs. Folding an improving loss-maker into the same line as a deteriorating profit center makes the combined trend look better than the China core underneath it.</p>
+<p><strong>Subsidy wars in China end in consolidation or regulation, not in a clean win.</strong> Ride-hailing ended in mergers. The 2015 to 2018 food delivery war ended with Alibaba buying Ele.me and Meituan still dominant. Community group buying ended with regulators stepping in. This war has already followed the script: on July 2, 2025, Taobao Flash Sale launched a RMB 50 billion subsidy campaign; China's State Administration for Market Regulation summoned JD.com, Meituan and Alibaba's Ele.me on May 13 and again on July 18, 2025; and on August 1 the three platforms jointly pledged to rein in promotional practices. None of those endings returned the money that was spent. They only slowed the spending.</p>
+<p>We do not argue that quick commerce will bankrupt Alibaba. We argue that it has already converted a large, predictable profit pool into a smaller and more contested one, and that the market's forward estimates assume most of that profit comes back. We think a meaningful share of it is gone.</p>
+<h2 id="5-alibaba-s-ai-lost-rmb-8-2-billion-last-quarter">5. Alibaba's AI lost RMB 8.2 billion last quarter<a class="anchor" href="#5-alibaba-s-ai-lost-rmb-8-2-billion-last-quarter" aria-label="Link to this section">#</a></h2>
+<p>This is the heart of the bull case and the heart of our disagreement.</p>
+<p>Alibaba Cloud is a genuinely good business. In the June 2026 quarter, the AI Cloud and Compute Services segment grew revenue 45% to RMB 48.4 billion and grew adjusted EBITA 133% to RMB 5.6 billion, an EBITA margin of about 12%. AI-related product revenue reached RMB 12.4 billion and grew at triple digits for the twelfth consecutive quarter. External customer revenue growth accelerated to 45%. Alibaba's own Zhenwu M890 AI processor, the company says, is in use by more than 650 external customers.</p>
+<p>We do not dispute any of that. We dispute what it is worth to an Alibaba shareholder, for four reasons.</p>
+<h3 id="5-1-the-ai-apps-lose-more-than-the-entire-cloud-segment-earn">5.1 The AI apps lose more than the entire cloud segment earns<a class="anchor" href="#5-1-the-ai-apps-lose-more-than-the-entire-cloud-segment-earn" aria-label="Link to this section">#</a></h3>
+<p>In the same June 2026 quarter, Alibaba created a new reporting segment called AI Labs and Applications, consolidating its model labs, the Qwen consumer business and QwenWork. That segment produced RMB 3.3 billion of revenue and an adjusted EBITA loss of RMB 13.9 billion, more than four times the RMB 3.2 billion loss in the same quarter of 2025.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>June 2026 quarter</th>
+  <th class="num">Revenue</th>
+  <th>Adjusted EBITA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>AI Cloud and Compute Services</td>
+  <td class="num">RMB 48.4 bn</td>
+  <td>+RMB 5.6 bn</td>
+</tr>
+<tr>
+  <td>AI Labs and Applications</td>
+  <td class="num">RMB 3.3 bn</td>
+  <td>-RMB 13.9 bn</td>
+</tr>
+<tr>
+  <td><strong>Alibaba's two AI segments combined</strong></td>
+  <td class="num"><strong>RMB 51.8 bn</strong></td>
+  <td><strong>-RMB 8.2 bn</strong></td>
+</tr>
+</tbody>
+</table></div>
+<figure><img src="alibaba-two-wars/exhibit-6.png" alt="Exhibit 6. Adjusted EBITA of the two AI-labelled segments, June 2026 quarter" loading="lazy"><figcaption>Exhibit 6. Adjusted EBITA of the two AI-labelled segments, June 2026 quarter</figcaption></figure>
+<p>Read that last line again. At the level of adjusted EBITA, which already excludes share-based compensation and amortization, Alibaba's two AI segments lost RMB 8.2 billion in one quarter. The cloud segment includes traditional, non-AI cloud services too, so this is, if anything, a generous view of AI's contribution. Annualize it and you get roughly RMB 33 billion a year. That is before the capital spending that builds the data centers those businesses run on.</p>
+<p>The market prices Alibaba Cloud as the AI winner. Alibaba's own segment disclosure says the group's AI activities, taken together, are a cost center.</p>
+<h3 id="5-2-every-yuan-of-ai-revenue-costs-about-three-yuan-of-capex">5.2 Every yuan of AI revenue costs about three yuan of capex<a class="anchor" href="#5-2-every-yuan-of-ai-revenue-costs-about-three-yuan-of-capex" aria-label="Link to this section">#</a></h3>
+<p>Alibaba spent RMB 67.7 billion on capital expenditures in the June 2026 quarter, up 75% from RMB 38.7 billion a year earlier. Over the last four quarters, we estimate capex at roughly RMB 151 billion. Three of those four quarters are estimated as operating cash flow minus free cash flow; the June quarter is the company's disclosed figure.</p>
+<p>Annualize the June quarter's AI-related product revenue and you get about RMB 49.5 billion. Trailing capex is therefore roughly three times annualized AI-related product revenue.</p>
+<p>That ratio is not unusual for a hyperscaler in a buildout. What is unusual is the funding source. Microsoft, Alphabet, Amazon and Meta fund their buildouts from enormous, growing operating cash flows. Alibaba's trailing operating cash flow is RMB 78.5 billion and falling. If Alibaba sustains the June-quarter capex pace for a year, it would spend about RMB 271 billion, equal to 26% of trailing revenue and 3.4 times trailing operating cash flow.</p>
+<h3 id="5-3-deepseek-gives-its-model-away-try-charging-for-yours">5.3 DeepSeek gives its model away. Try charging for yours.<a class="anchor" href="#5-3-deepseek-gives-its-model-away-try-charging-for-yours" aria-label="Link to this section">#</a></h3>
+<p>Cloud businesses earn their returns over years by charging for compute and services. In China, the price of model inference has been driven toward zero three times over.</p>
+<p>In 2024, Alibaba Cloud itself cut prices on Qwen models dramatically as ByteDance's Volcano Engine priced Doubao aggressively. In 2025, DeepSeek's releases reset expectations of what frontier performance should cost. In 2026, DeepSeek released V4-Pro and V4-Flash with open weights under the MIT license and a one-million-token context window. Any company in China, including Alibaba's own cloud customers, can now download a frontier-class model and run it wherever the compute is cheapest.</p>
+<p>The result is a market where volume and revenue have decoupled. According to IDC figures reported in May 2026, Volcano Engine held 49.5% of China's public cloud large-model token volume in 2025, against roughly 28% for Alibaba Cloud. Alibaba counters with Omdia data showing it held 35.8% of full-stack AI cloud revenue against 14.8% for Volcano Engine. Both can be true. That is exactly the point: the largest volume player is pricing for share, and the open-source leader is pricing at zero. Alibaba's AI revenue lead exists inside a market whose pricing is being set by its two most aggressive rivals.</p>
+<h3 id="5-4-chips-are-a-constraint-alibaba-cannot-buy-its-way-out-of">5.4 Chips are a constraint Alibaba cannot buy its way out of<a class="anchor" href="#5-4-chips-are-a-constraint-alibaba-cannot-buy-its-way-out-of" aria-label="Link to this section">#</a></h3>
+<p>In November 2023, Alibaba cancelled the planned spin-off of its cloud business, citing uncertainty from US export controls on advanced chips. The shares fell as much as 10% that day. Three years later the constraint has not gone away; it has changed shape.</p>
+<p>IDC's first-half 2026 data, as reported by Benzinga, put Nvidia's share of China AI accelerator unit shipments at 34% with shipments down 44%, Huawei's Ascend at 28%, Alibaba's own T-Head at 7% and Cambricon at 5%. Domestic chips are improving fast. But a buildout on less efficient silicon needs more chips, more power and more data center space per unit of compute. That shows up as higher capex per yuan of AI revenue, which is the ratio in section 5.2 that already worries us.</p>
+<h2 id="6-the-bill-for-the-data-centers-hasn-t-arrived-yet">6. The bill for the data centers hasn't arrived yet<a class="anchor" href="#6-the-bill-for-the-data-centers-hasn-t-arrived-yet" aria-label="Link to this section">#</a></h2>
+<p>Capital expenditure does not disappear. It comes back as depreciation, quarter after quarter, for the useful life of the servers, networking gear and buildings it paid for. Across the industry, AI servers are typically written off over roughly five to six years.</p>
+<p>Alibaba's last four quarters of capex, roughly RMB 151 billion by our estimate, have not yet been fully absorbed by its income statement. Spread over five years, that one year of spending alone implies on the order of RMB 30 billion of annual depreciation once it is all in service. For scale, the AI Cloud and Compute segment's June-quarter EBITA of RMB 5.6 billion annualizes to about RMB 22.5 billion.</p>
+<p>Some of that depreciation is already in the numbers. You can see it in the June 2026 cost structure:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>June quarter</th>
+  <th class="num">2025</th>
+  <th class="num">2026</th>
+  <th class="num">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Cost of revenue, % of revenue</td>
+  <td class="num">55.1%</td>
+  <td class="num">61.8%</td>
+  <td class="num">+6.7 pts</td>
+</tr>
+<tr>
+  <td>Product development expense</td>
+  <td class="num">RMB 15.0 bn</td>
+  <td class="num">RMB 22.5 bn</td>
+  <td class="num">+50%</td>
+</tr>
+<tr>
+  <td>General and administrative expense</td>
+  <td class="num">RMB 7.4 bn</td>
+  <td class="num">RMB 12.7 bn</td>
+  <td class="num">+72%</td>
+</tr>
+<tr>
+  <td>Sales and marketing, % of revenue</td>
+  <td class="num">21.5%</td>
+  <td class="num">17.7%</td>
+  <td class="num">-3.8 pts</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Source: Alibaba June quarter 2026 results, &quot;Other Financial Results.&quot;</em></p>
+<figure><img src="alibaba-two-wars/exhibit-7.png" alt="Exhibit 7. Cost structure and implied depreciation" loading="lazy"><figcaption>Exhibit 7. Cost structure and implied depreciation</figcaption></figure>
+<p>The only expense line that improved was sales and marketing, which is where quick commerce subsidies that are not booked as contra revenue live. Everything tied to technology and infrastructure went up, fast. The G&amp;A jump was driven mostly by a provision for the EUR 550 million fine the European Commission imposed on AliExpress under the Digital Services Act; we return to that in section 12.</p>
+<p>The point is simple. Alibaba's AI revenue growth is real, but it is running on a treadmill whose speed is set by its own capex. If the company keeps spending at the June-quarter pace, a growing share of every yuan of AI revenue will be pre-committed to depreciation for years. Bulls who model expanding cloud margins need to explain how margins expand while the asset base under them grows this fast.</p>
+<h2 id="7-outgunned-bytedance-and-tencent-each-earn-about-six-times-">7. Outgunned: ByteDance and Tencent each earn about six times as much<a class="anchor" href="#7-outgunned-bytedance-and-tencent-each-earn-about-six-times-" aria-label="Link to this section">#</a></h2>
+<p>A war of attrition is won by the side with the deepest and most durable profit pool. Here is what the three largest Chinese internet platforms bring to this one.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th></th>
+  <th>Last-year profit engine</th>
+  <th>AI spending</th>
+  <th>Funding moves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>ByteDance</strong> (private; reported)</td>
+  <td>2025 net profit about US$42 bn, up 27%; 1H 2026 revenue about US$120 bn, up about 30%; 1H 2026 net profit about US$20 bn</td>
+  <td>weighing up to US$70 bn of 2026 AI capex (Bloomberg, May 2026; not a final budget)</td>
+  <td>syndicated loan with 28 institutions, reported at about US$29.6 bn</td>
+</tr>
+<tr>
+  <td><strong>Tencent</strong></td>
+  <td>trailing non-IFRS net profit about RMB 280 bn, roughly US$42 bn; 2Q 2026 non-IFRS operating profit +9%, +19% excluding new AI products</td>
+  <td>2Q 2026 capex RMB 52.8 bn, up 176%</td>
+  <td>still buying back stock: HK$16.9 bn in 2Q 2026; net cash RMB 58.2 bn</td>
+</tr>
+<tr>
+  <td><strong>Alibaba</strong></td>
+  <td>trailing non-GAAP net income RMB 47.9 bn, roughly US$7 bn, down 68%</td>
+  <td>June 2026 quarter capex RMB 67.7 bn, up 75%</td>
+  <td>HK$80 bn equity placing, August 2026</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Sources: ByteDance figures as reported by The Information (September 15, 2026) and Bloomberg, via media coverage; not audited, not confirmed by the company. Tencent 2Q 2026 results announcement, August 12, 2026. Alibaba 6-K filings.</em></p>
+<figure><img src="alibaba-two-wars/exhibit-8.png" alt="Exhibit 8. Profit pools and consumer AI reach" loading="lazy"><figcaption>Exhibit 8. Profit pools and consumer AI reach</figcaption></figure>
+<p>ByteDance and Tencent each bring a profit engine of roughly US$40 billion a year into this fight. Alibaba brings about US$7 billion. ByteDance's revenue is growing about 30%. Tencent's core profit, excluding its new AI products, is growing 19%. Alibaba's core marketplace revenue is shrinking.</p>
+<h3 id="7-1-doubao-has-2-3-times-qwen-s-users">7.1 Doubao has 2.3 times Qwen's users<a class="anchor" href="#7-1-doubao-has-2-3-times-qwen-s-users" aria-label="Link to this section">#</a></h3>
+<p>AI assistants are becoming the entry point to search, shopping and content. Whoever owns the entry point owns the traffic, and in China that is ByteDance.</p>
+<p>According to QuestMobile's first-half 2026 data, as reported by TechNode, ByteDance's Doubao had 382 million monthly active users. Alibaba's Qwen had 167 million. DeepSeek had 130 million. Tencent's Yuanbao was reported at about 50 million. Doubao has 2.3 times Qwen's users, and it is distributed through Douyin, the most powerful attention machine in the country.</p>
+<p>ByteDance also runs Volcano Engine, which IDC reportedly ranked first in China by public cloud large-model token volume in 2025, with a 49.5% share. Alibaba leads on revenue. ByteDance leads on usage, and it is buying more of the future with a capex budget that, if the reporting is right, could be roughly three times Alibaba's.</p>
+<p>Alibaba's answer to that is the AI Labs and Applications segment: RMB 3.3 billion of revenue and a RMB 13.9 billion quarterly loss. That is what it costs to be the number two consumer AI app in a market where number one has Douyin behind it.</p>
+<h3 id="7-2-tencent-gets-paid-while-it-waits">7.2 Tencent gets paid while it waits<a class="anchor" href="#7-2-tencent-gets-paid-while-it-waits" aria-label="Link to this section">#</a></h3>
+<p>Tencent's position is the mirror image of Alibaba's. Its marketing services revenue grew 22% in the June 2026 quarter, which Tencent attributes partly to its AI-driven ad recommendation model. Its new AI products, the Hunyuan models, Yuanbao, CodeBuddy and WorkBuddy, cost it roughly RMB 10.5 billion of operating profit in the quarter, by the difference between reported non-IFRS operating profit and the figure excluding those products. And its profit still grew.</p>
+<p>Tencent is also one of DeepSeek's largest backers. According to Bloomberg reporting on a regulatory filing, DeepSeek's first outside round raised about RMB 50 billion at a post-money valuation above RMB 350 billion, with Tencent contributing about RMB 10 billion. Tencent and CATL are now reported to be leading a second round of at least RMB 80 billion at a target valuation around RMB 500 billion, ahead of a planned listing in early 2027.</p>
+<p>So Tencent has its own models, the WeChat distribution layer, a growing ad business funding the bill, and a large stake in the most important open-source model company in China. Alibaba has a strong cloud and a weak consumer AI position, and it is paying for both with a shrinking marketplace.</p>
+<h3 id="7-3-deepseek-is-a-winner-that-destroys-the-prize">7.3 DeepSeek is a winner that destroys the prize<a class="anchor" href="#7-3-deepseek-is-a-winner-that-destroys-the-prize" aria-label="Link to this section">#</a></h3>
+<p>DeepSeek is the cleanest example of why &quot;AI leader&quot; and &quot;AI profit&quot; are different things. According to The Information, as reported by The Standard, DeepSeek generated about RMB 475 million of revenue in the first seven months of 2026, roughly ten times its 2025 total, and lost about RMB 715 million. Its API gross margin was reported at 82.9%. Its V4 models are open-weight under the MIT license.</p>
+<p>That is a company with enormous technical credibility, a small business and a pricing strategy that turns frontier capability into a commodity. Every time DeepSeek ships, the price of &quot;good enough&quot; AI in China resets lower. That is excellent for Chinese AI users. It is a structural headwind for anyone, Alibaba included, trying to earn a return on AI infrastructure by selling model access.</p>
+<h3 id="7-4-alibaba-needs-192-of-its-cash-flow-to-spend-a-fifth-of-m">7.4 Alibaba needs 192% of its cash flow to spend a fifth of Microsoft's capex<a class="anchor" href="#7-4-alibaba-needs-192-of-its-cash-flow-to-spend-a-fifth-of-m" aria-label="Link to this section">#</a></h3>
+<p>Bulls often point out that Alibaba spends less on AI, relative to its size, than the US hyperscalers do. That is true, and it is the problem rather than the defense.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>Last four reported quarters</th>
+  <th class="num">Capex</th>
+  <th class="num">Capex as % of revenue</th>
+  <th class="num">Capex as % of operating cash flow</th>
+  <th>Recent free cash flow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Amazon (to March 2026)</td>
+  <td class="num">US$151 bn</td>
+  <td class="num">20%</td>
+  <td class="num">102%</td>
+  <td>trailing four quarters negative, about -US$2.5 bn</td>
+</tr>
+<tr>
+  <td>Alphabet (to June 2026)</td>
+  <td class="num">US$132 bn</td>
+  <td class="num">30%</td>
+  <td class="num">71%</td>
+  <td>June 2026 quarter capex exceeded operating cash flow</td>
+</tr>
+<tr>
+  <td>Microsoft (to June 2026)</td>
+  <td class="num">US$116 bn</td>
+  <td class="num">35%</td>
+  <td class="num">63%</td>
+  <td>positive</td>
+</tr>
+<tr>
+  <td>Meta (to June 2026)</td>
+  <td class="num">US$89 bn</td>
+  <td class="num">39%</td>
+  <td class="num">69%</td>
+  <td>September 2026 quarter free cash flow -US$2.1 bn</td>
+</tr>
+<tr>
+  <td><strong>Alibaba (to June 2026)</strong></td>
+  <td class="num"><strong>about RMB 151 bn, roughly US$23 bn</strong></td>
+  <td class="num"><strong>about 14%</strong></td>
+  <td class="num"><strong>about 192%</strong></td>
+  <td><strong>trailing four quarters -RMB 72.5 bn</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Sources: company filings via Yahoo Finance quarterly cash flow data; Meta third-quarter 2026 Form 8-K; Alibaba 6-K filings with three quarters of capex estimated as operating cash flow minus free cash flow.</em></p>
+<figure><img src="alibaba-two-wars/exhibit-9.png" alt="Exhibit 9. Capex as a share of operating cash flow" loading="lazy"><figcaption>Exhibit 9. Capex as a share of operating cash flow</figcaption></figure>
+<p>Every one of the US companies is spending far more than Alibaba in absolute terms, and several have recently pushed free cash flow to around zero or below. But they are doing it with operating cash flows of US$130 billion to US$186 billion a year, and their core businesses are growing. Alibaba is spending roughly one-fifth as much as Microsoft and about one-seventh as much as Amazon, and it already needs nearly twice its operating cash flow to do it.</p>
+<p>The constraint is not ambition. It is the size of the cash engine. In a race where scale of compute matters, the company that can only afford a fraction of the leaders' budgets, and has to sell stock to afford that, is not positioned to win on infrastructure. It is positioned to be a well-run number two in a market that ByteDance is pricing for share.</p>
+<h2 id="8-from-11-9-billion-of-buybacks-to-10-billion-of-new-shares">8. From $11.9 billion of buybacks to $10 billion of new shares<a class="anchor" href="#8-from-11-9-billion-of-buybacks-to-10-billion-of-new-shares" aria-label="Link to this section">#</a></h2>
+<p>For three years, Alibaba's most persuasive answer to skeptics was capital return. The company bought back stock aggressively, raised the dividend, and paid special dividends out of asset sales. That answer is gone.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>Fiscal year (to March)</th>
+  <th>Buybacks</th>
+  <th>Share count effect</th>
+  <th>Dividend per ADS paid the following June</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>FY2025</td>
+  <td>US$11.9 bn (1,197 mn ordinary shares)</td>
+  <td>net -5.1% after ESOP issuance</td>
+  <td>US$2.00 (US$1.05 regular + US$0.95 one-time, from disposals)</td>
+</tr>
+<tr>
+  <td>FY2026</td>
+  <td>about US$1.0 bn (73 mn ordinary shares)</td>
+  <td></td>
+  <td>US$1.05</td>
+</tr>
+<tr>
+  <td>June 2026 quarter</td>
+  <td>US$162 mn (13.4 mn ordinary shares)</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>August 2026</td>
+  <td></td>
+  <td><strong>+710 mn new ordinary shares issued, about 3.7% dilution</strong></td>
+  <td></td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Sources: Alibaba March quarter 2025 and March quarter 2026 results announcements; June quarter 2026 results; placing announcements of August 23 and August 26, 2026 (Form 6-K 0001193125-26-361715 and 0001193125-26-365894). Dividend history: Yahoo Finance.</em></p>
+<figure><img src="alibaba-two-wars/exhibit-10.png" alt="Exhibit 10. ADS price and the August 2026 share placing" loading="lazy"><figcaption>Exhibit 10. ADS price and the August 2026 share placing</figcaption></figure>
+<p>On August 23, 2026, Alibaba announced a proposed placing of new shares in Hong Kong. On August 26, it completed an HK$80 billion placing of 710,000,000 new ordinary shares at HK$112.70 each, about US$10.3 billion. Each ADS represents eight ordinary shares, so the placing price was about US$116 per ADS. The company said it would put roughly 60% of the proceeds into expanding global computing infrastructure and roughly 40% into hyperscale AI data centers and the upgrade of its traditional cloud infrastructure.</p>
+<p>The sequence matters.</p>
+<p>On August 20, Alibaba reported June-quarter results: CMR down 7%, adjusted EBITA down 30%, free cash flow of negative RMB 44.7 billion. The ADS closed up 1.3% that day. The next session it fell 8.6%. Two days later, on Sunday, August 23, the company announced the placing. Since the placing closed, the ADS has finished above US$116 on only three trading days, the last on September 22; on October 21 it closed at US$104.41.</p>
+<p>A company with RMB 474.5 billion of cash and other liquid investments chose to issue equity rather than draw down that liquidity or borrow more. We think that tells you two things. First, management expects capex needs that internal cash generation cannot cover, even after the quick commerce war cools. Second, at roughly US$116 per ADS, management judged its own stock a currency to spend rather than an asset to buy. A year earlier the same company was retiring 5% of its shares annually.</p>
+<p>When the people with the best information stop buying and start selling, we suggest believing the actions over the slides.</p>
+<h2 id="9-four-misses-in-a-row-and-the-street-still-wants-66">9. Four misses in a row, and the Street still wants +66%<a class="anchor" href="#9-four-misses-in-a-row-and-the-street-still-wants-66" aria-label="Link to this section">#</a></h2>
+<p>Alibaba has missed consensus non-GAAP EPS in each of the last four quarters.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>Quarter</th>
+  <th class="num">Consensus EPS per ADS</th>
+  <th class="num">Reported</th>
+  <th class="num">Surprise</th>
+  <th class="num">ADS move on results day</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Sep 2025</td>
+  <td class="num">RMB 5.78</td>
+  <td class="num">RMB 4.36</td>
+  <td class="num">-25%</td>
+  <td class="num">-2.3%</td>
+</tr>
+<tr>
+  <td>Dec 2025</td>
+  <td class="num">RMB 10.94</td>
+  <td class="num">RMB 7.09</td>
+  <td class="num">-35%</td>
+  <td class="num">-7.1%</td>
+</tr>
+<tr>
+  <td>Mar 2026</td>
+  <td class="num">RMB 5.74</td>
+  <td class="num">RMB 0.62</td>
+  <td class="num">-89%</td>
+  <td class="num">+8.2%</td>
+</tr>
+<tr>
+  <td>Jun 2026</td>
+  <td class="num">RMB 10.76</td>
+  <td class="num">RMB 8.52</td>
+  <td class="num">-21%</td>
+  <td class="num">+1.3%, then -8.6% the next session</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Consensus: Yahoo Finance. Price moves: close before results to close on results day (Alibaba reports before the US open), from OpenD price data.</em></p>
+<figure><img src="alibaba-two-wars/exhibit-11.png" alt="Exhibit 11. Non-GAAP EPS per ADS: consensus vs. reported" loading="lazy"><figcaption>Exhibit 11. Non-GAAP EPS per ADS: consensus vs. reported</figcaption></figure>
+<p>The stock does not reliably fall on misses. Across the last 20 reports, the ADS rose after 6 of 11 beats and 3 of 9 misses, and the median results-day move was 5.9%. The market has been trading the cloud story through the misses. That is precisely why the misses matter: they are accumulating in the estimates rather than in the price.</p>
+<p>Look at what consensus now requires:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>Period</th>
+  <th class="num">Consensus non-GAAP EPS per ADS</th>
+  <th>Implied change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>September 2026 quarter</td>
+  <td class="num">RMB 10.96 (18 analysts, range 8.59 to 14.19)</td>
+  <td>+29% vs. June quarter; +151% vs. a year ago</td>
+</tr>
+<tr>
+  <td>December 2026 quarter</td>
+  <td class="num">RMB 14.77</td>
+  <td>+108% vs. a year ago</td>
+</tr>
+<tr>
+  <td>FY2027 (to March 2027)</td>
+  <td class="num">RMB 44.45</td>
+  <td>+66% vs. FY2026's RMB 26.82</td>
+</tr>
+<tr>
+  <td>FY2028 (to March 2028)</td>
+  <td class="num">RMB 62.05</td>
+  <td>+40% again</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Source: Yahoo Finance consensus, October 21, 2026.</em></p>
+<p>Here is a simple seasonality check. In fiscal 2025, before the quick commerce war, the June quarter delivered 25% of full-year non-GAAP EPS (RMB 16.44 of RMB 65.41). Apply the same seasonality to June 2026's RMB 8.52 and you get a fiscal 2027 run-rate of about RMB 34, not RMB 44. Consensus is roughly 30% above the run-rate that Alibaba's own most recent quarter implies, after four quarters in which consensus was too high every time.</p>
+<p>The next test is the September quarter, which Yahoo Finance currently dates to around November 24, 2026; Alibaba has not confirmed the date. Options expiring November 27 price a move of about plus or minus 10.5% through that date, including several weeks of ordinary volatility.</p>
+<h2 id="10-not-cheap-33-9-times-what-alibaba-actually-earns">10. Not cheap: 33.9 times what Alibaba actually earns<a class="anchor" href="#10-not-cheap-33-9-times-what-alibaba-actually-earns" aria-label="Link to this section">#</a></h2>
+<p>Bulls describe Alibaba as cheap. On trailing earnings it is not cheap at all.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>Measure</th>
+  <th class="num">Value</th>
+  <th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Trailing non-GAAP P/E</td>
+  <td class="num">33.9x</td>
+  <td>96th percentile of its own five-year range (7.3x to 42.7x, median 12.0x)</td>
+</tr>
+<tr>
+  <td>P/E on FY2027 consensus (RMB 44.45)</td>
+  <td class="num">15.7x</td>
+  <td>requires 66% EPS growth</td>
+</tr>
+<tr>
+  <td>P/E on FY2027 run-rate (about RMB 34)</td>
+  <td class="num">about 20.4x</td>
+  <td>seasonality-adjusted June quarter</td>
+</tr>
+<tr>
+  <td>P/E on FY2028 consensus (RMB 62.05)</td>
+  <td class="num">11.2x</td>
+  <td>requires another 40% growth</td>
+</tr>
+<tr>
+  <td>Tencent trailing non-IFRS P/E, for comparison</td>
+  <td class="num">11.2x</td>
+  <td>lowest in five years, with profits growing</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Computed from OpenD closing prices, Yahoo Finance EPS history and consensus, and USD/CNY of 6.678. P/E series use point-in-time trailing four-quarter non-GAAP EPS per ADS.</em></p>
+<figure><img src="alibaba-two-wars/exhibit-12.png" alt="Exhibit 12. Price-to-earnings on different earnings bases" loading="lazy"><figcaption>Exhibit 12. Price-to-earnings on different earnings bases</figcaption></figure>
+<p>The &quot;cheap&quot; multiple only appears after you assume the recovery. On what Alibaba is actually earning, the stock is priced near the top of its five-year range. And for investors who want Chinese internet exposure with AI optionality at a low multiple, Tencent trades at the lowest trailing multiple in five years while still growing profits. Alibaba is not the value option in its own peer group.</p>
+<h3 id="10-1-four-scenarios-one-expected-value-83">10.1 Four scenarios, one expected value: $83<a class="anchor" href="#10-1-four-scenarios-one-expected-value-83" aria-label="Link to this section">#</a></h3>
+<p>We value Alibaba on fiscal 2028 non-GAAP EPS, one year out, under four scenarios. Multiples are anchored to Alibaba's own five-year trailing range (low 7.3x, median 12.0x, high 42.7x) and to where Tencent trades today.</p>
+<p><strong>Bear, 25% probability: two wars, no ceasefire. FY2028 EPS RMB 30, 9x, US$40 per ADS.</strong> Quick commerce stays a subsidy fight. CMR stays flat to down on a reported basis. AI Labs and Applications losses stay above RMB 50 billion a year as Alibaba chases Doubao. Depreciation from the 2026 buildout lands on cloud margins. EPS settles near today's run-rate. The market prices Alibaba near the low end of its range, as it did in 2022 to 2024.</p>
+<p><strong>Base, 40% probability: slow, expensive repair. FY2028 EPS RMB 42, 11x, US$69 per ADS.</strong> Quick commerce losses keep narrowing, the e-commerce group's EBITA recovers partway toward fiscal 2025 levels, and cloud keeps compounding. But AI Labs remains a large loss, depreciation absorbs much of cloud's operating leverage, and fiscal 2028 EPS lands about one-third below consensus. A below-median multiple reflects lower returns on a much larger capital base.</p>
+<p><strong>Street, 25% probability: consensus delivered. FY2028 EPS RMB 62, 12x, US$111 per ADS.</strong> Everything in the consensus path happens on schedule. The market pays Alibaba's five-year median multiple for it. The stock is roughly where it is today plus 7%.</p>
+<p><strong>Bull, 10% probability: the AI winner re-rating. FY2028 EPS RMB 72, 16x, US$172 per ADS.</strong> Earnings recover above fiscal 2025's RMB 65.41, cloud becomes the dominant profit center, Qwen closes the consumer gap, and the market re-rates Alibaba as China's AI infrastructure champion.</p>
+<p><strong>Exhibit 13. Scenario valuation and probability weighting</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>Scenario</th>
+  <th class="num">EPS (RMB)</th>
+  <th class="num">P/E</th>
+  <th class="num">Value (US$)</th>
+  <th class="num">Return from US$104.41</th>
+  <th class="num">Probability</th>
+  <th class="num">Weighted value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Bear</td>
+  <td class="num">30</td>
+  <td class="num">9x</td>
+  <td class="num">40.4</td>
+  <td class="num">-61%</td>
+  <td class="num">25%</td>
+  <td class="num">10.1</td>
+</tr>
+<tr>
+  <td>Base</td>
+  <td class="num">42</td>
+  <td class="num">11x</td>
+  <td class="num">69.2</td>
+  <td class="num">-34%</td>
+  <td class="num">40%</td>
+  <td class="num">27.7</td>
+</tr>
+<tr>
+  <td>Street</td>
+  <td class="num">62</td>
+  <td class="num">12x</td>
+  <td class="num">111.4</td>
+  <td class="num">+7%</td>
+  <td class="num">25%</td>
+  <td class="num">27.9</td>
+</tr>
+<tr>
+  <td>Bull</td>
+  <td class="num">72</td>
+  <td class="num">16x</td>
+  <td class="num">172.5</td>
+  <td class="num">+65%</td>
+  <td class="num">10%</td>
+  <td class="num">17.3</td>
+</tr>
+<tr>
+  <td><strong>Expected value</strong></td>
+  <td class="num"></td>
+  <td class="num"></td>
+  <td class="num"></td>
+  <td class="num"><strong>-21%</strong></td>
+  <td class="num">100%</td>
+  <td class="num"><strong>US$82.9</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Value per ADS = EPS x P/E / 6.678 (USD/CNY).</em></p>
+<h3 id="10-2-the-math-for-a-short-and-the-risk-that-comes-with-it">10.2 The math for a short, and the risk that comes with it<a class="anchor" href="#10-2-the-math-for-a-short-and-the-risk-that-comes-with-it" aria-label="Link to this section">#</a></h3>
+<ul>
+<li><strong>Target.</strong> Our 12-month base-case value is US$69 per ADS, 34% below the current price. Our probability-weighted value is US$83, 21% below.</li>
+<li><strong>Probability.</strong> We put 65% probability on the shares being lower than US$104.41 in twelve months: the bear and base cases together.</li>
+<li><strong>Expected value for a short.</strong> On our weights, the expected 12-month return on a short position is about +21% before costs. Costs include the US$1.05 annual dividend a short seller must pay, about 1.0% at today's price, plus borrow fees, which vary by broker; short interest is only about 1.5% of float, so borrow has been easy.</li>
+<li><strong>Sensitivity.</strong> Move 10 points of probability from the bear and base cases into the street and bull cases, using weights of 15%, 35%, 30% and 20%, and the expected value is US$98, still 6% below the current price. Move it the other way, to 35%, 40%, 20% and 5%, and the expected value is US$73, 30% below.</li>
+<li><strong>Floor.</strong> Alibaba's cash and other liquid investments of RMB 474.5 billion are worth about US$28.6 per ADS before debt. Our bear case of US$40 still assigns value to the operating businesses. This is not a &quot;zero&quot; thesis.</li>
+</ul>
+<p>The expected value is positive for a short across a wide range of probability weights. The distribution is not symmetric, and anyone acting on this should take that seriously: the bull case is a 65% loss on a short position, and Alibaba's ADS has rallied 52% in ten trading days (March 2022), 43% (February 2025) and 33% in eleven sessions after China's September 2024 stimulus. A thesis can be right and the position can still be wrong for months.</p>
+<h3 id="10-3-the-street-needs-profit-above-pre-war-levels-within-18-">10.3 The Street needs profit above pre-war levels within 18 months<a class="anchor" href="#10-3-the-street-needs-profit-above-pre-war-levels-within-18-" aria-label="Link to this section">#</a></h3>
+<p>EPS scenarios are easy to write down. It is more useful to translate them back into the profit the businesses must produce. With about 2.49 billion ADS-equivalents outstanding after the August placing, each RMB 1 of non-GAAP EPS per ADS is roughly RMB 2.5 billion of non-GAAP net income.</p>
+<p>Over the last two years, Alibaba's non-GAAP net income has run at between 0.74 and 0.90 times its adjusted EBITA: 0.90 in the four quarters to June 2025, when interest and investment income were large relative to a weaker tax line, and 0.74 in the four quarters to June 2026. Using that range:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>Scenario</th>
+  <th class="num">FY28 EPS per ADS</th>
+  <th class="num">Implied non-GAAP net income</th>
+  <th class="num">Implied adjusted EBITA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Bear</td>
+  <td class="num">RMB 30</td>
+  <td class="num">RMB 75 bn</td>
+  <td class="num">RMB 83 to 101 bn</td>
+</tr>
+<tr>
+  <td>Base</td>
+  <td class="num">RMB 42</td>
+  <td class="num">RMB 104 bn</td>
+  <td class="num">RMB 116 to 141 bn</td>
+</tr>
+<tr>
+  <td>Street</td>
+  <td class="num">RMB 62</td>
+  <td class="num">RMB 154 bn</td>
+  <td class="num">RMB 171 to 208 bn</td>
+</tr>
+<tr>
+  <td>Bull</td>
+  <td class="num">RMB 72</td>
+  <td class="num">RMB 179 bn</td>
+  <td class="num">RMB 199 to 242 bn</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Implied EBITA = net income / 0.90 to net income / 0.74. ADS-equivalents of 2.4877 billion per Yahoo Finance.</em></p>
+<figure><img src="alibaba-two-wars/exhibit-14.png" alt="Exhibit 14. Adjusted EBITA implied by each scenario" loading="lazy"><figcaption>Exhibit 14. Adjusted EBITA implied by each scenario</figcaption></figure>
+<p>Now compare those to what Alibaba has actually earned. Adjusted EBITA was RMB 166.9 billion in the four quarters to June 2025, before the quick commerce war hit in full, and RMB 64.9 billion in the four quarters to June 2026.</p>
+<p>The street case requires adjusted EBITA of roughly RMB 171 billion to RMB 208 billion in fiscal 2028. That is at or above the pre-war level, delivered while carrying an AI Labs and Applications segment that currently loses about RMB 55 billion a year at its June-quarter pace, and a depreciation base that the 2026 buildout is enlarging quarter by quarter. In other words, consensus does not merely assume that the quick commerce war ends. It assumes the war ends, the consumer AI losses largely disappear or are offset, and the new depreciation is absorbed, all within eighteen months.</p>
+<p>Our base case requires roughly RMB 116 billion to RMB 141 billion of EBITA, about double the trailing figure and still well below the pre-war level. We think that is the more realistic shape of a repair: real, expensive and incomplete.</p>
+<h2 id="11-we-have-seen-this-movie-baidu-went-all-in-ai-and-is-down-">11. We have seen this movie: Baidu went &quot;All in AI&quot; and is down 52%<a class="anchor" href="#11-we-have-seen-this-movie-baidu-went-all-in-ai-and-is-down-" aria-label="Link to this section">#</a></h2>
+<h3 id="11-1-baidu-s-ai-decade">11.1 Baidu's AI decade<a class="anchor" href="#11-1-baidu-s-ai-decade" aria-label="Link to this section">#</a></h3>
+<p>In 2017, Baidu told investors it was going &quot;All in AI.&quot; It was early, it was right about the technology, and it spent heavily for years on autonomous driving, models and cloud. On the last trading day of 2016, Baidu's ADS closed at US$164.46. On October 21, 2026, it closed at US$78.82, down 52%, a period over which the Nasdaq-100 ETF QQQ rose about 557%. Baidu touched US$339.91 in February 2021 along the way, which tells you the market was willing to believe the AI story more than once.</p>
+<p>Being early and right about AI did not make Baidu's shareholders money, because the profits from AI did not flow to the company that spent the most on it. They flowed to the companies that owned distribution and to the companies that sold the chips. We think Alibaba is now repeating Baidu's sequence with a larger checkbook and a weaker core than Baidu had in 2017.</p>
+<h3 id="11-2-twelve-years-after-its-ipo-alibaba-18-qqq-699">11.2 Twelve years after its IPO: Alibaba +18%, QQQ +699%<a class="anchor" href="#11-2-twelve-years-after-its-ipo-alibaba-18-qqq-699" aria-label="Link to this section">#</a></h3>
+<p>Alibaba's ADS closed its first trading day, September 19, 2014, at US$88.36. Twelve years later it trades at US$104.41, up 18%. QQQ is up about 699% over the same period. The ADS peaked at US$298.45 in October 2020 and is 65% below that level.</p>
+<figure><img src="alibaba-two-wars/exhibit-15.png" alt="Exhibit 15. Share-price change: Baidu and Alibaba vs. QQQ" loading="lazy"><figcaption>Exhibit 15. Share-price change: Baidu and Alibaba vs. QQQ</figcaption></figure>
+<p>Along the way, Alibaba has repeatedly announced strategies, restructured around them, and then written them down or reversed them:</p>
+<ul>
+<li><strong>Intime.</strong> Alibaba bought into department stores as a bet on integrating online and offline retail. In December 2024 it agreed to sell Intime and said it expected to record a loss of about RMB 9.3 billion.</li>
+<li><strong>Sun Art.</strong> In January 2025 Alibaba agreed to sell its roughly 78.7% stake in hypermarket operator Sun Art for HK$12.29 billion, recording a loss of about HK$13.17 billion.</li>
+<li><strong>The cloud spin-off.</strong> In November 2023 Alibaba cancelled the planned spin-off of its cloud unit, citing uncertainty from US chip export controls. The shares fell as much as 10% that day.</li>
+<li><strong>Cainiao.</strong> In March 2024 Alibaba withdrew the Hong Kong IPO of its logistics arm and offered to buy out minority shareholders, in a deal reported at up to US$3.75 billion.</li>
+<li><strong>Segments.</strong> In 2023 Alibaba reorganized into six business groups under its &quot;1+6+N&quot; structure, with separate listings envisioned for several of them. In the June 2026 quarter it reorganized again, into four segments: Alibaba E-commerce Group, AI Cloud and Compute Services, AI Labs and Applications, and All Others. Each re-segmentation resets the comparable history that investors use to judge whether the last strategy worked.</li>
+</ul>
+<p>None of these decisions was irrational in isolation. Together they describe a company that has spent a decade buying, building and then exiting businesses at a loss, while its stock went nowhere. The quick commerce war and the consumer AI war are the newest entries on that list. We see no reason to give management the benefit of the doubt that the last decade did not earn.</p>
+<h3 id="11-3-a-timeline">11.3 A timeline<a class="anchor" href="#11-3-a-timeline" aria-label="Link to this section">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>Date</th>
+  <th>Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Sep 19, 2014</td>
+  <td>NYSE IPO; first-day close US$88.36 per ADS</td>
+</tr>
+<tr>
+  <td>Oct 27, 2020</td>
+  <td>ADS all-time closing high, US$298.45</td>
+</tr>
+<tr>
+  <td>Apr 2021</td>
+  <td>RMB 18.2 bn antitrust fine from China's market regulator</td>
+</tr>
+<tr>
+  <td>Jul 2022</td>
+  <td>Named on the SEC's provisional list under the HFCAA</td>
+</tr>
+<tr>
+  <td>Mar 2023</td>
+  <td>&quot;1+6+N&quot; reorganization into six business groups announced</td>
+</tr>
+<tr>
+  <td>Nov 2023</td>
+  <td>Cloud spin-off cancelled, citing US chip export controls; ADS falls as much as 10%</td>
+</tr>
+<tr>
+  <td>Mar 2024</td>
+  <td>Cainiao Hong Kong IPO withdrawn; minority buyout offered</td>
+</tr>
+<tr>
+  <td>Dec 2024</td>
+  <td>Intime sale agreed, expected loss about RMB 9.3 bn</td>
+</tr>
+<tr>
+  <td>Jan 2025</td>
+  <td>Sun Art stake sale agreed, loss about HK$13.17 bn</td>
+</tr>
+<tr>
+  <td>FY2025 (to Mar 2025)</td>
+  <td>US$11.9 bn of buybacks, net share count -5.1%; US$2.00 per ADS dividend including a one-time US$0.95</td>
+</tr>
+<tr>
+  <td>2025</td>
+  <td>Quick commerce subsidy war; China E-commerce Group EBITA falls 44% for fiscal 2026</td>
+</tr>
+<tr>
+  <td>FY2026 (to Mar 2026)</td>
+  <td>About US$1.0 bn of buybacks; dividend US$1.05 per ADS</td>
+</tr>
+<tr>
+  <td>Jun 2026 quarter</td>
+  <td>New four-segment structure; CMR -7%; AI Labs and Applications loses RMB 13.9 bn</td>
+</tr>
+<tr>
+  <td>Jul 20, 2026</td>
+  <td>European Commission fines AliExpress EUR 550 mn under the DSA</td>
+</tr>
+<tr>
+  <td>Aug 20-21, 2026</td>
+  <td>June-quarter results; ADS +1.3%, then -8.6% the next session</td>
+</tr>
+<tr>
+  <td>Aug 23-26, 2026</td>
+  <td>HK$80 bn placing of 710 mn new shares at HK$112.70</td>
+</tr>
+<tr>
+  <td>Oct 21, 2026</td>
+  <td>ADS closes at US$104.41</td>
+</tr>
+<tr>
+  <td>Around Nov 24, 2026</td>
+  <td>September-quarter results (date per Yahoo Finance, not confirmed)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="12-fines-a-cayman-holding-company-and-a-board-you-don-t-cont">12. Fines, a Cayman holding company and a board you don't control<a class="anchor" href="#12-fines-a-cayman-holding-company-and-a-board-you-don-t-cont" aria-label="Link to this section">#</a></h2>
+<p><strong>Fines are not hypothetical.</strong> In April 2021, China's market regulator fined Alibaba RMB 18.2 billion for abusing its dominant position. In July 2026, the European Commission fined AliExpress EUR 550 million under the Digital Services Act, the largest DSA fine so far, for failing to assess and mitigate the risk of illegal, unsafe and counterfeit products. Alibaba booked a provision for it in the June quarter. AliExpress was required to propose remedial measures by October 20, 2026; the Commission is expected to assess them in December and may impose further penalties if it is not satisfied. AliExpress called the fine &quot;disproportionate.&quot;</p>
+<p><strong>The ADS is a claim on a Cayman holding company.</strong> Holders of BABA ADSs own shares in Alibaba Group Holding Limited, incorporated in the Cayman Islands. Key operating licenses in China sit in entities the group controls through contractual arrangements commonly called a variable interest entity structure. That structure has worked for two decades. It is also a structure whose enforceability ultimately depends on Chinese regulators, and investors should price it rather than ignore it.</p>
+<p><strong>Governance concentrates control.</strong> The Alibaba Partnership has the right to nominate a majority of the board of directors. That has not prevented good decisions. It does mean that minority shareholders, including every ADS holder, have limited ability to change strategy when the strategy is losing money.</p>
+<p><strong>Listing risk has receded but has not disappeared.</strong> In 2022, Alibaba was named on the SEC's provisional list under the Holding Foreign Companies Accountable Act before US-China audit access was resolved. Alibaba's dual primary listing in Hong Kong reduces the practical risk. The episode still shows how quickly the policy environment can change for this name in particular.</p>
+<h2 id="13-eight-questions-management-should-answer">13. Eight questions management should answer<a class="anchor" href="#13-eight-questions-management-should-answer" aria-label="Link to this section">#</a></h2>
+<p>If we were on the September-quarter call, we would ask these:</p>
+<ol>
+<li>CMR fell 7% on a reported basis. How much contra revenue did the new business development program create in the June quarter, how long will the program run, and what does CMR look like when it ends?</li>
+<li>Like-for-like CMR growth was 10% a year ago, 1% in December, 8% in March and 1% in June. What does &quot;weaker transaction activities&quot; mean for the Taobao and Tmall take rate over the next year?</li>
+<li>AI Cloud and Compute earned RMB 5.6 billion of EBITA and AI Labs and Applications lost RMB 13.9 billion. Is there a target date at which Alibaba's AI businesses, taken together, are EBITA-positive?</li>
+<li>What is the depreciation schedule for the RMB 67.7 billion of June-quarter capex, and what incremental depreciation should investors expect in fiscal 2027 and 2028?</li>
+<li>You hold RMB 474.5 billion of cash and other liquid investments. Why issue HK$80 billion of new equity at about US$116 per ADS instead of drawing on that liquidity?</li>
+<li>Will buybacks resume, and at what price would the board consider the stock cheap enough to buy rather than to sell?</li>
+<li>Doubao has 2.3 times Qwen's monthly users. What share of the consumer AI market does Alibaba need to justify the AI Labs losses, and by when?</li>
+<li>How much of Alibaba Cloud's AI revenue comes from customers running open-weight models such as DeepSeek V4, and what does that do to pricing power?</li>
+</ol>
+<p>The answers to those questions, more than the headline revenue growth, will decide whether consensus is right.</p>
+<h2 id="14-what-happens-next-results-around-november-24">14. What happens next: results around November 24<a class="anchor" href="#14-what-happens-next-results-around-november-24" aria-label="Link to this section">#</a></h2>
+<ul>
+<li><strong>September 2026 quarter results</strong>, expected around November 24, 2026 per Yahoo Finance and not yet confirmed by Alibaba. Consensus needs EPS of RMB 10.96 per ADS, 29% above the June quarter, on revenue of RMB 269.9 billion. Options price about plus or minus 10.5% through November 27.</li>
+<li><strong>Tencent's September-quarter results</strong>, dated around November 18, 2026 per Yahoo Finance. A strong Tencent print, with AI funded by growing ads, sharpens the contrast with Alibaba.</li>
+<li><strong>European Commission assessment of AliExpress's remedies</strong>, expected in December 2026, with the possibility of further penalties.</li>
+<li><strong>DeepSeek's second funding round and planned 2027 listing.</strong> Every DeepSeek release resets the price of capability in China.</li>
+<li><strong>ByteDance's 2026 capex and Doubao monetization.</strong> Reported subscription tiers launched in May 2026. If ByteDance starts monetizing its 382 million users, Alibaba's consumer AI losses look harder to recover.</li>
+<li><strong>Capital allocation.</strong> Any further equity issuance, or a continued absence of buybacks, confirms the funding gap. A large buyback restart would be a genuine negative for this thesis.</li>
+</ul>
+<h2 id="15-the-bull-case-and-why-we-don-t-buy-it">15. The bull case, and why we don't buy it<a class="anchor" href="#15-the-bull-case-and-why-we-don-t-buy-it" aria-label="Link to this section">#</a></h2>
+<p>We have heard every version of the bull case. Here are the strongest ones, stated as fairly as we can, with our response.</p>
+<p><strong>&quot;Alibaba Cloud alone is worth the market cap.&quot;</strong> The sum-of-the-parts argument values the cloud at a software-like multiple of sales, values e-commerce on its fiscal 2025 profits, and adds the cash. The average analyst price target of US$186.64 per ADS, from 40 analysts on Yahoo Finance, is in that spirit. We say the cloud's 12% EBITA margin is an infrastructure margin, not a software margin, earned on a capital base that is growing faster than its profit. And fiscal 2025's RMB 193.2 billion of China e-commerce EBITA is not a normal year to anchor on; fiscal 2026's was RMB 107.5 billion, and the marketplace revenue line beneath it is shrinking.</p>
+<p><strong>&quot;Quick commerce losses have peaked and unit economics are improving.&quot;</strong> We agree that the worst quarter was probably September 2025, when China E-commerce Group EBITA fell 76%. We say a peak in losses is not a return of profits. The June 2026 e-commerce group earned 1% less than a year earlier on a restated base that was itself down sharply, and CMR fell 7%. Wars like this end when someone stops spending, and the profits that were spent do not come back.</p>
+<p><strong>&quot;Alibaba is cheap against US peers.&quot;</strong> We say it is cheap only against estimates. On trailing earnings it trades at 33.9 times, the 96th percentile of its own five-year range. The forward multiple requires 66% growth in one year and 40% the next, from a company that has missed four quarters running. If you want China internet at a genuinely low multiple with growing profits, Tencent is at 11.2 times trailing earnings, its lowest in five years.</p>
+<p><strong>&quot;There is no balance sheet risk; Alibaba has RMB 474.5 billion of liquidity.&quot;</strong> We agree. This is a valuation short, not a solvency short, and we say so plainly. But the company itself chose to issue HK$80 billion of equity rather than use that liquidity. Investors should ask why, and should expect further dilution if capex stays at the June-quarter pace.</p>
+<p><strong>&quot;AI-related revenue growing at triple digits for twelve quarters proves monetization.&quot;</strong> We say growth from a small base is not the same as a return on capital. Alibaba's AI businesses lost RMB 8.2 billion of EBITA combined in the June quarter, and trailing capex was roughly three times annualized AI-related product revenue. The open-source price ceiling that DeepSeek sets makes that ratio harder, not easier, to improve.</p>
+<p><strong>&quot;Qwen is world-class and open-source too.&quot;</strong> We agree on the quality. We say quality is not the bottleneck in consumer AI; distribution is. Doubao has 382 million monthly users to Qwen's 167 million, and it sits on top of Douyin. Open-source leadership wins developer mindshare. It does not, by itself, win the cash flows that pay for the next data center.</p>
+<p><strong>&quot;A China stimulus rally will lift everything.&quot;</strong> We say that is the main risk to the position, not to the thesis. In the eleven sessions after China's September 2024 stimulus announcements, the ADS rose 33%. Anyone positioning against Alibaba should size for that possibility rather than argue with it.</p>
+<h2 id="16-eight-things-that-would-prove-us-wrong">16. Eight things that would prove us wrong<a class="anchor" href="#16-eight-things-that-would-prove-us-wrong" aria-label="Link to this section">#</a></h2>
+<p>We are disciplined about this. A short thesis that cannot be falsified is a bet, not research. These are the observable conditions under which we would abandon ours:</p>
+<ol>
+<li><strong>CMR returns to reported growth above 5% for two consecutive quarters</strong>, without new contra-revenue programs. That would mean the marketplace is not losing share.</li>
+<li><strong>The e-commerce group's adjusted EBITA returns above RMB 45 billion a quarter.</strong> That would mean the quick commerce profit drain is reversing faster than we think.</li>
+<li><strong>AI Labs and Applications losses fall below RMB 8 billion a quarter while Qwen's user base grows.</strong> That would mean consumer AI is becoming a business rather than a cost.</li>
+<li><strong>Free cash flow turns positive for two consecutive quarters without a capex cut.</strong> That would close the funding gap that the placing revealed.</li>
+<li><strong>Buybacks restart at scale</strong>, say above US$2 billion in a quarter. That would show management thinks the stock is cheap.</li>
+<li><strong>Alibaba beats September-quarter consensus EPS of RMB 10.96.</strong> That would be the first beat in five quarters and would weaken our case that estimates are too high.</li>
+<li><strong>A broad China re-rating.</strong> A large stimulus program like September 2024's could lift the whole sector regardless of fundamentals. That would not make the thesis wrong, but it would make the position painful.</li>
+<li><strong>Chip supply loosens materially</strong>, lowering the capex required per unit of AI revenue.</li>
+</ol>
+<figure><img src="alibaba-two-wars/exhibit-16.png" alt="Exhibit 16. Falsification tests and latest readings" loading="lazy"><figcaption>Exhibit 16. Falsification tests and latest readings</figcaption></figure>
+<p>Alibaba Cloud's 45% growth, its 12% EBITA margin and its RMB 474.5 billion of liquidity are real strengths, and we do not dismiss them. Our argument is that they are not large enough to offset a shrinking core, a loss-making AI portfolio, an equity-funded capex program and estimates that have been wrong four quarters running.</p>
+<h2 id="17-alibaba-is-not-going-to-zero-it-doesn-t-need-to">17. Alibaba is not going to zero. It doesn't need to.<a class="anchor" href="#17-alibaba-is-not-going-to-zero-it-doesn-t-need-to" aria-label="Link to this section">#</a></h2>
+<p>The market has spent a year forgiving Alibaba's earnings misses because the cloud number keeps going up. We think that is the wrong number to stare at.</p>
+<p>The number that funds Alibaba, customer management revenue, is shrinking. The number that measures the company's profitability, adjusted EBITA, has fallen 61% over the last four quarters. The number that measures self-sufficiency, free cash flow, is negative RMB 72.5 billion over the same period. The number that measures management's own conviction moved from US$11.9 billion of buybacks to HK$80 billion of new shares. And the number that measures expectations, consensus EPS, still assumes a recovery that the last four quarters did not deliver.</p>
+<p>Alibaba is fighting a subsidy war in quick commerce and a capital war in AI at the same time, against a competitor in ByteDance that is reportedly earning about six times as much and a competitor in Tencent that is earning about six times as much and funding AI out of a growing ad business. It is doing this while a well-funded open-source rival sets the price of the product it is trying to sell.</p>
+<p>We think the likeliest outcome is a slow, expensive repair: earnings recover partway, the capital base grows sharply, returns on that capital stay low, and the market prices Alibaba below its historical median multiple. That is our base case of US$69 per ADS. Weighting all four scenarios gives an expected value of about US$83, 21% below today's price.</p>
+<p>Alibaba is not going to zero. It does not need to for the shares to be overvalued.</p>
+<h2 id="disclaimer">Disclaimer<a class="anchor" href="#disclaimer" aria-label="Link to this section">#</a></h2>
+<p>This report expresses the author's opinions. It is based on public information, including Alibaba Group's filings with the US Securities and Exchange Commission, its results announcements and placing announcements, Tencent's results announcements, and named third-party reports, which the author believes to be reliable but has not independently audited. Figures about ByteDance and DeepSeek come from media reports citing people familiar with those private companies and have not been confirmed by them. Consensus estimates are from Yahoo Finance. Market prices are from OpenD and Yahoo Finance as of October 21, 2026. Scenario probabilities and valuations are subjective judgments and are not predictions. The author is not affiliated with Citron Research or any other research firm. This is not investment advice, not an offer or solicitation to buy or sell any security, and should not be relied on as the basis for any investment decision. Short selling involves the risk of unlimited loss. Do your own research.</p>
+<h2 id="sources">Sources<a class="anchor" href="#sources" aria-label="Link to this section">#</a></h2>
+<ul>
+<li>Alibaba Group, Form 6-K results announcements: quarter ended June 30, 2025 (0001104659-25-085638); September 30, 2025 (0001104659-25-115949); December 31, 2025 (0001104659-26-032060); March 31, 2026 and fiscal 2026 (0001104659-26-060224); June 30, 2026 (0001104659-26-099220); March 31, 2025 and fiscal 2025 (0001104659-25-049400). SEC EDGAR.</li>
+<li>Alibaba Group, proposed placing and completion of HK$80 billion placing, August 23 and August 26, 2026 (0001193125-26-361715; 0001193125-26-365894). SEC EDGAR.</li>
+<li>Tencent Holdings, 2026 second quarter results, August 12, 2026, and prior quarterly results announcements. tencent.com.</li>
+<li>QuestMobile first-half 2026 AI-native app data, via TechNode, July 14, 2026.</li>
+<li>IDC China public cloud large-model token share, via media coverage, May 2026; Omdia AI cloud revenue share, as cited by Alibaba, via media coverage.</li>
+<li>IDC China AI accelerator shipments, first half 2026, via Benzinga, October 2026.</li>
+<li>The Information, ByteDance first-half 2026 results, September 15, 2026, via media coverage; Bloomberg on ByteDance capex (May 2026) and syndicated loan (September 2026), via media coverage.</li>
+<li>The Information, DeepSeek January to July 2026 revenue and losses, via The Standard; Bloomberg and Caixin on DeepSeek funding rounds.</li>
+<li>European Commission, &quot;Commission fines AliExpress EUR 550 million for breaching the Digital Services Act,&quot; July 2026.</li>
+<li>Reuters, Bloomberg, Quartz and others on the Intime and Sun Art disposals, the cancelled cloud spin-off (November 2023) and the withdrawn Cainiao IPO (March 2024).</li>
+<li>Caixin, TechNode and The Bamboo Works on the 2025 SAMR summons of JD.com, Meituan and Ele.me and the August 2025 joint pledge.</li>
+<li>Yahoo Finance consensus estimates and dividend history; OpenD daily prices; author's calculations.</li>
+</ul>
+<h2 class="section-label" id="tests">What would prove this wrong</h2><ul class="tests"><li id="t-cmr"><span class="chip open">Open</span><span>Customer management revenue grows more than 5% on a reported basis for two consecutive quarters</span><span class="meta">Would undermine the view · Latest: −7% (June 2026 quarter)</span></li><li id="t-ecom"><span class="chip open">Open</span><span>E-commerce group adjusted EBITA returns above RMB 45 billion a quarter</span><span class="meta">Would undermine the view · Latest: RMB 39.7B (June 2026 quarter)</span></li><li id="t-ailabs"><span class="chip open">Open</span><span>AI Labs and Applications losses fall below RMB 8 billion a quarter while Qwen users grow</span><span class="meta">Would undermine the view · Latest: −RMB 13.9B (June 2026 quarter)</span></li><li id="t-fcf"><span class="chip open">Open</span><span>Free cash flow turns positive for two consecutive quarters without a capex cut</span><span class="meta">Would undermine the view · Latest: −RMB 44.7B (June 2026 quarter)</span></li><li id="t-buyback"><span class="chip open">Open</span><span>Buybacks restart at scale, above US$2 billion in a quarter</span><span class="meta">Would undermine the view · Latest: US$162M (June 2026 quarter)</span></li><li id="t-beat"><span class="chip open">Open</span><span>September-quarter non-GAAP EPS beats the RMB 10.96 per ADS consensus</span><span class="meta">Would undermine the view · Check by Nov 24, 2026 · Latest: Results expected around Nov 24 (date not confirmed)</span></li><li id="t-rerate"><span class="chip open">Open</span><span>A broad China re-rating, such as stimulus on the scale of September 2024</span><span class="meta">Would undermine the view</span></li><li id="t-chips"><span class="chip open">Open</span><span>AI chip supply loosens materially, lowering the capex needed per unit of AI revenue</span><span class="meta">Would undermine the view</span></li></ul><h2 class="section-label" id="disclosure">Disclosure</h2><div class="box"><span class="lab">Author's position at publication</span>At publication on October 22, 2026, the author held no position in BABA, 9988.HK or related derivatives. After publication, the author opened a short position in BABA ADS on October 22 and adjusted it on October 23. As of October 24, 2026, the author is short 400 ADS at an average price of about $101.19, and may add to, reduce or close the position at any time without notice.</div><p class="fine" style="margin-top:14px">Notes on this site express the author&#x27;s opinions. They are based on public information believed to be reliable but not independently audited. Nothing here is investment advice or an offer to buy or sell any security.</p><h2 class="section-label" id="zh">中文摘要</h2><div class="zh" lang="zh-CN"><p>阿里巴巴：两场仗，一个钱包。核心客户管理收入 6 月季度同比 −7%（同口径 +1%）；过去四季经调整 EBITA −61%、非 GAAP 每股收益 −68%、自由现金流 −725 亿元；AI 云赚 56 亿、AI 实验室与应用亏 139 亿，AI 合计单季亏 82 亿；回购从 FY25 的 119 亿美元降到 FY26 约 10 亿美元，8 月反手增发 800 亿港元、约 116 美元/ADS，现价已跌破增发价；连续四季不及预期，一致预期仍要求 FY27 增长 66%。按 FY28 四情景估值：熊 40 美元（25%）、基准 69 美元（40%）、街账 111 美元（25%）、牛 172 美元（10%），概率加权 83 美元，较 104.41 美元低 21%；股价一年后更低的概率 65%。牛市情景对空头是 −65%，历史上 10 个交易日最大反弹 52%。观点不构成投资建议；发布前须填写持仓披露。</p>
+</div></article><nav class="pager" aria-label="More notes"><div><span>Newer</span><a href="oil-140.html">The Market Prices a 5% Chance of $140 Oil. We Think That Is Too Low.</a></div><div class="next"></div></nav></main><footer class="site"><span>© 2026 canyon</span><a href="https://x.com/stevenkwok20290">X @stevenkwok20290</a><a href="../feed.xml">RSS</a><a href="../tests.html">Tests</a><span>Not investment advice</span></footer><script>
+(function(){
+  var root=document.documentElement,b=document.getElementById('theme-btn');
+  function save(v){try{v?localStorage.setItem('canyon-theme',v):localStorage.removeItem('canyon-theme')}catch(e){}}
+  function label(){if(!b)return;var v=root.getAttribute('data-theme');b.textContent=v==='dark'?'Dark':v==='light'?'Light':'Auto';b.setAttribute('aria-label','Colour theme: '+b.textContent)}
+  if(b){label();b.addEventListener('click',function(){var v=root.getAttribute('data-theme'),n=!v?'light':v==='light'?'dark':null;if(n)root.setAttribute('data-theme',n);else root.removeAttribute('data-theme');save(n);label()})}
+  var cv=document.getElementById('canyon-art');
+  if(cv&&cv.getContext){
+    /* Fly-through: a heightfield (plateau, terraced canyon, mesas) drawn as ridgelines back to front with paper fills
+       for hidden lines. The camera moves forward along the canyon; on load the scene zooms in from the vanishing point. */
+    var ctx=cv.getContext('2d'),W=0,H=0,dpr=1,ink='#1b1c1e',paper='#f7f6f2',stars=[],reduce=false;
+    try{reduce=matchMedia('(prefers-reduced-motion: reduce)').matches}catch(e){}
+    var hash=function(a,b){var h=(Math.imul(a|0,374761393)+Math.imul(b|0,668265263))|0;h=Math.imul(h^(h>>>13),1274126177);return((h^(h>>>16))>>>0)/4294967296};
+    var HALF=2.6,DEPTH=2.3,ST=5,SPEED=1.15;
+    var xc=function(z){return 2.2*Math.sin(z*0.115)+1.1*Math.sin(z*0.047+1.3)};
+    var mesasAt=function(z){var cz=Math.floor(z/7),out=[];for(var k=cz-1;k<=cz+1;k++){if(hash(k,17)<0.6){var mz=k*7+3.5+(hash(k,31)-0.5)*3,md=0.7+hash(k,43)*1.5,dz=Math.abs(z-mz)-md;if(dz<0.2){var side=hash(k,29)<0.5?-1:1;out.push([xc(mz)+side*(HALF*2+hash(k,37)*7),0.8+hash(k,41)*1.8,dz,0.6+hash(k,47)*1.2])}}}return out};
+    var ht=function(x,z,cz,ms){var g=0,u=Math.abs(x-cz)/HALF;if(u<1.45){var v=1-u/1.45,q=Math.floor(v*ST),f=v*ST-q;f=f*f*(3-2*f);f=f*f*f;g=Math.min(1,(q+f)/ST*1.1)}
+      var m=0;for(var i=0;i<ms.length;i++){var d=Math.max(Math.abs(x-ms[i][0])-ms[i][1],ms[i][2]);if(d<0.2)m=Math.max(m,ms[i][3]*Math.min(1,(0.2-d)/0.2))}
+      return 0.07*Math.sin(x*0.9+z*0.31)+0.05*Math.sin(x*0.37-z*0.53)+m-g*DEPTH};
+    var colors=function(){var cs=getComputedStyle(root);ink=cs.getPropertyValue('--ink').trim()||ink;paper=cs.getPropertyValue('--paper').trim()||paper};
+    var size=function(){dpr=Math.min(window.devicePixelRatio||1,1.75);W=cv.clientWidth;H=cv.clientHeight;cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);
+      stars=[];for(var i=0,n=Math.round(W*H*0.38/1500);i<n;i++)stars.push([hash(i,101)*W,hash(i,103)*H*0.36,0.07+hash(i,107)*0.22,hash(i,109)<0.12?1.6:1])};
+    var ease=function(k){k=Math.max(0,Math.min(1,k));return 1-Math.pow(1-k,3)};
+    var render=function(camZ,k){
+      if(!W||!H)return;var c=ctx,e=ease(k);c.setTransform(dpr,0,0,dpr,0,0);c.globalAlpha=1;c.fillStyle=paper;c.fillRect(0,0,W,H);
+      c.fillStyle=ink;for(var i=0;i<stars.length;i++){var s=stars[i];c.globalAlpha=s[2]*(0.25+0.75*e);c.fillRect(s[0],s[1],s[3],s[3])}
+      var mob=W<640,hy=H*0.40,f=H*1.2*(0.45+0.55*e),ext=(W/2+24)*ease(k*1.15),camX=xc(camZ+5)*0.8,camY=1.75;
+      var dz=mob?0.42:0.32,zN=0.75,zF=mob?24:30,step=mob?5:4,k0=Math.ceil((camZ+zN)/dz),k1=Math.floor((camZ+zF)/dz),pts=[];
+      for(var kk=k1;kk>=k0;kk--){
+        var zw=kk*dz,Zr=zw-camZ,nr=1-Zr/zF,al=Math.min(1,(zF-Zr)/(zF*0.25))*(0.16+0.78*nr*nr),cz=xc(zw),ms=mesasAt(zw);
+        var spx=f*camY*dz/(Zr*Zr),L=0,t2=kk;while(L<6&&t2!==0&&t2%2===0){t2/=2;L++}
+        var lod=Math.min(1,Math.max(0,(spx*Math.pow(2,L)-2.6)/2.6));if(lod<=0)continue;al*=lod;
+        pts.length=0;
+        for(var sx=-4;sx<=W+4;sx+=step){if(Math.abs(sx-W/2)>ext)continue;pts.push(sx,hy-(ht(camX+(sx-W/2)*Zr/f,zw,cz,ms)-camY)*f/Zr)}
+        if(pts.length<4)continue;
+        c.globalAlpha=1;c.fillStyle=paper;c.beginPath();c.moveTo(pts[0],H+4);for(var j=0;j<pts.length;j+=2)c.lineTo(pts[j],pts[j+1]);c.lineTo(pts[pts.length-2],H+4);c.closePath();c.fill();
+        c.strokeStyle=ink;c.globalAlpha=al;c.lineWidth=0.45+1.1*nr;c.beginPath();for(j=0;j<pts.length;j+=2){if(j)c.lineTo(pts[j],pts[j+1]);else c.moveTo(pts[j],pts[j+1])}c.stroke();
+        var half=Math.min(ext,W/2),gx=Math.max(0.12,Zr*0.011),xL=camX-half*Zr/f,xR=camX+half*Zr/f;c.fillStyle=ink;
+        for(var jj=Math.ceil(xL/gx),je=Math.floor(xR/gx);jj<=je;jj++){
+          var xw=jj*gx,dx=xw-cz;if(Math.abs(dx)>=HALF*1.5)continue;
+          var sl=Math.abs(ht(xw+0.04,zw,cz,ms)-ht(xw-0.04,zw,cz,ms))/0.08,px=W/2+(xw-camX)*f/Zr,py=hy-(ht(xw,zw,cz,ms)-camY)*f/Zr;
+          if(sl>0.5&&hash(kk*131+jj,5)<Math.min(0.9,sl*0.3)){c.globalAlpha=al*(dx<0?1:0.5);c.fillRect(px+(hash(kk,jj)-0.5)*2,py+1+hash(jj,kk)*(3+14*nr),1.1,1.1)}
+          if(Math.abs(dx)<0.22&&hash(kk*7+jj,9)<0.5){c.globalAlpha=Math.min(1,al*1.1);c.beginPath();c.arc(px,py+1.6,0.5+1.2*nr,0,6.283);c.fill()}
+        }
+      }
+      c.globalAlpha=1;
+    };
+    var camZ=0,start=0,last=0,running=false,raf=0,inView=true;
+    var loop=function(ts){if(!running)return;if(!start){start=ts;last=ts}
+      var el=ts-last;if(el>=24||ts===start){camZ+=Math.min(0.1,el/1000)*SPEED;last=ts;render(camZ,(ts-start)/1800)}raf=requestAnimationFrame(loop)};
+    var play=function(){if(running||reduce||!inView||document.hidden)return;running=true;last=0;if(start)start=performance.now()-1800;raf=requestAnimationFrame(function(ts){last=ts;loop(ts)})};
+    var stop=function(){running=false;cancelAnimationFrame(raf)};
+    colors();size();
+    if(reduce)render(0,1);else play();
+    window.addEventListener('resize',function(){size();if(!running)render(camZ,1)});
+    var retheme=function(){colors();if(!running)render(camZ,1)};
+    try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',retheme)}catch(e){}
+    try{new MutationObserver(retheme).observe(root,{attributes:true,attributeFilter:['data-theme']})}catch(e){}
+    document.addEventListener('visibilitychange',function(){if(document.hidden)stop();else play()});
+    try{new IntersectionObserver(function(en){inView=en[0].isIntersecting;if(inView)play();else stop()}).observe(cv)}catch(e){}
+  }
+  var chips=[].slice.call(document.querySelectorAll('[data-filter]'));
+  chips.forEach(function(c){c.addEventListener('click',function(){var d=c.getAttribute('data-filter');
+    chips.forEach(function(x){x.setAttribute('aria-pressed',String(x===c))});
+    [].slice.call(document.querySelectorAll('[data-domain]')).forEach(function(it){it.hidden=(d!=='all'&&it.getAttribute('data-domain')!==d)});
+    [].slice.call(document.querySelectorAll('.year')).forEach(function(y){y.hidden=![].slice.call(y.querySelectorAll('[data-domain]')).some(function(i){return !i.hidden})});
+  })});
+})();
+</script></body></html>

@@ -1,0 +1,368 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>The Market Prices a 5% Chance of $140 Oil. We Think That Is Too Low.</title><meta name="claude:viewport-fit-sides" content="cover"><meta name="description" content="WTI settled at $103.44 on October 23. After inflation, $140 oil is roughly where the market spent much of 2011–14, not a fantasy number. The spare capacity that capped earlier spikes is thinner than it was before the war, and inventories are falling. The futures curve still says $81 a year from now. This note sets out why we think the upside tail is underpriced, what the market itself is pricing, the evidence that cuts against us, and what would prove us wrong."><meta property="og:title" content="The Market Prices a 5% Chance of $140 Oil. We Think That Is Too Low."><meta property="og:description" content="WTI settled at $103.44 on October 23. After inflation, $140 oil is roughly where the market spent much of 2011–14, not a fantasy number. The spare capacity that capped earlier spikes is thinner than it was before the war, and inventories are falling. The futures curve still says $81 a year from now. This note sets out why we think the upside tail is underpriced, what the market itself is pricing, the evidence that cuts against us, and what would prove us wrong."><meta property="og:type" content="article"><meta property="og:image" content="https://stevenkwo.github.io/canyon/posts/oil-140/cover.png"><script>(function(){try{var t=localStorage.getItem('canyon-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:wght@500;700;800&display=swap"><style>
+/* Layout: one 720px reading column for notes, the index and the ledger; wide tables scroll inside their own box. */
+:root{
+  --paper:#f7f6f2; --surface:#fdfcfa; --ink:#1b1c1e; --ink-2:#56575c; --rule:#e2e0da; --accent:#2b5fd9; --accent-ink:#ffffff;
+  --open:#7d5f0e; --open-bg:#f4ecd4; --met:#1d7148; --met-bg:#e0f0e7; --failed:#ad3127; --failed-bg:#f7e1dd; --held:#8a4510; --held-bg:#fae8d3;
+  --display:"Schibsted Grotesk","Helvetica Neue","PingFang SC","Noto Sans SC",Arial,sans-serif;
+  --body:-apple-system,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#131416; --surface:#1a1b1e; --ink:#e8e7e3; --ink-2:#a4a39e; --rule:#2c2d31; --accent:#82a6ff; --accent-ink:#0f1115;
+  --open:#e3c062; --open-bg:#2d2614; --met:#62cc95; --met-bg:#15281e; --failed:#ff8e81; --failed-bg:#321918; --held:#f1a65e; --held-bg:#33220f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#131416; --surface:#1a1b1e; --ink:#e8e7e3; --ink-2:#a4a39e; --rule:#2c2d31; --accent:#82a6ff; --accent-ink:#0f1115;
+  --open:#e3c062; --open-bg:#2d2614; --met:#62cc95; --met-bg:#15281e; --failed:#ff8e81; --failed-bg:#321918; --held:#f1a65e; --held-bg:#33220f; color-scheme:dark}
+[hidden]{display:none!important}
+img{max-width:100%;height:auto}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17.5px/1.72 var(--body)}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1px solid var(--rule)}
+.topbar .in{max-width:760px;margin:0 auto;padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.brand{font:800 21px/1 var(--display);color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.nav{display:flex;gap:16px;margin-left:auto;align-items:center;flex-wrap:wrap}
+.nav a,.nav button{font:500 12.5px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);text-decoration:none;background:none;border:0;padding:6px 0;cursor:pointer}
+.nav a[aria-current="page"]{color:var(--ink)}
+.nav button{border:1px solid var(--rule);border-radius:999px;padding:5px 10px}
+.wrap{max-width:760px;margin:0 auto;padding-block:28px 72px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.kicker{font:500 12.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);display:flex;gap:10px;flex-wrap:wrap}
+h1.title{font:800 clamp(28px,5vw,40px)/1.12 var(--display);letter-spacing:-.015em;margin:14px 0 14px;text-wrap:balance}
+.dek{font-size:19px;line-height:1.55;color:var(--ink-2);margin:0 0 22px;text-wrap:pretty}
+.cover{margin:0 0 10px}
+.cover img,figure img{display:block;width:100%;height:auto;border:1px solid var(--rule);border-radius:6px;background:var(--surface)}
+.origin{font:500 13px/1.5 var(--mono);color:var(--ink-2);margin:6px 0 26px}
+.banner{border:1px solid var(--held);background:var(--held-bg);color:var(--ink);border-radius:8px;padding:12px 14px;font-size:15px;line-height:1.55;margin:0 0 22px}
+.banner b{color:var(--held)}
+details.toc{border-block:1px solid var(--rule);padding-block:10px;margin:0 0 28px}
+details.toc summary{cursor:pointer;font:500 12.5px/1.6 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+details.toc ol{margin:10px 0 4px;padding-left:1.3em;font-size:15.5px;line-height:1.55;columns:2 260px;column-gap:28px}
+details.toc li{break-inside:avoid;margin:0 0 6px}
+article h2{font:700 25px/1.25 var(--display);letter-spacing:-.01em;margin:2.3em 0 .6em;text-wrap:balance;scroll-margin-top:72px}
+article h3{font:700 19.5px/1.3 var(--display);margin:1.8em 0 .5em;scroll-margin-top:72px}
+article h2 .anchor,article h3 .anchor{font:400 .7em/1 var(--mono);color:var(--ink-2);text-decoration:none;margin-left:.35em;opacity:0}
+article h2:hover .anchor,article h3:hover .anchor,.anchor:focus{opacity:1}
+article p{margin:0 0 1.05em}
+article ul,article ol{padding-left:1.35em;margin:0 0 1.1em}
+article li{margin:0 0 .45em}
+article em{color:var(--ink-2)}
+article strong{font-weight:650}
+article blockquote{margin:1.4em 0;padding-left:16px;border-left:3px solid var(--rule);color:var(--ink-2)}
+article hr{border:0;border-top:1px solid var(--rule);margin:2.4em 0}
+article code{font:14.5px var(--mono);background:var(--surface);border:1px solid var(--rule);border-radius:4px;padding:0 4px}
+figure{margin:1.6em 0}
+figcaption{font:500 12.5px/1.5 var(--mono);color:var(--ink-2);margin-top:8px}
+.table-wrap{overflow-x:auto;margin:1.3em 0 1.4em;border-block:1px solid var(--rule)}
+table{border-collapse:collapse;width:100%;font-size:14.5px;line-height:1.45;font-variant-numeric:tabular-nums}
+th{font:500 11.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--ink-2);text-align:left;padding:9px 10px;border-bottom:1px solid var(--rule);vertical-align:bottom}
+td{padding:8px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;white-space:nowrap}
+.section-label{font:500 12.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);margin:3em 0 .8em;padding-top:14px;border-top:1px solid var(--rule)}
+.tests{list-style:none;padding:0;margin:0}
+.tests li{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;padding:10px 0;border-bottom:1px solid var(--rule);font-size:15.5px;line-height:1.5}
+.tests li .meta{grid-column:2;font:500 12.5px/1.5 var(--mono);color:var(--ink-2)}
+.chip{font:500 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;border-radius:999px;padding:5px 8px;white-space:nowrap;align-self:start;margin-top:2px}
+.chip.open{color:var(--open);background:var(--open-bg)}.chip.met{color:var(--met);background:var(--met-bg)}
+.chip.failed{color:var(--failed);background:var(--failed-bg)}.chip.retired{color:var(--ink-2);background:var(--surface);border:1px solid var(--rule)}
+.chip.held{color:var(--held);background:var(--held-bg)}.chip.draft{color:var(--ink-2);background:var(--surface);border:1px solid var(--rule)}
+.box{border:1px solid var(--rule);background:var(--surface);border-radius:8px;padding:14px 16px;font-size:15.5px;line-height:1.6}
+.box .lab{font:500 11.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);display:block;margin-bottom:4px}
+.box.missing{border-color:var(--held);background:var(--held-bg)}
+.zh{font-size:16.5px;line-height:1.9}
+.zh p{margin:0 0 .9em}
+.fine{font-size:14px;line-height:1.6;color:var(--ink-2)}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px;padding-top:18px;border-top:1px solid var(--rule)}
+.pager a{text-decoration:none;color:var(--ink);font:700 16px/1.35 var(--display)}
+.pager span{display:block;font:500 11.5px/1.6 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+.pager .next{text-align:right}
+footer.site{max-width:760px;margin:0 auto;padding-block:22px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));border-top:1px solid var(--rule);font:500 12.5px/1.7 var(--mono);color:var(--ink-2);display:flex;gap:16px;flex-wrap:wrap}
+footer.site a{color:var(--ink-2)}
+/* hero: full-width canyon drawn in dots and lines (canvas, seeded, theme-aware) */
+.hero{position:relative;height:clamp(250px,36vw,440px);border-bottom:1px solid var(--rule);overflow:hidden;background:var(--paper)}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero-in{position:relative;max-width:760px;margin:0 auto;padding-block:clamp(20px,4.2vw,44px) 0;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.hero h1{font:800 clamp(46px,9.5vw,92px)/.92 var(--display);letter-spacing:-.04em;margin:0;color:var(--ink)}
+/* index */
+.masthead p{margin:0;color:var(--ink-2);font-size:18px;line-height:1.55;max-width:34em}
+.masthead p.zh-line{font-size:15.5px;margin-top:6px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:26px 0 8px}
+.filters button{font:500 12px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:8px 12px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.year{margin-top:26px}
+.year > .y{font:500 12.5px/1.4 var(--mono);color:var(--ink-2);letter-spacing:.06em;padding-bottom:8px;border-bottom:1px solid var(--rule)}
+.entry{display:grid;grid-template-columns:92px 1fr;gap:4px 18px;padding:18px 0;border-bottom:1px solid var(--rule)}
+.entry .d{font:500 13px/1.6 var(--mono);color:var(--ink-2);padding-top:3px}
+.entry .t{font:700 22px/1.25 var(--display);letter-spacing:-.01em;color:var(--ink);text-decoration:none;text-wrap:balance}
+.entry .t:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.entry .s{margin:6px 0 8px;color:var(--ink-2);font-size:15.5px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.entry .m{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font:500 12px/1.4 var(--mono);color:var(--ink-2)}
+.entry > div{min-width:0}
+.ledger-sum{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 22px}
+@media (max-width:560px){
+  body{font-size:17px}
+  .entry{grid-template-columns:1fr}
+  .entry .d{padding-top:0}
+  details.toc ol{columns:1}
+  .pager{grid-template-columns:1fr}.pager .next{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style><link rel="alternate" type="application/rss+xml" title="canyon" href="../feed.xml"></head><body><header class="topbar"><div class="in"><a class="brand" href="../index.html">canyon</a><nav class="nav" aria-label="Site"><a href="../index.html" aria-current="page">Notes</a><a href="../tests.html">Tests</a><a href="../about.html">About</a><a href="../feed.xml">RSS</a><button id="theme-btn" type="button">Auto</button></nav></div></header><main class="wrap"><article><div class="kicker"><span>Markets</span><span>Oct 24, 2026</span><span>21 min read</span></div><h1 class="title">The Market Prices a 5% Chance of $140 Oil. We Think That Is Too Low.</h1><p class="dek">WTI settled at $103.44 on October 23. After inflation, $140 oil is roughly where the market spent much of 2011–14, not a fantasy number. The spare capacity that capped earlier spikes is thinner than it was before the war, and inventories are falling. The futures curve still says $81 a year from now. This note sets out why we think the upside tail is underpriced, what the market itself is pricing, the evidence that cuts against us, and what would prove us wrong.</p><figure class="cover"><img src="oil-140/cover.png" alt="Oil $140 note cover"></figure><details class="toc"><summary>Contents · 13 sections</summary><ol><li><a href="#the-short-version">The short version</a></li><li><a href="#100-in-2026-is-65-in-2008-money">$100 in 2026 is $65 in 2008 money</a></li><li><a href="#where-140-sits-in-history-11-of-months-since-2000">Where $140 sits in history: 11% of months since 2000</a></li><li><a href="#in-a-supply-shock-the-price-stops-rising-only-when-demand-br">In a supply shock, the price stops rising only when demand breaks</a></li><li><a href="#the-buffers-are-thinner-than-they-were-before-the-war">The buffers are thinner than they were before the war</a></li><li><a href="#the-futures-curve-says-81-a-year-from-now-we-do-not-take-it-">The futures curve says $81 a year from now. We do not take it at face value</a></li><li><a href="#wti-or-brent-which-140">WTI or Brent: which $140?</a></li><li><a href="#the-options-market-already-leans-toward-the-upside-but-still">The options market already leans toward the upside, but still prices $140 at about 5%</a></li><li><a href="#the-evidence-against-us-war-spikes-have-been-0-for-12-at-mak">The evidence against us: war spikes have been 0 for 12 at making new highs</a></li><li><a href="#what-140-oil-would-mean-for-stocks">What $140 oil would mean for stocks</a></li><li><a href="#why-uso-is-a-poor-way-to-own-this-view">Why USO is a poor way to own this view</a></li><li><a href="#what-would-prove-us-right-and-what-would-prove-us-wrong">What would prove us right, and what would prove us wrong</a></li><li><a href="#bottom-line">Bottom line</a></li></ol></details><h2 id="the-short-version">The short version<a class="anchor" href="#the-short-version" aria-label="Link to this section">#</a></h2>
+<ul>
+<li><strong>Our view.</strong> We think WTI has a materially higher chance of trading at $140 before the end of 2027 than the roughly 5% the options market implies. This is a view about the size of the upside tail. It is not a claim that $140 is the most likely outcome.</li>
+<li><strong>$140 is not an extreme number once you adjust for inflation.</strong> $100 today buys what $65 bought in July 2008. The $100 oil of 2011–14 is about $147 in today's money. The June 2022 peak of $122 is about $139. Since August 2000, WTI's monthly average has been above today's $140 in real terms in 33 of 313 months.</li>
+<li><strong>The buffers are thinner.</strong> Nearly all of OPEC's spare capacity sits around the Gulf, and the EIA now puts OPEC spare capacity at about 0.5 million barrels a day (mb/d) this year after the UAE left the group. Global observed inventories fell in September, and US commercial crude stocks fell 11.7 million barrels in the two weeks to October 16. The IEA says attacks on energy infrastructure and tankers are escalating.</li>
+<li><strong>What the market prices.</strong> Options imply a 4–7% chance that WTI touches $140 in the next 30 days and a 4–7% chance that the December 2027 contract settles above $140. The futures curve slopes from $103.44 (December 2026) to $80.68 (December 2027).</li>
+<li><strong>The evidence against us.</strong> After the war-driven spikes of 2011 and 2022, WTI never reclaimed its spike high within 12 months (0 of 12 starting points). This year's closing high of $112.95 (April 7) still stands, and WTI has not closed above $100 for more than seven sessions in a row in 2026.</li>
+<li><strong>What would change our mind.</strong> A flattening curve, several weeks of US inventory builds, oil volatility starting to rise on down days again, or WTI failing to trade above $112.95 by the end of the first quarter of 2027.</li>
+</ul>
+<h2 id="100-in-2026-is-65-in-2008-money">$100 in 2026 is $65 in 2008 money<a class="anchor" href="#100-in-2026-is-65-in-2008-money" aria-label="Link to this section">#</a></h2>
+<p>Most investors carry a mental map of oil prices drawn in nominal dollars. On that map, $100 is "high", $120 is "crisis" and $140 belongs to July 2008. The map is out of date. US consumer prices (CPI-U) rose 53% between July 2008 and September 2026, so the same nominal price now represents a much smaller share of household budgets and corporate costs.</p>
+<p>Translated into September 2026 dollars using CPI-U:</p>
+<ul>
+<li>The July 2008 closing high of $145.29 is about $223.</li>
+<li>A $100 barrel in 2012, the middle of the 2011–14 plateau, is about $147.</li>
+<li>The June 2022 peak of $122.11 is about $139.</li>
+<li>Today's $103.44 is about $67.50 in July 2008 dollars.</li>
+</ul>
+<figure><img src="oil-140/exhibit-1.png" alt="Exhibit 1" loading="lazy"><figcaption>Exhibit 1</figcaption></figure>
+<p>Exhibit 1 shows the gap between the two series. The grey line is the price on the screen. The blue line is the same price expressed in today's dollars. In nominal terms, WTI has closed above $140 on only nine trading days in its history, between June 27 and July 14, 2008, and no month has averaged above $140 (the June 2008 average was $134). In real terms, it spent long stretches above that level in 2008 and again in 2011–14. The US economy kept expanding through 2011–14 with oil at a real price that, in today's money, sits close to $140.</p>
+<p>The point is narrow but important. The level at which oil started to break demand in past cycles is well above where it trades today. When commentators say $140 would be "unprecedented", they are reading the grey line. The blue line says the economy has lived there before.</p>
+<p>We want to be careful not to overstate this. Adjusting for inflation does not make $100 oil cheap in absolute terms. Over the full period since August 2000, today's $100 sits at the 66th percentile of monthly real prices. The median month was $84 in today's dollars and the mean was $92. Oil is not cheap. It is simply not as expensive, relative to the economy's past tolerance, as the nominal figure suggests.</p>
+<h2 id="where-140-sits-in-history-11-of-months-since-2000">Where $140 sits in history: 11% of months since 2000<a class="anchor" href="#where-140-sits-in-history-11-of-months-since-2000" aria-label="Link to this section">#</a></h2>
+<figure><img src="oil-140/exhibit-2.png" alt="Exhibit 2" loading="lazy"><figcaption>Exhibit 2</figcaption></figure>
+<p>Exhibit 2 counts how often the monthly average of WTI, in today's dollars, was at or above a given level between August 2000 and September 2026:</p>
+<ul>
+<li>At or above $60: 85% of months.</li>
+<li>At or above $80: 56%.</li>
+<li>At or above $100: 34%.</li>
+<li>At or above $120: 22%.</li>
+<li>At or above $140: 11%.</li>
+<li>At or above $160: 2%.</li>
+</ul>
+<p>Those 33 months above $140 fall in 2007, 2008 and 2011–14. The highest monthly average in today's dollars was June 2008, at about $206.</p>
+<p>So $140 sits at the edge of the historical range, not outside it. A move there would put WTI in the top decile of real prices since 2000: rare, but repeatedly observed. $160 and above is genuinely extreme; it has happened in only 2% of months, all in 2008. Our case is about $140, not about a replay of 2008.</p>
+<h2 id="in-a-supply-shock-the-price-stops-rising-only-when-demand-br">In a supply shock, the price stops rising only when demand breaks<a class="anchor" href="#in-a-supply-shock-the-price-stops-rising-only-when-demand-br" aria-label="Link to this section">#</a></h2>
+<p>The reason the real-price threshold matters is the way oil markets clear during a supply shock. In the short run, both supply and demand respond slowly to price. When a large volume of supply disappears, the price has to rise until enough demand is destroyed, or until enough supply arrives from somewhere else. The ceiling in a supply shock is therefore set by the price at which consumers and businesses actually cut back.</p>
+<p>Fitch put numbers on this in May. In its analysis of a five-month closure of the Strait of Hormuz, balancing the market would require about 5 mb/d of demand destruction, roughly 5% of global demand. In the short run, demand gives way only slowly, so cutting a few percent of it takes a very large move in price.</p>
+<p>History gives two reference points for where that pressure became intolerable:</p>
+<ul>
+<li><strong>2022.</strong> WTI peaked at $122.11 in June. In today's dollars that is about $139. Demand destruction, a strong dollar and the fastest Federal Reserve tightening in four decades capped the move.</li>
+<li><strong>2008.</strong> WTI peaked at $145.29 in July, about $223 in today's dollars. The cap came from a global recession.</li>
+</ul>
+<p>Our inference is this: if supply were disrupted again on a scale similar to March and April of this year, the clearing price would have to rise into the zone where demand gave way in 2022, around $140 in today's money, or higher. This is our reasoning, not a market forecast, and we set out the evidence against it below.</p>
+<p>It is worth recalling what happened in the spring. According to the IEA's March report, Gulf producers cut combined oil output by at least 10 mb/d, including about 8 mb/d of crude, and around 3 mb/d of refining capacity was shut. The EIA estimated that crude production losses in Iraq, Saudi Arabia, Kuwait, the UAE, Qatar and Bahrain reached 7.5 mb/d in March and 9.1 mb/d in April. WTI peaked at $119.48 intraday on March 9 and closed at a 2026 high of $112.95 on April 7.</p>
+<p>That is an argument against us as well as for us. One of the largest supply losses on record took WTI to "only" $119 intraday. The system absorbed the shock through inventories, bypass pipelines, demand destruction and higher exports from elsewhere. Our case rests on the view that several of those buffers have since been used up or have become targets themselves.</p>
+<h2 id="the-buffers-are-thinner-than-they-were-before-the-war">The buffers are thinner than they were before the war<a class="anchor" href="#the-buffers-are-thinner-than-they-were-before-the-war" aria-label="Link to this section">#</a></h2>
+<p><strong>Spare capacity.</strong> Before the war, Fitch estimated OPEC's spare capacity at 3.6 mb/d. Almost all of it sits around the Persian Gulf; as CME's PVM commentary noted in March, with the Strait of Hormuz closed that capacity was effectively stranded. The UAE then withdrew from OPEC and OPEC+ on May 1. Rystad Energy estimates the UAE held about 1.54 mb/d of spare capacity, roughly a quarter of OPEC+'s total of nearly 6 mb/d as of February. Following the exit, the EIA cut its estimate of OPEC spare capacity in 2027 to about 2.5 mb/d from 3.8 mb/d, and puts this year's figure at about 0.5 mb/d.</p>
+<p><strong>Bypass routes.</strong> Fitch estimated that Saudi and UAE pipelines that bypass Hormuz had about 4.5 mb/d of spare capacity before the conflict. Those routes are now part of the target set. In its October Short-Term Energy Outlook, the EIA cited attacks on Saudi Arabia's East-West pipeline, one of the main bypass routes, as a reason for raising its fourth-quarter Brent forecast.</p>
+<p><strong>Inventories.</strong> The IEA's October Oil Market Report says global observed inventories fell by 10 million barrels in September. On-land stocks fell by 113 million barrels, with most of the decline offset by oil on water, which reflects longer voyages rather than oil available to refiners. The IEA expects the market to stay in deficit through the end of the year. The EIA estimates global stocks fell by 1.9 mb/d in the third quarter and will fall by a further 0.7 mb/d in the fourth. In the US, commercial crude inventories fell 8.6 million barrels in the week to October 9 and another 3.1 million barrels in the week to October 16, to 412.5 million barrels, about 3% below the five-year average, according to EIA weekly data.</p>
+<p><strong>Transport and products.</strong> The IEA reports record tanker rates. The EIA describes diesel markets as extremely tight.</p>
+<p><strong>Forecast revisions.</strong> Forecasters have been revising up, not down. In May, Fitch assumed the strait would begin reopening around July and that Brent would fall to about $70 by September. Brent's December contract settled at $116.91 on October 23. In October, the EIA raised its fourth-quarter Brent forecast by $14 to $105 a barrel.</p>
+<p>None of this guarantees a new spike. It does mean that a second disruption would hit a system with less spare capacity, lower inventories and more vulnerable bypass routes than in March.</p>
+<h2 id="the-futures-curve-says-81-a-year-from-now-we-do-not-take-it-">The futures curve says $81 a year from now. We do not take it at face value<a class="anchor" href="#the-futures-curve-says-81-a-year-from-now-we-do-not-take-it-" aria-label="Link to this section">#</a></h2>
+<figure><img src="oil-140/exhibit-3.png" alt="Exhibit 3" loading="lazy"><figcaption>Exhibit 3</figcaption></figure>
+<p>Exhibit 3 shows the WTI and Brent futures curves as of the October 23 settlement. The curve is in steep backwardation: near-dated contracts trade well above later ones.</p>
+<ul>
+<li>WTI: December 2026 $103.44, March 2027 $95.80, June 2027 $89.29, December 2027 $80.68, December 2029 $69.59.</li>
+<li>Brent: December 2026 $116.91, June 2027 $96.32, December 2027 $86.68, December 2029 $75.23.</li>
+<li>The Brent–WTI spread for December 2026 delivery is $13.47, wide by recent standards. Seaborne crude, which is exposed to the Gulf, is carrying a premium over landlocked US crude.</li>
+</ul>
+<p>The EIA's base case is similar to the curve. It expects Middle East production to return to pre-conflict levels by the end of the second quarter of 2027, Brent to average about $87 in that quarter, and Brent to average about $84 for 2027, assuming convoys and workarounds keep Gulf exports moving. The EIA itself flags attacks on energy infrastructure as the main risk to that path.</p>
+<p>Why do we not take the curve at face value?</p>
+<ol>
+<li><strong>Backwardation describes scarcity today, not prices tomorrow.</strong> A steep curve means buyers pay up for oil now and the market rewards anyone who can deliver barrels immediately. It does not mean the market has forecast the decline. A widely cited 2010 study by Alquist and Kilian found that oil futures prices have not been better predictors of future spot prices than simply assuming prices stay where they are.</li>
+<li><strong>The normalization date keeps moving.</strong> In May, the consensus assumption was a reopening around July and Brent around $70 by September. The curve's path to $81 relies on the same type of assumption, pushed out by several quarters.</li>
+<li><strong>The curve embeds a premium for bearing risk.</strong> Producers who hedge future output sell forward contracts and accept a discount to do so. Part of the slope is that discount, not a forecast.</li>
+</ol>
+<p>We do not dismiss the curve. It is the market's central path, and it says that if the shock fades as the EIA expects, WTI falls about 22% over the next 14 months. Our disagreement is about the tail, not the centre.</p>
+<h2 id="wti-or-brent-which-140">WTI or Brent: which $140?<a class="anchor" href="#wti-or-brent-which-140" aria-label="Link to this section">#</a></h2>
+<p>This note is about WTI because it is the contract most US investors trade and the one behind USO. Brent, the seaborne benchmark, is closer to the Gulf risk and already higher. On October 23, Brent's December contract settled at $116.91, so reaching $140 would take a 20% rise. For WTI, at $103.44, the same level is 35% away. If the December Brent–WTI spread stayed at $13.47, WTI at $140 would correspond to Brent at about $153. A narrower spread would mean a smaller move in Brent; a wider one, as in a further escalation in the Gulf, would mean Brent leads and WTI lags.</p>
+<p>That distinction matters for anyone translating this note into views on other markets. Fuel prices outside the US, Asian refiners' costs and the currencies of oil importers follow Brent more closely than WTI. A $140 WTI outcome is, in practice, a Brent outcome above $150, which is a larger shock for importing countries than the headline number suggests.</p>
+<h2 id="the-options-market-already-leans-toward-the-upside-but-still">The options market already leans toward the upside, but still prices $140 at about 5%<a class="anchor" href="#the-options-market-already-leans-toward-the-upside-but-still" aria-label="Link to this section">#</a></h2>
+<p>The CBOE crude oil volatility index (OVX) closed at 60.0 on October 23, the 93rd percentile of its history since 2007. Implied volatility on its own does not tell you direction. Two other measures do.</p>
+<figure><img src="oil-140/exhibit-5.png" alt="Exhibit 5" loading="lazy"><figcaption>Exhibit 5</figcaption></figure>
+<p><strong>Volatility now rises when oil rises.</strong> Exhibit 5 shows the daily correlation between changes in WTI and changes in OVX, by year. From 2008 to 2025 it was negative every year, ranging from −0.04 to −0.60. In those years, oil volatility rose when prices fell: the market's main fear was a demand collapse. In 2026 the correlation is +0.57, the first positive year in the series. Volatility rises when prices rise. The market is paying for protection against supply spikes.</p>
+<p><strong>Upside options cost more than downside options.</strong> On October 16, out-of-the-money calls on USO with November expiry traded at an implied volatility of 50.8%, against 46.2% for equally distant puts, a premium of 4.6 points.</p>
+<figure><img src="oil-140/exhibit-4.png" alt="Exhibit 4" loading="lazy"><figcaption>Exhibit 4</figcaption></figure>
+<p>Exhibit 4 converts those prices into probabilities. We use a standard lognormal model, which treats prices as random with a constant volatility and should be read as a rough guide.</p>
+<ul>
+<li><strong>$120:</strong> a 31–36% chance that WTI touches $120 within 30 days, and a 9–13% chance that the December 2027 contract settles above $120.</li>
+<li><strong>$130:</strong> 12–16% within 30 days; 6–10% for December 2027.</li>
+<li><strong>$140:</strong> 4–7% within 30 days; 4–7% for December 2027.</li>
+</ul>
+<p>Three caveats apply. First, these are "risk-neutral" probabilities: they include the premium investors pay for protection, so they are not pure forecasts. Second, OVX has overstated the volatility that followed in about 78% of cases since 2007, by a median of 6.2 points; the low end of each 30-day range adjusts for that. Third, the chance of touching a level at some point over the next year is higher than the chance of settling above it on one date, at most about double under a standard model. For the December 2027 estimate, we use a volatility range of 33–44%: the upper end is the implied volatility on long-dated USO options in mid-October, and the lower end allows for the fact that far-dated contracts move less than the front month.</p>
+<p><strong>Where we disagree.</strong> We think the $140 tail deserves more weight than the roughly 5% priced for the next 12–14 months. Our reasons are the thinner buffers described above, the escalation in attacks reported by the IEA, and the real-price argument: a supply shock does not have to stop at the nominal levels that feel "high", because the economy's tolerance is higher in real terms than it was in 2008, 2011–14 or 2022.</p>
+<p>Our subjective scenario weights to the end of 2027 are:</p>
+<ul>
+<li><strong>Re-escalation (WTI trades at $140 or above at some point): 20%.</strong> Further damage to Gulf export or bypass infrastructure, or a renewed disruption at Hormuz, while inventories are already drawn down.</li>
+<li><strong>High plateau (WTI mostly $90–120): 45%.</strong> Attacks continue but exports keep flowing; the deficit narrows slowly; the curve stays backwardated.</li>
+<li><strong>Normalization (WTI $70–85): 30%.</strong> Ceasefire or effective protection of shipping; Gulf output recovers on the EIA's timetable.</li>
+<li><strong>Demand shock (WTI below $70): 5%.</strong> A recession or financial accident, possibly triggered by high energy prices and rising rates.</li>
+</ul>
+<p>These weights are our judgment, not a model output. The point of writing them down is to make the view testable.</p>
+<h2 id="the-evidence-against-us-war-spikes-have-been-0-for-12-at-mak">The evidence against us: war spikes have been 0 for 12 at making new highs<a class="anchor" href="#the-evidence-against-us-war-spikes-have-been-0-for-12-at-mak" aria-label="Link to this section">#</a></h2>
+<figure><img src="oil-140/exhibit-7.png" alt="Exhibit 7" loading="lazy"><figcaption>Exhibit 7</figcaption></figure>
+<p>Exhibit 7 measures how often WTI set a new 52-week closing high within 12 months of sitting 10–15% below its previous high, which is where it has been for most of the past six months.</p>
+<ul>
+<li><strong>All starting points since 2000:</strong> 62% (65 of 104).</li>
+<li><strong>2000–2010, the demand-driven supercycle:</strong> 98% (40 of 41).</li>
+<li><strong>2011–2026:</strong> 40% (25 of 63).</li>
+<li><strong>After the war-driven spikes of 2011 (Libya) and 2022 (Russia–Ukraine):</strong> 0% (0 of 12).</li>
+</ul>
+<p>Other geopolitical episodes are mixed: after the 2012 Iran sanctions premium, 3 of 5 starting points led to a new high within a year; after the 2013 Syria scare, 0 of 8 did. The closest analogues to 2026 are supply shocks caused by war, and in those the spike high was not revisited within a year.</p>
+<p>The current price action is consistent with that pattern so far. This year's closing high of $112.95 was set on April 7 and has not been reclaimed in six and a half months. In 2026 WTI closed at or above $100 on 27 sessions through October 22, but never on more than seven in a row. It settled at $103.44 on October 23.</p>
+<p>Two further points cut against us. The futures curve and the EIA both point to normalization in 2027, and they may be right. And the March–April shock, one of the largest supply losses on record, produced an intraday high of $119.48, not $140. Our argument is that the next shock would land on a weaker system. The counter-argument is that the system has already shown more flexibility than headline numbers suggested.</p>
+<p>We take these base rates seriously. That is why our call is about an underpriced tail, not a base case.</p>
+<h2 id="what-140-oil-would-mean-for-stocks">What $140 oil would mean for stocks<a class="anchor" href="#what-140-oil-would-mean-for-stocks" aria-label="Link to this section">#</a></h2>
+<figure><img src="oil-140/exhibit-6.png" alt="Exhibit 6" loading="lazy"><figcaption>Exhibit 6</figcaption></figure>
+<p>Exhibit 6 looks at US equities during the six periods since 2000 when WTI held above $100. We date a period from the 10th consecutive close at or above $100 to the point where WTI has closed below $100 for 10 consecutive sessions.</p>
+<p>Three patterns stand out:</p>
+<ol>
+<li><strong>The direction of the broad market was not set by oil.</strong> The Nasdaq 100 rose in three of the six periods and fell in three. Twelve months after each period began, it was higher in four of six. The two exceptions were 2008, during the credit crisis, and 2022, when the Federal Reserve was raising rates aggressively. In both, the Nasdaq 100 fell about 27% from its peak during the high-oil period. In the other four, the maximum drawdown was 3–8%.</li>
+<li><strong>Smaller and more cyclical companies suffered most.</strong> The Russell 2000 fell in five of the six periods and the Philadelphia semiconductor index in four. Measured day by day, when WTI was at or above $100, the S&amp;P 500 returned −2.3% annualised against +9.6% on other days; the Russell 2000 0% against +10.9%; semiconductors +5.8% against +17.7%; and the Nasdaq 100 +8.6% against +12.2%. These days are clustered in a few periods, so the effective sample is six episodes, not hundreds of days.</li>
+<li><strong>Energy stocks mostly fell once oil was already above $100.</strong> The energy sector ETF XLE fell in four of the six periods, and on days when WTI was at or above $100 it returned −24.5% annualised, against +17.4% on other days. The gains in energy equities came on the way up, not at the top.</li>
+</ol>
+<p>What separated the good and bad outcomes was monetary policy, not the size of the bond-market move alone. In July 2013, the 10-year Treasury yield had risen 79 basis points in three months, but the Fed was still buying bonds and holding rates near zero; the Nasdaq 100 rose 26% over the following year. In March 2022, the 10-year yield had risen 65 basis points and the Fed began a cycle of rapid increases; the Nasdaq 100 fell 27% from its peak during the high-oil period.</p>
+<p>Today's configuration has elements of 2022. The Fed raised rates on September 17, the first increase of this cycle. The 10-year yield closed at 4.99% on October 23. In past cycles, the first Fed increase was followed by a weaker Nasdaq 100 in the short run: it was lower three months later in four of five cycles since 1994 (−7%, +4%, −7%, −5% and −17%), and higher 12 months later in three of five (+6%, +64%, −1%, +6% and −10%). Since 1990, the Nasdaq 100 has been higher 12 months later 84% of the time from any starting day, with a median gain of 19%.</p>
+<p>The relationship between oil and stocks has also changed this year. The daily correlation between WTI and the S&amp;P 500 is −0.43 in 2026 through October 22, against figures close to zero in 2022–2024 and +0.25 in 2025. For the Nasdaq 100 it is −0.34, and for the Russell 2000 −0.43. Days when oil rises have been days when stocks fall. Over the month to October 22, WTI rose from $94.6 to $99.5 while the Nasdaq 100 fell 5.8%, the semiconductor index fell 15.4% and XLE rose 9.4%.</p>
+<p>For equity investors, three conditions together would mark a 2022-style setting: WTI closing at or above $100 for ten straight sessions, the 10-year yield rising more than 60 basis points over three months, and the 10-year yield holding above 5%. As of October 23, none of the three is in place, though the 10-year yield is within one basis point of 5%.</p>
+<h2 id="why-uso-is-a-poor-way-to-own-this-view">Why USO is a poor way to own this view<a class="anchor" href="#why-uso-is-a-poor-way-to-own-this-view" aria-label="Link to this section">#</a></h2>
+<figure><img src="oil-140/exhibit-8.png" alt="Exhibit 8" loading="lazy"><figcaption>Exhibit 8</figcaption></figure>
+<p>The United States Oil Fund (USO) is the most popular way to buy oil in a brokerage account. It is a poor instrument for a spike thesis, for reasons that have nothing to do with the direction of oil.</p>
+<p>USO does not own oil. It owns WTI futures contracts and sells each one before expiry to buy the next. When the curve is in backwardation, as now, each roll sells a more expensive contract and buys a cheaper one, which adds to returns if prices stay put. When the curve is in contango, the roll costs money. Exhibit 8 shows the result:</p>
+<ul>
+<li><strong>Ten years to October 23:</strong> USO +85%, WTI front-month futures +105%, Brent +115%.</li>
+<li><strong>Five years to October 23:</strong> USO +192%, WTI +23%, Brent +31%. Nearly all of that gap comes from the persistent backwardation since 2021.</li>
+<li><strong>Since USO's launch in April 2006 (to October 22):</strong> USO −70%, WTI +45%. USO suffered drawdowns of 81% (2008–09), 80% (2014–16) and 87% (2018–20).</li>
+</ul>
+<p>Holding USO for a year is roughly equivalent to buying WTI for delivery about a year from now at around $81. You make money if WTI in a year is above roughly that level, whether or not it ever touches $140, and you lose money if prices follow the curve down and the backwardation disappears with them. A thesis about a spike is a thesis about the path, not the end point.</p>
+<p>Our own tests of USO point the same way. Since 2006, buying USO at month-end when the curve was in backwardation produced a positive 12-month return 36% of the time, against 47% for all month-ends. When backwardation coincided with a three-month rally of more than 20%, as it does today, the following 12 months were positive in one case out of six, with a median return of −22%. Backwardation tends to be deepest near price peaks, and when the shortage eases, spot prices and roll income fall together.</p>
+<p>If we wanted to express this view, the principles we would follow are general ones: use instruments with a defined maximum loss rather than an open-ended position; size the position as a tail bet, small enough that being wrong does no lasting damage; avoid leverage; and write the exit conditions down before entering. None of this is a recommendation to buy or sell any security.</p>
+<h2 id="what-would-prove-us-right-and-what-would-prove-us-wrong">What would prove us right, and what would prove us wrong<a class="anchor" href="#what-would-prove-us-right-and-what-would-prove-us-wrong" aria-label="Link to this section">#</a></h2>
+<p>We prefer views that can be checked. The thresholds below are our own choices. Readings are as of the October 23 settlement unless noted.</p>
+<p><strong>Signals that would support the $140 case</strong></p>
+<ul>
+<li>WTI closes at or above $100 for 10 consecutive sessions, for the first time in 2026. Current run: one session.</li>
+<li>The WTI December 2026–March 2027 spread widens beyond $10. Now: $7.64.</li>
+<li>The Brent–WTI spread for December delivery widens beyond $15. Now: $13.47.</li>
+<li>US commercial crude stocks keep falling. Latest reading: 412.5 million barrels in the week to October 16.</li>
+<li>Further attacks on Gulf export terminals, bypass pipelines or tankers, as reported by the IEA or the EIA.</li>
+<li>The correlation between oil and oil volatility stays positive. Now: +0.57 for 2026.</li>
+</ul>
+<p><strong>Signals that would undermine it</strong></p>
+<ul>
+<li>The December 2026–March 2027 spread narrows below $3, which would mean the shortage is easing.</li>
+<li>Three or more consecutive weekly builds in US commercial crude stocks.</li>
+<li>The Brent–WTI spread narrows below $8, which would mean the seaborne risk premium is fading.</li>
+<li>The oil–volatility correlation turns negative, which would mean the market fears demand more than supply.</li>
+<li>Verifiable de-escalation in the Gulf, such as sustained protection of shipping and repairs to damaged infrastructure.</li>
+<li>WTI closes below $90 for 10 consecutive sessions.</li>
+<li>A time limit: if WTI has not traded above this year's closing high of $112.95 by March 31, 2027, we will treat the thesis as failing and say so.</li>
+</ul>
+<h2 id="bottom-line">Bottom line<a class="anchor" href="#bottom-line" aria-label="Link to this section">#</a></h2>
+<p>The futures curve, the EIA and the historical record all say the most likely path is lower prices in 2027. We do not argue with that central case. We argue with the size of the tail.</p>
+<p>$140 oil sounds extreme because we remember it as a 2008 number. In today's dollars, it is roughly where the market traded for long stretches of 2011–14, and the level at which demand gave way in 2022. Spare capacity is thinner than before the war, inventories are falling, bypass routes are under attack, and the options market already shows that investors fear spikes more than collapses. Against that background, a 4–7% probability for $140 looks low to us.</p>
+<p>Being early and being wrong look the same for a long time. That is why we have written down the signals, the thresholds and a date. If the curve flattens, inventories build and WTI fails to reclaim $112.95 by the end of March, we were wrong, and we will say so.</p>
+<hr>
+<p><strong>Disclaimer.</strong> This note reflects the author's opinions as of October 24, 2026. It is not investment advice or a recommendation to buy or sell any security. Prices are October 23, 2026 settlements unless stated otherwise. Probabilities derived from options are risk-neutral, include risk premia and are not forecasts. Scenario weights are subjective. Historical patterns may not repeat.</p>
+<p><strong>Sources</strong></p>
+<ul>
+<li>Prices, futures curves, volatility and index data: Yahoo Finance (CL=F, BZ=F, NYMEX CL and BZ contracts, ^OVX, USO, ^NDX, ^GSPC, ^RUT, ^SOX, XLE, ^TNX); author's calculations.</li>
+<li>US consumer prices: US Bureau of Labor Statistics, CPI-U (series CUUR0000SA0), <a href="https://www.bls.gov/cpi/">https://www.bls.gov/cpi/</a></li>
+<li>IEA, Oil Market Report, October 2026: <a href="https://www.iea.org/reports/oil-market-report-october-2026">https://www.iea.org/reports/oil-market-report-october-2026</a></li>
+<li>EIA, Short-Term Energy Outlook, October 2026: <a href="https://www.eia.gov/outlooks/steo/pdf/steo_full.pdf">https://www.eia.gov/outlooks/steo/pdf/steo_full.pdf</a> and <a href="https://www.eia.gov/pressroom/releases/press593.php">https://www.eia.gov/pressroom/releases/press593.php</a></li>
+<li>IEA March estimate of Gulf output losses, as reported by Argus Media: <a href="https://www.argusmedia.com/pt/news-and-insights/latest-market-news/2800022-production-shutdowns-in-mideast-gulf-hit-10mn-b-d-iea">https://www.argusmedia.com/pt/news-and-insights/latest-market-news/2800022-production-shutdowns-in-mideast-gulf-hit-10mn-b-d-iea</a> and Argaam: <a href="https://www.argaam.com/en/article/articledetail/id/1887483">https://www.argaam.com/en/article/articledetail/id/1887483</a></li>
+<li>EIA estimate of Gulf crude production losses, as reported by Bloomberg, April 7, 2026: <a href="https://www.bloomberg.com/news/articles/2026-04-07/mideast-crude-output-seen-dropping-by-9-million-barrels-a-day">https://www.bloomberg.com/news/articles/2026-04-07/mideast-crude-output-seen-dropping-by-9-million-barrels-a-day</a></li>
+<li>CME Group, WTI Insights by PVM, March 21, 2026: <a href="https://www.cmegroup.com/news/2026/wti-insights-by-pvm-2026-03-21.html">https://www.cmegroup.com/news/2026/wti-insights-by-pvm-2026-03-21.html</a></li>
+<li>Fitch Ratings price assumptions and Hormuz analysis, as reported by bne IntelliNews: <a href="https://www.intellinews.com/fitch-raises-2026-27-oil-and-gas-price-assumptions-on-prolonged-hormuz-closure-442071/">https://www.intellinews.com/fitch-raises-2026-27-oil-and-gas-price-assumptions-on-prolonged-hormuz-closure-442071/</a></li>
+<li>EIA OPEC spare-capacity estimates, as reported by TASS: <a href="https://tass.com/economy/2130003/amp">https://tass.com/economy/2130003/amp</a></li>
+<li>UAE exit from OPEC: <a href="https://www.hellenicshippingnews.com/uae-says-its-decision-to-leave-opec-was-a-strategic-economic-move-not-a-political-one/">https://www.hellenicshippingnews.com/uae-says-its-decision-to-leave-opec-was-a-strategic-economic-move-not-a-political-one/</a> and <a href="https://www.hellenicshippingnews.com/uae-departure-slashes-opecs-global-market-share-eia/">https://www.hellenicshippingnews.com/uae-departure-slashes-opecs-global-market-share-eia/</a></li>
+<li>Rystad Energy on UAE spare capacity, as reported by Petromindo: <a href="https://www.petromindo.com/news/article/uae-exit-from-opec-weakens-supply-coordination-raises-oil-price-volatility-risks-says-rystad">https://www.petromindo.com/news/article/uae-exit-from-opec-weakens-supply-coordination-raises-oil-price-volatility-risks-says-rystad</a></li>
+<li>EIA weekly crude inventories, as reported by Oil &amp; Gas 360: <a href="https://www.oilandgas360.com/?p=1051007">https://www.oilandgas360.com/?p=1051007</a> and <a href="https://www.oilandgas360.com/?p=1051006">https://www.oilandgas360.com/?p=1051006</a></li>
+<li>Alquist, R. and Kilian, L. (2010), "What do we learn from the price of crude oil futures?", Journal of Applied Econometrics.</li>
+</ul>
+
+<h2 class="section-label" id="tests">What would prove this wrong</h2><ul class="tests"><li id="t-deadline"><span class="chip open">Open</span><span>WTI trades above this year&#x27;s closing high of $112.95 by March 31, 2027. If it does not, the thesis is treated as failing.</span><span class="meta">Deadline test · Check by Mar 31, 2027 · Latest: $112.95 (April 7) still stands</span></li><li id="t-run100"><span class="chip open">Open</span><span>WTI closes at or above $100 for 10 consecutive sessions, for the first time in 2026</span><span class="meta">Would support the view · Latest: Current run: one session (Oct 23)</span></li><li id="t-spread10"><span class="chip open">Open</span><span>The WTI December 2026–March 2027 spread widens beyond $10</span><span class="meta">Would support the view · Latest: $7.64 (Oct 23)</span></li><li id="t-bw15"><span class="chip open">Open</span><span>The Brent–WTI spread for December delivery widens beyond $15</span><span class="meta">Would support the view · Latest: $13.47 (Oct 23)</span></li><li id="t-spread3"><span class="chip open">Open</span><span>The December 2026–March 2027 spread narrows below $3</span><span class="meta">Would undermine the view · Latest: $7.64 (Oct 23)</span></li><li id="t-builds"><span class="chip open">Open</span><span>Three or more consecutive weekly builds in US commercial crude stocks</span><span class="meta">Would undermine the view · Latest: 412.5M barrels in the week to Oct 16, falling</span></li><li id="t-bw8"><span class="chip open">Open</span><span>The Brent–WTI spread narrows below $8</span><span class="meta">Would undermine the view · Latest: $13.47 (Oct 23)</span></li><li id="t-corr"><span class="chip open">Open</span><span>The correlation between oil and oil volatility turns negative</span><span class="meta">Would undermine the view · Latest: +0.57 for 2026</span></li><li id="t-deesc"><span class="chip open">Open</span><span>Verifiable de-escalation in the Gulf, such as sustained protection of shipping and repairs to damaged infrastructure</span><span class="meta">Would undermine the view</span></li><li id="t-below90"><span class="chip open">Open</span><span>WTI closes below $90 for 10 consecutive sessions</span><span class="meta">Would undermine the view</span></li></ul><h2 class="section-label" id="disclosure">Disclosure</h2><div class="box"><span class="lab">Author's position at publication</span>As of publication, the author holds 100 shares of USO, 100 shares of XOM, and a position in the 富国标普油气 ETF (listed in China). The author may trade these securities at any time without notice.</div><p class="fine" style="margin-top:14px">Notes on this site express the author&#x27;s opinions. They are based on public information believed to be reliable but not independently audited. Nothing here is investment advice or an offer to buy or sell any security.</p><h2 class="section-label" id="zh">中文摘要</h2><div class="zh" lang="zh-CN"><p>期权市场给"WTI 到 140 美元"的概率大约 5%，我们认为偏低。这是对上行尾部大小的判断，不是说 140 是最可能的结果。</p>
+<ul>
+<li><strong>扣掉通胀，140 并不极端。</strong> 按美国 CPI 折算，今天的 100 美元只相当于 2008 年 7 月的 65 美元；2011–14 年的 100 美元约等于今天的 147 美元；2022 年高点 122 美元约等于今天的 139 美元。2000 年 8 月以来 313 个月里，有 33 个月的月均价按今天的美元算在 140 以上。但今天的 100 美元在这段历史里排在第 66 百分位，并不便宜，只是没有名义数字看上去那么贵。</li>
+<li><strong>缓冲变薄了。</strong> OPEC 的闲置产能几乎都在海湾；阿联酋 5 月 1 日退出 OPEC 后，EIA 估计今年 OPEC 闲置产能只有约 50 万桶/日。9 月全球库存下降；美国商业原油库存截至 10 月 16 日的两周减少 1,170 万桶。IEA 称针对能源设施和油轮的袭击在升级，绕行管道本身也成了目标。</li>
+<li><strong>市场怎么定价。</strong> 期权给出 30 天内摸到 140 的概率约 4–7%，2027 年 12 月合约收在 140 以上的概率也约 4–7%。期货曲线从 2026 年 12 月的 103.44 美元降到 2027 年 12 月的 80.68 美元。油价波动率指数 OVX 为 60，处在 2007 年以来第 93 百分位；今年油价与 OVX 的日相关是 +0.57，2008–2025 年每年都是负的。市场怕的是供应冲击。</li>
+<li><strong>不利证据。</strong> 2011 年和 2022 年战争推起来的高点，之后 12 个月内都没被收复（0/12）；今年 4 月 7 日的收盘高点 112.95 美元至今未破；今年 WTI 收在 100 以上最长只连续 7 天。春季那次规模极大的供应损失，也只把 WTI 推到盘中 119.48 美元。</li>
+<li><strong>对股市。</strong> 2000 年以来 6 次油价站稳 100：纳指期间三涨三跌，之后 12 个月四涨两跌；跌的两次是 2008 和 2022，期间回撤约 27%。小盘股 6 次跌 5 次。能源股在油价已经高于 100 时多半下跌。今年油价和标普的日相关是 −0.43，Fed 已于 9 月 17 日首次加息，10 年期美债收益率 4.99%。</li>
+<li><strong>为什么不用 USO 表达。</strong> USO 持有滚动的 WTI 期货：上市以来 −70%，同期 WTI +45%；拿一年约等于按 81 美元左右买一年后交割的 WTI。押"冲高"押的是路径，应当用最大亏损确定的工具、小仓位、不加杠杆、事先写好退出条件。以上不构成买卖建议。</li>
+<li><strong>怎么验证。</strong> 支持：WTI 连续 10 天收在 100 以上、12 月与 3 月合约价差扩大到 10 美元以上、布伦特与 WTI 价差超过 15 美元、库存继续下降、袭击继续、油价与 OVX 保持正相关。否定：近月价差收窄到 3 美元以下、美国库存连续 3 周以上增加、油价与 OVX 转为负相关、WTI 连续 10 天收在 90 以下；若 2027 年 3 月 31 日前没有突破 112.95 美元，我们认为判断失效，会公开承认。</li>
+</ul>
+<p>主观情景权重（到 2027 年底）：再度升级、摸到 140 以上 20%；高位震荡 90–120 美元 45%；恢复正常 70–85 美元 30%；需求冲击跌破 70 美元 5%。</p>
+
+</div></article><nav class="pager" aria-label="More notes"><div></div><div class="next"><span>Older</span><a href="alibaba-two-wars.html">Alibaba Loses AI Money, and It Will Lose the War. Our Target: $69</a></div></nav></main><footer class="site"><span>© 2026 canyon</span><a href="https://x.com/stevenkwok20290">X @stevenkwok20290</a><a href="../feed.xml">RSS</a><a href="../tests.html">Tests</a><span>Not investment advice</span></footer><script>
+(function(){
+  var root=document.documentElement,b=document.getElementById('theme-btn');
+  function save(v){try{v?localStorage.setItem('canyon-theme',v):localStorage.removeItem('canyon-theme')}catch(e){}}
+  function label(){if(!b)return;var v=root.getAttribute('data-theme');b.textContent=v==='dark'?'Dark':v==='light'?'Light':'Auto';b.setAttribute('aria-label','Colour theme: '+b.textContent)}
+  if(b){label();b.addEventListener('click',function(){var v=root.getAttribute('data-theme'),n=!v?'light':v==='light'?'dark':null;if(n)root.setAttribute('data-theme',n);else root.removeAttribute('data-theme');save(n);label()})}
+  var cv=document.getElementById('canyon-art');
+  if(cv&&cv.getContext){
+    /* Fly-through: a heightfield (plateau, terraced canyon, mesas) drawn as ridgelines back to front with paper fills
+       for hidden lines. The camera moves forward along the canyon; on load the scene zooms in from the vanishing point. */
+    var ctx=cv.getContext('2d'),W=0,H=0,dpr=1,ink='#1b1c1e',paper='#f7f6f2',stars=[],reduce=false;
+    try{reduce=matchMedia('(prefers-reduced-motion: reduce)').matches}catch(e){}
+    var hash=function(a,b){var h=(Math.imul(a|0,374761393)+Math.imul(b|0,668265263))|0;h=Math.imul(h^(h>>>13),1274126177);return((h^(h>>>16))>>>0)/4294967296};
+    var HALF=2.6,DEPTH=2.3,ST=5,SPEED=1.15;
+    var xc=function(z){return 2.2*Math.sin(z*0.115)+1.1*Math.sin(z*0.047+1.3)};
+    var mesasAt=function(z){var cz=Math.floor(z/7),out=[];for(var k=cz-1;k<=cz+1;k++){if(hash(k,17)<0.6){var mz=k*7+3.5+(hash(k,31)-0.5)*3,md=0.7+hash(k,43)*1.5,dz=Math.abs(z-mz)-md;if(dz<0.2){var side=hash(k,29)<0.5?-1:1;out.push([xc(mz)+side*(HALF*2+hash(k,37)*7),0.8+hash(k,41)*1.8,dz,0.6+hash(k,47)*1.2])}}}return out};
+    var ht=function(x,z,cz,ms){var g=0,u=Math.abs(x-cz)/HALF;if(u<1.45){var v=1-u/1.45,q=Math.floor(v*ST),f=v*ST-q;f=f*f*(3-2*f);f=f*f*f;g=Math.min(1,(q+f)/ST*1.1)}
+      var m=0;for(var i=0;i<ms.length;i++){var d=Math.max(Math.abs(x-ms[i][0])-ms[i][1],ms[i][2]);if(d<0.2)m=Math.max(m,ms[i][3]*Math.min(1,(0.2-d)/0.2))}
+      return 0.07*Math.sin(x*0.9+z*0.31)+0.05*Math.sin(x*0.37-z*0.53)+m-g*DEPTH};
+    var colors=function(){var cs=getComputedStyle(root);ink=cs.getPropertyValue('--ink').trim()||ink;paper=cs.getPropertyValue('--paper').trim()||paper};
+    var size=function(){dpr=Math.min(window.devicePixelRatio||1,1.75);W=cv.clientWidth;H=cv.clientHeight;cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);
+      stars=[];for(var i=0,n=Math.round(W*H*0.38/1500);i<n;i++)stars.push([hash(i,101)*W,hash(i,103)*H*0.36,0.07+hash(i,107)*0.22,hash(i,109)<0.12?1.6:1])};
+    var ease=function(k){k=Math.max(0,Math.min(1,k));return 1-Math.pow(1-k,3)};
+    var render=function(camZ,k){
+      if(!W||!H)return;var c=ctx,e=ease(k);c.setTransform(dpr,0,0,dpr,0,0);c.globalAlpha=1;c.fillStyle=paper;c.fillRect(0,0,W,H);
+      c.fillStyle=ink;for(var i=0;i<stars.length;i++){var s=stars[i];c.globalAlpha=s[2]*(0.25+0.75*e);c.fillRect(s[0],s[1],s[3],s[3])}
+      var mob=W<640,hy=H*0.40,f=H*1.2*(0.45+0.55*e),ext=(W/2+24)*ease(k*1.15),camX=xc(camZ+5)*0.8,camY=1.75;
+      var dz=mob?0.42:0.32,zN=0.75,zF=mob?24:30,step=mob?5:4,k0=Math.ceil((camZ+zN)/dz),k1=Math.floor((camZ+zF)/dz),pts=[];
+      for(var kk=k1;kk>=k0;kk--){
+        var zw=kk*dz,Zr=zw-camZ,nr=1-Zr/zF,al=Math.min(1,(zF-Zr)/(zF*0.25))*(0.16+0.78*nr*nr),cz=xc(zw),ms=mesasAt(zw);
+        var spx=f*camY*dz/(Zr*Zr),L=0,t2=kk;while(L<6&&t2!==0&&t2%2===0){t2/=2;L++}
+        var lod=Math.min(1,Math.max(0,(spx*Math.pow(2,L)-2.6)/2.6));if(lod<=0)continue;al*=lod;
+        pts.length=0;
+        for(var sx=-4;sx<=W+4;sx+=step){if(Math.abs(sx-W/2)>ext)continue;pts.push(sx,hy-(ht(camX+(sx-W/2)*Zr/f,zw,cz,ms)-camY)*f/Zr)}
+        if(pts.length<4)continue;
+        c.globalAlpha=1;c.fillStyle=paper;c.beginPath();c.moveTo(pts[0],H+4);for(var j=0;j<pts.length;j+=2)c.lineTo(pts[j],pts[j+1]);c.lineTo(pts[pts.length-2],H+4);c.closePath();c.fill();
+        c.strokeStyle=ink;c.globalAlpha=al;c.lineWidth=0.45+1.1*nr;c.beginPath();for(j=0;j<pts.length;j+=2){if(j)c.lineTo(pts[j],pts[j+1]);else c.moveTo(pts[j],pts[j+1])}c.stroke();
+        var half=Math.min(ext,W/2),gx=Math.max(0.12,Zr*0.011),xL=camX-half*Zr/f,xR=camX+half*Zr/f;c.fillStyle=ink;
+        for(var jj=Math.ceil(xL/gx),je=Math.floor(xR/gx);jj<=je;jj++){
+          var xw=jj*gx,dx=xw-cz;if(Math.abs(dx)>=HALF*1.5)continue;
+          var sl=Math.abs(ht(xw+0.04,zw,cz,ms)-ht(xw-0.04,zw,cz,ms))/0.08,px=W/2+(xw-camX)*f/Zr,py=hy-(ht(xw,zw,cz,ms)-camY)*f/Zr;
+          if(sl>0.5&&hash(kk*131+jj,5)<Math.min(0.9,sl*0.3)){c.globalAlpha=al*(dx<0?1:0.5);c.fillRect(px+(hash(kk,jj)-0.5)*2,py+1+hash(jj,kk)*(3+14*nr),1.1,1.1)}
+          if(Math.abs(dx)<0.22&&hash(kk*7+jj,9)<0.5){c.globalAlpha=Math.min(1,al*1.1);c.beginPath();c.arc(px,py+1.6,0.5+1.2*nr,0,6.283);c.fill()}
+        }
+      }
+      c.globalAlpha=1;
+    };
+    var camZ=0,start=0,last=0,running=false,raf=0,inView=true;
+    var loop=function(ts){if(!running)return;if(!start){start=ts;last=ts}
+      var el=ts-last;if(el>=24||ts===start){camZ+=Math.min(0.1,el/1000)*SPEED;last=ts;render(camZ,(ts-start)/1800)}raf=requestAnimationFrame(loop)};
+    var play=function(){if(running||reduce||!inView||document.hidden)return;running=true;last=0;if(start)start=performance.now()-1800;raf=requestAnimationFrame(function(ts){last=ts;loop(ts)})};
+    var stop=function(){running=false;cancelAnimationFrame(raf)};
+    colors();size();
+    if(reduce)render(0,1);else play();
+    window.addEventListener('resize',function(){size();if(!running)render(camZ,1)});
+    var retheme=function(){colors();if(!running)render(camZ,1)};
+    try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',retheme)}catch(e){}
+    try{new MutationObserver(retheme).observe(root,{attributes:true,attributeFilter:['data-theme']})}catch(e){}
+    document.addEventListener('visibilitychange',function(){if(document.hidden)stop();else play()});
+    try{new IntersectionObserver(function(en){inView=en[0].isIntersecting;if(inView)play();else stop()}).observe(cv)}catch(e){}
+  }
+  var chips=[].slice.call(document.querySelectorAll('[data-filter]'));
+  chips.forEach(function(c){c.addEventListener('click',function(){var d=c.getAttribute('data-filter');
+    chips.forEach(function(x){x.setAttribute('aria-pressed',String(x===c))});
+    [].slice.call(document.querySelectorAll('[data-domain]')).forEach(function(it){it.hidden=(d!=='all'&&it.getAttribute('data-domain')!==d)});
+    [].slice.call(document.querySelectorAll('.year')).forEach(function(y){y.hidden=![].slice.call(y.querySelectorAll('[data-domain]')).some(function(i){return !i.hidden})});
+  })});
+})();
+</script></body></html>
