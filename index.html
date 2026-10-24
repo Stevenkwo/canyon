@@ -80,8 +80,12 @@ td.num,th.num{text-align:right;white-space:nowrap}
 .pager .next{text-align:right}
 footer.site{max-width:760px;margin:0 auto;padding-block:22px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));border-top:1px solid var(--rule);font:500 12.5px/1.7 var(--mono);color:var(--ink-2);display:flex;gap:16px;flex-wrap:wrap}
 footer.site a{color:var(--ink-2)}
+/* hero: full-width canyon drawn in dots and lines (canvas, seeded, theme-aware) */
+.hero{position:relative;height:clamp(250px,36vw,440px);border-bottom:1px solid var(--rule);overflow:hidden;background:var(--paper)}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero-in{position:relative;max-width:760px;margin:0 auto;padding-block:clamp(20px,4.2vw,44px) 0;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.hero h1{font:800 clamp(46px,9.5vw,92px)/.92 var(--display);letter-spacing:-.04em;margin:0;color:var(--ink)}
 /* index */
-.masthead h1{font:800 clamp(40px,8vw,58px)/1 var(--display);letter-spacing:-.03em;margin:8px 0 14px}
 .masthead p{margin:0;color:var(--ink-2);font-size:18px;line-height:1.55;max-width:34em}
 .masthead p.zh-line{font-size:15.5px;margin-top:6px}
 .filters{display:flex;gap:8px;flex-wrap:wrap;margin:26px 0 8px}
@@ -105,12 +109,54 @@ footer.site a{color:var(--ink-2)}
   .pager{grid-template-columns:1fr}.pager .next{text-align:left}
 }
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
-</style><link rel="alternate" type="application/rss+xml" title="canyon" href="feed.xml"></head><body><header class="topbar"><div class="in"><a class="brand" href="index.html">canyon</a><nav class="nav" aria-label="Site"><a href="index.html" aria-current="page">Notes</a><a href="tests.html">Tests</a><a href="about.html">About</a><a href="feed.xml">RSS</a><button id="theme-btn" type="button">Auto</button></nav></div></header><main class="wrap"><section class="masthead"><h1>canyon</h1><p>Research notes on markets, design and AI agents. Every call comes with a test and a date.</p><p class="zh-line" lang="zh-CN">市场、设计与 AI Agent 研究笔记。每个判断都附检验条件和日期。</p></section><div class="filters" role="group" aria-label="Filter notes"><button type="button" data-filter="all" aria-pressed="true">All</button></div><p class="fine" style="margin-top:28px">No published notes yet.</p></main><footer class="site"><span>© 2026 canyon</span><a href="https://x.com/stevenkwok20290">X @stevenkwok20290</a><a href="feed.xml">RSS</a><a href="tests.html">Tests</a><span>Not investment advice</span></footer><script>
+</style><link rel="alternate" type="application/rss+xml" title="canyon" href="feed.xml"></head><body><header class="topbar"><div class="in"><a class="brand" href="index.html">canyon</a><nav class="nav" aria-label="Site"><a href="index.html" aria-current="page">Notes</a><a href="tests.html">Tests</a><a href="about.html">About</a><a href="feed.xml">RSS</a><button id="theme-btn" type="button">Auto</button></nav></div></header><section class="hero"><canvas id="canyon-art" aria-hidden="true"></canvas><div class="hero-in"><h1>canyon</h1></div></section><main class="wrap"><section class="masthead"><p>Research notes on markets, design and AI agents. Every call comes with a test and a date.</p><p class="zh-line" lang="zh-CN">市场、设计与 AI Agent 研究笔记。每个判断都附检验条件和日期。</p></section><div class="filters" role="group" aria-label="Filter notes"><button type="button" data-filter="all" aria-pressed="true">All</button></div><p class="fine" style="margin-top:28px">No published notes yet.</p></main><footer class="site"><span>© 2026 canyon</span><a href="https://x.com/stevenkwok20290">X @stevenkwok20290</a><a href="feed.xml">RSS</a><a href="tests.html">Tests</a><span>Not investment advice</span></footer><script>
 (function(){
   var root=document.documentElement,b=document.getElementById('theme-btn');
   function save(v){try{v?localStorage.setItem('canyon-theme',v):localStorage.removeItem('canyon-theme')}catch(e){}}
   function label(){if(!b)return;var v=root.getAttribute('data-theme');b.textContent=v==='dark'?'Dark':v==='light'?'Light':'Auto';b.setAttribute('aria-label','Colour theme: '+b.textContent)}
   if(b){label();b.addEventListener('click',function(){var v=root.getAttribute('data-theme'),n=!v?'light':v==='light'?'dark':null;if(n)root.setAttribute('data-theme',n);else root.removeAttribute('data-theme');save(n);label()})}
+  var cv=document.getElementById('canyon-art');
+  if(cv&&cv.getContext){
+    var rng=function(s){return function(){s|=0;s=s+0x6D2B79F5|0;var t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}};
+    var draw=function(){
+      var cs=getComputedStyle(root),ink=cs.getPropertyValue('--ink').trim()||'#1b1c1e',paper=cs.getPropertyValue('--paper').trim()||'#f7f6f2';
+      var dpr=Math.min(window.devicePixelRatio||1,2),W=cv.clientWidth,H=cv.clientHeight;if(!W||!H)return;
+      cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);
+      var c=cv.getContext('2d');c.setTransform(dpr,0,0,dpr,0,0);c.globalAlpha=1;c.fillStyle=paper;c.fillRect(0,0,W,H);
+      var R=rng(20261024),ph=[];for(var k=0;k<6;k++)ph.push([R()*6.283,0.6+R()*1.8]);
+      var nz=function(x){var s=0;for(var k=0;k<ph.length;k++)s+=Math.sin(x*ph[k][1]*(k+1)*0.37+ph[k][0])/(k+1);return s/1.8};
+      var rows=Math.round(Math.max(30,Math.min(64,H/5.8))),hz=H*0.40,sc=H/380;
+      var mesas=[[0.16,0.075,0.11],[0.31,0.035,0.065],[0.87,0.055,0.085]];
+      c.fillStyle=ink;
+      for(var i=0,n=Math.round(W*hz/1500);i<n;i++){var sx=R()*W,sy=R()*hz*0.9;c.globalAlpha=0.07+R()*0.2;var d=R()<0.12?1.6:1;c.fillRect(sx,sy,d,d)}
+      for(var r=0;r<rows;r++){
+        var t=r/(rows-1),e=Math.pow(t,1.7),base=hz+(H*1.06-hz)*e;
+        var cx=W*(0.62+0.1*Math.sin(t*2.6+0.5)),half=W*(0.016+0.3*e)+6,depth=H*(0.02+0.62*e),amp=(1.5+7*e)*sc,pts=[];
+        for(var x=-6;x<=W+6;x+=3){
+          var u=Math.abs(x-cx)/half,g=0,m=0;
+          if(u<1.45){var v=1-u/1.45,st=5,q=Math.floor(v*st),f=v*st-q;f=f*f*(3-2*f);f=f*f*f;g=Math.min(1,(q+f)/st*1.1)}
+          if(t<0.24){for(var k=0;k<mesas.length;k++){var ms=mesas[k],dx=Math.abs(x-W*ms[0]),mw=W*ms[1];if(dx<mw*1.18){m=Math.max(m,ms[2]*H*Math.min(1,(mw*1.18-dx)/(mw*0.18))*(1-t/0.24))}}}
+          pts.push(x,base-amp*(0.55+0.45*nz(x*0.011+r*0.37))+g*depth-m);
+        }
+        c.globalAlpha=1;c.fillStyle=paper;c.beginPath();c.moveTo(-6,H+4);
+        for(var j=0;j<pts.length;j+=2)c.lineTo(pts[j],pts[j+1]);
+        c.lineTo(W+6,H+4);c.closePath();c.fill();
+        c.strokeStyle=ink;c.globalAlpha=0.24+0.7*t;c.lineWidth=0.5+1.0*t;c.beginPath();
+        for(j=0;j<pts.length;j+=2){if(j)c.lineTo(pts[j],pts[j+1]);else c.moveTo(pts[j],pts[j+1])}
+        c.stroke();c.fillStyle=ink;
+        for(j=2;j<pts.length-2;j+=2){
+          var px=pts[j],py=pts[j+1],sl=Math.abs(pts[j+3]-pts[j-1])/6,shadow=px<cx;
+          if(sl>0.25){var nd=Math.min(4,Math.round(sl*(shadow?2.2:0.9)));for(var q2=0;q2<nd;q2++){if(R()<0.75){c.globalAlpha=(shadow?0.55:0.25)+0.35*t;c.fillRect(px+(R()-0.5)*3,py+1+R()*(4+16*t),1.15,1.15)}}}
+          if(Math.abs(px-cx)<half*0.1&&R()<0.55){c.globalAlpha=0.35+0.6*t;c.beginPath();c.arc(px,py+1.8,0.6+1.1*t,0,6.283);c.fill()}
+        }
+      }
+      c.globalAlpha=1;
+    };
+    var tm;draw();
+    window.addEventListener('resize',function(){clearTimeout(tm);tm=setTimeout(draw,150)});
+    try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw)}catch(e){}
+    try{new MutationObserver(draw).observe(root,{attributes:true,attributeFilter:['data-theme']})}catch(e){}
+  }
   var chips=[].slice.call(document.querySelectorAll('[data-filter]'));
   chips.forEach(function(c){c.addEventListener('click',function(){var d=c.getAttribute('data-filter');
     chips.forEach(function(x){x.setAttribute('aria-pressed',String(x===c))});
