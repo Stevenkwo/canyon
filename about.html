@@ -122,8 +122,73 @@ footer.site a{color:var(--ink-2)}
   details.toc ol{columns:1}
   .pager{grid-template-columns:1fr}.pager .next{text-align:left}
 }
+/* strategies: framework orange / comparison grey shared with the review pages; figures use the review pages' bar-division language */
+:root{--fw:#cf6a12;--fw2:#d98f45;--qqq:#8d8e93}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--fw:#f1a65e;--fw2:#f6cfa5;--qqq:#7c7d82}}
+:root[data-theme="dark"]{--fw:#f1a65e;--fw2:#f6cfa5;--qqq:#7c7d82}
+.crumb{display:inline-block;font:500 12.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);text-decoration:none;margin:0 0 16px}
+.crumb:hover{color:var(--ink)}
+.status{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;border:1px solid var(--rule);background:var(--surface);border-radius:8px;padding:11px 14px;font-size:15px;line-height:1.55;margin:0 0 26px}
+.fig{margin:1.7em 0;padding:14px 16px 12px;border:1px solid var(--rule);border-radius:8px;background:var(--surface)}
+.fig .fk{font:500 11.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+.fig .ft{font:700 17.5px/1.3 var(--display);letter-spacing:-.01em;margin:3px 0 2px;color:var(--ink)}
+.fig .fs{font:500 12px/1.5 var(--mono);color:var(--ink-2);margin:0 0 12px}
+.fig .fsub{font:500 11px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink);margin:14px 0 6px}
+.fig .fn{font-size:13.5px;line-height:1.55;color:var(--ink-2);margin:10px 0 0}
+.fig .leg{display:flex;flex-wrap:wrap;gap:4px 16px;margin-top:10px;font:500 11.5px/1.4 var(--mono);color:var(--ink-2)}
+.fig .leg i{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.f1{background:color-mix(in srgb,var(--accent) 92%,transparent)}.f2{background:color-mix(in srgb,var(--accent) 66%,transparent)}
+.f3{background:color-mix(in srgb,var(--accent) 46%,transparent)}.f4{background:color-mix(in srgb,var(--accent) 32%,transparent)}
+.f5{background:color-mix(in srgb,var(--accent) 20%,transparent)}
+.fh{background:repeating-linear-gradient(135deg,var(--accent) 0 2.5px,transparent 2.5px 6px);box-shadow:inset 0 0 0 1px var(--accent)}
+.fo{background:transparent;box-shadow:inset 0 0 0 1.5px var(--accent)}.fe{background:transparent;box-shadow:inset 0 0 0 1px var(--ink-2);opacity:.6}
+.ffw{background:var(--fw)}.fgr{background:var(--qqq)}
+.dv-g{font:500 11px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink);margin:12px 0 4px}
+.dv>.dv-g:first-child,.dv>.dv-hd+.dv-g{margin-top:2px}
+.dv-row{display:grid;grid-template-columns:66px 1fr 50px;gap:10px;align-items:center;min-height:30px}
+.dv-l{font:500 11.5px/1.2 var(--mono);color:var(--ink-2)}
+.dv-v{font:500 12px/1 var(--mono);color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
+.dv-tr{position:relative;height:22px}
+.dv-bar{position:absolute;left:0;top:0;bottom:0;display:flex;gap:2px}
+.dv-bar i{display:flex;align-items:center;min-width:2px;border-radius:2px;font:500 10.5px/1 var(--mono);font-style:normal;white-space:nowrap;overflow:hidden;padding-left:5px;color:var(--ink)}
+.dv-bar i.f1,.dv-bar i.f2{color:var(--accent-ink)}.dv-bar i.fo{color:var(--accent)}
+.dv-bar i.fh span{background:var(--surface);padding:2px 3px;border-radius:2px}
+.dv-cap{position:absolute;top:-5px;bottom:-5px;border-left:1.5px dashed var(--fw)}
+.dv-ax{min-height:20px}.dv-ax .dv-tr{height:18px;border-top:1px solid var(--rule)}
+.dv-ax b{position:absolute;top:3px;transform:translateX(-50%);font:400 10px/1.2 var(--mono);color:var(--ink-2);white-space:nowrap}.dv-ax b:first-child{transform:none}
+.dv-hd{min-height:16px}.dv-hd .dv-tr{height:16px}.dv-hd b{position:absolute;bottom:1px;transform:translateX(-50%);font:500 10.5px/1.2 var(--mono);color:var(--fw);white-space:nowrap}
+.hb-hint{font:500 11px/1.4 var(--mono);color:var(--ink-2);margin:0 0 4px}
+.hb-row{display:grid;grid-template-columns:minmax(0,200px) 1fr 58px;gap:10px;align-items:center;min-height:28px}
+.hb-l{font-size:13.5px;line-height:1.3;color:var(--ink)}
+.hb-tr{position:relative;height:14px}.hb-tr i{position:absolute;left:0;top:0;bottom:0;border-radius:2px}
+.hb-v{font:500 12px/1 var(--mono);text-align:right;color:var(--ink);font-variant-numeric:tabular-nums}
+.yb-row{display:grid;grid-template-columns:44px 1fr 78px;gap:10px;align-items:center;min-height:34px;border-bottom:1px solid var(--rule)}
+.yb-row:last-child{border-bottom:0}
+.yb-y{font:500 12px/1 var(--mono);color:var(--ink)}
+.yb-tr{position:relative;height:22px}.yb-tr .z{position:absolute;top:-6px;bottom:-6px;border-left:1px solid var(--ink-2)}
+.yb-tr i{position:absolute;height:8px;border-radius:1.5px}.yb-tr i.a{top:2px}.yb-tr i.b{top:12px}.yb-tr i.c{top:5px;height:12px}
+.yb-v{font:500 11px/1.35 var(--mono);color:var(--ink-2);text-align:right;font-variant-numeric:tabular-nums}.yb-v b{color:var(--ink);font-weight:500}
+.hm-wrap{overflow-x:auto}
+table.hm{border-collapse:separate;border-spacing:3px;width:100%;min-width:300px;font:500 13px/1.2 var(--mono);font-variant-numeric:tabular-nums}
+table.hm th{font:500 11px/1.3 var(--mono);text-transform:none;letter-spacing:0;color:var(--ink-2);text-align:center;padding:4px;border:0;vertical-align:middle}
+table.hm th.r{text-align:left;white-space:nowrap;width:26%}
+table.hm td{text-align:center;padding:9px 4px;border:0;border-radius:3px}
+table.hm td.sel{outline:2px solid var(--fw);outline-offset:-2px}
+.lc{overflow-x:auto}.lc svg{display:block;width:100%;min-width:520px;height:auto}
+.lc text{font:500 12px var(--mono);fill:var(--ink-2)}
+.strat{display:grid;grid-template-columns:62px 1fr;gap:4px 18px;padding:20px 0;border-bottom:1px solid var(--rule)}
+.strat .code{font:800 26px/1 var(--display);letter-spacing:-.02em;color:var(--ink);padding-top:3px}
+.strat .t{font:700 22px/1.25 var(--display);letter-spacing:-.01em;color:var(--ink);text-decoration:none;text-wrap:balance}
+.strat .t:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.strat .s{margin:6px 0 8px;color:var(--ink-2);font-size:15.5px;line-height:1.55}
+.strat .m{display:flex;gap:6px 12px;flex-wrap:wrap;align-items:center;font:500 12px/1.4 var(--mono);color:var(--ink-2)}
+.strat > div{min-width:0}
+@media (max-width:560px){
+  .hb-row{grid-template-columns:minmax(0,118px) 1fr 52px}.dv-row{grid-template-columns:58px 1fr 44px;gap:8px}.dv-bar i.sm{font-size:0;padding-left:0}.dv-bar i.sm span{display:none}
+  .yb-row{grid-template-columns:38px 1fr 70px;gap:8px}.strat{grid-template-columns:1fr}.strat .code{font-size:20px}
+}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
-</style><link rel="alternate" type="application/rss+xml" title="canyon" href="feed.xml"></head><body><header class="topbar"><div class="in"><a class="brand" href="index.html">canyon</a><nav class="nav" aria-label="Site"><a href="index.html">Notes</a><a href="reviews.html">Reviews</a><a href="about.html" aria-current="page">About</a><button id="theme-btn" type="button">Auto</button></nav></div></header><main class="wrap"><article><h1 class="title">About</h1><p>canyon is the website of a professional stock trader. At its centre is a weekly review of the trading record: every trade, what it made or lost, and how the week compares with simpler choices. Research notes on stocks and markets are published alongside.</p>
+</style><link rel="alternate" type="application/rss+xml" title="canyon" href="feed.xml"></head><body><header class="topbar"><div class="in"><a class="brand" href="index.html">canyon</a><nav class="nav" aria-label="Site"><a href="index.html">Notes</a><a href="strategies.html">Strategies</a><a href="reviews.html">Reviews</a><a href="about.html" aria-current="page">About</a><button id="theme-btn" type="button">Auto</button></nav></div></header><main class="wrap"><article><h1 class="title">About</h1><p>canyon is the website of a professional stock trader. At its centre is a weekly review of the trading record: every trade, what it made or lost, and how the week compares with simpler choices. Research notes on stocks and markets are published alongside.</p>
 <h2 id="the-weekly-review">The weekly review<a class="anchor" href="#the-weekly-review" aria-label="Link to this section">#</a></h2>
 <ul>
 <li><strong>One account, every trade.</strong> The <a href="reviews.html">reviews</a> follow one brokerage account, called the canyon account here. Each week is rebuilt from the account's trade ledger and charted day by day.</li>
@@ -142,7 +207,7 @@ footer.site a{color:var(--ink-2)}
 <p>Nothing on this site is investment advice. The reviews record the past results of one account and do not predict future results.</p>
 <h2 id="s">中文<a class="anchor" href="#s" aria-label="Link to this section">#</a></h2>
 <p>canyon 是一位职业股票交易者的网站，核心是每周复盘交易记录。复盘只跟踪一个账户（站内称 canyon 账户），按成交记录逐日重建，对照 QQQ、不交易（持有周初仓位）和事先写好的交易规则（纸面执行），并按股票和日期找出最大的盈亏来源；多周复盘把各周连成一条曲线，不把一周的好坏当成趋势。研究笔记同时发布：每篇市场笔记写明什么情况会证明它错了，数字给出处，错误在原文注明日期更正，发布时的持仓必须披露。本站内容不构成投资建议；复盘记录的是一个账户的过去表现，不预示未来结果。</p>
-</article></main><footer class="site"><span>© 2026 canyon</span><a href="https://x.com/stevenkwok20290">X @stevenkwok20290</a><a href="feed.xml">RSS</a><a href="reviews.html">Reviews</a><span>Not investment advice</span></footer><script>
+</article></main><footer class="site"><span>© 2026 canyon</span><a href="https://x.com/stevenkwok20290">X @stevenkwok20290</a><a href="feed.xml">RSS</a><a href="strategies.html">Strategies</a><a href="reviews.html">Reviews</a><span>Not investment advice</span></footer><script>
 (function(){
   var root=document.documentElement,b=document.getElementById('theme-btn');
   function save(v){try{v?localStorage.setItem('canyon-theme',v):localStorage.removeItem('canyon-theme')}catch(e){}}
