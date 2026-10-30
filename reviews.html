@@ -187,6 +187,24 @@ table.hm td.sel{outline:2px solid var(--fw);outline-offset:-2px}
   .hb-row{grid-template-columns:minmax(0,118px) 1fr 52px}.dv-row{grid-template-columns:58px 1fr 44px;gap:8px}.dv-bar i.sm{font-size:0;padding-left:0}.dv-bar i.sm span{display:none}
   .yb-row{grid-template-columns:38px 1fr 70px;gap:8px}.strat{grid-template-columns:1fr}.strat .code{font-size:20px}
 }
+.lamp-head{display:flex;gap:16px;align-items:center;padding:4px 0 12px;border-bottom:1px solid var(--rule);margin-bottom:2px}
+.lamp-head .cnt{font:500 13px/1.2 var(--mono);color:var(--ink-2);white-space:nowrap}.lamp-head .cnt b{font:800 30px/1 var(--display);color:var(--ink);margin-right:4px}
+.lamp-head .vd{font-size:14.5px;line-height:1.45;color:var(--ink)}.lamp-head .vd span{font:500 11.5px/1.5 var(--mono);color:var(--ink-2)}
+.lamp{display:grid;grid-template-columns:22px 1fr auto;gap:2px 12px;align-items:start;padding:12px 0;border-bottom:1px solid var(--rule)}.lamp:last-child{border-bottom:0}
+.lamp .dot{width:16px;height:16px;border-radius:50%;margin-top:3px;box-shadow:inset 0 0 0 1.5px var(--ink-2)}
+.lamp.on .dot{background:var(--held);box-shadow:0 0 0 4px color-mix(in srgb,var(--held) 22%,transparent)}
+.lamp.na .dot{background:repeating-linear-gradient(135deg,var(--ink-2) 0 1.5px,transparent 1.5px 4px);opacity:.45}
+.lamp .nm{font:700 15.5px/1.3 var(--display);color:var(--ink)}.lamp .nm em{font:500 10.5px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--fw);font-style:normal;margin-left:6px}
+.lamp .cond{font-size:13px;line-height:1.45;color:var(--ink-2);margin-top:2px}
+.lamp .st{font:500 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;padding:5px 8px;border-radius:999px;border:1px solid var(--rule);color:var(--ink-2);white-space:nowrap}
+.lamp.on .st{color:var(--held);background:var(--held-bg);border-color:transparent}
+.lamp .rd{grid-column:2/4;font:500 12px/1.5 var(--mono);color:var(--ink);margin-top:6px}.lamp .rd:empty{display:none}
+.meter{position:relative;height:8px;background:color-mix(in srgb,var(--ink-2) 14%,transparent);border-radius:2px;margin:9px 0 3px}
+.meter i{position:absolute;left:0;top:0;bottom:0;border-radius:2px;background:color-mix(in srgb,var(--accent) 65%,transparent)}.meter.on i{background:var(--held)}
+.meter b{position:absolute;top:-5px;bottom:-5px;border-left:2px dashed var(--fw)}
+.mt{display:flex;justify-content:space-between;gap:10px;font:500 10.5px/1.4 var(--mono);color:var(--ink-2)}
+.fhd{background:var(--held)}table.ldg td.c,table.ldg th.c{text-align:center;width:26px}table.ldg td{white-space:nowrap}
+@media (max-width:560px){.lamp-head{flex-direction:column;align-items:flex-start;gap:6px}}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 </style><link rel="alternate" type="application/rss+xml" title="canyon" href="feed.xml"></head><body><header class="topbar"><div class="in"><a class="brand" href="index.html">canyon</a><nav class="nav" aria-label="Site"><a href="index.html">Notes</a><a href="strategies.html">Strategies</a><a href="factors.html">Factors</a><a href="reviews.html" aria-current="page">Reviews</a><a href="about.html">About</a><button id="theme-btn" type="button">Auto</button></nav></div></header><main class="wrap"><div class="kicker">Canyon account</div><h1 class="title">Reviews</h1><p class="dek">Each week the account is replayed from its trade ledger and compared with QQQ, with doing nothing, and with the registered rules on paper. Each review shows where the gains and losses came from.</p><div class="list-head">Weekly reviews</div><div class="entry"><div class="d">Oct 23</div><div><div class="kicker" style="margin-bottom:4px">Weekly review · Oct 19 → Oct 23</div><a class="t" href="reviews/week_2026-10-19_curve.html">Week of Oct 19, 2026</a><p class="s">Account +3.19% (+$1,272) · QQQ -0.76% · No-trade +0.27% · R1 paper +5.64% · R2 proposal (rejected) +7.01%</p></div></div><div class="list-head">Longer periods</div><div class="entry"><div class="d">Oct 23</div><div><div class="kicker" style="margin-bottom:4px">Period review · Aug 28 → Oct 23</div><a class="t" href="reviews/period_2026-08-28_2026-10-23_curve.html">8-week review · Aug 28 → Oct 23, 2026</a><p class="s">Account -6.90% (-$3,051; 08-28 close $44,240 → 10-23 close $41,190) · QQQ -1.68% · No-trade (08-28 book held throughout) +1.27% · No-trade · weekly +2.40% · R1 paper +19.84% · R2 proposal (rejected) +17.13%</p></div></div></main><footer class="site"><span>© 2026 canyon</span><a href="https://x.com/stevenkwok20290">X @stevenkwok20290</a><a href="feed.xml">RSS</a><a href="strategies.html">Strategies</a><a href="factors.html">Factors</a><a href="reviews.html">Reviews</a><span>Not investment advice</span></footer><script>
 (function(){
