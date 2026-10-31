@@ -1,0 +1,103 @@
+---
+code: R1
+title: 'NVDA by night, AAPL by day'
+dek: 'Two auction orders on each side of the session. Buy NVDA at the close and hold it overnight, swap it for AAPL at the open, sell AAPL at the close. Two gated energy legs and an FTNT gap-down overlay sit beside it.'
+status: live
+status_label: 'In force since Oct 26, 2026 · rule change #17'
+order: 1
+updated: 2026-10-27
+stats: 'Ten-year backtest: +85.9% a year · Sharpe 2.05 · max drawdown −39.7%'
+disclosure: 'R1 is the canyon account''s registered rule set, in force from Oct 26, 2026 (rule change #17, registered Sep 24 and held for a 30-day cooling period). The weekly reviews put the account next to R1 on paper, so any difference between the two is visible.'
+---
+
+## The rule in one paragraph
+
+At the closing auction the account buys NVDA and holds it overnight. At the next opening auction it sells NVDA and buys AAPL. At the closing auction it sells AAPL and buys NVDA again. The core never holds both names at once. Three smaller legs sit beside it: XOM, 20% of NAV while XOM is above its 200-day average (checked once a month); USO, 20% of NAV for 21 trading days after the oil-volatility index OVX closes back below 50; and FTNT, an extra 50% of NAV bought at the open and sold at the close on days it opens at least 2% below the prior close. Nothing is financed overnight, and no order depends on judgment during the session.
+
+{{fig:sizing}}
+
+## Rules
+
+| Leg | Trigger, fixed before the order | Order | Size |
+|---|---|---|---|
+| Night · NVDA | Every trading day | Buy at the closing auction, sell at the next opening auction | Core |
+| Day · AAPL | Every trading day | Buy at the opening auction, sell at the closing auction | Core |
+| FTNT overlay | Pre-market indication at 09:28 ET at or below 98% of the prior close; not an earnings day or the day after; prior VIX close below 30 | Buy at the open, sell at the close | 50% of NAV, intraday only |
+| XOM | First trading day of the month: XOM closes above its 200-day average | Hold until the next monthly check | 20% of NAV, or nothing |
+| USO | OVX closes below 50 after closing at or above 50 the day before | Buy at that close, sell at the close 21 trading days later; re-arms only after OVX is back above 50 | 20% of NAV |
+| Core | 1 − XOM weight − USO weight | | 100%, 80% or 60% of NAV |
+
+The backtest charges 1.2 basis points per leg for a round trip, the fee level of auction orders. Slippage beyond that comes straight out of the result. In the registered study (data to Sep 21, 2026), raising the cost to 3 bp per leg cut the ten-year return from 85.0% to 71.5% a year, and 8 bp cut it to 38.8%. That is why only auction orders are allowed.
+
+## Why the day is split this way
+
+Over the registered study's ten years NVDA earned +51.4% a year overnight and +8.6% a year during the session. AAPL earned +1.4% overnight and +27.6% during the session. The rotation holds each stock for the half of the day in which it has earned its return. The mirror image, AAPL overnight and NVDA by day, made +3.6% a year. The pattern holds in both halves of the decade.
+
+The FTNT overlay fired on 77 days in ten years, about eight a year. On those days FTNT rose from open to close 71% of the time, by an average of 122 basis points (t = 4.1), and the worst day was −4.1%. Without the earnings filter the hit rate drops to 64%: a gap-down on the day after earnings behaves like any other day.
+
+XOM and USO are energy exposure with rules attached. The XOM gate helped more when checked monthly than daily or not at all. The USO leg is a probe. Its events are positive on average but not significant, so it runs under its own kill switch.
+
+## Results
+
+{{fig:growth}}
+
+| | R1 | QQQ |
+|---|---|---|
+| Annual return | +85.9% | +20.3% |
+| Sharpe ratio | 2.05 | 0.94 |
+| Volatility | 32.8% | 22.5% |
+| Maximum drawdown | −39.7% | −35.1% |
+| Worst month | −17.7% (Mar 2020) | −13.6% (Apr 2022) |
+| Worst day | −12.3% (Mar 9, 2020) | −12.0% (Mar 16, 2020) |
+| $1 became | $513 | $6.45 |
+
+Daily data, Sep 22, 2016 → Oct 26, 2026. Sharpe ratio = mean daily return ÷ daily standard deviation × √252, with a zero risk-free rate. The same definition is used on every strategy page.
+
+{{fig:legs}}
+
+{{fig:years}}
+
+## What makes it fragile
+
+- **Hindsight.** NVDA was the strongest large-cap stock of the decade, and the night leg was chosen knowing that. With QQQ in its place the night leg returns about +37% a year. Kill switch F-1 exists for this reason.
+- **One stock overnight.** Up to 100% of NAV sits in NVDA every night. In 2022 the night leg alone lost 37.8%. The worst month and the worst day both fell in March 2020, mostly through the night leg.
+- **Costs.** Every basis point of slippage per leg costs several points of annual return; see the cost test above.
+- **Intraday exposure.** On FTNT trigger days the day book reaches 150% of NAV through intraday buying power, and it is flat by the close.
+- **The oil probe can misfire.** OVX fell through 50 on Mar 2, 2020, just before the oil crash. USO lost 57.6% over the next 21 days, about −11.5% of NAV at a 20% weight.
+
+## Kill switches and current readings
+
+The kill switches are armed from the day the rule takes effect, and each one acts mechanically.
+
+| # | Condition | Action | Reading at the Oct 26 close |
+|---|---|---|---|
+| F-1 | Rolling 252 days: NVDA night leg at or below the QQQ night leg | Night leg switches from NVDA to QQQ | NVDA +60.3% vs QQQ +12.6%: clear |
+| F-2 | Drawdown since Oct 26 reaches −40% | Stop R1 and return to the previous rule set | First day |
+| F-3 | Rolling 252 days: AAPL day leg at or below zero | Day leg goes to cash | +27.1%: clear |
+| F-4 | First eight live USO events sum to zero or less, or one event loses 25% | Close the USO leg | One event on record (Oct 5) |
+| F-5 | First 20 days: median auction slippage above 5 bp | Review execution | Collecting |
+| F-6 | Last 20 FTNT triggers: under 50% up or a net loss; or one trigger loses 8% | Close the FTNT overlay | 65% up, +17.4% (backtest definition): clear |
+
+Gate status at the Oct 26 close:
+- **XOM:** 184.54 against a 200-day average of 152.20, gate open.
+- **USO:** the Oct 5 event runs to its 21st trading day on Nov 3.
+- **Core:** 60% of NAV.
+- **FTNT overlay:** VIX at 18.4, so the overlay is live. FTNT reports on Oct 28, so Oct 28 and Oct 29 are excluded.
+
+## Amendments in the queue
+
+These amendments are registered and cooling. Until their dates R1 runs as described above.
+
+**v1.2 night gate (rule change #20, cooling to Nov 16).** If QQQ closed below its 200-day average the day before, the account skips the NVDA purchase at the close and holds cash overnight. The day leg is unchanged.
+- **Nights skipped:** 413 over ten years. On those nights NVDA averaged −13.3 bp with 47% up, against +24.4 bp and 60% up on the others.
+- **Backtest:** +93.4% a year, Sharpe 2.36, maximum drawdown −33.5%.
+- **2022:** goes from −18.5% to +23.2%.
+- **Years that get worse:** 2019, 2020, 2023 and 2026. The gate is slow when a recovery starts below the average.
+
+**S-1 satellite (rule change #19, cooling to Nov 15).** Buy NVDA with up to 10% of NAV, without new margin, when it closes 15% below its one-year high while QQQ is above its 200-day average. Exit after 21 trading days, when QQQ closes below its average, or when NVDA reaches −20% from the high.
+- **History since 2014:** 15 events, 80% up after 21 days, average +8.4%.
+- **Against any bull-market day:** 68% up and +5.6%. The difference is not significant (p ≈ 0.24).
+
+## What R1 does not do
+
+R1 does not use SQQQ or any other short of the index. It does not time the night or day leg on volatility. It does not hold FTNT every day or finance the energy legs. It does not trade before the open or after the close, and it uses no limit orders and no judgment during the session. Each of these was backtested and rejected.
