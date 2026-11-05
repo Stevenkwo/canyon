@@ -118,6 +118,33 @@ footer.site a{color:var(--ink-2)}
 @media (prefers-reduced-motion:reduce){.cf .dot.live{animation:none}}
 .cf svg{display:block;width:100%;height:64px}
 .cf .foot{font-size:13.5px;line-height:1.6;color:var(--ink-2);margin:0}
+.ind{margin:18px 0 0;padding:18px 18px 14px;border:1px solid var(--rule);border-radius:10px;background:var(--surface);display:grid;gap:12px}
+.ind-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.ind .upd{font:400 12.5px/1.4 var(--mono);color:var(--ink-2)}
+.ind-status{font:500 14px/1.5 var(--body);padding:8px 12px;border-radius:6px}
+.ind-status.ok{color:var(--met);background:var(--met-bg)}.ind-status.hit{color:var(--held);background:var(--held-bg)}
+.ind .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:640px){.ind .grid{grid-template-columns:1fr}}
+.ind .tile{border:1px solid var(--rule);border-radius:8px;padding:12px 14px;background:var(--paper);min-width:0}
+.ind .lab{font:500 12px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2)}
+.ind .lab a{color:var(--ink-2);text-decoration:none}.ind .lab a:hover{color:var(--ink);text-decoration:underline}
+.ind .big{font:600 clamp(30px,5vw,40px)/1.1 var(--mono);letter-spacing:-.02em;color:var(--ink);font-variant-numeric:tabular-nums;margin:6px 0 4px}
+.ind .big .unit{font-size:.45em;letter-spacing:0;color:var(--ink-2);font-weight:500;margin-left:4px}
+.ind .sub{font:400 12.5px/1.55 var(--mono);color:var(--ink-2)}.ind .sub b{color:var(--ink);font-weight:600}
+.ind svg{display:block;width:100%;height:44px;margin-top:8px;overflow:visible}
+.ind svg .ln{fill:none;stroke:var(--accent);stroke-width:1.6;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.ind svg .ma{fill:none;stroke:var(--ink-2);stroke-width:1.2;stroke-dasharray:4 3;vector-effect:non-scaling-stroke}
+.ind svg .g{stroke:var(--rule);stroke-width:1;vector-effect:non-scaling-stroke}
+.ind .key{font:400 11.5px/1.4 var(--mono);color:var(--ink-2);margin-top:4px}
+.ind .key i{display:inline-block;width:14px;border-top:2px solid var(--accent);vertical-align:middle;margin-right:5px}.ind .key i.k2{border-top:2px dashed var(--ink-2);margin-left:8px}
+.ind .split{display:flex;gap:2px;margin-top:10px;font:500 11.5px/1 var(--mono)}
+.ind .split span{padding:6px 8px;border-radius:4px;white-space:nowrap;overflow:hidden}
+.ind .split span:first-child{background:var(--accent);color:var(--accent-ink)}.ind .split span:last-child{background:var(--rule);color:var(--ink);text-align:right}
+.ind .lamps{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:4px;font:400 12.5px/1.4 var(--mono);color:var(--ink-2)}
+.ind .lamps li{display:flex;align-items:center;gap:8px}.ind .lamps .r{margin-left:auto;text-align:right}
+.ind .lamps .d{width:8px;height:8px;border-radius:50%;border:1.5px solid var(--ink-2);flex:none}
+.ind .lamps li.on{color:var(--ink);font-weight:600}.ind .lamps li.on .d{background:var(--failed);border-color:var(--failed)}
+.ind .foot{font-size:13px;line-height:1.6;color:var(--ink-2);margin:0}
 .entry.thumb{grid-template-columns:92px 1fr 150px}
 .entry .th img{display:block;width:150px;height:auto;border:1px solid var(--rule);border-radius:5px;background:var(--surface)}
 .year{margin-top:26px}
@@ -250,7 +277,7 @@ a.sk{text-decoration:none;color:inherit;transition:border-color .15s}a.sk:hover{
 .sk-cases li:last-child{border-bottom:0}.sk-cases .d{font:500 12px/1.9 var(--mono);color:var(--ink-2);text-transform:uppercase;letter-spacing:.04em}
 @media (max-width:560px){.sk-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sk-ov{grid-template-columns:minmax(0,96px) 1fr 1fr}.sk-ov .h b{font-size:24px}.sk .ds{font-size:12.5px}}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
-</style><link rel="alternate" type="application/rss+xml" title="canyon" href="../feed.xml"></head><body><header class="topbar"><div class="in"><a class="brand" href="../index.html">canyon</a><nav class="nav" aria-label="Site"><a href="../index.html">Notes</a><a href="../strategies.html">Strategies</a><a href="../factors.html">Factors</a><a href="../reviews.html">Reviews</a><a href="../skills.html" aria-current="page">Skills</a><a href="../about.html">About</a><button id="theme-btn" type="button">Auto</button></nav></div></header><main class="wrap"><article><a class="crumb" href="../skills.html">← All skills</a><div class="kicker"><span>Skill</span><span>Built Oct 25, 2026</span></div><h1 class="title">Trip as a quest</h1><p class="dek">Turns a trip plan into a 2-3 minute vertical adventure-game quest film: a stuck opening, an old captain who sets the main quest, a quest map on a real coastline, five tavern NPCs with hidden quests, a log and a field guide for each city, a &#x27;did you know&#x27; finale, and a full checklist of dates, places, times and prices.</p><div class="sk-hero"><svg viewBox="0 0 96 56" aria-hidden="true"><path d="M12 44 C20 34, 26 30, 30 30 S 42 40, 48 38 S 62 24, 68 20" fill="none" stroke="var(--ink-2)" stroke-width="1.25" stroke-dasharray="2.5 3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="44" r="3" fill="var(--surface)" stroke="var(--ink)" stroke-width="1.25"/><circle cx="30" cy="30" r="3" fill="var(--surface)" stroke="var(--ink)" stroke-width="1.25"/><circle cx="48" cy="38" r="3" fill="var(--surface)" stroke="var(--ink)" stroke-width="1.25"/><circle cx="68" cy="20" r="3" fill="var(--surface)" stroke="var(--ink)" stroke-width="1.25"/><polyline points="76,10 76,30" fill="none" stroke="var(--ink)" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M76 10 L88 14 L76 18 Z" fill="var(--fw)" stroke="var(--fw)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+</style><link rel="alternate" type="application/rss+xml" title="canyon" href="../feed.xml"></head><body><header class="topbar"><div class="in"><a class="brand" href="../index.html">canyon</a><nav class="nav" aria-label="Site"><a href="../notes.html">Notes</a><a href="../strategies.html">Strategies</a><a href="../factors.html">Factors</a><a href="../reviews.html">Reviews</a><a href="../skills.html" aria-current="page">Skills</a><a href="../about.html">About</a><button id="theme-btn" type="button">Auto</button></nav></div></header><main class="wrap"><article><a class="crumb" href="../skills.html">← All skills</a><div class="kicker"><span>Skill</span><span>Built Oct 25, 2026</span></div><h1 class="title">Trip as a quest</h1><p class="dek">Turns a trip plan into a 2-3 minute vertical adventure-game quest film: a stuck opening, an old captain who sets the main quest, a quest map on a real coastline, five tavern NPCs with hidden quests, a log and a field guide for each city, a &#x27;did you know&#x27; finale, and a full checklist of dates, places, times and prices.</p><div class="sk-hero"><svg viewBox="0 0 96 56" aria-hidden="true"><path d="M12 44 C20 34, 26 30, 30 30 S 42 40, 48 38 S 62 24, 68 20" fill="none" stroke="var(--ink-2)" stroke-width="1.25" stroke-dasharray="2.5 3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="44" r="3" fill="var(--surface)" stroke="var(--ink)" stroke-width="1.25"/><circle cx="30" cy="30" r="3" fill="var(--surface)" stroke="var(--ink)" stroke-width="1.25"/><circle cx="48" cy="38" r="3" fill="var(--surface)" stroke="var(--ink)" stroke-width="1.25"/><circle cx="68" cy="20" r="3" fill="var(--surface)" stroke="var(--ink)" stroke-width="1.25"/><polyline points="76,10 76,30" fill="none" stroke="var(--ink)" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M76 10 L88 14 L76 18 Z" fill="var(--fw)" stroke="var(--fw)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
 <h2 id="how-to-use-it">How to use it<a class="anchor" href="#how-to-use-it" aria-label="Link to this section">#</a></h2>
 <ul>
 <li>Say 'travel quest film', ask for a game-style or NPC-style travel plan, or ask how to arrange several days across several cities or around an event.</li>
