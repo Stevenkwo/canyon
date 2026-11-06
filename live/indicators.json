@@ -88,8 +88,14 @@
    "date": "2026-11-04"
   },
   "flags": [
-   "30Y 5.25 过 5%（双击还差 10Y）",
-   "TIPS 2.64 过 2.5%"
+   {
+    "level": "amber",
+    "text": "30-year 5.25 above 5%; the double hit still needs the 10-year"
+   },
+   {
+    "level": "red",
+    "text": "TIPS 2.64 above 2.5%"
+   }
   ]
  },
  "fear_greed": {
