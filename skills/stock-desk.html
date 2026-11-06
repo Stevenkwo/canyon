@@ -144,6 +144,13 @@ footer.site a{color:var(--ink-2)}
 .ind .lamps li{display:flex;align-items:center;gap:8px}.ind .lamps .r{margin-left:auto;text-align:right}
 .ind .lamps .d{width:8px;height:8px;border-radius:50%;border:1.5px solid var(--ink-2);flex:none}
 .ind .lamps li.on{color:var(--ink);font-weight:600}.ind .lamps li.on .d{background:var(--failed);border-color:var(--failed)}
+.ind .tape{display:flex;flex-wrap:wrap;gap:4px 16px;align-items:center;padding:8px 12px;border:1px solid var(--rule);border-radius:6px;background:var(--paper);font:500 12.5px/1.6 var(--mono);font-variant-numeric:tabular-nums}
+.ind .tape .tk b{color:var(--ink-2);font-weight:500;margin-right:6px}.ind .tape .px{color:var(--ink)}.ind .tape .ch{margin-left:6px;color:var(--ink-2)}
+.ind .tape .up{color:var(--met)}.ind .tape .dn{color:var(--failed)}.ind .tape .lab{color:var(--ink-2);text-transform:uppercase;letter-spacing:.08em;font-size:11px}
+.ind .tape .ldot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ink-2);margin-right:6px;vertical-align:middle}.ind .tape .ldot.on{background:var(--met);animation:cf-pulse 1.6s ease-in-out infinite}
+.ind .livest{color:var(--ink-2)}.ind .livest.on{color:var(--met)}
+.ind .lamps.rates li{flex-wrap:wrap;row-gap:0}.ind .lamps.rates .n{min-width:9em}.ind .lamps.rates .v{font-weight:600;color:var(--ink);margin-left:auto}.ind .lamps.rates .r{flex-basis:100%;margin-left:0;text-align:left;font-size:11.5px;color:var(--ink-2);padding-bottom:4px}
+.ind .lamps.rates li.amber .v{color:var(--held)}.ind .lamps.rates li.red .v{color:var(--failed)}
 .ind .foot{font-size:13px;line-height:1.6;color:var(--ink-2);margin:0}
 .entry.thumb{grid-template-columns:92px 1fr 150px}
 .entry .th img{display:block;width:150px;height:auto;border:1px solid var(--rule);border-radius:5px;background:var(--surface)}
@@ -282,7 +289,7 @@ a.sk{text-decoration:none;color:inherit;transition:border-color .15s}a.sk:hover{
 <ul>
 <li>Ask to analyze a stock, whether it is cheap or expensive, or for a research report; a ticker or company name is enough.</li>
 <li>Run the data pack first (stock_desk.py &lt;TICKER&gt; [--peers A,B,C]); it prefers OpenD and Tonghuashun data, falls back to yfinance, EDGAR and FRED, and lists anything missing.</li>
-<li>Read the nine lenses: identity, financial trajectory, valuation percentile, street expectations, price state and regime, risk triangle (VIX, top-warning signals, rates), correlation and exposure, bull and bear evidence with falsifiers, portfolio mapping.</li>
+<li>Read the nine lenses: identity, financial trajectory, valuation percentile, street expectations, price state and regime, risk triangle (VIX, volatility-alert signals, rates), correlation and exposure, bull and bear evidence with falsifiers, portfolio mapping.</li>
 <li>Verdict: a three-scenario fair-value band ending in undervalued / fully valued / overvalued with a percentile; anything actionable is a trigger draft (condition, size, falsifier) left for a calm-time decision.</li>
 <li>If earnings are 10 trading days away or less, the event layer is handed to earnings-desk.</li>
 <li>Output: a report in the research archive and one ledger row that the next look at the same stock is checked against.</li>
