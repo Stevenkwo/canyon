@@ -54,7 +54,7 @@
           var key = keys.filter(function (k) { return TENCENT[k] === m[1]; })[0]; if (!key) return;
           setTk(key, { price: +f[3], pct: +f[32], src: 'tencent', time: f[30] }); any = true;
         });
-        stamp(any ? 'quotes direct, base station unreachable' : 'closes', any);
+        stamp(any ? 'quotes ' + new Date().toLocaleTimeString('en-GB', {hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Shanghai'}) + ' CST, direct feed (no base station on this host), 15-min delay' : 'closes', any);
       }).catch(function () { stamp('closes', false); });
   }
   function live() {
