@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-17T00:00+08:00",
+ "asof": "2026-11-17T01:00+08:00",
  "status": [
   "3 of 5 volatility lights are lit: the trim prompt is on"
  ],
@@ -36,33 +36,33 @@
   "asof": "2026-11-16"
  },
  "vix": {
-  "now": 21.43,
-  "chg": 2.13,
+  "now": 21.12,
+  "chg": 1.82,
   "close": 19.3,
   "close_date": "2026-11-13",
   "futures": 19.1079,
   "vix_vix3m": 0.9359844810863239
  },
  "ovx": {
-  "now": 49.26,
-  "chg": -1.02,
+  "now": 49.4,
+  "chg": -0.88,
   "close": 50.28,
   "close_date": "2026-11-13"
  },
  "rates": {
   "y10": {
-   "value": 5.127,
-   "d5": 28.699999999999992,
-   "d63": 49.69999999999999,
-   "pct": 99.4047619047619,
+   "value": 5.145,
+   "d5": 30.49999999999997,
+   "d63": 51.49999999999997,
+   "pct": 99.50396825396825,
    "level": "red",
    "date": "2026-11-16"
   },
   "y30": {
-   "value": 5.462,
-   "d5": 21.199999999999974,
-   "d63": 25.199999999999978,
-   "pct": 99.68253968253968,
+   "value": 5.482,
+   "d5": 23.20000000000002,
+   "d63": 27.200000000000024,
+   "pct": 99.72222222222223,
    "level": "red",
    "date": "2026-11-16"
   },
@@ -92,8 +92,12 @@
   },
   "flags": [
    {
+    "level": "amber",
+    "text": "10-year +30 bp in a week, over the 30 bp line"
+   },
+   {
     "level": "red",
-    "text": "10-year 5.13 and 30-year 5.46 both above 5%: the double hit"
+    "text": "10-year 5.14 and 30-year 5.48 both above 5%: the double hit"
    },
    {
     "level": "red",
