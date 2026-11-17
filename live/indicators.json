@@ -1,6 +1,8 @@
 {
- "asof": "2026-11-17T11:00+08:00",
- "status": [],
+ "asof": "2026-11-17T12:00+08:00",
+ "status": [
+  "3 of 5 volatility lights are lit: the trim prompt is on"
+ ],
  "barbell": {
   "rule": "50 : 50",
   "held": [
@@ -19,13 +21,15 @@
   "date": "2026-11-16"
  },
  "lights": {
-  "lit": 2,
+  "lit": 3,
   "on": [
    "②",
+   "③",
    "④"
   ],
   "fixed": [
    "②",
+   "③",
    "④",
    "⑥"
   ],
