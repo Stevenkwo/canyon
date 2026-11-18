@@ -1,6 +1,8 @@
 {
- "asof": "2026-11-18T20:00+08:00",
- "status": [],
+ "asof": "2026-11-18T21:00+08:00",
+ "status": [
+  "3 of 5 volatility lights are lit: the trim prompt is on"
+ ],
  "barbell": {
   "rule": "50 : 50",
   "held": [
@@ -19,19 +21,23 @@
   "date": "2026-11-17"
  },
  "lights": {
-  "lit": 1,
+  "lit": 3,
   "on": [
-   "②"
+   "②",
+   "③",
+   "④"
   ],
   "fixed": [
    "②",
+   "③",
+   "④",
    "⑥"
   ],
   "asof": "2026-11-17"
  },
  "vix": {
-  "now": 24.19,
-  "chg": -1.27,
+  "now": 24.74,
+  "chg": -0.72,
   "close": 25.46,
   "close_date": "2026-11-17",
   "futures": 24.7417,
@@ -96,7 +102,7 @@
   ]
  },
  "fear_greed": {
-  "score": 26.1227799227799,
+  "score": 25.4471042471042,
   "rating": "Fear",
   "prev": 25.2297455968689
  }
