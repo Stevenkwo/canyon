@@ -284,7 +284,7 @@ a.sk{text-decoration:none;color:inherit;transition:border-color .15s}a.sk:hover{
 .sk-cases li:last-child{border-bottom:0}.sk-cases .d{font:500 12px/1.9 var(--mono);color:var(--ink-2);text-transform:uppercase;letter-spacing:.04em}
 @media (max-width:560px){.sk-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sk-ov{grid-template-columns:minmax(0,96px) 1fr 1fr}.sk-ov .h b{font-size:24px}.sk .ds{font-size:12.5px}}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
-</style><link rel="alternate" type="application/rss+xml" title="canyon" href="../feed.xml"></head><body><header class="topbar"><div class="in"><a class="brand" href="../index.html">canyon</a><nav class="nav" aria-label="Site"><a href="../notes.html">Notes</a><a href="../strategies.html" aria-current="page">Strategies</a><a href="../factors.html">Factors</a><a href="../reviews.html">Reviews</a><a href="../skills.html">Skills</a><a href="../about.html">About</a><button id="theme-btn" type="button">Auto</button></nav></div></header><main class="wrap"><article><a class="crumb" href="../strategies.html">← All strategies</a><div class="kicker"><span>Strategy</span><span>CF</span><span>Updated Nov 11, 2026</span></div><h1 class="title">Barbell: Shaanxi Coal and the Nasdaq-100</h1><p class="dek">Shaanxi Coal and a Nasdaq-100 ETF form the core. On paper, the off-peak rank sets their weights across three zones. Three rules borrow to add Nasdaq exposure, and two low-premium ETF rules use cash raised from the core.</p><div class="status"><span class="chip open">Partly in force</span><span>Coal band in force since Jul 18, 2026 · Three-zone barbell and five additions on paper</span></div><details class="toc"><summary>Contents · 11 sections</summary><ol><li><a href="#the-current-paper-draft">The current paper draft</a></li><li><a href="#the-signal">The signal</a></li><li><a href="#two-rules-on-one-signal">Two rules on one signal</a></li><li><a href="#measuring-the-swap-fairly">Measuring the swap fairly</a></li><li><a href="#when-to-swap-back">When to swap back</a></li><li><a href="#three-zones-instead-of-a-swap">Three zones instead of a swap</a></li><li><a href="#three-legs-on-top">Three legs on top</a></li><li><a href="#ten-years-with-the-older-etf">Ten years, with the older ETF</a></li><li><a href="#a-third-leg-the-first-vix-close-above-20">A third leg: the first VIX close above 20</a></li><li><a href="#why-the-swap-is-not-in-force">Why the swap is not in force</a></li><li><a href="#the-current-episode-on-paper">The current episode, on paper</a></li></ol></details><h2 id="the-current-paper-draft">The current paper draft<a class="anchor" href="#the-current-paper-draft" aria-label="Link to this section">#</a></h2>
+</style><link rel="alternate" type="application/rss+xml" title="canyon" href="../feed.xml"></head><body><header class="topbar"><div class="in"><a class="brand" href="../index.html">canyon</a><nav class="nav" aria-label="Site"><a href="../notes.html">Notes</a><a href="../strategies.html" aria-current="page">Strategies</a><a href="../factors.html">Factors</a><a href="../reviews.html">Reviews</a><a href="../skills.html">Skills</a><a href="../about.html">About</a><button id="theme-btn" type="button">Auto</button></nav></div></header><main class="wrap"><article><a class="crumb" href="../strategies.html">← All strategies</a><div class="kicker"><span>Strategy</span><span>CF</span><span>Updated Nov 18, 2026</span></div><h1 class="title">Barbell: Shaanxi Coal and the Nasdaq-100</h1><p class="dek">Shaanxi Coal and a Nasdaq-100 ETF form the core. On paper, the off-peak rank sets their weights across three zones. Three rules borrow to add Nasdaq exposure, and two low-premium ETF rules use cash raised from the core.</p><div class="status"><span class="chip open">Partly in force</span><span>Coal band in force since Jul 18, 2026 · Three-zone barbell and five additions on paper</span></div><details class="toc"><summary>Contents · 12 sections</summary><ol><li><a href="#the-current-paper-draft">The current paper draft</a></li><li><a href="#the-signal">The signal</a></li><li><a href="#two-rules-on-one-signal">Two rules on one signal</a></li><li><a href="#measuring-the-swap-fairly">Measuring the swap fairly</a></li><li><a href="#when-to-swap-back">When to swap back</a></li><li><a href="#three-zones-instead-of-a-swap">Three zones instead of a swap</a></li><li><a href="#three-legs-on-top">Three legs on top</a></li><li><a href="#ten-years-with-the-older-etf">Ten years, with the older ETF</a></li><li><a href="#a-third-leg-the-first-vix-close-above-20">A third leg: the first VIX close above 20</a></li><li><a href="#related-spread-and-high-win-rate-rules-on-the-pair">Related spread and high-win-rate rules on the pair</a></li><li><a href="#why-the-swap-is-not-in-force">Why the swap is not in force</a></li><li><a href="#the-current-episode-on-paper">The current episode, on paper</a></li></ol></details><h2 id="the-current-paper-draft">The current paper draft<a class="anchor" href="#the-current-paper-draft" aria-label="Link to this section">#</a></h2>
 <style>#barbell-weights{scroll-margin-top:64px}@media(max-width:600px){#barbell-weights{scroll-margin-top:144px}}</style>
 <figure class="fig" id="barbell-weights" aria-labelledby="barbell-weights-title"><div class="fk">Barbell draft</div><div class="ft" id="barbell-weights-title">Portfolio weights and funding</div><div class="fs">Target weights and position sizes at entry</div><div class="dv"><div class="dv-g">Core weights by off-peak rank</div><div class="dv-row"><div class="dv-l">≤20</div><div class="dv-tr"><div class="dv-bar" style="width:100.000%"><i class="f1" style="flex:90 1 0" title="Coal 90">Coal 90</i><i class="f4 sm" style="flex:10 1 0" title="Nasdaq 10">10</i></div></div><div class="dv-v">90/10</div></div><div class="dv-row"><div class="dv-l">Middle</div><div class="dv-tr"><div class="dv-bar" style="width:100.000%"><i class="f1" style="flex:60 1 0" title="Coal 60">Coal 60</i><i class="f4" style="flex:40 1 0" title="Nasdaq 40">Nasdaq 40</i></div></div><div class="dv-v">60/40</div></div><div class="dv-row"><div class="dv-l">≥80</div><div class="dv-tr"><div class="dv-bar" style="width:100.000%"><i class="f1" style="flex:30 1 0" title="Coal 30">Coal 30</i><i class="f4" style="flex:70 1 0" title="Nasdaq 70">Nasdaq 70</i></div></div><div class="dv-v">30/70</div></div><div class="dv-g">Borrowed Nasdaq positions</div><div class="dv-row"><div class="dv-l">Leg 1</div><div class="dv-tr"><div class="dv-bar" style="width:12.500%"><i class="fh sm" style="flex:12.5 1 0" title="VIX &gt;30"><span>VIX &gt;30</span></i></div></div><div class="dv-v">12.5%</div></div><div class="dv-row"><div class="dv-l">Leg 2</div><div class="dv-tr"><div class="dv-bar" style="width:20.000%"><i class="fh sm" style="flex:20 1 0" title="ETF gaps down ≥3%"><span>Gap ≥3%</span></i></div></div><div class="dv-v">20%</div></div><div class="dv-row"><div class="dv-l">Leg 3</div><div class="dv-tr"><div class="dv-bar" style="width:20.000%"><i class="fh sm" style="flex:20 1 0" title="VIX returns to 20"><span>VIX ≥20</span></i></div></div><div class="dv-v">20%</div></div><div class="dv-g">Low-premium ETF positions funded from the core</div><div class="dv-row"><div class="dv-l">513350</div><div class="dv-tr"><div class="dv-bar" style="width:100.000%"><i class="f5" style="flex:90 1 0" title="Core 90">Core 90</i><i class="f2 sm" style="flex:10 1 0" title="513350 10">10</i></div></div><div class="dv-v">10%</div></div><div class="dv-row"><div class="dv-l">513310</div><div class="dv-tr"><div class="dv-bar" style="width:100.000%"><i class="f5" style="flex:90 1 0" title="Core 90">Core 90</i><i class="f3 sm" style="flex:10 1 0" title="513310 10">10</i></div></div><div class="dv-v">10%</div></div><div class="dv-row"><div class="dv-l">Both</div><div class="dv-tr"><div class="dv-bar" style="width:100.000%"><i class="f5" style="flex:80 1 0" title="Core 80">Core 80</i><i class="f2 sm" style="flex:10 1 0" title="513350 10">10</i><i class="f3 sm" style="flex:10 1 0" title="513310 10">10</i></div></div><div class="dv-v">20%</div></div><div class="dv-row dv-ax"><div></div><div class="dv-tr"><b style="left:0.000%">0</b><b style="left:50.000%">50%</b><b style="left:100.000%">100%</b></div><div></div></div></div><div class="leg"><span><i class="f1"></i>Shaanxi Coal</span><span><i class="f4"></i>Nasdaq-100 ETF</span><span><i class="fh"></i>Borrowed allocation</span><span><i class="f5"></i>Remaining core</span><span><i class="f2"></i>513350 Oil &amp; Gas</span><span><i class="f3"></i>513310 Semiconductors</span></div><p class="fn">The first group uses percentages of the core. The other two use percentages of sleeve net asset value at entry. The hatched bars show each loan separately. Total debt is checked against 40% of net asset value when a loan is opened. Each low-premium ETF takes 10% from the two core holdings in proportion to their weights.</p></figure>
 
@@ -857,6 +857,98 @@ a.sk{text-decoration:none;color:inherit;transition:border-color .15s}a.sk:hover{
 <p><strong>Leg 3 fired 16 times in ten years when run alone.</strong> There were 21 crossings; four came while a position was already on. Thirteen of the sixteen were up, with a mean of +7.2% on the position and a median of +9.8%. The three losses, Oct 2018 (−7.6%), Nov 2021 (−15.3%) and Dec 2024 (−9.2%), were the crossings where the VIX did not stop at 20: each went on to become a leg 1 event. Inside the full sleeve the debt cap blocked four more, so the barbell traded 13 of the 21, twelve of them up, +9.3% on average. The Feb 2020 entry, the day after the VIX crossed 20 on Feb 24, finished its 63 days at +1.8% but sat through the crash. With the leg on, the ten-year drawdown deepens from −23.3% to −25.7%.</p>
 <p><strong>Year by year the third leg added to the two-leg barbell in seven of eleven calendar years</strong>: +1.2, +1.0, 0.0, +4.3, −1.4, +5.7, −4.1, +8.2, +4.0, −0.8 and +2.7 points from the last quarter of 2016 to Oct 2026. The losing years, 2020, 2022 and 2025, are the years the first gust turned into a storm.</p>
 <p><strong>What the leg costs.</strong> At 20% of the sleeve it is worth 1.8 points a year over ten years and 2.1 over six, with the Sharpe ratio up 0.03. It is also the leg that takes the drawdown from about −23% to −26% and peak debt from 34–35% to 43%: the 40% cap holds when a leg enters, and the sleeve's own fall does the rest. At 10% it is worth half a point with the drawdown and debt almost unchanged. Holding 21 days instead of 63 keeps most of the six-year result and loses most of the ten-year one; waiting for 60 calm days instead of 20 leaves six episodes in ten years. Like the other two legs it is on paper only.</p>
+<h2 id="related-spread-and-high-win-rate-rules-on-the-pair">Related spread and high-win-rate rules on the pair<a class="anchor" href="#related-spread-and-high-win-rate-rules-on-the-pair" aria-label="Link to this section">#</a></h2>
+<p>Beyond the 42-day off-peak rank and the five additions above, three related mean-reversion and pricing rules on the Shaanxi Coal / Nasdaq-100 pair have been tested with explicit unconditional base rates, alongside one falsified intraday rule.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>Rule on the onshore pair</th>
+  <th>Pre-fixed trigger and execution</th>
+  <th>Horizon</th>
+  <th>Non-overlapping n</th>
+  <th>Hit rate and payoff</th>
+  <th>Benchmark / base rate</th>
+  <th>Boundary and constraint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Extreme low off-peak rank (<code>rank ≤ 10</code>) → buy coal</strong></td>
+  <td>Research 504-day rank falls to 10 or below (re-arms above 30) → buy Shaanxi Coal (601225) at the next close</td>
+  <td>10d / 21d</td>
+  <td>18 episodes</td>
+  <td><strong>94%</strong> over 10d (17/18, +3.7% mean); <strong>83%</strong> over 21d (15/18, +6.0%)</td>
+  <td>10d base: 55% / +1.1% (<strong>p = 0.0002</strong>); 21d base: 57% / +2.2% (<strong>p = 0.02</strong>)</td>
+  <td>14/15 over 10d even with the 2021 and 2026 coal boom years removed; edge fades to base by 63d (72% vs 66%)</td>
+</tr>
+<tr>
+  <td><strong>F2 · 20-day return spread (<code>D = coal 20d − Nasdaq 20d</code>)</strong></td>
+  <td>Shift 10 percentage points from the leader to the laggard when <code>abs(D) &gt; 15%</code>; reset when <code>abs(D) &lt; 5%</code> or at 60 trading days</td>
+  <td>~15d mean</td>
+  <td>17 coal-trim episodes (21 total)</td>
+  <td><strong>76%</strong> excess hit rate trimming coal (<code>D &gt; +15%</code>); 98% of all 21 episodes exited by convergence</td>
+  <td>54% breakeven line; positive across all 8 threshold cells and both halves</td>
+  <td>Standalone Nasdaq buys on <code>D &gt; +15%</code> days won only 59% over 60d against a 74% base—strictly a capital-conserving pair rebalance, never a directional buy signal</td>
+</tr>
+<tr>
+  <td><strong>Same-index Nasdaq-100 ETF premium-spread switch</strong></td>
+  <td>Prior-day NAV premium of 513300 exceeds an onshore Nasdaq-100 peer (159632 / 513110 / 513390) by ≥ 1.5 pp → switch to peer; return at ≤ 0 (20 bp round trip)</td>
+  <td>Uncapped / 40d cap</td>
+  <td>18 uncapped · 33 capped (2022–2026)</td>
+  <td><strong>94.4%</strong> uncapped (+1.80% mean); <strong>72.7%</strong> with a 40-day cap (+1.17%)</td>
+  <td>Relative to holding 513300 continuously</td>
+  <td>Legacy negative-cost 513300 shares in the A-share Account are frozen by rule; applies only to un-frozen tranches or parking switches</td>
+</tr>
+<tr>
+  <td><strong>Falsified: intraday coal limit scalping (<code>−4% / +3%</code>)</strong></td>
+  <td>Buy −4.0% intraday for +0.50% target or sell +3.0% for −0.50% buyback, exit at close (9 bp round trip)</td>
+  <td>Intraday</td>
+  <td>78 long · 213 short (2019–2026)</td>
+  <td>78.2% / 72.8% target hit on 1-minute bars (87% / 84% on 5-minute bars was same-bar look-ahead)</td>
+  <td>Net sleeve effect <strong>−0.08 pp / yr</strong></td>
+  <td>Negative skew: ~75% of trades make +0.5% while ~25% close out at −1.3% mean, leaving ~0 bp per trade; excluded</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="live-spread-and-rank-readings-nov-18-2026-close">Live spread and rank readings (Nov 18, 2026 close)<a class="anchor" href="#live-spread-and-rank-readings-nov-18-2026-close" aria-label="Link to this section">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>Gauge</th>
+  <th class="num">Window</th>
+  <th>Shaanxi Coal (601225)</th>
+  <th>Nasdaq-100 leg</th>
+  <th class="num">Reading</th>
+  <th>Threshold and state</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>F2 · 20-day spread <code>D</code> (official engine, joint close)</strong></td>
+  <td class="num">Oct 20 → Nov 17, 2026</td>
+  <td>−0.35% (HFQ)</td>
+  <td>−8.46% (<code>QQQ × FX</code>, 717.63 → 656.95)</td>
+  <td class="num"><strong><code>+8.11%</code></strong></td>
+  <td>Inside <code>±15%</code> (<code>6.89 pp</code> below <code>+15%</code> trim line) · <strong>Neutral</strong></td>
+</tr>
+<tr>
+  <td><strong>F2 · 20-day spread <code>D</code> (advanced to Nov 18 A-share close)</strong></td>
+  <td class="num">Oct 21 → Nov 18, 2026</td>
+  <td>+0.57% (geometric total return incl. 0.058 dividend)</td>
+  <td>−8.46% (visible prior <code>QQQ</code> close) / −5.13% (<code>513300</code> price)</td>
+  <td class="num"><strong><code>+9.03%</code></strong> (<code>+5.70%</code> vs <code>513300</code>)</td>
+  <td>Inside <code>±15%</code> (<code>5.97 pp</code> below trigger) · <strong>Neutral</strong></td>
+</tr>
+<tr>
+  <td><strong>F1 · 42-day off-peak rank</strong></td>
+  <td class="num">Through Nov 18, 2026 close</td>
+  <td>+6.9% (42d total return)</td>
+  <td>−7.2% (<code>QQQ</code> 42d, <code>β = −0.02</code>)</td>
+  <td class="num"><strong>71.3</strong> official · <strong>71.2</strong> research (<code>d = +5.5%</code>)</td>
+  <td>Middle zone (<code>20–80</code> → 60/40 paper sleeve; 100% coal band anchor) · <strong>Neutral</strong></td>
+</tr>
+</tbody>
+</table></div>
 <h2 id="why-the-swap-is-not-in-force">Why the swap is not in force<a class="anchor" href="#why-the-swap-is-not-in-force" aria-label="Link to this section">#</a></h2>
 <p><strong>The parameters were chosen in sample.</strong> The 85 entry was picked while watching the current episode, and the exit below 50 was chosen during the research. The statistical support is marginal. For an earlier version of the signal that moved a smaller, fixed amount:</p>
 <ul>
@@ -925,7 +1017,14 @@ a.sk{text-decoration:none;color:inherit;transition:border-color .15s}a.sk:hover{
 </tbody>
 </table></div>
 <p>The first episode on paper lost money: both legs fell, and the Nasdaq-100 leg fell further. With the rank below 50, the swap is re-armed.</p>
-<h2 class="section-label" id="disclosure">Disclosure</h2><div class="box"><span class="lab">Status of these rules</span>The band rule governs the account’s Shaanxi Coal holding. The swap, three-zone barbell and five additions are paper research. The three Nasdaq additions borrow subject to a 40% entry cap. The two low-premium ETFs are funded by reducing the core. The account’s standing leverage and ETF restrictions are described below.</div><p class="fine" style="margin-top:14px">Backtests are hypothetical: they use auction prices and stated costs, are fitted on data the author had already seen, and say nothing certain about the future. Notes on this site express the author&#x27;s opinions. They are based on public information believed to be reliable but not independently audited. Nothing here is investment advice or an offer to buy or sell any security.</p><h2 class="section-label" id="comments">Comments</h2><p class="fine">Comments run on GitHub Discussions through giscus; posting needs a GitHub account. Off-topic or abusive comments are removed.</p><div id="comments-box" class="giscus"></div><script>(function(){var d=document.documentElement,c={"data-repo": "Stevenkwo/canyon", "data-repo-id": "R_kgDOVVunOA", "data-category": "Announcements", "data-category-id": "DIC_kwDOVVunOM4DJiO-", "data-mapping": "pathname", "data-strict": "1", "data-reactions-enabled": "1", "data-emit-metadata": "0", "data-input-position": "top", "data-lang": "en", "data-loading": "lazy"};function th(){var t=d.getAttribute("data-theme");return t==="dark"?"dark":t==="light"?"light":"preferred_color_scheme"}var s=document.createElement("script");s.src="https://giscus.app/client.js";s.async=true;s.crossOrigin="anonymous";for(var k in c)s.setAttribute(k,c[k]);s.setAttribute("data-theme",th());document.getElementById("comments-box").appendChild(s);new MutationObserver(function(){var f=document.querySelector("iframe.giscus-frame");if(f)f.contentWindow.postMessage({giscus:{setConfig:{theme:th()}}},"https://giscus.app")}).observe(d,{attributes:true,attributeFilter:["data-theme"]})})();</script></article><nav class="pager" aria-label="More strategies"><div><span>Previous</span><a href="whale-one.html">W1 · Whale One</a></div><div class="next"></div></nav></main><footer class="site"><span>© 2026 canyon</span><a href="https://x.com/stevenkwok20290">X @stevenkwok20290</a><a href="../feed.xml">RSS</a><a href="../strategies.html">Strategies</a><a href="../factors.html">Factors</a><a href="../reviews.html">Reviews</a><a href="../skills.html">Skills</a><span>Not investment advice</span></footer><script>
+<h3 id="paper-book-snapshot-nov-18-2026-a-share-close">Paper book snapshot (Nov 18, 2026 A-share close)<a class="anchor" href="#paper-book-snapshot-nov-18-2026-a-share-close" aria-label="Link to this section">#</a></h3>
+<ul>
+<li><strong>Three-zone core:</strong> Rank at <strong>71.2</strong> (research) / <strong>71.3</strong> (official), inside the 20–80 middle zone → <strong>60% Shaanxi Coal / 40% Nasdaq-100</strong> before core-funded ETF carves.</li>
+<li><strong>Three borrowed Nasdaq additions:</strong> <strong>Leg 1 (<code>VIX &gt; 30</code>)</strong> idle (<code>VIX</code> closed at 25.46 on Nov 17); <strong>Leg 2 (<code>≤ −3%</code> gap)</strong> flat (<code>513300</code> opened unchanged at 2.606 on Nov 18); <strong>Leg 3 (<code>F6</code>, first <code>VIX ≥ 20</code> after calm)</strong> <strong>active at 20% of sleeve</strong> (triggered Nov 2 at <code>VIX</code> 21.15 after 66 calm sessions with <code>QQQ</code> above its 200-day average; entered Nov 3 A-share close, session 12 of 63).</li>
+<li><strong>Two core-funded low-premium ETFs:</strong> <strong>513350 (US oil &amp; gas)</strong> <strong>active at 10% of sleeve</strong> (estimated premium fell from +2.51% on Nov 16 to +0.20% at the Nov 17 close and stayed at +0.12% at the Nov 18 open, entering session 1 of 21 funded 6% from coal and 4% from Nasdaq); <strong>513310 (China-Korea semis)</strong> flat (estimated premium +10.95% on Nov 18; Nov 16 close dip to +0.27% reopened at +6.51% on Nov 17 and did not qualify).</li>
+<li><strong>Standing onshore rules (in force):</strong> Coal band at 100% of anchor (<code>rank</code> 71.3 in 10–90); energy gate open (<code>XLE</code> +7.2% and <code>XOM</code> +8.1% above their 200-day averages on Nov 17, above the +3% band); <code>513300</code> estimated premium at +17.39% (above the 2% parking threshold, with legacy negative-cost shares frozen).</li>
+</ul>
+<h2 class="section-label" id="disclosure">Disclosure</h2><div class="box"><span class="lab">Status of these rules</span>The band rule governs the account’s Shaanxi Coal holding. The swap, three-zone barbell and five additions are paper research. The three Nasdaq additions borrow subject to a 40% entry cap. The two low-premium ETFs are funded by reducing the core. The account’s standing leverage and ETF restrictions are described below.</div><p class="fine" style="margin-top:14px">Backtests are hypothetical: they use auction prices and stated costs, are fitted on data the author had already seen, and say nothing certain about the future. Notes on this site express the author&#x27;s opinions. They are based on public information believed to be reliable but not independently audited. Nothing here is investment advice or an offer to buy or sell any security.</p></article><nav class="pager" aria-label="More strategies"><div><span>Previous</span><a href="whale-one.html">W1 · Whale One</a></div><div class="next"></div></nav></main><footer class="site"><span>© 2026 canyon</span><a href="https://x.com/stevenkwok20290">X @stevenkwok20290</a><a href="../feed.xml">RSS</a><a href="../strategies.html">Strategies</a><a href="../factors.html">Factors</a><a href="../reviews.html">Reviews</a><a href="../skills.html">Skills</a><span>Not investment advice</span></footer><script>
 (function(){
   var root=document.documentElement,b=document.getElementById('theme-btn');
   function save(v){try{v?localStorage.setItem('canyon-theme',v):localStorage.removeItem('canyon-theme')}catch(e){}}
