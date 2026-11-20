@@ -1,14 +1,14 @@
 {
   "asof": "2026-11-20",
   "next_session": "2026-11-23",
-  "updated_cst": "2026-11-21 06:04 CST",
+  "updated_cst": "2026-11-21 07:06 CST",
   "first_day_month": "2026-11-02",
   "gates": {
     "qqq_close": 608.45,
     "qqq_ma200": 683.06,
     "qqq_pct_vs_ma200": -10.92,
     "night_gate_on": true,
-    "f3_252d_pct": 21.11,
+    "f3_252d_pct": 21.19,
     "f3_day_gate_on": true,
     "f5_lit": 2,
     "f5_lights": "②③",
@@ -23,7 +23,7 @@
     "uso_gate_on": true,
     "uso_session": 5,
     "uso_entry": "2026-11-16",
-    "vix_close": 37.3,
+    "vix_close": 35.89,
     "ftnt_prior_close": 124.56,
     "ftnt_trigger_px": 122.07,
     "ftnt_armed": false
@@ -142,7 +142,7 @@
         },
         {
           "sym": "AAPL",
-          "role": "Right day leg · MOO → MOC (F-3 +21.1% > 0 · G-1 clear)",
+          "role": "Right day leg · MOO → MOC (F-3 +21.2% > 0 · G-1 clear)",
           "day_pct": 27.0,
           "night_pct": 0.0
         },
@@ -204,7 +204,7 @@
         },
         {
           "sym": "AAPL",
-          "role": "Right day leg · MOO → MOC (F-3 +21.1% > 0 · G-1 clear)",
+          "role": "Right day leg · MOO → MOC (F-3 +21.2% > 0 · G-1 clear)",
           "day_pct": 36.0,
           "night_pct": 0.0
         },
@@ -254,7 +254,7 @@
         },
         {
           "sym": "AAPL",
-          "role": "Right day leg · MOO → MOC (F-3 +21.1% > 0 · G-1 clear)",
+          "role": "Right day leg · MOO → MOC (F-3 +21.2% > 0 · G-1 clear)",
           "day_pct": 60.0,
           "night_pct": 0.0
         },
