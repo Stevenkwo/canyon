@@ -1,7 +1,7 @@
 {
   "asof": "2026-11-19",
   "next_session": "2026-11-20",
-  "updated_cst": "2026-11-20 22:05 CST",
+  "updated_cst": "2026-11-20 23:13 CST",
   "first_day_month": "2026-11-02",
   "gates": {
     "qqq_close": 645.04,
@@ -35,8 +35,8 @@
     {
       "sym": "GOOGL",
       "close": 272.66,
-      "eps_ttm": 19.1502,
-      "pe_ttm": 14.24,
+      "eps_ttm": 19.1552,
+      "pe_ttm": 14.23,
       "sma200": 337.3,
       "above_ma200": false,
       "under_20": true
@@ -44,7 +44,7 @@
     {
       "sym": "NVDA",
       "close": 145.98,
-      "eps_ttm": 9.3105,
+      "eps_ttm": 9.3091,
       "pe_ttm": 15.68,
       "sma200": 203.58,
       "above_ma200": false,
@@ -53,7 +53,7 @@
     {
       "sym": "META",
       "close": 596.22,
-      "eps_ttm": 29.3112,
+      "eps_ttm": 29.3109,
       "pe_ttm": 20.34,
       "sma200": 629.14,
       "above_ma200": false,
@@ -62,8 +62,8 @@
     {
       "sym": "AMZN",
       "close": 257.37,
-      "eps_ttm": 12.3706,
-      "pe_ttm": 20.8,
+      "eps_ttm": 12.37,
+      "pe_ttm": 20.81,
       "sma200": 245.03,
       "above_ma200": true,
       "under_20": false
@@ -71,7 +71,7 @@
     {
       "sym": "MSFT",
       "close": 498.3,
-      "eps_ttm": 19.1507,
+      "eps_ttm": 19.1503,
       "pe_ttm": 26.02,
       "sma200": 443.18,
       "above_ma200": true,
@@ -80,8 +80,8 @@
     {
       "sym": "AAPL",
       "close": 349.21,
-      "eps_ttm": 8.9801,
-      "pe_ttm": 38.89,
+      "eps_ttm": 8.9781,
+      "pe_ttm": 38.9,
       "sma200": 302.91,
       "above_ma200": true,
       "under_20": false
@@ -89,7 +89,7 @@
     {
       "sym": "LLY",
       "close": 1351.12,
-      "eps_ttm": 30.8102,
+      "eps_ttm": 30.8103,
       "pe_ttm": 43.85,
       "sma200": 1116.27,
       "above_ma200": true,
@@ -116,7 +116,7 @@
       "rows": [
         {
           "sym": "GOOGL",
-          "role": "Left Slot 1 · Long-term anchor (TTM PE 14.24)",
+          "role": "Left Slot 1 · Long-term anchor (TTM PE 14.23)",
           "day_pct": 27.5,
           "night_pct": 27.5
         },
@@ -167,7 +167,7 @@
       "rows": [
         {
           "sym": "GOOGL",
-          "role": "Left Slot 1 · Long-term anchor (TTM PE 14.24)",
+          "role": "Left Slot 1 · Long-term anchor (TTM PE 14.23)",
           "day_pct": 20.0,
           "night_pct": 20.0
         },
