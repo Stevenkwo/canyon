@@ -1,6 +1,7 @@
 {
   "asof": "2026-11-19",
-  "updated_cst": "2026-11-20 08:04 CST",
+  "next_session": "2026-11-20",
+  "updated_cst": "2026-11-20 08:52 CST",
   "first_day_month": "2026-11-02",
   "gates": {
     "qqq_close": 645.04,
@@ -9,6 +10,12 @@
     "night_gate_on": true,
     "f3_252d_pct": 26.17,
     "f3_day_gate_on": true,
+    "f5_lit": 3,
+    "f5_lights": "②③R",
+    "f5_src": "close",
+    "g1_day_gate_on": true,
+    "g1_in_force": false,
+    "g1_effective": "2026-12-21",
     "xom_close": 158.93,
     "xom_ma200": 156.77,
     "xom_gate_on": true,
@@ -105,6 +112,7 @@
       "left_pct": 55.0,
       "right_pct": 45.0,
       "right_core_pct": 27.0,
+      "g1_applied": true,
       "rows": [
         {
           "sym": "GOOGL",
@@ -120,8 +128,8 @@
         },
         {
           "sym": "AAPL",
-          "role": "Right day leg · MOO → MOC (F-3 +26.2% > 0)",
-          "day_pct": 27.0,
+          "role": "Right day leg · PAUSED (paper) by G-1 (F5 3/5 ②③R & QQQ < 200d)",
+          "day_pct": 0.0,
           "night_pct": 0.0
         },
         {
@@ -139,12 +147,12 @@
         {
           "sym": "CASH / T-BILLS",
           "role": "Uninvested cash / T-bills (0% overnight margin)",
-          "day_pct": 0.0,
+          "day_pct": 27.0,
           "night_pct": 27.0
         }
       ],
       "actions": [
-        "Open (MOO): buy 27.0% AAPL with right-bucket cash; Close (MOC): sell 27.0% AAPL",
+        "Daytime: skip AAPL → hold 27.0% cash (G-1 on: F5 3/5 ②③R & QQQ < 200d)",
         "Overnight: hold 27.0% right-bucket cash (NVDA paused while QQQ < 200d)",
         "09:28 ET check: if FTNT ≤ $128.83, add +50% FTNT MOO → MOC"
       ]
@@ -155,6 +163,7 @@
       "left_pct": 40.0,
       "right_pct": 60.0,
       "right_core_pct": 36.0,
+      "g1_applied": true,
       "rows": [
         {
           "sym": "GOOGL",
@@ -170,8 +179,8 @@
         },
         {
           "sym": "AAPL",
-          "role": "Right day leg · MOO → MOC (F-3 +26.2% > 0)",
-          "day_pct": 36.0,
+          "role": "Right day leg · PAUSED (paper) by G-1 (F5 3/5 ②③R & QQQ < 200d)",
+          "day_pct": 0.0,
           "night_pct": 0.0
         },
         {
@@ -195,12 +204,12 @@
         {
           "sym": "CASH / T-BILLS",
           "role": "Uninvested cash / T-bills (0% overnight margin)",
-          "day_pct": 0.0,
+          "day_pct": 36.0,
           "night_pct": 36.0
         }
       ],
       "actions": [
-        "Open (MOO): buy 36.0% AAPL with right-bucket cash; Close (MOC): sell 36.0% AAPL",
+        "Daytime: skip AAPL → hold 36.0% cash (G-1 on: F5 3/5 ②③R & QQQ < 200d)",
         "Overnight: hold 36.0% right-bucket cash (TSM paused while QQQ < 200d)",
         "09:28 ET check: if FTNT ≤ $128.83, add +50% FTNT MOO → MOC"
       ]
@@ -211,6 +220,7 @@
       "left_pct": 0.0,
       "right_pct": 100.0,
       "right_core_pct": 60.0,
+      "g1_applied": false,
       "rows": [
         {
           "sym": "NVDA",
@@ -220,7 +230,7 @@
         },
         {
           "sym": "AAPL",
-          "role": "Right day leg · MOO → MOC (F-3 +26.2% > 0)",
+          "role": "Right day leg · MOO → MOC (in-force R1; G-1 pause cools → 2026-12-21)",
           "day_pct": 60.0,
           "night_pct": 0.0
         },
@@ -244,7 +254,7 @@
         }
       ],
       "actions": [
-        "Open (MOO): buy 60.0% AAPL with right-bucket cash; Close (MOC): sell 60.0% AAPL",
+        "Open (MOO): buy 60.0% AAPL with right-bucket cash; Close (MOC): sell 60.0% AAPL (in-force R1; G-1 pause cools until 2026-12-21)",
         "Overnight: hold 60.0% right-bucket cash (NVDA paused while QQQ < 200d)",
         "09:28 ET check: if FTNT ≤ $128.83, add +50% FTNT MOO → MOC"
       ]

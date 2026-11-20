@@ -80,10 +80,17 @@
     var gatesEl = document.getElementById('wb-gates');
     if (gatesEl) {
       var mList = (state.monsters_active && state.monsters_active.length) ? state.monsters_active.join(', ') : 'None (T-bills)';
+      var f5Txt = 'F5 ' + (g.f5_lit != null ? g.f5_lit : 0) + '/5' + (g.f5_lights ? ' ' + esc(g.f5_lights) : '');
+      var g1Badge = 'CLEAR';
+      if (g.g1_day_gate_on) {
+        g1Badge = g.g1_in_force
+          ? 'PAUSE · Cash daytime'
+          : (m.g1_applied ? 'PAPER PAUSE (cools → ' + esc(g.g1_effective) + ')' : 'COOLING → ' + esc(g.g1_effective) + ' (live trades AAPL)');
+      }
       gatesEl.innerHTML =
         '<div class="wb-g">Night gate (QQQ 200d): <b>' + (g.night_gate_on ? 'ON · Cash overnight' : 'OFF · Hold ' + esc(m.night_sym)) + '</b><br>QQQ <b>$' + Number(qLive).toFixed(2) + '</b> vs ' + Number(g.qqq_ma200).toFixed(2) + ' (' + (qDiff >= 0 ? '+' : '') + qDiff.toFixed(1) + '%)</div>' +
-        '<div class="wb-g">Day gate (F-3 252d AAPL): <b>' + (g.f3_day_gate_on ? 'OPEN' : 'CLOSED') + '</b> (' + (g.f3_252d_pct >= 0 ? '+' : '') + Number(g.f3_252d_pct).toFixed(1) + '%)<br>' + ftLine + '</div>' +
-        '<div class="wb-g">Left Slot 2 (PE &lt; 20 monster): <b>' + esc(mList) + '</b><br>Left Slot 1 anchor: <b>' + (m.left_pct > 0 ? 'GOOGL (' + (m.left_pct / 2).toFixed(1) + '%)' : 'None (100% auction)') + '</div>' +
+        '<div class="wb-g">Day gates · F-3: <b>' + (g.f3_day_gate_on ? 'OPEN' : 'CLOSED') + '</b> (' + (g.f3_252d_pct >= 0 ? '+' : '') + Number(g.f3_252d_pct).toFixed(1) + '%) · G-1: <b>' + g1Badge + '</b> (' + f5Txt + ')<br>' + ftLine + '</div>' +
+        '<div class="wb-g">Left Slot 2 (PE &lt; 20 monster): <b>' + esc(mList) + '</b><br>Left Slot 1 anchor: <b>' + (m.left_pct > 0 ? 'GOOGL (' + (m.left_pct / 2).toFixed(1) + '%)' : 'None (100% auction)') + '</b></div>' +
         '<div class="wb-g">Energy sleeves: XOM <b>' + (g.xom_gate_on ? 'ON' : 'OFF') + '</b> · USO <b>' + (g.uso_gate_on ? 'ON (' + g.uso_session + '/21)' : 'OFF') + '</b><br>OVX close ' + Number(g.ovx_close).toFixed(2) + '</div>';
     }
 
