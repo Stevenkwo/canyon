@@ -1,7 +1,7 @@
 {
   "asof": "2026-11-20",
   "next_session": "2026-11-23",
-  "updated_cst": "2026-11-21 05:20 CST",
+  "updated_cst": "2026-11-21 06:04 CST",
   "first_day_month": "2026-11-02",
   "gates": {
     "qqq_close": 608.45,
@@ -12,7 +12,7 @@
     "f3_day_gate_on": true,
     "f5_lit": 2,
     "f5_lights": "②③",
-    "f5_src": "intraday",
+    "f5_src": "close",
     "g1_day_gate_on": false,
     "g1_in_force": false,
     "g1_effective": "2026-12-21",
@@ -37,7 +37,7 @@
     {
       "sym": "NVDA",
       "close": 125.53,
-      "eps_ttm": 9.3104,
+      "eps_ttm": 9.3102,
       "pe_ttm": 13.48,
       "sma200": 203.35,
       "above_ma200": false,
@@ -46,7 +46,7 @@
     {
       "sym": "GOOGL",
       "close": 265.29,
-      "eps_ttm": 19.1509,
+      "eps_ttm": 19.1504,
       "pe_ttm": 13.85,
       "sma200": 336.97,
       "above_ma200": false,
@@ -55,7 +55,7 @@
     {
       "sym": "META",
       "close": 560.84,
-      "eps_ttm": 29.3102,
+      "eps_ttm": 29.3112,
       "pe_ttm": 19.13,
       "sma200": 628.59,
       "above_ma200": false,
@@ -73,7 +73,7 @@
     {
       "sym": "MSFT",
       "close": 484.52,
-      "eps_ttm": 19.1504,
+      "eps_ttm": 19.1502,
       "pe_ttm": 25.3,
       "sma200": 443.63,
       "above_ma200": true,
