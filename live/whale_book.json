@@ -1,7 +1,7 @@
 {
   "asof": "2026-11-20",
   "next_session": "2026-11-23",
-  "updated_cst": "2026-11-24 03:01 CST",
+  "updated_cst": "2026-11-24 04:00 CST",
   "first_day_month": "2026-11-02",
   "gates": {
     "qqq_close": 608.45,
@@ -37,8 +37,8 @@
     {
       "sym": "NVDA",
       "close": 125.53,
-      "eps_ttm": 9.3045,
-      "pe_ttm": 13.49,
+      "eps_ttm": 9.311,
+      "pe_ttm": 13.48,
       "sma200": 203.35,
       "above_ma200": false,
       "under_20": true
@@ -46,7 +46,7 @@
     {
       "sym": "GOOGL",
       "close": 265.29,
-      "eps_ttm": 19.1517,
+      "eps_ttm": 19.1512,
       "pe_ttm": 13.85,
       "sma200": 336.97,
       "above_ma200": false,
@@ -55,7 +55,7 @@
     {
       "sym": "META",
       "close": 560.84,
-      "eps_ttm": 29.3113,
+      "eps_ttm": 29.3103,
       "pe_ttm": 19.13,
       "sma200": 628.59,
       "above_ma200": false,
@@ -64,7 +64,7 @@
     {
       "sym": "AMZN",
       "close": 246.82,
-      "eps_ttm": 12.3691,
+      "eps_ttm": 12.3701,
       "pe_ttm": 19.95,
       "sma200": 245.15,
       "above_ma200": true,
@@ -73,7 +73,7 @@
     {
       "sym": "MSFT",
       "close": 484.52,
-      "eps_ttm": 19.1532,
+      "eps_ttm": 19.1504,
       "pe_ttm": 25.3,
       "sma200": 443.63,
       "above_ma200": true,
@@ -82,8 +82,8 @@
     {
       "sym": "AAPL",
       "close": 342.56,
-      "eps_ttm": 8.9813,
-      "pe_ttm": 38.14,
+      "eps_ttm": 8.98,
+      "pe_ttm": 38.15,
       "sma200": 303.24,
       "above_ma200": true,
       "under_20": false
@@ -91,7 +91,7 @@
     {
       "sym": "LLY",
       "close": 1347.11,
-      "eps_ttm": 30.8103,
+      "eps_ttm": 30.8104,
       "pe_ttm": 43.72,
       "sma200": 1117.9,
       "above_ma200": true,
@@ -130,7 +130,7 @@
         },
         {
           "sym": "NVDA",
-          "role": "Left Slot 2 · Monster slot (TTM PE 13.49 < 20)",
+          "role": "Left Slot 2 · Monster slot (TTM PE 13.48 < 20)",
           "day_pct": 9.2,
           "night_pct": 9.2
         },
@@ -192,7 +192,7 @@
         },
         {
           "sym": "NVDA",
-          "role": "Left Slot 2 · Monster slot (TTM PE 13.49 < 20)",
+          "role": "Left Slot 2 · Monster slot (TTM PE 13.48 < 20)",
           "day_pct": 6.7,
           "night_pct": 6.7
         },
