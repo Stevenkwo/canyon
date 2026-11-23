@@ -1,14 +1,14 @@
 {
   "asof": "2026-11-23",
   "next_session": "2026-11-24",
-  "updated_cst": "2026-11-24 06:00 CST",
+  "updated_cst": "2026-11-24 07:01 CST",
   "first_day_month": "2026-11-02",
   "gates": {
     "qqq_close": 651.03,
     "qqq_ma200": 683.27,
     "qqq_pct_vs_ma200": -4.72,
     "night_gate_on": true,
-    "f3_252d_pct": 23.62,
+    "f3_252d_pct": 23.65,
     "f3_day_gate_on": true,
     "f5_lit": 0,
     "f5_lights": "",
