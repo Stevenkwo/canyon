@@ -1,7 +1,7 @@
 {
   "asof": "2026-11-20",
   "next_session": "2026-11-23",
-  "updated_cst": "2026-11-23 22:03 CST",
+  "updated_cst": "2026-11-23 23:01 CST",
   "first_day_month": "2026-11-02",
   "gates": {
     "qqq_close": 608.45,
@@ -10,8 +10,8 @@
     "night_gate_on": true,
     "f3_252d_pct": 21.1,
     "f3_day_gate_on": true,
-    "f5_lit": 2,
-    "f5_lights": "②③",
+    "f5_lit": 1,
+    "f5_lights": "R",
     "f5_src": "close",
     "g1_day_gate_on": false,
     "g1_in_force": false,
@@ -37,7 +37,7 @@
     {
       "sym": "NVDA",
       "close": 125.53,
-      "eps_ttm": 9.3102,
+      "eps_ttm": 9.3123,
       "pe_ttm": 13.48,
       "sma200": 203.35,
       "above_ma200": false,
@@ -46,7 +46,7 @@
     {
       "sym": "GOOGL",
       "close": 265.29,
-      "eps_ttm": 19.1504,
+      "eps_ttm": 19.1506,
       "pe_ttm": 13.85,
       "sma200": 336.97,
       "above_ma200": false,
@@ -55,8 +55,8 @@
     {
       "sym": "META",
       "close": 560.84,
-      "eps_ttm": 29.3112,
-      "pe_ttm": 19.13,
+      "eps_ttm": 29.2993,
+      "pe_ttm": 19.14,
       "sma200": 628.59,
       "above_ma200": false,
       "under_20": true
@@ -64,8 +64,8 @@
     {
       "sym": "AMZN",
       "close": 246.82,
-      "eps_ttm": 12.3701,
-      "pe_ttm": 19.95,
+      "eps_ttm": 12.3684,
+      "pe_ttm": 19.96,
       "sma200": 245.15,
       "above_ma200": true,
       "under_20": true
@@ -73,7 +73,7 @@
     {
       "sym": "MSFT",
       "close": 484.52,
-      "eps_ttm": 19.1502,
+      "eps_ttm": 19.1518,
       "pe_ttm": 25.3,
       "sma200": 443.63,
       "above_ma200": true,
@@ -82,8 +82,8 @@
     {
       "sym": "AAPL",
       "close": 342.56,
-      "eps_ttm": 8.9802,
-      "pe_ttm": 38.15,
+      "eps_ttm": 8.9829,
+      "pe_ttm": 38.13,
       "sma200": 303.24,
       "above_ma200": true,
       "under_20": false
@@ -91,7 +91,7 @@
     {
       "sym": "LLY",
       "close": 1347.11,
-      "eps_ttm": 30.8101,
+      "eps_ttm": 30.8105,
       "pe_ttm": 43.72,
       "sma200": 1117.9,
       "above_ma200": true,
@@ -100,8 +100,8 @@
     {
       "sym": "TSLA",
       "close": 345.82,
-      "eps_ttm": 0.91,
-      "pe_ttm": 380.02,
+      "eps_ttm": 0.9096,
+      "pe_ttm": 380.21,
       "sma200": 381.66,
       "above_ma200": false,
       "under_20": false
@@ -124,7 +124,7 @@
         },
         {
           "sym": "AMZN",
-          "role": "Left Slot 2 · Monster slot (TTM PE 19.95 < 20)",
+          "role": "Left Slot 2 · Monster slot (TTM PE 19.96 < 20)",
           "day_pct": 9.2,
           "night_pct": 9.2
         },
@@ -136,7 +136,7 @@
         },
         {
           "sym": "META",
-          "role": "Left Slot 2 · Monster slot (TTM PE 19.13 < 20)",
+          "role": "Left Slot 2 · Monster slot (TTM PE 19.14 < 20)",
           "day_pct": 9.2,
           "night_pct": 9.2
         },
@@ -186,7 +186,7 @@
         },
         {
           "sym": "AMZN",
-          "role": "Left Slot 2 · Monster slot (TTM PE 19.95 < 20)",
+          "role": "Left Slot 2 · Monster slot (TTM PE 19.96 < 20)",
           "day_pct": 6.7,
           "night_pct": 6.7
         },
@@ -198,7 +198,7 @@
         },
         {
           "sym": "META",
-          "role": "Left Slot 2 · Monster slot (TTM PE 19.13 < 20)",
+          "role": "Left Slot 2 · Monster slot (TTM PE 19.14 < 20)",
           "day_pct": 6.7,
           "night_pct": 6.7
         },
