@@ -1,7 +1,7 @@
 {
   "asof": "2026-11-23",
   "next_session": "2026-11-24",
-  "updated_cst": "2026-11-25 00:01 CST",
+  "updated_cst": "2026-11-25 01:01 CST",
   "first_day_month": "2026-11-02",
   "gates": {
     "qqq_close": 651.03,
@@ -37,7 +37,7 @@
     {
       "sym": "GOOGL",
       "close": 282.1,
-      "eps_ttm": 19.1505,
+      "eps_ttm": 19.1502,
       "pe_ttm": 14.73,
       "sma200": 336.77,
       "above_ma200": false,
@@ -46,7 +46,7 @@
     {
       "sym": "NVDA",
       "close": 165.05,
-      "eps_ttm": 9.3103,
+      "eps_ttm": 9.3111,
       "pe_ttm": 17.73,
       "sma200": 203.24,
       "above_ma200": false,
@@ -55,7 +55,7 @@
     {
       "sym": "META",
       "close": 597.6,
-      "eps_ttm": 29.3033,
+      "eps_ttm": 29.3103,
       "pe_ttm": 20.39,
       "sma200": 628.27,
       "above_ma200": false,
@@ -64,7 +64,7 @@
     {
       "sym": "AMZN",
       "close": 255.39,
-      "eps_ttm": 12.3702,
+      "eps_ttm": 12.3703,
       "pe_ttm": 20.65,
       "sma200": 245.38,
       "above_ma200": true,
@@ -73,7 +73,7 @@
     {
       "sym": "MSFT",
       "close": 492.5,
-      "eps_ttm": 19.1507,
+      "eps_ttm": 19.1514,
       "pe_ttm": 25.72,
       "sma200": 444.09,
       "above_ma200": true,
@@ -82,7 +82,7 @@
     {
       "sym": "AAPL",
       "close": 349.08,
-      "eps_ttm": 8.9801,
+      "eps_ttm": 8.9798,
       "pe_ttm": 38.87,
       "sma200": 303.6,
       "above_ma200": true,
@@ -91,8 +91,8 @@
     {
       "sym": "LLY",
       "close": 1364.6,
-      "eps_ttm": 30.8106,
-      "pe_ttm": 44.29,
+      "eps_ttm": 30.8285,
+      "pe_ttm": 44.26,
       "sma200": 1119.43,
       "above_ma200": true,
       "under_20": false
