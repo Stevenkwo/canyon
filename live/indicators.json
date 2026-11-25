@@ -1,8 +1,7 @@
 {
- "asof": "2026-11-26T01:00+08:00",
+ "asof": "2026-11-26T02:00+08:00",
  "status": [
-  "3 of 5 volatility lights are lit: the trim prompt is on",
-  "VIX is above 30"
+  "3 of 5 volatility lights are lit: the trim prompt is on"
  ],
  "barbell": {
   "rule": "50 : 50",
@@ -37,8 +36,8 @@
   "asof": "2026-11-25"
  },
  "vix": {
-  "now": 33.5099983215332,
-  "chg": 7.149998321533204,
+  "now": 29.850000381469727,
+  "chg": 3.490000381469727,
   "close": 26.36,
   "close_date": "2026-11-24",
   "futures": 23.9769,
@@ -52,18 +51,18 @@
  },
  "rates": {
   "y10": {
-   "value": 4.813,
-   "d5": -28.699999999999992,
-   "d63": 11.299999999999955,
-   "pct": 97.59920634920636,
+   "value": 4.836,
+   "d5": -26.399999999999935,
+   "d63": 13.600000000000012,
+   "pct": 97.79761904761905,
    "level": null,
    "date": "2026-11-25"
   },
   "y30": {
-   "value": 5.217,
-   "d5": -24.300000000000033,
-   "d63": -1.3000000000000789,
-   "pct": 98.25396825396825,
+   "value": 5.236,
+   "d5": -22.40000000000002,
+   "d63": 0.5999999999999339,
+   "pct": 98.43253968253968,
    "level": "amber",
    "date": "2026-11-25"
   },
@@ -94,7 +93,7 @@
   "flags": [
    {
     "level": "amber",
-    "text": "30-year 5.22 above 5%; the double hit still needs the 10-year"
+    "text": "30-year 5.24 above 5%; the double hit still needs the 10-year"
    },
    {
     "level": "red",
@@ -103,7 +102,7 @@
   ]
  },
  "fear_greed": {
-  "score": 8.89945750452079,
+  "score": 9.09475587703436,
   "rating": "Extreme fear",
   "prev": 17.4212454212454
  }
