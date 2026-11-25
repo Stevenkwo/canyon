@@ -1,36 +1,36 @@
 {
-  "asof": "2026-11-24",
-  "next_session": "2026-11-25",
-  "updated_cst": "2026-11-26 05:01 CST",
+  "asof": "2026-11-25",
+  "next_session": "2026-11-27",
+  "updated_cst": "2026-11-26 06:01 CST",
   "first_day_month": "2026-11-02",
   "quotes_close": {
-    "LLY": 1407.59,
-    "GOOGL": 279.05,
-    "AAPL": 354.07,
-    "SGOV": 100.66,
-    "FTNT": 132.5,
-    "QQQ": 638.1
+    "LLY": 1392.22,
+    "GOOGL": 273.1,
+    "AAPL": 355.58,
+    "SGOV": 100.68,
+    "FTNT": 134.96,
+    "QQQ": 633.93
   },
   "gates": {
-    "qqq_close": 638.1,
-    "qqq_ma200": 683.39,
-    "qqq_pct_vs_ma200": -6.63,
+    "qqq_close": 633.93,
+    "qqq_ma200": 683.5,
+    "qqq_pct_vs_ma200": -7.25,
     "tech_gate_on": false,
-    "googl_close": 279.05,
-    "googl_ma200": 336.54,
-    "googl_pct_vs_ma200": -17.08,
-    "lly_close": 1407.59,
-    "lly_ma200": 1121.25,
-    "lly_pct_vs_ma200": 25.54,
+    "googl_close": 273.1,
+    "googl_ma200": 336.32,
+    "googl_pct_vs_ma200": -18.8,
+    "lly_close": 1392.22,
+    "lly_ma200": 1123.08,
+    "lly_pct_vs_ma200": 23.96,
     "lly_monthly_on": true,
-    "aapl_close": 354.07,
-    "aapl_ma200": 303.99,
-    "f3_252d_pct": 23.18,
+    "aapl_close": 355.58,
+    "aapl_ma200": 304.4,
+    "f3_252d_pct": 21.66,
     "f3_day_open": true,
-    "irx_yield_pct": 4.17,
-    "vix_close": 26.36,
-    "ftnt_prior_close": 132.5,
-    "ftnt_trigger_px": 129.85,
+    "irx_yield_pct": 4.15,
+    "vix_close": 28.29,
+    "ftnt_prior_close": 134.96,
+    "ftnt_trigger_px": 132.26,
     "ftnt_armed": true
   },
   "modes": {
@@ -53,19 +53,19 @@
         },
         {
           "sym": "SGOV",
-          "role": "0–3M US Treasury bill ETF (~4.17% yield · TLT strictly excluded)",
+          "role": "0–3M US Treasury bill ETF (~4.15% yield · TLT strictly excluded)",
           "day_pct": 50.0,
           "night_pct": 50.0
         },
         {
           "sym": "AAPL",
-          "role": "Daytime MOO → MOC overlay (F-3 +23.2% > 0 · 50% if FTNT fires)",
+          "role": "Daytime MOO → MOC overlay (F-3 +21.7% > 0 · 50% if FTNT fires)",
           "day_pct": 100.0,
           "night_pct": 0.0
         },
         {
           "sym": "FTNT",
-          "role": "Conditional 09:28 ET gap <= -2% (<= $129.85) · swaps 50% AAPL → 50% FTNT (<= 200% cap)",
+          "role": "Conditional 09:28 ET gap <= -2% (<= $132.26) · swaps 50% AAPL → 50% FTNT (<= 200% cap)",
           "day_pct": 0.0,
           "night_pct": 0.0,
           "cond_day": "+50% swap"
@@ -73,7 +73,7 @@
       ],
       "actions": [
         "Standing overnight / all-day core (100% NAV, 0% margin): hold 50% LLY + 50% SGOV (0–3M T-bills).",
-        "09:28 ET check (2026-11-25): normal day buys 100% AAPL at MOO → sells at MOC; if FTNT indication <= $129.85, swap half the day slot to 50% AAPL + 50% FTNT MOO → MOC (200% gross intraday cap)."
+        "09:28 ET check (2026-11-27): normal day buys 100% AAPL at MOO → sells at MOC; if FTNT indication <= $132.26, swap half the day slot to 50% AAPL + 50% FTNT MOO → MOC (200% gross intraday cap)."
       ]
     },
     "a5_ftnt": {
@@ -101,13 +101,13 @@
         },
         {
           "sym": "SGOV",
-          "role": "0–3M US Treasury bill ETF (~4.17% yield · TLT strictly excluded)",
+          "role": "0–3M US Treasury bill ETF (~4.15% yield · TLT strictly excluded)",
           "day_pct": 66.7,
           "night_pct": 66.7
         },
         {
           "sym": "FTNT",
-          "role": "Conditional 09:28 ET gap <= -2% (<= $129.85) · +50% MOO → MOC intraday only",
+          "role": "Conditional 09:28 ET gap <= -2% (<= $132.26) · +50% MOO → MOC intraday only",
           "day_pct": 0.0,
           "night_pct": 0.0,
           "cond_day": "+50% MOO→MOC"
@@ -115,7 +115,7 @@
       ],
       "actions": [
         "Unleveraged spot core (100% NAV): hold 33.3% LLY + 66.7% SGOV (rebalance on +-20% relative drift or QQQ 200d cross).",
-        "09:28 ET check (2026-11-25): no intraday order unless FTNT <= $129.85 (then buy +50% FTNT at MOO and sell at MOC)."
+        "09:28 ET check (2026-11-27): no intraday order unless FTNT <= $132.26 (then buy +50% FTNT at MOO and sell at MOC)."
       ]
     },
     "a6_ftnt": {
@@ -143,13 +143,13 @@
         },
         {
           "sym": "SGOV",
-          "role": "0–3M US Treasury bill ETF (~4.17% yield · TLT strictly excluded)",
+          "role": "0–3M US Treasury bill ETF (~4.15% yield · TLT strictly excluded)",
           "day_pct": 66.7,
           "night_pct": 66.7
         },
         {
           "sym": "FTNT",
-          "role": "Conditional 09:28 ET gap <= -2% (<= $129.85) · +50% MOO → MOC intraday only",
+          "role": "Conditional 09:28 ET gap <= -2% (<= $132.26) · +50% MOO → MOC intraday only",
           "day_pct": 0.0,
           "night_pct": 0.0,
           "cond_day": "+50% MOO→MOC"
@@ -157,7 +157,7 @@
       ],
       "actions": [
         "Unleveraged spot core (100% NAV): hold 33.3% LLY + 66.7% SGOV (rebalance on +-20% relative drift or QQQ 200d cross).",
-        "09:28 ET check (2026-11-25): no intraday order unless FTNT <= $129.85 (then buy +50% FTNT at MOO and sell at MOC)."
+        "09:28 ET check (2026-11-27): no intraday order unless FTNT <= $132.26 (then buy +50% FTNT at MOO and sell at MOC)."
       ]
     }
   }
