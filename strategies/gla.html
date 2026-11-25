@@ -1,0 +1,768 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>GLA · GLA: Alphabet, Eli Lilly and Apple</title><meta name="claude:viewport-fit-sides" content="cover"><meta name="description" content="A low-correlation three-stock rule set pairing Alphabet (GOOGL) and Eli Lilly (LLY) with Apple (AAPL) and conditional Fortinet (FTNT) gap-down reversals. A split 200-day gate moves tech exposure into 0–3 month Treasury bills (SGOV) during Nasdaq downturns without cutting Lilly&#x27;s counter-cyclical trend."><meta property="og:title" content="GLA: Alphabet, Eli Lilly and Apple"><meta property="og:description" content="A low-correlation three-stock rule set pairing Alphabet (GOOGL) and Eli Lilly (LLY) with Apple (AAPL) and conditional Fortinet (FTNT) gap-down reversals. A split 200-day gate moves tech exposure into 0–3 month Treasury bills (SGOV) during Nasdaq downturns without cutting Lilly&#x27;s counter-cyclical trend."><meta property="og:type" content="article"><link rel="icon" href="../favicon.ico" sizes="32x32"><link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../apple-touch-icon.png"><script>(function(){try{var t=localStorage.getItem('canyon-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:wght@500;700;800&display=swap"><style>
+/* Layout: one 720px reading column for notes, the index and the ledger; wide tables scroll inside their own box. */
+:root{
+  --paper:#f7f6f2; --surface:#fdfcfa; --ink:#1b1c1e; --ink-2:#56575c; --rule:#e2e0da; --accent:#2b5fd9; --accent-ink:#ffffff;
+  --open:#7d5f0e; --open-bg:#f4ecd4; --met:#1d7148; --met-bg:#e0f0e7; --failed:#ad3127; --failed-bg:#f7e1dd; --held:#8a4510; --held-bg:#fae8d3;
+  --display:"Schibsted Grotesk","Helvetica Neue","PingFang SC","Noto Sans SC",Arial,sans-serif;
+  --body:-apple-system,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#131416; --surface:#1a1b1e; --ink:#e8e7e3; --ink-2:#a4a39e; --rule:#2c2d31; --accent:#82a6ff; --accent-ink:#0f1115;
+  --open:#e3c062; --open-bg:#2d2614; --met:#62cc95; --met-bg:#15281e; --failed:#ff8e81; --failed-bg:#321918; --held:#f1a65e; --held-bg:#33220f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#131416; --surface:#1a1b1e; --ink:#e8e7e3; --ink-2:#a4a39e; --rule:#2c2d31; --accent:#82a6ff; --accent-ink:#0f1115;
+  --open:#e3c062; --open-bg:#2d2614; --met:#62cc95; --met-bg:#15281e; --failed:#ff8e81; --failed-bg:#321918; --held:#f1a65e; --held-bg:#33220f; color-scheme:dark}
+[hidden]{display:none!important}
+img{max-width:100%;height:auto}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17.5px/1.72 var(--body)}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px;overflow-wrap:anywhere}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1px solid var(--rule)}
+.topbar .in{max-width:760px;margin:0 auto;padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.brand{font:800 21px/1 var(--display);color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.nav{display:flex;gap:16px;margin-left:auto;align-items:center;flex-wrap:wrap}
+.nav a,.nav button{font:500 12.5px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);text-decoration:none;background:none;border:0;padding:6px 0;cursor:pointer}
+.nav a[aria-current="page"]{color:var(--ink)}
+.nav button{border:1px solid var(--rule);border-radius:999px;padding:5px 10px}
+.wrap{max-width:760px;margin:0 auto;padding-block:28px 72px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.kicker{font:500 12.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);display:flex;gap:10px;flex-wrap:wrap}
+h1.title{font:800 clamp(28px,5vw,40px)/1.12 var(--display);letter-spacing:-.015em;margin:14px 0 14px;text-wrap:balance}
+.dek{font-size:19px;line-height:1.55;color:var(--ink-2);margin:0 0 22px;text-wrap:pretty}
+.cover{margin:0 0 10px}
+.cover img,figure img{display:block;width:100%;height:auto;border:1px solid var(--rule);border-radius:6px;background:var(--surface)}
+.origin{font:500 13px/1.5 var(--mono);color:var(--ink-2);margin:6px 0 26px}
+.banner{border:1px solid var(--held);background:var(--held-bg);color:var(--ink);border-radius:8px;padding:12px 14px;font-size:15px;line-height:1.55;margin:0 0 22px}
+.banner b{color:var(--held)}
+details.toc{border-block:1px solid var(--rule);padding-block:10px;margin:0 0 28px}
+details.toc summary{cursor:pointer;font:500 12.5px/1.6 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+details.toc ol{margin:10px 0 4px;padding-left:1.3em;font-size:15.5px;line-height:1.55;columns:2 260px;column-gap:28px}
+details.toc li{break-inside:avoid;margin:0 0 6px}
+article h2{font:700 25px/1.25 var(--display);letter-spacing:-.01em;margin:2.3em 0 .6em;text-wrap:balance;scroll-margin-top:72px}
+article h3{font:700 19.5px/1.3 var(--display);margin:1.8em 0 .5em;scroll-margin-top:72px}
+article h2 .anchor,article h3 .anchor{font:400 .7em/1 var(--mono);color:var(--ink-2);text-decoration:none;margin-left:.35em;opacity:0}
+article h2:hover .anchor,article h3:hover .anchor,.anchor:focus{opacity:1}
+details.fold{border-top:1px solid var(--rule)}details.fold:last-of-type{border-bottom:1px solid var(--rule)}details.fold>summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:12px}details.fold>summary::-webkit-details-marker{display:none}details.fold>summary::before{content:'+';font:500 16px/1 var(--mono);color:var(--ink-2);width:12px;flex:none}details.fold[open]>summary::before{content:'\2212'}details.fold>summary h2{margin:.85em 0;font-size:21px}details.fold[open]>summary h2{margin-bottom:.5em}details.fold>summary:hover h2{color:var(--accent)}details.fold .fold-body{padding-bottom:1.2em}.jump{font:500 12.5px/1.6 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);margin:0 0 18px;display:flex;flex-wrap:wrap;gap:6px 18px}.jump a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}.jump a.new{color:var(--accent);border-color:var(--accent)}.jump button{font:inherit;letter-spacing:inherit;text-transform:inherit;color:var(--ink-2);background:none;border:0;border-bottom:1px dashed var(--ink-2);padding:0;cursor:pointer}
+article p{margin:0 0 1.05em}
+article ul,article ol{padding-left:1.35em;margin:0 0 1.1em}
+article li{margin:0 0 .45em}
+article em{color:var(--ink-2)}
+article strong{font-weight:650}
+article blockquote{margin:1.4em 0;padding-left:16px;border-left:3px solid var(--rule);color:var(--ink-2)}
+article hr{border:0;border-top:1px solid var(--rule);margin:2.4em 0}
+article code{font:14.5px var(--mono);background:var(--surface);border:1px solid var(--rule);border-radius:4px;padding:0 4px}
+figure{margin:1.6em 0}
+figcaption{font:500 12.5px/1.5 var(--mono);color:var(--ink-2);margin-top:8px}
+.table-wrap{overflow-x:auto;margin:1.3em 0 1.4em;border-block:1px solid var(--rule)}
+table{border-collapse:collapse;width:100%;font-size:14.5px;line-height:1.45;font-variant-numeric:tabular-nums}
+th{font:500 11.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--ink-2);text-align:left;padding:9px 10px;border-bottom:1px solid var(--rule);vertical-align:bottom}
+td{padding:8px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;white-space:nowrap}
+.section-label{font:500 12.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);margin:3em 0 .8em;padding-top:14px;border-top:1px solid var(--rule)}
+.tests{list-style:none;padding:0;margin:0}
+.tests li{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;padding:10px 0;border-bottom:1px solid var(--rule);font-size:15.5px;line-height:1.5}
+.tests li .meta{grid-column:2;font:500 12.5px/1.5 var(--mono);color:var(--ink-2)}
+.chip{font:500 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;border-radius:999px;padding:5px 8px;white-space:nowrap;align-self:start;margin-top:2px}
+.chip.open{color:var(--open);background:var(--open-bg)}.chip.met{color:var(--met);background:var(--met-bg)}
+.chip.failed{color:var(--failed);background:var(--failed-bg)}.chip.retired{color:var(--ink-2);background:var(--surface);border:1px solid var(--rule)}
+.chip.held{color:var(--held);background:var(--held-bg)}.chip.draft{color:var(--ink-2);background:var(--surface);border:1px solid var(--rule)}
+.box{border:1px solid var(--rule);background:var(--surface);border-radius:8px;padding:14px 16px;font-size:15.5px;line-height:1.6}
+.box .lab{font:500 11.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);display:block;margin-bottom:4px}
+.box.missing{border-color:var(--held);background:var(--held-bg)}
+.zh{font-size:16.5px;line-height:1.9}
+.zh p{margin:0 0 .9em}
+.fine{font-size:14px;line-height:1.6;color:var(--ink-2)}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px;padding-top:18px;border-top:1px solid var(--rule)}
+.pager a{text-decoration:none;color:var(--ink);font:700 16px/1.35 var(--display)}
+.pager span{display:block;font:500 11.5px/1.6 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+.pager .next{text-align:right}
+footer.site{max-width:760px;margin:0 auto;padding-block:22px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));border-top:1px solid var(--rule);font:500 12.5px/1.7 var(--mono);color:var(--ink-2);display:flex;gap:16px;flex-wrap:wrap}
+footer.site a{color:var(--ink-2)}
+/* hero: full-width canyon drawn in dots and lines (canvas, seeded, theme-aware) */
+.hero{position:relative;height:clamp(250px,36vw,440px);border-bottom:1px solid var(--rule);overflow:hidden;background:var(--paper)}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero-in{position:relative;max-width:760px;margin:0 auto;padding-block:clamp(20px,4.2vw,44px) 0;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.hero h1{font:800 clamp(46px,9.5vw,92px)/.92 var(--display);letter-spacing:-.04em;margin:0;color:var(--ink)}
+/* index */
+.masthead p{margin:0;color:var(--ink-2);font-size:18px;line-height:1.55;max-width:34em}
+.masthead p.zh-line{font-size:15.5px;margin-top:6px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:26px 0 8px}
+.filters button{font:500 12px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:8px 12px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.feature{margin:30px 0 8px;display:grid;gap:14px}
+.feature .lab{font:500 12px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2)}
+.feature a.img{display:block}
+.feature a.img img{display:block;width:100%;height:auto;border:1px solid var(--rule);border-radius:8px;background:var(--surface)}
+.feature h2{font:800 clamp(26px,4.4vw,36px)/1.12 var(--display);letter-spacing:-.015em;margin:2px 0 0;text-wrap:balance}
+.feature h2 a{color:var(--ink);text-decoration:none}
+.feature h2 a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+.feature p{margin:0;color:var(--ink-2);font-size:17px;line-height:1.6}
+.feature .go{font:500 13px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em}
+.list-head{font:500 12px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2);margin:34px 0 0}
+/* home: off-peak rank live card (data: live/cf.json + public quotes, script: live/cf.js) */
+.cf{margin:26px 0 0;padding:18px 18px 14px;border:1px solid var(--rule);border-radius:10px;background:var(--surface);display:grid;gap:12px}
+.cf .top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.cf .kicker a{color:var(--ink);text-decoration:none}.cf .kicker a:hover{text-decoration:underline}
+.cf .nums{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media (max-width:540px){.cf .nums{grid-template-columns:1fr}}
+.cf .lab{font:500 12px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2)}
+.cf .big{font:600 clamp(40px,7.5vw,58px)/1.05 var(--mono);letter-spacing:-.03em;color:var(--ink);font-variant-numeric:tabular-nums;margin:4px 0 2px}
+.cf .big.pending{color:var(--ink-2)}
+.cf .sub{font:400 13px/1.55 var(--mono);color:var(--ink-2)}.cf .sub b{color:var(--ink);font-weight:600}
+.cf .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ink-2);margin-right:6px;vertical-align:1px}
+.cf .dot.live{background:var(--accent);animation:cf-pulse 1.6s ease-in-out infinite}
+@keyframes cf-pulse{0%,100%{opacity:1}50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.cf .dot.live{animation:none}}
+.cf svg{display:block;width:100%;height:64px}
+.cf .foot{font-size:13.5px;line-height:1.6;color:var(--ink-2);margin:0}
+.ind{margin:18px 0 0;padding:18px 18px 14px;border:1px solid var(--rule);border-radius:10px;background:var(--surface);display:grid;gap:12px}
+.ind-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.ind .upd{font:400 12.5px/1.4 var(--mono);color:var(--ink-2)}
+.ind-status{font:500 14px/1.5 var(--body);padding:8px 12px;border-radius:6px}
+.ind-status.ok{color:var(--met);background:var(--met-bg)}.ind-status.hit{color:var(--held);background:var(--held-bg)}
+.ind .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:640px){.ind .grid{grid-template-columns:1fr}}
+.ind .tile{border:1px solid var(--rule);border-radius:8px;padding:12px 14px;background:var(--paper);min-width:0}
+.ind .lab{font:500 12px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2)}
+.ind .lab a{color:var(--ink-2);text-decoration:none}.ind .lab a:hover{color:var(--ink);text-decoration:underline}
+.ind .big{font:600 clamp(30px,5vw,40px)/1.1 var(--mono);letter-spacing:-.02em;color:var(--ink);font-variant-numeric:tabular-nums;margin:6px 0 4px}
+.ind .big .unit{font-size:.45em;letter-spacing:0;color:var(--ink-2);font-weight:500;margin-left:4px}
+.ind .sub{font:400 12.5px/1.55 var(--mono);color:var(--ink-2)}.ind .sub b{color:var(--ink);font-weight:600}
+.ind svg{display:block;width:100%;height:44px;margin-top:8px;overflow:visible}
+.ind svg .ln{fill:none;stroke:var(--accent);stroke-width:1.6;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.ind svg .ma{fill:none;stroke:var(--ink-2);stroke-width:1.2;stroke-dasharray:4 3;vector-effect:non-scaling-stroke}
+.ind svg .g{stroke:var(--rule);stroke-width:1;vector-effect:non-scaling-stroke}
+.ind .key{font:400 11.5px/1.4 var(--mono);color:var(--ink-2);margin-top:4px}
+.ind .key i{display:inline-block;width:14px;border-top:2px solid var(--accent);vertical-align:middle;margin-right:5px}.ind .key i.k2{border-top:2px dashed var(--ink-2);margin-left:8px}
+.ind .split{display:flex;gap:2px;margin-top:10px;font:500 11.5px/1 var(--mono)}
+.ind .split span{padding:6px 8px;border-radius:4px;white-space:nowrap;overflow:hidden}
+.ind .split span:first-child{background:var(--accent);color:var(--accent-ink)}.ind .split span:last-child{background:var(--rule);color:var(--ink);text-align:right}
+.ind .lamps{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:4px;font:400 12.5px/1.4 var(--mono);color:var(--ink-2)}
+.ind .lamps li{display:flex;align-items:center;gap:8px}.ind .lamps .r{margin-left:auto;text-align:right}
+.ind .lamps .d{width:8px;height:8px;border-radius:50%;border:1.5px solid var(--ink-2);flex:none}
+.ind .lamps li.on{color:var(--ink);font-weight:600}.ind .lamps li.on .d{background:var(--failed);border-color:var(--failed)}
+.ind .tape{display:flex;flex-wrap:wrap;gap:4px 16px;align-items:center;padding:8px 12px;border:1px solid var(--rule);border-radius:6px;background:var(--paper);font:500 12.5px/1.6 var(--mono);font-variant-numeric:tabular-nums}
+.ind .tape .tk b{color:var(--ink-2);font-weight:500;margin-right:6px}.ind .tape .px{color:var(--ink)}.ind .tape .ch{margin-left:6px;color:var(--ink-2)}
+.ind .tape .up{color:var(--met)}.ind .tape .dn{color:var(--failed)}.ind .tape .lab{color:var(--ink-2);text-transform:uppercase;letter-spacing:.08em;font-size:11px}
+.ind .tape .ldot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ink-2);margin-right:6px;vertical-align:middle}.ind .tape .ldot.on{background:var(--met);animation:cf-pulse 1.6s ease-in-out infinite}
+.ind .livest{color:var(--ink-2)}.ind .livest.on{color:var(--met)}
+.ind .lamps.rates li{flex-wrap:wrap;row-gap:0}.ind .lamps.rates .n{min-width:9em}.ind .lamps.rates .v{font-weight:600;color:var(--ink);margin-left:auto}.ind .lamps.rates .r{flex-basis:100%;margin-left:0;text-align:left;font-size:11.5px;color:var(--ink-2);padding-bottom:4px}
+.ind .lamps.rates li.amber .v{color:var(--held)}.ind .lamps.rates li.red .v{color:var(--failed)}
+.ind .foot{font-size:13px;line-height:1.6;color:var(--ink-2);margin:0}
+.entry.thumb{grid-template-columns:92px 1fr 150px}
+.entry .th img{display:block;width:150px;height:auto;border:1px solid var(--rule);border-radius:5px;background:var(--surface)}
+.year{margin-top:26px}
+.year > .y{font:500 12.5px/1.4 var(--mono);color:var(--ink-2);letter-spacing:.06em;padding-bottom:8px;border-bottom:1px solid var(--rule)}
+.entry{display:grid;grid-template-columns:92px 1fr;gap:4px 18px;padding:18px 0;border-bottom:1px solid var(--rule)}
+.entry .d{font:500 13px/1.6 var(--mono);color:var(--ink-2);padding-top:3px}
+.entry .t{font:700 22px/1.25 var(--display);letter-spacing:-.01em;color:var(--ink);text-decoration:none;text-wrap:balance}
+.entry .t:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.entry .s{margin:6px 0 8px;color:var(--ink-2);font-size:15.5px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.entry .m{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font:500 12px/1.4 var(--mono);color:var(--ink-2)}
+.entry > div{min-width:0}
+.ledger-sum{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 22px}
+@media (max-width:560px){
+  body{font-size:17px}
+  .entry,.entry.thumb{grid-template-columns:1fr}
+  .entry .th{order:-1}.entry .th img{width:100%}
+  .entry .d{padding-top:0}
+  details.toc ol{columns:1}
+  .pager{grid-template-columns:1fr}.pager .next{text-align:left}
+}
+/* strategies: framework orange / comparison grey shared with the review pages; figures use the review pages' bar-division language */
+:root{--fw:#cf6a12;--fw2:#d98f45;--qqq:#8d8e93}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--fw:#f1a65e;--fw2:#f6cfa5;--qqq:#7c7d82}}
+:root[data-theme="dark"]{--fw:#f1a65e;--fw2:#f6cfa5;--qqq:#7c7d82}
+.crumb{display:inline-block;font:500 12.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);text-decoration:none;margin:0 0 16px}
+.crumb:hover{color:var(--ink)}
+.status{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;border:1px solid var(--rule);background:var(--surface);border-radius:8px;padding:11px 14px;font-size:15px;line-height:1.55;margin:0 0 26px}
+.fig{margin:1.7em 0;padding:14px 16px 12px;border:1px solid var(--rule);border-radius:8px;background:var(--surface)}
+.fig .fk{font:500 11.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+.fig .ft{font:700 17.5px/1.3 var(--display);letter-spacing:-.01em;margin:3px 0 2px;color:var(--ink)}
+.fig .fs{font:500 12px/1.5 var(--mono);color:var(--ink-2);margin:0 0 12px}
+.fig .fsub{font:500 11px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink);margin:14px 0 6px}
+.fig .fn{font-size:13.5px;line-height:1.55;color:var(--ink-2);margin:10px 0 0}
+.fig .leg{display:flex;flex-wrap:wrap;gap:4px 16px;margin-top:10px;font:500 11.5px/1.4 var(--mono);color:var(--ink-2)}
+.fig .leg i{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.f1{background:color-mix(in srgb,var(--accent) 92%,transparent)}.f2{background:color-mix(in srgb,var(--accent) 66%,transparent)}
+.f3{background:color-mix(in srgb,var(--accent) 46%,transparent)}.f4{background:color-mix(in srgb,var(--accent) 32%,transparent)}
+.f5{background:color-mix(in srgb,var(--accent) 20%,transparent)}
+.fh{background:repeating-linear-gradient(135deg,var(--accent) 0 2.5px,transparent 2.5px 6px);box-shadow:inset 0 0 0 1px var(--accent)}
+.fo{background:transparent;box-shadow:inset 0 0 0 1.5px var(--accent)}.fe{background:transparent;box-shadow:inset 0 0 0 1px var(--ink-2);opacity:.6}
+.ffw{background:var(--fw)}.fgr{background:var(--qqq)}
+.dv-g{font:500 11px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink);margin:12px 0 4px}
+.dv>.dv-g:first-child,.dv>.dv-hd+.dv-g{margin-top:2px}
+.dv-row{display:grid;grid-template-columns:66px 1fr 50px;gap:10px;align-items:center;min-height:30px}
+.dv-l{font:500 11.5px/1.2 var(--mono);color:var(--ink-2)}
+.dv-v{font:500 12px/1 var(--mono);color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
+.dv-tr{position:relative;height:22px}
+.dv-bar{position:absolute;left:0;top:0;bottom:0;display:flex;gap:2px}
+.dv-bar i{display:flex;align-items:center;min-width:2px;border-radius:2px;font:500 10.5px/1 var(--mono);font-style:normal;white-space:nowrap;overflow:hidden;padding-left:5px;color:var(--ink)}
+.dv-bar i.f1,.dv-bar i.f2{color:var(--accent-ink)}.dv-bar i.fo{color:var(--accent)}
+.dv-bar i.fh span{background:var(--surface);padding:2px 3px;border-radius:2px}
+.dv-cap{position:absolute;top:-5px;bottom:-5px;border-left:1.5px dashed var(--fw)}
+.dv-ax{min-height:20px}.dv-ax .dv-tr{height:18px;border-top:1px solid var(--rule)}
+.dv-ax b{position:absolute;top:3px;transform:translateX(-50%);font:400 10px/1.2 var(--mono);color:var(--ink-2);white-space:nowrap}.dv-ax b:first-child{transform:none}
+.dv-hd{min-height:16px}.dv-hd .dv-tr{height:16px}.dv-hd b{position:absolute;bottom:1px;transform:translateX(-50%);font:500 10.5px/1.2 var(--mono);color:var(--fw);white-space:nowrap}
+.hb-hint{font:500 11px/1.4 var(--mono);color:var(--ink-2);margin:0 0 4px}
+.hb-row{display:grid;grid-template-columns:minmax(0,200px) 1fr 58px;gap:10px;align-items:center;min-height:28px}
+.hb-l{font-size:13.5px;line-height:1.3;color:var(--ink)}
+.hb-tr{position:relative;height:14px}.hb-tr i{position:absolute;left:0;top:0;bottom:0;border-radius:2px}
+.hb-v{font:500 12px/1 var(--mono);text-align:right;color:var(--ink);font-variant-numeric:tabular-nums}
+.yb-row{display:grid;grid-template-columns:44px 1fr 78px;gap:10px;align-items:center;min-height:34px;border-bottom:1px solid var(--rule)}
+.yb-row:last-child{border-bottom:0}
+.yb-y{font:500 12px/1 var(--mono);color:var(--ink)}
+.yb-tr{position:relative;height:22px}.yb-tr .z{position:absolute;top:-6px;bottom:-6px;border-left:1px solid var(--ink-2)}
+.yb-tr i{position:absolute;height:8px;border-radius:1.5px}.yb-tr i.a{top:2px}.yb-tr i.b{top:12px}.yb-tr i.c{top:5px;height:12px}
+.yb-v{font:500 11px/1.35 var(--mono);color:var(--ink-2);text-align:right;font-variant-numeric:tabular-nums}.yb-v b{color:var(--ink);font-weight:500}
+.yb.wide .yb-row{grid-template-columns:minmax(0,170px) 1fr 104px}.yb.wide .yb-y{font:inherit;font-size:13.5px;line-height:1.3}
+.hm-wrap{overflow-x:auto}
+table.hm{border-collapse:separate;border-spacing:3px;width:100%;min-width:300px;font:500 13px/1.2 var(--mono);font-variant-numeric:tabular-nums}
+table.hm th{font:500 11px/1.3 var(--mono);text-transform:none;letter-spacing:0;color:var(--ink-2);text-align:center;padding:4px;border:0;vertical-align:middle}
+table.hm th.r{text-align:left;white-space:nowrap;width:26%}
+table.hm td{text-align:center;padding:9px 4px;border:0;border-radius:3px}
+table.hm td.sel{outline:2px solid var(--fw);outline-offset:-2px}
+.lc{overflow-x:auto}.lc svg{display:block;width:100%;min-width:520px;height:auto}
+.lc text{font:500 12px var(--mono);fill:var(--ink-2)}
+.strat{display:grid;grid-template-columns:62px 1fr;gap:4px 18px;padding:20px 0;border-bottom:1px solid var(--rule)}
+.strat .code{font:800 26px/1 var(--display);letter-spacing:-.02em;color:var(--ink);padding-top:3px}
+.strat .t{font:700 22px/1.25 var(--display);letter-spacing:-.01em;color:var(--ink);text-decoration:none;text-wrap:balance}
+.strat .t:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.strat .s{margin:6px 0 8px;color:var(--ink-2);font-size:15.5px;line-height:1.55}
+.strat .m{display:flex;gap:6px 12px;flex-wrap:wrap;align-items:center;font:500 12px/1.4 var(--mono);color:var(--ink-2)}
+.strat > div{min-width:0}
+@media (max-width:560px){
+  .hb-row{grid-template-columns:minmax(0,118px) 1fr 52px}.dv-row{grid-template-columns:58px 1fr 44px;gap:8px}.dv-bar i.sm{font-size:0;padding-left:0}.dv-bar i.sm span{display:none}
+  .yb-row{grid-template-columns:38px 1fr 70px;gap:8px}.strat{grid-template-columns:1fr}.strat .code{font-size:20px}
+  .yb.wide .yb-row{grid-template-columns:minmax(0,92px) 1fr 84px}
+}
+.lamp-head{display:flex;gap:16px;align-items:center;padding:4px 0 12px;border-bottom:1px solid var(--rule);margin-bottom:2px}
+.lamp-head .cnt{font:500 13px/1.2 var(--mono);color:var(--ink-2);white-space:nowrap}.lamp-head .cnt b{font:800 30px/1 var(--display);color:var(--ink);margin-right:4px}
+.lamp-head .vd{font-size:14.5px;line-height:1.45;color:var(--ink)}.lamp-head .vd span{font:500 11.5px/1.5 var(--mono);color:var(--ink-2)}
+.lamp{display:grid;grid-template-columns:22px 1fr auto;gap:2px 12px;align-items:start;padding:12px 0;border-bottom:1px solid var(--rule)}.lamp:last-child{border-bottom:0}
+.lamp .dot{width:16px;height:16px;border-radius:50%;margin-top:3px;box-shadow:inset 0 0 0 1.5px var(--ink-2)}
+.lamp.on .dot{background:var(--held);box-shadow:0 0 0 4px color-mix(in srgb,var(--held) 22%,transparent)}
+.lamp.na .dot{background:repeating-linear-gradient(135deg,var(--ink-2) 0 1.5px,transparent 1.5px 4px);opacity:.45}
+.lamp .nm{font:700 15.5px/1.3 var(--display);color:var(--ink)}.lamp .nm em{font:500 10.5px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--fw);font-style:normal;margin-left:6px}
+.lamp .cond{font-size:13px;line-height:1.45;color:var(--ink-2);margin-top:2px}
+.lamp .st{font:500 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;padding:5px 8px;border-radius:999px;border:1px solid var(--rule);color:var(--ink-2);white-space:nowrap}
+.lamp.on .st{color:var(--held);background:var(--held-bg);border-color:transparent}
+.lamp .rd{grid-column:2/4;font:500 12px/1.5 var(--mono);color:var(--ink);margin-top:6px}.lamp .rd:empty{display:none}
+.meter{position:relative;height:8px;background:color-mix(in srgb,var(--ink-2) 14%,transparent);border-radius:2px;margin:9px 0 3px}
+.meter i{position:absolute;left:0;top:0;bottom:0;border-radius:2px;background:color-mix(in srgb,var(--accent) 65%,transparent)}.meter.on i{background:var(--held)}
+.meter b{position:absolute;top:-5px;bottom:-5px;border-left:2px dashed var(--fw)}
+.mt{display:flex;justify-content:space-between;gap:10px;font:500 10.5px/1.4 var(--mono);color:var(--ink-2)}
+.fhd{background:var(--held)}table.ldg td.c,table.ldg th.c{text-align:center;width:26px}table.ldg td{white-space:nowrap}
+@media (max-width:560px){.lamp-head{flex-direction:column;align-items:flex-start;gap:6px}}
+/* skills: dot matrix by area × origin, then one card per skill with a small line sketch (ink lines, dots, one orange mark); dashed card = installed */
+.sk-fig{margin:1.4em 0 1.8em}
+.sk-ov{display:grid;grid-template-columns:minmax(0,150px) 1fr 1fr;border-top:1px solid var(--ink)}
+.sk-ov>div{padding:10px 10px 10px 0;border-bottom:1px solid var(--rule)}
+.sk-ov .h{font:500 11.5px/1.3 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);display:flex;align-items:baseline;gap:8px}
+.sk-ov .h b{font:800 30px/1 var(--display);color:var(--ink);letter-spacing:-.01em}
+.sk-ov .r{font:700 14.5px/1.3 var(--display);color:var(--ink);align-self:center}
+.sk-ov .c{display:flex;align-items:center;gap:8px}
+.sk-dots{display:flex;flex-wrap:wrap;gap:4px}
+.sk-dots i{width:9px;height:9px;border-radius:50%;background:var(--ink)}.sk-dots i.f{background:var(--fw)}.sk-dots i.o{background:transparent;box-shadow:inset 0 0 0 1.5px var(--ink-2)}
+.sk-ov .n{font:500 12px/1 var(--mono);color:var(--ink-2);font-variant-numeric:tabular-nums}
+.sk-rowhd{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-top:1px solid var(--ink);padding-top:8px;margin:22px 0 10px}.sk-rowhd:first-child{margin-top:0}
+.sk-rowhd b{font:700 17px/1.3 var(--display)}.sk-rowhd span{font:500 11.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);white-space:nowrap}
+.sk-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.sk{border:1px solid var(--rule);border-radius:8px;background:var(--surface);padding:10px 12px 12px;display:flex;flex-direction:column;gap:5px}
+.sk.inst{background:transparent;border-style:dashed}
+.sk svg{display:block;width:100%;height:64px;margin-bottom:4px}
+.sk .nm{font:700 15px/1.25 var(--display);color:var(--ink)}.sk .nm em{font:500 11px/1 var(--mono);color:var(--fw);font-style:normal;margin-left:6px}
+.sk .ds{font-size:13px;line-height:1.45;color:var(--ink-2)}
+.sk .when{font:500 10.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--ink-2);margin-top:auto;padding-top:4px}
+a.sk{text-decoration:none;color:inherit;transition:border-color .15s}a.sk:hover{border-color:var(--ink-2)}a.sk:hover .nm{color:var(--accent)}
+.sk-hero{margin:0 0 26px;padding:18px 16px;border:1px solid var(--rule);border-radius:8px;background:var(--surface)}.sk-hero.inst{background:transparent;border-style:dashed}
+.sk-hero svg{display:block;width:100%;height:150px}
+.sk-cases{list-style:none;padding:0;margin:0 0 1.2em}.sk-cases li{display:grid;grid-template-columns:96px 1fr;gap:4px 14px;padding:10px 0;border-bottom:1px solid var(--rule);font-size:16px;line-height:1.55}
+.sk-cases li:last-child{border-bottom:0}.sk-cases .d{font:500 12px/1.9 var(--mono);color:var(--ink-2);text-transform:uppercase;letter-spacing:.04em}
+@media (max-width:560px){.sk-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sk-ov{grid-template-columns:minmax(0,96px) 1fr 1fr}.sk-ov .h b{font-size:24px}.sk .ds{font-size:12.5px}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style><link rel="alternate" type="application/rss+xml" title="canyon" href="../feed.xml"></head><body><header class="topbar"><div class="in"><a class="brand" href="../index.html">canyon</a><nav class="nav" aria-label="Site"><a href="../notes.html">Notes</a><a href="../strategies.html" aria-current="page">Strategies</a><a href="../factors.html">Factors</a><a href="../reviews.html">Reviews</a><a href="../skills.html">Skills</a><a href="../about.html">About</a><button id="theme-btn" type="button">Auto</button></nav></div></header><main class="wrap"><article><a class="crumb" href="../strategies.html">← All strategies</a><div class="kicker"><span>Strategy</span><span>GLA</span><span>Updated Nov 25, 2026</span></div><h1 class="title">GLA: Alphabet, Eli Lilly and Apple</h1><p class="dek">A low-correlation three-stock rule set pairing Alphabet (GOOGL) and Eli Lilly (LLY) with Apple (AAPL) and conditional Fortinet (FTNT) gap-down reversals. A split 200-day gate moves tech exposure into 0–3 month Treasury bills (SGOV) during Nasdaq downturns without cutting Lilly&#x27;s counter-cyclical trend.</p><div class="status"><span class="chip open">Paper only</span><span>Registered paper rule set · updated Nov 25, 2026 · live daily reminder on homepage &amp; below</span></div><details class="toc"><summary>Contents · 6 sections</summary><ol><li><a href="#daily-target-book">Daily target book</a></li><li><a href="#the-rule-in-two-chassis">The rule in two chassis</a></li><li><a href="#why-the-qqq-200-day-gate-is-split-and-why-tlt-is-excluded">Why the QQQ 200-day gate is split — and why TLT is excluded</a></li><li><a href="#ten-year-and-twenty-year-results">Ten-year and twenty-year results</a></li><li><a href="#what-makes-it-fragile">What makes it fragile</a></li><li><a href="#kill-switches-and-current-readings">Kill switches and current readings</a></li></ol></details><h2 id="daily-target-book">Daily target book<a class="anchor" href="#daily-target-book" aria-label="Link to this section">#</a></h2>
+<p>The card below (mirrored at the bottom of the Canyon homepage) displays today's close-confirmed gate states and target weights across <strong>GLA-Overlay (<code>B3 + FTNT</code>)</strong> and the unleveraged <strong>GLA-Core (<code>A5 + FTNT</code> and <code>A6 + FTNT</code>)</strong> books. Gate states update from completed US closes; live stock quotes and the <code>09:28 ET</code> Fortinet trigger zone refresh automatically on open.</p>
+<section class="fig gla-card" id="gla-card" data-src="../live/gla_book.json" aria-label="GLA daily position reminder"><style>.gla-card{margin:18px 0 0;padding:18px 18px 14px}.fig.gla-card{margin:1.2em 0 2em;padding:16px 16px 14px}.gla-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}.gla-live{font:500 11.5px/1.4 var(--mono);color:var(--ink-2)}.gla-live .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ink-2);margin-right:5px;vertical-align:1px}.gla-live.on{color:var(--met)}.gla-live.on .dot{background:var(--met);animation:cf-pulse 1.6s ease-in-out infinite}.gla-hd{font:700 18px/1.3 var(--display);letter-spacing:-.01em;margin:2px 0 0;color:var(--ink)}.gla-sub{font:500 12px/1.5 var(--mono);color:var(--ink-2);margin:0 0 8px}.gla-tabs{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 10px}.gla-tabs button{font:500 11.5px/1.2 var(--mono);padding:6px 10px;border-radius:999px;border:1px solid var(--rule);background:var(--paper);color:var(--ink-2);cursor:pointer}.gla-tabs button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}.gla-gates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-bottom:10px}@media (max-width:560px){.gla-gates{grid-template-columns:1fr}}.gla-g{border:1px solid var(--rule);border-radius:6px;padding:8px 10px;background:var(--paper);font:400 12px/1.45 var(--mono);color:var(--ink-2)}.gla-g b{color:var(--ink);font-weight:600}.gla-tbl{width:100%;border-collapse:collapse;font-size:14px;margin:2px 0 10px}.gla-tbl th{font:500 11px/1.3 var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--ink-2);padding:6px 8px;border-bottom:1px solid var(--ink)}.gla-tbl td{padding:8px 8px;border-bottom:1px solid var(--rule);vertical-align:middle}.gla-role{font:400 11.5px/1.35 var(--mono);color:var(--ink-2);margin-top:2px}.gla-px{font:500 12px/1.3 var(--mono);color:var(--ink-2)}.gla-px .up{color:var(--met)}.gla-px .dn{color:var(--failed)}.gla-act{margin:6px 0 8px;padding:10px 12px;border-radius:6px;background:var(--paper);border:1px solid var(--rule)}.gla-act .lab{font:500 11px/1.3 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--fw);margin-bottom:4px}.gla-act ul{margin:0;padding-left:16px;font-size:13.5px;line-height:1.55}</style><div class="gla-top"><div class="fk">GLA · Live Daily Target Book</div><div class="gla-live" id="gla-status"><span class="dot"></span>Rules: 2026-11-24 close · for 2026-11-25</div></div><div class="gla-hd" id="gla-title">Today's target holdings (0% overnight margin · SGOV T-bill parking)</div><div class="gla-sub">GOOGL + LLY + AAPL + conditional FTNT · refreshes hourly from closes and live quotes on open</div><div class="gla-tabs" id="gla-tabs"><button type="button" data-mode="b3_ftnt" class="on">GLA-Overlay (B3 + FTNT)</button><button type="button" data-mode="a5_ftnt">GLA-Core (A5 + FTNT · Split Gate)</button><button type="button" data-mode="a6_ftnt">GLA-Core (A6 + FTNT · Dual Gate)</button></div><div class="gla-gates" id="gla-gates"><div class="gla-g">Tech gate (QQQ 200d): <b>OFF · Park in SGOV</b><br>QQQ <b>$638.10</b> vs 683.39 (-6.6%)</div><div class="gla-g">Pharma anchor (LLY monthly 200d): <b>ON · Hold LLY</b><br>LLY <b>$1407.59</b> vs 1121.25 (+25.5%)</div><div class="gla-g">Daytime AAPL (F-3 252d): <b>OPEN · MOO → MOC</b> (+23.2%)<br>SGOV 0–3M T-bill yield ~<b>4.17%</b> (no TLT)</div><div class="gla-g">FTNT 09:28 ET check: <b>ARMED · <= $129.85</b><br>Prior close $132.50 · VIX 26.36</div></div><div style="overflow-x:auto"><table class="gla-tbl"><thead><tr><th>Holding / Sleeve</th><th class="num">Quote</th><th class="num">Day (MOO→MOC)</th><th class="num">Overnight / All-day</th></tr></thead><tbody id="gla-tbody"><tr><td><b>LLY</b><div class="gla-role">All-day pharma anchor · monthly 200d check ON (2026-11-02)</div></td><td class="num gla-px" data-gla-px="LLY">$1407.59</td><td class="num"><b>50.0%</b></td><td class="num"><b>50.0%</b></td></tr><tr><td><b>GOOGL</b><div class="gla-role">All-day search/AI anchor · PARKED in SGOV (QQQ &lt; 200d)</div></td><td class="num gla-px" data-gla-px="GOOGL">$279.05</td><td class="num"><b>0.0%</b></td><td class="num"><b>0.0%</b></td></tr><tr><td><b>SGOV</b><div class="gla-role">0–3M US Treasury bill ETF (~4.17% yield · TLT strictly excluded)</div></td><td class="num gla-px" data-gla-px="SGOV">$100.66</td><td class="num"><b>50.0%</b></td><td class="num"><b>50.0%</b></td></tr><tr><td><b>AAPL</b><div class="gla-role">Daytime MOO → MOC overlay (F-3 +23.2% &gt; 0 · 50% if FTNT fires)</div></td><td class="num gla-px" data-gla-px="AAPL">$354.07</td><td class="num"><b>100.0%</b></td><td class="num"><b>0.0%</b></td></tr><tr><td><b>FTNT</b><div class="gla-role">Conditional 09:28 ET gap &lt;= -2% (&lt;= $129.85) · swaps 50% AAPL → 50% FTNT (&lt;= 200% cap)</div></td><td class="num gla-px" data-gla-px="FTNT">$132.50</td><td class="num"><span style="color:var(--ink-2)">0.0%</span> <span style="font-size:11px;color:var(--fw)">(+50% swap)</span></td><td class="num"><b>0.0%</b></td></tr></tbody></table></div><div class="gla-act"><div class="lab">Next-session execution checklist (2026-11-25)</div><ul id="gla-actions"><li>Standing overnight / all-day core (100% NAV, 0% margin): hold 50% LLY + 50% SGOV (0–3M T-bills).</li><li>09:28 ET check (2026-11-25): normal day buys 100% AAPL at MOO → sells at MOC; if FTNT indication &lt;= $129.85, swap half the day slot to 50% AAPL + 50% FTNT MOO → MOC (200% gross intraday cap).</li></ul></div><p class="foot">GLA is a registered paper rule set; the active rule set in force on the US Account remains R1 v1.2 until any 30-day cooling period completes. Defensive cash parks strictly in 0–3 month Treasury bills (SGOV / BIL), never long-duration bonds (TLT). Informational research record, not investment advice.</p><script id="gla-seed" type="application/json">{"asof":"2026-11-24","next_session":"2026-11-25","updated_cst":"2026-11-25 11:12 CST","first_day_month":"2026-11-02","quotes_close":{"LLY":1407.59,"GOOGL":279.05,"AAPL":354.07,"SGOV":100.66,"FTNT":132.5,"QQQ":638.1},"gates":{"qqq_close":638.1,"qqq_ma200":683.39,"qqq_pct_vs_ma200":-6.63,"tech_gate_on":false,"googl_close":279.05,"googl_ma200":336.54,"googl_pct_vs_ma200":-17.08,"lly_close":1407.59,"lly_ma200":1121.25,"lly_pct_vs_ma200":25.54,"lly_monthly_on":true,"aapl_close":354.07,"aapl_ma200":303.99,"f3_252d_pct":23.18,"f3_day_open":true,"irx_yield_pct":4.17,"vix_close":26.36,"ftnt_prior_close":132.5,"ftnt_trigger_px":129.85,"ftnt_armed":true},"modes":{"b3_ftnt":{"label":"GLA-Overlay · B3 + FTNT (<= 200% Intraday Cap)","overnight_gross_pct":100.0,"day_gross_pct":200.0,"rows":[{"sym":"LLY","role":"All-day pharma anchor · monthly 200d check ON (2026-11-02)","day_pct":50.0,"night_pct":50.0},{"sym":"GOOGL","role":"All-day search/AI anchor · PARKED in SGOV (QQQ < 200d)","day_pct":0.0,"night_pct":0.0},{"sym":"SGOV","role":"0–3M US Treasury bill ETF (~4.17% yield · TLT strictly excluded)","day_pct":50.0,"night_pct":50.0},{"sym":"AAPL","role":"Daytime MOO → MOC overlay (F-3 +23.2% > 0 · 50% if FTNT fires)","day_pct":100.0,"night_pct":0.0},{"sym":"FTNT","role":"Conditional 09:28 ET gap <= -2% (<= $129.85) · swaps 50% AAPL → 50% FTNT (<= 200% cap)","day_pct":0.0,"night_pct":0.0,"cond_day":"+50% swap"}],"actions":["Standing overnight / all-day core (100% NAV, 0% margin): hold 50% LLY + 50% SGOV (0–3M T-bills).","09:28 ET check (2026-11-25): normal day buys 100% AAPL at MOO → sells at MOC; if FTNT indication <= $129.85, swap half the day slot to 50% AAPL + 50% FTNT MOO → MOC (200% gross intraday cap)."]},"a5_ftnt":{"label":"GLA-Core · A5 + FTNT (Split Gate)","overnight_gross_pct":100.0,"day_gross_pct":100.0,"rows":[{"sym":"LLY","role":"1/3 counter-cyclical pharma sleeve · held across QQQ regimes","day_pct":33.3,"night_pct":33.3},{"sym":"GOOGL","role":"1/3 search/AI sleeve · PARKED in SGOV (QQQ < 200d)","day_pct":0.0,"night_pct":0.0},{"sym":"AAPL","role":"1/3 ecosystem sleeve · PARKED in SGOV (QQQ < 200d)","day_pct":0.0,"night_pct":0.0},{"sym":"SGOV","role":"0–3M US Treasury bill ETF (~4.17% yield · TLT strictly excluded)","day_pct":66.7,"night_pct":66.7},{"sym":"FTNT","role":"Conditional 09:28 ET gap <= -2% (<= $129.85) · +50% MOO → MOC intraday only","day_pct":0.0,"night_pct":0.0,"cond_day":"+50% MOO→MOC"}],"actions":["Unleveraged spot core (100% NAV): hold 33.3% LLY + 66.7% SGOV (rebalance on +-20% relative drift or QQQ 200d cross).","09:28 ET check (2026-11-25): no intraday order unless FTNT <= $129.85 (then buy +50% FTNT at MOO and sell at MOC)."]},"a6_ftnt":{"label":"GLA-Core · A6 + FTNT (Dual Gate)","overnight_gross_pct":100.0,"day_gross_pct":100.0,"rows":[{"sym":"LLY","role":"1/3 pharma sleeve · monthly 200d ON","day_pct":33.3,"night_pct":33.3},{"sym":"GOOGL","role":"1/3 search/AI sleeve · PARKED in SGOV (QQQ < 200d)","day_pct":0.0,"night_pct":0.0},{"sym":"AAPL","role":"1/3 ecosystem sleeve · PARKED in SGOV (QQQ < 200d)","day_pct":0.0,"night_pct":0.0},{"sym":"SGOV","role":"0–3M US Treasury bill ETF (~4.17% yield · TLT strictly excluded)","day_pct":66.7,"night_pct":66.7},{"sym":"FTNT","role":"Conditional 09:28 ET gap <= -2% (<= $129.85) · +50% MOO → MOC intraday only","day_pct":0.0,"night_pct":0.0,"cond_day":"+50% MOO→MOC"}],"actions":["Unleveraged spot core (100% NAV): hold 33.3% LLY + 66.7% SGOV (rebalance on +-20% relative drift or QQQ 200d cross).","09:28 ET check (2026-11-25): no intraday order unless FTNT <= $129.85 (then buy +50% FTNT at MOO and sell at MOC)."]}}}</script><script src="../live/gla_book.js" defer></script></section>
+<h2 id="the-rule-in-two-chassis">The rule in two chassis<a class="anchor" href="#the-rule-in-two-chassis" aria-label="Link to this section">#</a></h2>
+<p>Most high-return US equity portfolios concentrate in correlated semiconductor and mega-cap software names whose drawdowns synchronize whenever real yields spike or the Nasdaq-100 breaks trend. <strong>GLA</strong> pairs two orthogonal secular compounders—<strong>Alphabet (<code>GOOGL</code>)</strong> in search/cloud AI and <strong>Eli Lilly (<code>LLY</code>)</strong> in biopharma (<code>20</code>-year daily return correlation <code>0.26</code>)—with <strong>Apple (<code>AAPL</code>)</strong> and the rare <strong>Fortinet (<code>FTNT</code>)</strong> non-earnings opening gap-down reversal, while parking gated cash strictly in <strong>0–3 month US Treasury bills (<code>SGOV</code> or <code>BIL</code>)</strong>.</p>
+<p>Two variations serve different account structures without carrying overnight margin:</p>
+<ol>
+<li><strong>GLA-Overlay (<code>B3 + FTNT</code>, slot-swapped <code>&lt;= 200%</code> intraday cap):</strong> Holds an unleveraged <code>100%</code> all-day core (<code>50% GOOGL</code> + <code>50% LLY</code>), steps <code>GOOGL</code> into <code>SGOV</code> whenever <code>QQQ</code> closes below its 200-day simple moving average, steps <code>LLY</code> into <code>SGOV</code> only if <code>LLY</code> closes below its own 200-day average on a monthly first-trading-day check, and runs <code>100% AAPL</code> from the opening auction to the closing auction (<code>MOO → MOC</code>, zero overnight financing) while rolling 252-session <code>AAPL</code> intraday return (<code>F-3</code>) exceeds zero. On the roughly seven to eight non-earnings sessions a year when <code>FTNT</code> indicates at least <code>2%</code> below its prior close at <code>09:28 ET</code> (<code>prior VIX &lt; 30</code>), half of the daytime <code>AAPL</code> slot swaps into <code>FTNT</code> (<code>50% AAPL + 50% FTNT</code> <code>MOO → MOC</code>), keeping peak intraday gross exposure at or below <code>200%</code> and overnight exposure at <code>100%</code>.</li>
+<li><strong>GLA-Core (<code>A5 + FTNT</code> split gate, or <code>A6 + FTNT</code> dual gate):</strong> Holds an unleveraged <code>100%</code> spot portfolio (<code>1/3 GOOGL + 1/3 LLY + 1/3 AAPL</code>, rebalanced only on <code>±20%</code> relative weight drift or gate transitions). When <code>QQQ</code> closes below its 200-day average, the two tech sleeves (<code>GOOGL</code> and <code>AAPL</code>, <code>66.7%</code> of NAV) step into <code>SGOV</code> while <code>LLY</code> (<code>33.3%</code>) stays invested (<code>A5</code>), or checks its own monthly 200-day average (<code>A6</code>). On <code>FTNT &lt;= −2%</code> non-earnings trigger mornings, <code>+50% FTNT</code> runs intraday (<code>MOO → MOC</code>), lifting exposure to <code>150%</code> on roughly <code>3%</code> of sessions and returning to <code>100%</code> by <code>16:00 ET</code>.</li>
+</ol>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>Leg</th>
+  <th>Trigger, fixed before the order</th>
+  <th>Order</th>
+  <th>Size in B3 + FTNT</th>
+  <th>Size in A5 + FTNT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Search / AI anchor · <strong>GOOGL</strong></td>
+  <td>Prior session <strong>QQQ</strong> close at or above its 200-day average of closes (otherwise park in <strong>SGOV</strong>)</td>
+  <td>Rebalance at the open/close after a cross</td>
+  <td>50% of NAV (all-day)</td>
+  <td>33.3% of NAV (all-day)</td>
+</tr>
+<tr>
+  <td>Pharma anchor · <strong>LLY</strong></td>
+  <td>Held across <strong>QQQ</strong> regimes (<code>A5</code>), or first trading day of month <strong>LLY</strong> close above its own 200-day average (<code>B3</code> / <code>A6</code>; otherwise <strong>SGOV</strong>)</td>
+  <td>Monthly check at close</td>
+  <td>50% of NAV (all-day)</td>
+  <td>33.3% of NAV (all-day)</td>
+</tr>
+<tr>
+  <td>Ecosystem leg · <strong>AAPL</strong></td>
+  <td><code>B3</code>: rolling 252-day <strong>AAPL</strong> <code>MOO → MOC</code> net return <strong>F-3 &gt; 0</strong>; <code>A5</code>: prior <strong>QQQ</strong> close <code>&gt;=</code> 200-day average</td>
+  <td><code>B3</code>: buy <code>MOO</code>, sell <code>MOC</code>; <code>A5</code>: spot sleeve</td>
+  <td>100% intraday (<code>50%</code> on FTNT days)</td>
+  <td>33.3% of NAV (all-day)</td>
+</tr>
+<tr>
+  <td>Gap reversal · <strong>FTNT</strong></td>
+  <td><code>09:28 ET</code> indication <code>&lt;= 98%</code> of prior close; not an earnings day or the day after; prior <strong>VIX</strong> <code>&lt; 30</code></td>
+  <td>Buy at opening auction (<code>MOO</code>), sell at closing auction (<code>MOC</code>)</td>
+  <td>50% intraday (swaps half of AAPL)</td>
+  <td>+50% intraday (<code>MOO → MOC</code>)</td>
+</tr>
+<tr>
+  <td>Defensive parking · <strong>SGOV / BIL</strong></td>
+  <td>Any gated-out equity weight</td>
+  <td>Hold 0–3 month US Treasury bills (<code>TLT</code> forbidden)</td>
+  <td>0%, 50%, or 100% of NAV</td>
+  <td>0% or 66.7% of NAV (<code>100%</code> in <code>A6</code>)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Every backtest charges <code>1.214</code> basis points per auction side (<code>2.43</code> basis points per round trip) and models Treasury bill parking from the daily 13-week Treasury yield (<code>^IRX</code>), cross-checked against <code>SGOV</code>, <code>SHY</code>, and <code>TLT</code>.</p>
+<h2 id="why-the-qqq-200-day-gate-is-split-and-why-tlt-is-excluded">Why the QQQ 200-day gate is split — and why TLT is excluded<a class="anchor" href="#why-the-qqq-200-day-gate-is-split-and-why-tlt-is-excluded" aria-label="Link to this section">#</a></h2>
+<p>Applying a single <code>QQQ &lt; 200-day</code> switch to the entire portfolio looks intuitive, yet twenty-two years of daily data expose a sharp divergence across the three holdings. Over the ten-year window (<code>Nov 24, 2016 → Nov 24, 2026</code>, <code>2,513</code> trading days), <code>QQQ</code> spent <code>424</code> sessions (<code>16.9%</code> of the decade) below its 200-day average:</p>
+<ul>
+<li><strong>GOOGL</strong> lost <code>−11.1%</code> cumulative (<code>−6.8%</code> annualized) and <strong>AAPL</strong> lost <code>−12.8%</code> cumulative (<code>−7.8%</code> annualized) across those <code>424</code> below-trend sessions; over the twenty-year record including <code>2008</code>, ungated <code>GLA-Core</code> suffered a <code>−54.6%</code> drawdown (<code>−83.7%</code> for the ungated daytime overlay <code>B0</code>).</li>
+<li><strong>LLY</strong> gained <strong><code>+76.5%</code> cumulative (<code>+40.2%</code> annualized)</strong> during the exact same <code>424</code> sessions while <code>QQQ</code> sat below its 200-day line—including <code>+34.2%</code> in <code>2022</code> when <code>QQQ</code> fell <code>−32.6%</code>. Forcing <code>LLY</code> to cash whenever <code>QQQ</code> breaks trend (<code>A1</code>) turns <code>2022</code> from <code>+8.0%</code> (<code>A5 + FTNT</code>) into a loss (<code>−12.7%</code> without <code>FTNT</code>).</li>
+</ul>
+<div class="fig"><div class="fk">GLA · Figure 2</div><div class="ft">Split-gate evidence below QQQ 200-day and the 2022 Treasury test</div><div class="fs">Top three rows: annualized return during the 424 ten-year sessions after QQQ closed below its 200-day average · bottom three rows: 2022 calendar return by parking ETF</div><div class="yb wide"><div class="yb-row"><div class="yb-y">LLY while QQQ &lt; 200d (424 sessions)</div><div class="yb-tr"><span class="z" style="left:28.57%"></span><i class="ffw c" style="left:28.57%;width:57.43%"></i></div><div class="yb-v"><b>+40.2%</b><br>Cum +76.5%</div></div><div class="yb-row"><div class="yb-y">GOOGL while QQQ &lt; 200d (424 sessions)</div><div class="yb-tr"><span class="z" style="left:28.57%"></span><i class="fgr c" style="left:18.86%;width:9.71%"></i></div><div class="yb-v"><b>-6.8%</b><br>Cum -11.1%</div></div><div class="yb-row"><div class="yb-y">AAPL while QQQ &lt; 200d (424 sessions)</div><div class="yb-tr"><span class="z" style="left:28.57%"></span><i class="fgr c" style="left:17.43%;width:11.14%"></i></div><div class="yb-v"><b>-7.8%</b><br>Cum -12.8%</div></div><div class="yb-row"><div class="yb-y">2022 return · B3+FTNT parked in SGOV (0–3M)</div><div class="yb-tr"><span class="z" style="left:28.57%"></span><i class="ffw c" style="left:28.57%;width:21.14%"></i></div><div class="yb-v"><b>+14.8%</b><br>A5+FTNT +8.0%</div></div><div class="yb-row"><div class="yb-y">2022 return · B3+FTNT parked in SHY (1–3Y)</div><div class="yb-tr"><span class="z" style="left:28.57%"></span><i class="ffw c" style="left:28.57%;width:17.29%"></i></div><div class="yb-v"><b>+12.1%</b><br>A5+FTNT +4.9%</div></div><div class="yb-row"><div class="yb-y">2022 return · B3+FTNT parked in TLT (20Y+)</div><div class="yb-tr"><span class="z" style="left:28.57%"></span><i class="fgr c" style="left:26.71%;width:1.86%"></i></div><div class="yb-v"><b>-1.3%</b><br>A5+FTNT -11.4%</div></div></div><p class="fn">Blanket-gating all three names when QQQ breaks its 200-day line discards Eli Lilly's counter-cyclical gain (+40.2% annualized across QQQ bear sessions). Parking gated tech sleeves in 20-year Treasuries (TLT, -31.2% in 2022) imports rate-hike duration losses just when the QQQ gate turns defensive; 0–3 month T-bills (SGOV / BIL) carry near-zero duration and earned +14.8% in 2022.</p></div>
+<p>Equally critical is <strong>what replaces gated equity</strong>. Substituting 20-year Treasury bonds (<code>TLT</code>) for 0–3 month Treasury bills (<code>SGOV</code> / <code>BIL</code>) fails during inflation-driven rate shocks—the exact regime (<code>2022</code>) when the <code>QQQ</code> 200-day gate stays defensive for ten months:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>Defensive parking instrument</th>
+  <th class="num">Effective duration</th>
+  <th class="num">B3 + FTNT 10Y return / Sharpe / MaxDD</th>
+  <th class="num">B3 + FTNT in 2022</th>
+  <th class="num">A5 + FTNT in 2022</th>
+  <th class="num">B3 + FTNT 20Y MaxDD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>SGOV / BIL · 0–3M Treasury bills (Rule)</strong></td>
+  <td class="num"><strong>~0.1 yr</strong></td>
+  <td class="num"><strong>+54.23% · 1.48 · −28.0%</strong></td>
+  <td class="num"><strong>+14.8%</strong></td>
+  <td class="num"><strong>+8.0%</strong></td>
+  <td class="num"><strong>−33.4%</strong></td>
+</tr>
+<tr>
+  <td>SHY · 1–3Y Treasury notes</td>
+  <td class="num">~1.9 yr</td>
+  <td class="num">+54.23% · 1.48 · −28.0%</td>
+  <td class="num">+12.1%</td>
+  <td class="num">+4.9%</td>
+  <td class="num">−32.3%</td>
+</tr>
+<tr>
+  <td>TLT · 20Y+ Treasury bonds (Excluded)</td>
+  <td class="num">~16.5 yr</td>
+  <td class="num">+53.60% · 1.47 · −28.0%</td>
+  <td class="num"><strong>−1.3%</strong></td>
+  <td class="num"><strong>−11.4%</strong></td>
+  <td class="num"><strong>−35.5%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>In <code>2022</code>, <code>TLT</code> fell <code>−31.2%</code> alongside equities, erasing <code>16.1</code> percentage points from <code>B3 + FTNT</code> (<code>+14.8% → −1.3%</code>) and <code>19.4</code> points from <code>A5 + FTNT</code> (<code>+8.0% → −11.4%</code>). Defensive cash in <code>GLA</code> exists solely to preserve principal while waiting for trend restoration, never to speculate on long-end duration.</p>
+<h2 id="ten-year-and-twenty-year-results">Ten-year and twenty-year results<a class="anchor" href="#ten-year-and-twenty-year-results" aria-label="Link to this section">#</a></h2>
+<div class="fig"><div class="fk">GLA · Figure 1</div><div class="ft">Ten-year growth of $1, log scale</div><div class="fs">Nov 24, 2016 → 2026-11-24 (2,513 sessions) · 1.2 bp per side · SGOV (0–3M T-bill) defensive parking · shaded = B3+FTNT drawdowns of 12% or more</div><div class="lc"><svg viewBox="0 0 640 312" role="img" aria-label="Ten-year growth of $1 for GLA strategies and QQQ" xmlns="http://www.w3.org/2000/svg"><rect x="74.0" y="48" width="13.9" height="234" style="fill:var(--accent);fill-opacity:0.07"/><rect x="74.0" y="48" width="3.7" height="234" style="fill:var(--accent);fill-opacity:0.15"/><rect x="97.1" y="48" width="24.4" height="234" style="fill:var(--accent);fill-opacity:0.07"/><rect x="97.1" y="48" width="12.3" height="234" style="fill:var(--accent);fill-opacity:0.15"/><rect x="129.3" y="48" width="50.0" height="234" style="fill:var(--accent);fill-opacity:0.07"/><rect x="129.3" y="48" width="9.5" height="234" style="fill:var(--accent);fill-opacity:0.15"/><rect x="192.5" y="48" width="3.7" height="234" style="fill:var(--accent);fill-opacity:0.07"/><rect x="192.5" y="48" width="1.1" height="234" style="fill:var(--accent);fill-opacity:0.15"/><rect x="196.2" y="48" width="3.3" height="234" style="fill:var(--accent);fill-opacity:0.07"/><rect x="196.2" y="48" width="1.0" height="234" style="fill:var(--accent);fill-opacity:0.15"/><rect x="216.7" y="48" width="18.7" height="234" style="fill:var(--accent);fill-opacity:0.07"/><rect x="216.7" y="48" width="3.5" height="234" style="fill:var(--accent);fill-opacity:0.15"/><rect x="235.7" y="48" width="20.1" height="234" style="fill:var(--accent);fill-opacity:0.07"/><rect x="235.7" y="48" width="7.3" height="234" style="fill:var(--accent);fill-opacity:0.15"/><rect x="278.2" y="48" width="11.2" height="234" style="fill:var(--accent);fill-opacity:0.07"/><rect x="278.2" y="48" width="7.3" height="234" style="fill:var(--accent);fill-opacity:0.15"/><rect x="291.2" y="48" width="11.2" height="234" style="fill:var(--accent);fill-opacity:0.07"/><rect x="291.2" y="48" width="5.3" height="234" style="fill:var(--accent);fill-opacity:0.15"/><rect x="308.1" y="48" width="8.2" height="234" style="fill:var(--accent);fill-opacity:0.07"/><rect x="308.1" y="48" width="3.5" height="234" style="fill:var(--accent);fill-opacity:0.15"/><rect x="317.2" y="48" width="17.6" height="234" style="fill:var(--accent);fill-opacity:0.07"/><rect x="317.2" y="48" width="8.6" height="234" style="fill:var(--accent);fill-opacity:0.15"/><rect x="361.2" y="48" width="2.7" height="234" style="fill:var(--accent);fill-opacity:0.07"/><rect x="361.2" y="48" width="1.5" height="234" style="fill:var(--accent);fill-opacity:0.15"/><rect x="394.7" y="48" width="19.4" height="234" style="fill:var(--accent);fill-opacity:0.07"/><rect x="394.7" y="48" width="3.3" height="234" style="fill:var(--accent);fill-opacity:0.15"/><rect x="422.9" y="48" width="8.8" height="234" style="fill:var(--accent);fill-opacity:0.07"/><rect x="422.9" y="48" width="6.0" height="234" style="fill:var(--accent);fill-opacity:0.15"/><rect x="466.8" y="48" width="11.0" height="234" style="fill:var(--accent);fill-opacity:0.07"/><rect x="466.8" y="48" width="6.8" height="234" style="fill:var(--accent);fill-opacity:0.15"/><rect x="481.1" y="48" width="5.9" height="234" style="fill:var(--accent);fill-opacity:0.07"/><rect x="481.1" y="48" width="3.5" height="234" style="fill:var(--accent);fill-opacity:0.15"/><line x1="44" x2="504" y1="267.9" y2="267.9" style="stroke:var(--rule)"/><text x="38" y="271.9" text-anchor="end">$1</text><line x1="44" x2="504" y1="189.3" y2="189.3" style="stroke:var(--rule)"/><text x="38" y="193.3" text-anchor="end">$5</text><line x1="44" x2="504" y1="155.4" y2="155.4" style="stroke:var(--rule)"/><text x="38" y="159.4" text-anchor="end">$10</text><line x1="44" x2="504" y1="110.6" y2="110.6" style="stroke:var(--rule)"/><text x="38" y="114.6" text-anchor="end">$25</text><line x1="44" x2="504" y1="56.9" y2="56.9" style="stroke:var(--rule)"/><text x="38" y="60.9" text-anchor="end">$75</text><line x1="94.5" x2="94.5" y1="282" y2="286" style="stroke:var(--ink-2)"/><text x="94.5" y="300" text-anchor="middle">2018</text><line x1="186.7" x2="186.7" y1="282" y2="286" style="stroke:var(--ink-2)"/><text x="186.7" y="300" text-anchor="middle">2020</text><line x1="279.1" x2="279.1" y1="282" y2="286" style="stroke:var(--ink-2)"/><text x="279.1" y="300" text-anchor="middle">2022</text><line x1="370.9" x2="370.9" y1="282" y2="286" style="stroke:var(--ink-2)"/><text x="370.9" y="300" text-anchor="middle">2024</text><line x1="462.8" x2="462.8" y1="282" y2="286" style="stroke:var(--ink-2)"/><text x="462.8" y="300" text-anchor="middle">2026</text><line x1="44" x2="504" y1="282" y2="282" style="stroke:var(--ink-2)"/><path d="M44.0,267.8 L44.7,269.2 L45.5,268.0 L46.2,267.1 L46.9,267.1 L47.7,267.1 L48.4,267.8 L49.1,266.4 L49.9,266.0 L50.6,265.9 L51.3,265.0 L52.1,265.3 L52.8,264.8 L53.5,264.2 L54.3,263.5 L55.0,263.2 L55.7,262.7 L56.5,263.0 L57.2,262.6 L57.9,262.5 L58.6,263.0 L59.4,262.3 L60.1,262.2 L60.8,262.4 L61.6,262.6 L62.3,262.2 L63.0,261.0 L63.8,260.6 L64.5,260.1 L65.2,259.8 L66.0,260.3 L66.7,259.2 L67.4,258.9 L68.2,258.3 L68.9,259.4 L69.6,259.2 L70.4,258.9 L71.1,260.2 L71.8,260.7 L72.6,259.1 L73.3,258.3 L74.0,257.7 L74.8,258.1 L75.5,258.2 L76.2,258.0 L77.0,258.0 L77.7,259.0 L78.4,258.7 L79.2,257.3 L79.9,257.5 L80.6,257.2 L81.4,257.3 L82.1,258.3 L82.8,257.4 L83.6,256.7 L84.3,256.5 L85.0,256.2 L85.8,256.6 L86.5,255.5 L87.2,255.3 L87.9,254.5 L88.7,254.8 L89.4,254.7 L90.1,253.9 L90.9,254.5 L91.6,254.6 L92.3,254.0 L93.1,253.3 L93.8,253.7 L94.5,253.1 L95.3,251.9 L96.0,251.3 L96.7,250.7 L97.5,250.2 L98.2,249.9 L98.9,251.9 L99.7,253.0 L100.4,251.1 L101.1,250.2 L101.9,251.3 L102.6,250.0 L103.3,249.2 L104.1,250.4 L104.8,253.0 L105.5,252.5 L106.3,252.4 L107.0,252.5 L107.7,250.7 L108.5,252.0 L109.2,251.9 L109.4,252.3 L109.9,252.0 L110.7,250.2 L111.4,250.2 L112.1,250.1 L112.9,249.7 L113.6,248.8 L114.3,248.3 L115.1,248.0 L115.8,247.8 L116.5,249.1 L117.2,249.0 L118.0,247.9 L118.7,246.8 L119.4,246.7 L120.2,246.6 L120.9,248.0 L121.6,246.7 L122.4,246.2 L123.1,246.9 L123.8,246.6 L124.6,245.5 L125.3,244.9 L126.0,246.4 L126.8,245.5 L127.5,246.0 L128.2,245.5 L129.0,245.0 L129.7,246.6 L130.4,249.5 L131.2,247.4 L131.9,248.5 L132.6,251.4 L133.4,249.6 L134.1,248.1 L134.8,250.8 L135.6,252.6 L136.3,251.3 L137.0,248.7 L137.8,251.4 L138.5,252.0 L138.9,252.9 L139.2,254.8 L140.0,254.4 L140.7,255.4 L141.4,252.0 L142.2,251.5 L142.9,251.6 L143.6,251.3 L144.4,250.0 L145.1,249.8 L145.8,249.0 L146.5,248.6 L147.3,248.2 L148.0,248.0 L148.7,248.9 L149.5,247.4 L150.2,246.5 L150.9,246.6 L151.7,245.8 L152.4,245.1 L153.1,245.0 L153.9,244.5 L154.6,243.8 L155.3,243.9 L156.1,243.8 L156.8,245.0 L157.5,245.1 L158.3,246.1 L159.0,247.5 L159.7,247.8 L160.5,245.5 L161.2,245.7 L161.9,244.0 L162.7,244.7 L163.4,243.6 L164.1,243.5 L164.9,242.6 L165.6,243.4 L166.3,242.8 L167.1,243.4 L167.8,245.4 L168.5,245.1 L169.3,244.8 L170.0,244.1 L170.7,244.9 L171.5,244.1 L172.2,243.5 L172.9,243.2 L173.6,243.4 L174.4,243.7 L175.1,245.1 L175.8,244.7 L176.6,243.3 L177.3,243.1 L178.0,242.5 L178.8,241.8 L179.5,241.0 L180.2,240.8 L181.0,240.3 L181.7,240.6 L182.4,239.6 L183.2,240.4 L183.9,240.1 L184.6,238.8 L185.4,238.2 L186.1,237.7 L186.8,237.6 L187.6,236.5 L188.3,236.2 L189.0,235.4 L189.8,235.9 L190.5,235.7 L191.2,234.3 L192.0,233.3 L192.7,233.1 L193.4,237.1 L193.6,239.6 L194.2,238.7 L194.9,242.5 L195.6,242.8 L196.4,246.7 L196.7,248.6 L197.1,245.3 L197.8,243.2 L198.6,241.7 L199.3,240.1 L200.0,237.2 L200.8,238.3 L201.5,236.4 L202.2,236.7 L202.9,234.7 L203.7,235.4 L204.4,234.2 L205.1,234.0 L205.9,232.6 L206.6,231.2 L207.3,232.2 L208.1,231.1 L208.8,230.6 L209.5,229.7 L210.3,227.9 L211.0,227.8 L211.7,226.7 L212.5,228.8 L213.2,227.7 L213.9,225.9 L214.7,226.9 L215.4,225.1 L216.1,224.0 L216.9,222.4 L217.6,220.5 L218.3,224.7 L219.1,224.5 L219.8,226.5 L220.2,227.1 L220.5,225.8 L221.3,223.9 L222.0,224.3 L222.7,221.8 L223.5,223.6 L224.2,223.5 L224.9,224.9 L225.7,223.1 L226.4,223.7 L227.1,222.0 L227.9,222.5 L228.6,221.1 L229.3,220.2 L230.1,220.7 L230.8,219.7 L231.5,219.4 L232.2,218.8 L233.0,219.3 L233.7,217.8 L234.4,218.5 L235.2,216.7 L235.9,217.8 L236.6,216.5 L237.4,215.6 L238.1,215.2 L238.8,216.0 L239.6,218.8 L240.3,219.4 L241.0,218.9 L241.8,217.9 L242.5,218.7 L243.1,218.9 L243.2,219.0 L244.0,217.7 L244.7,215.9 L245.4,214.6 L246.2,214.8 L246.9,214.7 L247.6,214.6 L248.4,216.3 L249.1,216.8 L249.8,216.9 L250.6,216.6 L251.3,215.7 L252.0,216.1 L252.8,215.1 L253.5,214.3 L254.2,214.0 L255.0,213.3 L255.7,212.5 L256.4,212.0 L257.2,211.4 L257.9,212.0 L258.6,210.7 L259.4,211.2 L260.1,210.5 L260.8,211.0 L261.5,211.0 L262.3,210.0 L263.0,209.7 L263.7,209.1 L264.5,209.2 L265.2,209.4 L265.9,210.9 L266.7,210.4 L267.4,211.7 L268.1,211.3 L268.9,211.7 L269.6,209.7 L270.3,209.4 L271.1,208.3 L271.8,206.8 L272.5,207.9 L273.3,206.9 L274.0,206.7 L274.7,206.6 L275.5,208.7 L276.2,207.4 L276.9,207.0 L277.7,207.9 L278.4,206.3 L279.1,206.3 L279.9,209.1 L280.6,209.3 L281.3,211.4 L282.1,213.8 L282.8,210.9 L283.5,212.3 L284.3,213.5 L285.0,213.7 L285.5,216.0 L285.7,214.4 L286.5,213.4 L287.2,216.9 L287.9,217.7 L288.6,212.9 L289.4,211.7 L290.1,210.7 L290.8,211.5 L291.6,214.3 L292.3,214.6 L293.0,216.6 L293.8,216.2 L294.5,215.9 L295.2,220.4 L296.0,220.8 L296.5,222.3 L296.7,222.4 L297.4,220.6 L298.2,218.2 L298.9,219.3 L299.6,224.6 L300.4,223.6 L301.1,221.7 L301.8,223.4 L302.6,221.2 L303.3,222.7 L304.0,219.9 L304.8,221.4 L305.5,218.0 L306.2,217.0 L307.0,216.7 L307.7,216.0 L308.4,218.2 L309.2,219.7 L309.9,221.2 L310.6,219.3 L311.4,221.9 L311.5,222.2 L312.1,223.1 L312.8,224.7 L313.6,224.9 L314.3,225.7 L315.0,225.7 L315.8,225.4 L316.5,223.0 L317.2,224.1 L317.9,226.5 L318.7,223.2 L319.4,222.8 L320.1,222.7 L320.9,223.6 L321.6,222.4 L322.3,223.4 L323.1,224.3 L323.8,224.8 L324.5,227.2 L325.3,226.2 L325.8,225.3 L326.0,224.9 L326.7,223.3 L327.5,222.1 L328.2,220.8 L328.9,218.4 L329.7,219.5 L330.4,219.1 L331.1,221.2 L331.9,221.2 L332.6,220.3 L333.3,221.4 L334.1,220.4 L334.8,218.5 L335.5,218.8 L336.3,216.9 L337.0,217.3 L337.7,217.1 L338.5,217.2 L339.2,218.6 L339.9,216.7 L340.7,216.6 L341.4,216.1 L342.1,215.3 L342.9,215.0 L343.6,212.6 L344.3,211.9 L345.1,212.0 L345.8,209.9 L346.5,210.3 L347.2,210.6 L348.0,209.8 L348.7,210.1 L349.4,208.2 L350.2,209.1 L350.9,209.0 L351.6,209.3 L352.4,209.6 L353.1,209.8 L353.8,211.4 L354.6,211.0 L355.3,208.9 L356.0,209.2 L356.8,209.5 L357.5,209.7 L358.2,211.4 L359.0,211.4 L359.7,211.1 L360.4,210.0 L361.2,209.8 L361.9,211.8 L362.6,213.4 L363.4,211.5 L364.1,209.4 L364.8,208.8 L365.6,207.7 L366.3,207.3 L367.0,207.3 L367.8,207.8 L368.5,206.1 L369.2,205.0 L370.0,204.8 L370.7,204.7 L371.4,206.2 L372.2,204.7 L372.9,204.3 L373.6,202.8 L374.4,202.8 L375.1,202.5 L375.8,201.5 L376.5,201.8 L377.3,201.4 L378.0,201.7 L378.7,201.6 L379.5,201.5 L380.2,201.9 L380.9,200.5 L381.7,200.6 L382.4,200.9 L383.1,200.9 L383.9,202.1 L384.6,204.0 L385.3,202.9 L386.1,203.2 L386.8,201.1 L387.5,200.8 L388.3,199.8 L389.0,199.6 L389.7,199.8 L390.5,198.6 L391.2,198.1 L391.9,196.3 L392.7,197.4 L393.4,196.9 L394.1,195.2 L394.9,195.6 L395.6,196.6 L396.3,196.7 L397.1,198.4 L397.8,200.1 L398.0,201.6 L398.5,200.1 L399.3,198.6 L400.0,196.8 L400.7,197.3 L401.5,197.2 L402.2,200.1 L402.9,197.5 L403.6,197.7 L404.4,196.2 L405.1,195.9 L405.8,196.0 L406.6,195.4 L407.3,195.6 L408.0,195.1 L408.8,195.2 L409.5,196.0 L410.2,193.4 L411.0,193.5 L411.7,194.4 L412.4,194.1 L413.2,193.2 L413.9,192.2 L414.6,192.2 L415.4,193.1 L416.1,191.8 L416.8,193.6 L417.6,193.2 L418.3,194.1 L419.0,192.3 L419.8,193.3 L420.5,192.5 L421.2,191.8 L422.0,191.9 L422.7,190.9 L423.4,193.4 L424.2,194.9 L424.9,195.4 L425.6,197.8 L426.4,196.5 L427.1,195.2 L427.8,197.7 L428.6,202.8 L428.9,203.5 L429.3,200.1 L430.0,200.4 L430.8,199.2 L431.5,197.0 L432.2,196.0 L432.9,195.8 L433.7,192.7 L434.4,193.3 L435.1,192.8 L435.9,192.0 L436.6,191.7 L437.3,192.0 L438.1,192.0 L438.8,190.2 L439.5,189.8 L440.3,189.3 L441.0,189.3 L441.7,188.6 L442.5,188.4 L443.2,188.5 L443.9,188.3 L444.7,187.3 L445.4,187.5 L446.1,187.9 L446.9,187.5 L447.6,187.7 L448.3,187.2 L449.1,186.3 L449.8,185.4 L450.5,185.9 L451.3,185.1 L452.0,184.6 L452.7,185.7 L453.5,184.6 L454.2,184.2 L454.9,183.5 L455.7,183.7 L456.4,183.8 L457.1,185.2 L457.9,186.4 L458.6,184.0 L459.3,183.7 L460.1,183.3 L460.8,184.6 L461.5,183.9 L462.2,183.8 L463.0,184.0 L463.7,183.4 L464.4,183.7 L465.2,183.8 L465.9,182.8 L466.6,184.2 L467.4,184.3 L468.1,185.3 L468.8,184.8 L469.6,184.7 L470.3,184.6 L471.0,184.9 L471.8,185.5 L472.5,187.0 L473.2,187.6 L473.6,188.9 L474.0,186.7 L474.7,184.9 L475.4,183.1 L476.2,181.7 L476.9,180.5 L477.6,180.2 L478.4,178.2 L479.1,177.4 L479.8,177.5 L480.6,176.7 L481.3,175.3 L482.0,175.1 L482.8,178.3 L483.5,175.8 L484.2,176.9 L484.6,176.7 L485.0,176.2 L485.7,176.3 L486.4,176.1 L487.2,177.4 L487.9,177.5 L488.6,179.6 L489.4,177.8 L490.1,176.2 L490.8,175.6 L491.5,176.7 L492.3,177.1 L493.0,176.7 L493.7,176.5 L494.5,176.8 L495.2,176.7 L495.9,175.0 L496.7,175.2 L497.4,174.0 L498.1,174.3 L498.9,175.9 L499.6,176.1 L500.3,176.3 L501.1,179.1 L501.8,180.9 L502.5,178.6 L503.3,180.7 L504.0,182.3" style="fill:none;stroke:var(--qqq);stroke-width:1.5;stroke-linejoin:round"/><path d="M44.0,267.6 L44.7,269.0 L45.5,267.8 L46.2,266.4 L46.9,265.3 L47.7,265.3 L48.4,265.8 L49.1,264.4 L49.9,263.8 L50.6,263.9 L51.3,263.3 L52.1,263.7 L52.8,262.4 L53.5,261.8 L54.3,260.7 L55.0,259.9 L55.7,259.1 L56.5,259.5 L57.2,259.0 L57.9,258.8 L58.6,259.2 L59.4,258.6 L60.1,258.2 L60.8,258.7 L61.6,259.2 L62.3,259.2 L63.0,258.5 L63.8,257.0 L64.5,256.2 L65.2,255.9 L66.0,256.7 L66.7,255.8 L67.4,255.7 L68.2,255.3 L68.9,256.5 L69.6,256.3 L70.4,255.8 L71.1,257.2 L71.8,257.7 L72.6,256.3 L73.3,255.4 L74.0,254.8 L74.8,256.1 L75.5,255.9 L76.2,255.2 L77.0,255.1 L77.7,256.7 L78.4,256.0 L79.2,254.7 L79.9,255.0 L80.6,255.0 L81.4,255.5 L82.1,256.0 L82.8,254.7 L83.6,254.0 L84.3,253.8 L85.0,253.3 L85.8,254.0 L86.5,253.0 L87.2,252.4 L87.9,251.2 L88.7,252.0 L89.4,252.2 L90.1,250.9 L90.9,251.9 L91.6,251.7 L92.3,250.9 L93.1,250.4 L93.8,251.3 L94.5,251.1 L95.3,250.0 L96.0,249.3 L96.7,249.2 L97.5,249.4 L98.2,250.4 L98.9,253.0 L99.7,253.8 L100.4,251.5 L101.1,250.8 L101.9,252.1 L102.6,251.3 L103.3,250.1 L104.1,251.2 L104.8,254.2 L105.5,253.1 L106.3,252.4 L107.0,252.6 L107.7,251.0 L108.5,252.3 L109.2,252.6 L109.4,252.9 L109.9,252.3 L110.7,250.1 L111.4,249.6 L112.1,249.5 L112.9,249.2 L113.6,247.9 L114.3,247.4 L115.1,247.6 L115.8,247.4 L116.5,248.4 L117.2,248.4 L118.0,247.4 L118.7,246.2 L119.4,245.9 L120.2,244.5 L120.9,244.3 L121.6,242.2 L122.4,241.6 L123.1,241.5 L123.8,241.0 L124.6,240.3 L125.3,239.8 L126.0,240.7 L126.8,240.3 L127.5,241.1 L128.2,240.6 L129.0,239.7 L129.7,239.2 L130.4,242.0 L131.2,240.2 L131.9,240.7 L132.6,243.1 L133.4,243.0 L134.1,242.1 L134.8,244.3 L135.6,244.7 L136.3,244.7 L137.0,242.2 L137.8,245.1 L138.5,245.8 L138.9,246.7 L139.2,247.4 L140.0,246.4 L140.7,248.5 L141.4,245.6 L142.2,245.6 L142.9,245.7 L143.6,245.6 L144.4,243.2 L145.1,243.4 L145.8,242.8 L146.5,242.2 L147.3,241.7 L148.0,240.8 L148.7,241.2 L149.5,240.1 L150.2,238.6 L150.9,238.8 L151.7,238.6 L152.4,238.1 L153.1,238.2 L153.9,238.5 L154.6,237.7 L155.3,239.2 L156.1,238.6 L156.8,240.0 L157.5,240.3 L158.3,241.2 L159.0,242.5 L159.7,243.0 L160.5,241.8 L161.2,242.0 L161.9,240.5 L162.7,241.5 L163.4,240.4 L164.1,240.5 L164.9,240.4 L165.6,241.1 L166.3,240.5 L167.1,238.7 L167.8,240.5 L168.5,239.8 L169.3,239.5 L170.0,238.6 L170.7,239.6 L171.5,238.8 L172.2,238.1 L172.9,237.6 L173.6,236.9 L174.4,237.2 L175.1,238.9 L175.8,238.3 L176.6,236.9 L177.3,236.4 L178.0,235.8 L178.8,235.2 L179.5,234.0 L180.2,233.3 L181.0,232.5 L181.7,233.0 L182.4,232.1 L183.2,232.2 L183.9,231.2 L184.6,230.0 L185.4,229.0 L186.1,228.4 L186.8,227.8 L187.6,226.0 L188.3,225.1 L189.0,224.2 L189.8,224.8 L190.5,224.8 L191.2,223.6 L192.0,223.4 L192.7,223.6 L193.4,227.5 L193.6,230.0 L194.2,228.6 L194.9,230.8 L195.6,229.6 L196.4,233.8 L196.7,238.1 L197.1,235.5 L197.8,231.8 L198.6,230.7 L199.3,229.3 L200.0,226.4 L200.8,226.6 L201.5,225.7 L202.2,224.8 L202.9,223.1 L203.7,223.7 L204.4,223.6 L205.1,223.6 L205.9,222.8 L206.6,222.0 L207.3,223.2 L208.1,220.8 L208.8,219.6 L209.5,219.4 L210.3,217.4 L211.0,217.4 L211.7,216.4 L212.5,218.8 L213.2,218.4 L213.9,216.6 L214.7,217.0 L215.4,215.5 L216.1,213.5 L216.9,212.9 L217.6,211.2 L218.3,214.5 L219.1,215.1 L219.8,216.8 L220.2,217.6 L220.5,216.5 L221.3,216.0 L222.0,216.1 L222.7,214.0 L223.5,215.9 L224.2,214.9 L224.9,216.9 L225.7,213.1 L226.4,213.2 L227.1,212.9 L227.9,213.1 L228.6,212.5 L229.3,211.7 L230.1,210.8 L230.8,209.3 L231.5,209.3 L232.2,208.2 L233.0,209.6 L233.7,208.5 L234.4,207.5 L235.2,203.8 L235.9,203.3 L236.6,204.1 L237.4,201.8 L238.1,201.7 L238.8,202.9 L239.6,204.2 L240.3,204.3 L241.0,203.7 L241.8,204.6 L242.5,205.8 L243.1,206.0 L243.2,205.7 L244.0,205.0 L244.7,203.1 L245.4,202.1 L246.2,201.3 L246.9,201.3 L247.6,201.2 L248.4,201.7 L249.1,202.2 L249.8,201.8 L250.6,201.6 L251.3,201.1 L252.0,201.2 L252.8,198.6 L253.5,198.3 L254.2,198.0 L255.0,197.3 L255.7,196.7 L256.4,195.3 L257.2,194.2 L257.9,194.9 L258.6,193.1 L259.4,193.3 L260.1,191.7 L260.8,191.8 L261.5,190.7 L262.3,190.6 L263.0,190.8 L263.7,190.3 L264.5,191.5 L265.2,192.3 L265.9,193.8 L266.7,193.6 L267.4,194.3 L268.1,193.6 L268.9,193.9 L269.6,191.9 L270.3,192.5 L271.1,190.5 L271.8,189.3 L272.5,190.3 L273.3,190.1 L274.0,189.1 L274.7,189.6 L275.5,190.4 L276.2,188.6 L276.9,186.4 L277.7,188.0 L278.4,186.3 L279.1,186.5 L279.9,189.1 L280.6,189.5 L281.3,191.3 L282.1,192.7 L282.8,189.5 L283.5,189.8 L284.3,191.2 L285.0,191.0 L285.5,192.8 L285.7,191.5 L286.5,190.2 L287.2,191.7 L287.9,192.0 L288.6,188.3 L289.4,186.7 L290.1,186.2 L290.8,186.4 L291.6,187.7 L292.3,188.5 L293.0,191.0 L293.8,189.8 L294.5,189.2 L295.2,191.9 L296.0,192.0 L296.5,194.2 L296.7,193.6 L297.4,192.2 L298.2,190.5 L298.9,190.4 L299.6,194.9 L300.4,193.5 L301.1,190.6 L301.8,192.0 L302.6,189.3 L303.3,190.6 L304.0,189.9 L304.8,190.8 L305.5,188.7 L306.2,189.0 L307.0,188.5 L307.7,187.0 L308.4,188.6 L309.2,190.1 L309.9,191.4 L310.6,190.0 L311.4,192.1 L311.5,192.3 L312.1,193.1 L312.8,192.8 L313.6,193.2 L314.3,193.2 L315.0,192.5 L315.8,192.5 L316.5,189.7 L317.2,190.4 L317.9,193.5 L318.7,190.7 L319.4,190.3 L320.1,190.1 L320.9,191.3 L321.6,189.7 L322.3,191.7 L323.1,192.7 L323.8,192.7 L324.5,194.6 L325.3,194.3 L325.8,194.5 L326.0,194.2 L326.7,192.8 L327.5,191.4 L328.2,191.0 L328.9,189.4 L329.7,190.4 L330.4,190.7 L331.1,192.6 L331.9,193.6 L332.6,192.4 L333.3,192.8 L334.1,191.3 L334.8,189.0 L335.5,189.3 L336.3,188.1 L337.0,186.3 L337.7,186.1 L338.5,186.6 L339.2,186.5 L339.9,184.5 L340.7,183.5 L341.4,181.6 L342.1,180.9 L342.9,181.3 L343.6,180.5 L344.3,179.3 L345.1,179.7 L345.8,178.6 L346.5,178.6 L347.2,178.8 L348.0,178.2 L348.7,180.0 L349.4,178.2 L350.2,178.5 L350.9,177.3 L351.6,177.5 L352.4,175.9 L353.1,175.4 L353.8,176.0 L354.6,175.5 L355.3,173.8 L356.0,174.0 L356.8,173.2 L357.5,173.5 L358.2,175.5 L359.0,175.7 L359.7,175.5 L360.4,173.3 L361.2,172.0 L361.9,173.8 L362.6,176.6 L363.4,175.9 L364.1,173.3 L364.8,172.5 L365.6,172.3 L366.3,171.9 L367.0,172.7 L367.8,172.9 L368.5,172.5 L369.2,172.2 L370.0,171.9 L370.7,171.9 L371.4,172.1 L372.2,170.5 L372.9,170.5 L373.6,169.2 L374.4,169.0 L375.1,168.1 L375.8,166.7 L376.5,167.3 L377.3,166.9 L378.0,168.3 L378.7,169.2 L379.5,169.4 L380.2,168.6 L380.9,167.6 L381.7,166.9 L382.4,166.8 L383.1,167.0 L383.9,167.1 L384.6,168.4 L385.3,167.8 L386.1,165.8 L386.8,164.0 L387.5,164.3 L388.3,163.0 L389.0,162.7 L389.7,162.3 L390.5,161.3 L391.2,159.7 L391.9,158.6 L392.7,158.9 L393.4,158.2 L394.1,156.1 L394.9,156.1 L395.6,157.0 L396.3,157.7 L397.1,160.7 L397.8,160.9 L398.0,163.1 L398.5,161.0 L399.3,158.9 L400.0,157.5 L400.7,157.6 L401.5,157.5 L402.2,160.4 L402.9,159.2 L403.6,159.5 L404.4,158.4 L405.1,158.4 L405.8,158.7 L406.6,158.5 L407.3,158.0 L408.0,157.8 L408.8,158.1 L409.5,159.9 L410.2,159.1 L411.0,159.1 L411.7,160.5 L412.4,160.7 L413.2,159.0 L413.9,157.9 L414.6,156.8 L415.4,157.4 L416.1,155.5 L416.8,157.1 L417.6,157.1 L418.3,158.8 L419.0,158.8 L419.8,157.6 L420.5,156.0 L421.2,156.2 L422.0,156.6 L422.7,156.0 L423.4,156.1 L424.2,157.0 L424.9,157.4 L425.6,161.9 L426.4,160.7 L427.1,159.1 L427.8,161.3 L428.6,166.8 L428.9,168.6 L429.3,166.3 L430.0,165.6 L430.8,162.5 L431.5,160.4 L432.2,162.2 L432.9,165.3 L433.7,163.1 L434.4,163.5 L435.1,163.3 L435.9,163.1 L436.6,161.7 L437.3,161.3 L438.1,162.9 L438.8,161.6 L439.5,160.5 L440.3,160.7 L441.0,160.6 L441.7,159.8 L442.5,158.4 L443.2,160.4 L443.9,159.4 L444.7,159.7 L445.4,158.2 L446.1,157.9 L446.9,156.6 L447.6,154.4 L448.3,154.4 L449.1,152.6 L449.8,151.6 L450.5,152.7 L451.3,150.7 L452.0,150.2 L452.7,151.4 L453.5,149.9 L454.2,149.3 L454.9,147.1 L455.7,145.4 L456.4,143.6 L457.1,143.7 L457.9,142.0 L458.6,140.2 L459.3,141.3 L460.1,141.6 L460.8,141.6 L461.5,141.2 L462.2,140.8 L463.0,141.6 L463.7,140.9 L464.4,141.2 L465.2,141.1 L465.9,141.3 L466.6,140.6 L467.4,140.4 L468.1,142.6 L468.8,142.0 L469.6,141.7 L470.3,142.9 L471.0,142.8 L471.8,143.6 L472.5,145.5 L473.2,146.4 L473.6,147.5 L474.0,144.4 L474.7,143.1 L475.4,142.8 L476.2,141.6 L476.9,142.0 L477.6,139.0 L478.4,136.7 L479.1,136.7 L479.8,136.1 L480.6,134.8 L481.3,134.1 L482.0,134.1 L482.8,135.6 L483.5,134.7 L484.2,136.4 L484.6,137.1 L485.0,134.6 L485.7,132.7 L486.4,133.1 L487.2,132.5 L487.9,133.6 L488.6,132.4 L489.4,133.9 L490.1,133.4 L490.8,133.9 L491.5,132.4 L492.3,133.3 L493.0,134.2 L493.7,134.2 L494.5,134.0 L495.2,132.8 L495.9,133.3 L496.7,133.1 L497.4,133.2 L498.1,132.3 L498.9,131.2 L499.6,131.5 L500.3,131.8 L501.1,132.6 L501.8,132.7 L502.5,130.5 L503.3,132.0 L504.0,131.8" style="fill:none;stroke:var(--ink-2);stroke-width:1.3;stroke-dasharray:4 3;stroke-linejoin:round"/><path d="M44.0,267.6 L44.7,269.0 L45.5,267.8 L46.2,266.4 L46.9,265.1 L47.7,265.1 L48.4,265.5 L49.1,264.1 L49.9,263.5 L50.6,263.6 L51.3,263.2 L52.1,263.4 L52.8,262.1 L53.5,261.5 L54.3,260.4 L55.0,259.6 L55.7,258.8 L56.5,259.2 L57.2,258.7 L57.9,258.5 L58.6,258.8 L59.4,258.3 L60.1,257.8 L60.8,258.3 L61.6,258.9 L62.3,258.9 L63.0,258.2 L63.8,256.9 L64.5,256.1 L65.2,255.8 L66.0,256.6 L66.7,255.8 L67.4,255.6 L68.2,255.3 L68.9,256.4 L69.6,256.2 L70.4,255.7 L71.1,257.0 L71.8,257.5 L72.6,256.1 L73.3,254.6 L74.0,254.0 L74.8,255.2 L75.5,255.1 L76.2,254.3 L77.0,254.3 L77.7,255.9 L78.4,255.2 L79.2,253.8 L79.9,254.2 L80.6,254.2 L81.4,254.6 L82.1,255.0 L82.8,253.8 L83.6,253.1 L84.3,253.0 L85.0,252.5 L85.8,253.1 L86.5,252.2 L87.2,251.7 L87.9,250.4 L88.7,251.3 L89.4,251.4 L90.1,250.2 L90.9,251.1 L91.6,250.9 L92.3,250.1 L93.1,249.7 L93.8,250.6 L94.5,250.4 L95.3,249.3 L96.0,248.6 L96.7,248.6 L97.5,248.1 L98.2,249.1 L98.9,251.6 L99.7,252.4 L100.4,250.1 L101.1,249.3 L101.9,250.6 L102.6,249.8 L103.3,248.6 L104.1,249.4 L104.8,252.4 L105.5,251.4 L106.3,250.7 L107.0,250.8 L107.7,249.2 L108.5,250.6 L109.2,251.0 L109.4,251.2 L109.9,250.4 L110.7,248.2 L111.4,247.7 L112.1,247.6 L112.9,247.3 L113.6,246.1 L114.3,245.6 L115.1,245.8 L115.8,245.2 L116.5,246.3 L117.2,246.2 L118.0,245.2 L118.7,244.0 L119.4,243.7 L120.2,242.4 L120.9,242.3 L121.6,240.1 L122.4,239.5 L123.1,239.4 L123.8,238.9 L124.6,238.2 L125.3,237.6 L126.0,238.6 L126.8,238.1 L127.5,239.1 L128.2,238.0 L129.0,237.1 L129.7,236.8 L130.4,239.5 L131.2,238.7 L131.9,238.4 L132.6,240.5 L133.4,240.6 L134.1,240.4 L134.8,240.9 L135.6,239.7 L136.3,239.7 L137.0,239.1 L137.8,238.5 L138.5,238.8 L138.9,239.6 L139.2,239.1 L140.0,238.6 L140.7,238.4 L141.4,237.2 L142.2,237.2 L142.9,236.8 L143.6,237.1 L144.4,236.3 L145.1,236.8 L145.8,236.4 L146.5,235.8 L147.3,235.6 L148.0,234.7 L148.7,235.1 L149.5,235.0 L150.2,233.5 L150.9,233.7 L151.7,233.5 L152.4,233.1 L153.1,233.1 L153.9,233.5 L154.6,232.3 L155.3,233.8 L156.1,232.9 L156.8,234.2 L157.5,234.9 L158.3,235.8 L159.0,237.1 L159.7,237.2 L160.5,236.2 L161.2,236.4 L161.9,234.9 L162.7,235.9 L163.4,234.8 L164.1,234.9 L164.9,234.8 L165.6,235.5 L166.3,234.9 L167.1,233.1 L167.8,235.6 L168.5,234.9 L169.3,235.1 L170.0,234.3 L170.7,235.2 L171.5,234.4 L172.2,233.8 L172.9,233.3 L173.6,232.7 L174.4,232.9 L175.1,234.5 L175.8,233.8 L176.6,232.4 L177.3,231.9 L178.0,231.3 L178.8,230.5 L179.5,229.5 L180.2,228.8 L181.0,228.0 L181.7,228.4 L182.4,227.5 L183.2,227.6 L183.9,226.6 L184.6,225.5 L185.4,224.3 L186.1,223.8 L186.8,223.2 L187.6,221.4 L188.3,220.5 L189.0,219.6 L189.8,220.3 L190.5,220.3 L191.2,219.0 L192.0,218.9 L192.7,219.1 L193.4,222.9 L193.6,225.6 L194.2,224.3 L194.9,226.3 L195.6,227.3 L196.4,228.0 L196.7,229.7 L197.1,229.4 L197.8,227.4 L198.6,227.0 L199.3,226.2 L200.0,223.4 L200.8,223.7 L201.5,222.5 L202.2,221.6 L202.9,219.9 L203.7,220.5 L204.4,220.3 L205.1,220.3 L205.9,219.5 L206.6,218.7 L207.3,219.8 L208.1,217.6 L208.8,216.4 L209.5,216.4 L210.3,214.4 L211.0,214.3 L211.7,213.8 L212.5,216.1 L213.2,215.7 L213.9,213.6 L214.7,214.0 L215.4,212.7 L216.1,210.9 L216.9,210.3 L217.6,208.5 L218.3,211.9 L219.1,212.5 L219.8,214.0 L220.2,214.8 L220.5,213.7 L221.3,213.1 L222.0,213.2 L222.7,211.0 L223.5,212.9 L224.2,212.0 L224.9,213.9 L225.7,210.3 L226.4,210.4 L227.1,209.9 L227.9,210.2 L228.6,209.6 L229.3,208.7 L230.1,208.0 L230.8,206.4 L231.5,206.5 L232.2,205.2 L233.0,206.7 L233.7,205.5 L234.4,204.6 L235.2,200.9 L235.9,200.4 L236.6,201.3 L237.4,199.0 L238.1,198.9 L238.8,200.1 L239.6,201.0 L240.3,201.0 L241.0,200.6 L241.8,201.5 L242.5,202.7 L243.1,203.0 L243.2,202.7 L244.0,201.9 L244.7,200.1 L245.4,199.2 L246.2,198.3 L246.9,198.3 L247.6,198.2 L248.4,198.6 L249.1,198.2 L249.8,197.9 L250.6,197.6 L251.3,197.1 L252.0,197.1 L252.8,194.5 L253.5,194.2 L254.2,194.0 L255.0,193.2 L255.7,192.7 L256.4,191.3 L257.2,190.3 L257.9,191.0 L258.6,189.1 L259.4,189.3 L260.1,187.6 L260.8,187.7 L261.5,186.6 L262.3,186.5 L263.0,186.6 L263.7,186.3 L264.5,187.5 L265.2,188.3 L265.9,189.3 L266.7,189.1 L267.4,189.8 L268.1,189.1 L268.9,189.3 L269.6,187.4 L270.3,188.0 L271.1,185.9 L271.8,184.7 L272.5,185.7 L273.3,185.6 L274.0,184.7 L274.7,185.2 L275.5,186.1 L276.2,184.4 L276.9,182.7 L277.7,182.4 L278.4,180.8 L279.1,181.0 L279.9,182.0 L280.6,180.4 L281.3,181.8 L282.1,182.5 L282.8,181.8 L283.5,182.9 L284.3,183.9 L285.0,183.5 L285.5,183.6 L285.7,183.3 L286.5,182.6 L287.2,182.2 L287.9,181.6 L288.6,180.4 L289.4,180.4 L290.1,180.4 L290.8,180.9 L291.6,180.0 L292.3,180.5 L293.0,181.6 L293.8,180.6 L294.5,180.7 L295.2,181.2 L296.0,180.4 L296.5,181.7 L296.7,181.0 L297.4,180.2 L298.2,180.8 L298.9,180.2 L299.6,182.4 L300.4,182.7 L301.1,181.0 L301.8,181.2 L302.6,179.6 L303.3,179.5 L304.0,179.7 L304.8,179.2 L305.5,179.6 L306.2,180.8 L307.0,180.8 L307.7,179.9 L308.4,180.0 L309.2,180.2 L309.9,180.7 L310.6,179.8 L311.4,180.8 L311.5,180.9 L312.1,181.5 L312.8,180.7 L313.6,180.1 L314.3,179.8 L315.0,179.5 L315.8,179.7 L316.5,178.5 L317.2,177.9 L317.9,178.1 L318.7,177.5 L319.4,178.3 L320.1,177.5 L320.9,177.4 L321.6,177.3 L322.3,177.7 L323.1,177.7 L323.8,177.3 L324.5,177.4 L325.3,177.5 L325.8,178.2 L326.0,178.0 L326.7,176.4 L327.5,177.2 L328.2,176.2 L328.9,175.3 L329.7,176.1 L330.4,176.3 L331.1,178.3 L331.9,179.2 L332.6,178.1 L333.3,178.5 L334.1,177.2 L334.8,175.0 L335.5,175.4 L336.3,174.1 L337.0,172.2 L337.7,172.0 L338.5,172.5 L339.2,172.3 L339.9,170.4 L340.7,169.3 L341.4,167.4 L342.1,166.7 L342.9,167.2 L343.6,166.4 L344.3,165.2 L345.1,165.5 L345.8,164.4 L346.5,164.5 L347.2,164.6 L348.0,164.0 L348.7,165.9 L349.4,164.1 L350.2,164.3 L350.9,163.2 L351.6,163.4 L352.4,161.6 L353.1,161.0 L353.8,161.6 L354.6,161.1 L355.3,159.5 L356.0,159.6 L356.8,158.8 L357.5,159.1 L358.2,161.0 L359.0,161.3 L359.7,161.0 L360.4,158.9 L361.2,157.2 L361.9,159.0 L362.6,161.7 L363.4,160.9 L364.1,158.3 L364.8,157.5 L365.6,157.3 L366.3,156.8 L367.0,157.6 L367.8,157.7 L368.5,157.4 L369.2,157.0 L370.0,156.8 L370.7,156.8 L371.4,157.3 L372.2,155.7 L372.9,155.2 L373.6,153.9 L374.4,153.8 L375.1,153.3 L375.8,151.7 L376.5,152.0 L377.3,150.3 L378.0,151.6 L378.7,152.6 L379.5,152.6 L380.2,151.8 L380.9,150.8 L381.7,150.1 L382.4,150.0 L383.1,150.2 L383.9,150.2 L384.6,151.5 L385.3,150.9 L386.1,148.7 L386.8,146.8 L387.5,147.0 L388.3,145.8 L389.0,145.5 L389.7,145.1 L390.5,144.1 L391.2,142.3 L391.9,141.1 L392.7,141.5 L393.4,140.8 L394.1,138.7 L394.9,138.6 L395.6,139.4 L396.3,140.2 L397.1,143.1 L397.8,143.3 L398.0,145.2 L398.5,143.2 L399.3,140.9 L400.0,139.5 L400.7,139.6 L401.5,139.6 L402.2,142.4 L402.9,141.3 L403.6,141.5 L404.4,140.4 L405.1,140.3 L405.8,140.6 L406.6,140.5 L407.3,139.9 L408.0,139.5 L408.8,139.7 L409.5,141.4 L410.2,140.5 L411.0,140.6 L411.7,141.8 L412.4,142.1 L413.2,140.4 L413.9,139.4 L414.6,138.1 L415.4,138.8 L416.1,136.8 L416.8,138.4 L417.6,138.4 L418.3,140.1 L419.0,140.1 L419.8,138.3 L420.5,136.8 L421.2,136.8 L422.0,137.2 L422.7,136.6 L423.4,136.6 L424.2,137.3 L424.9,138.1 L425.6,139.3 L426.4,138.7 L427.1,138.4 L427.8,138.4 L428.6,140.9 L428.9,141.1 L429.3,141.2 L430.0,140.9 L430.8,139.1 L431.5,138.1 L432.2,138.8 L432.9,140.1 L433.7,139.6 L434.4,140.0 L435.1,139.8 L435.9,139.6 L436.6,138.2 L437.3,137.8 L438.1,139.4 L438.8,138.0 L439.5,137.0 L440.3,137.1 L441.0,137.1 L441.7,136.2 L442.5,134.9 L443.2,136.9 L443.9,135.9 L444.7,136.1 L445.4,134.5 L446.1,134.2 L446.9,133.0 L447.6,130.2 L448.3,130.2 L449.1,128.4 L449.8,127.5 L450.5,128.6 L451.3,126.5 L452.0,125.9 L452.7,127.0 L453.5,125.5 L454.2,124.9 L454.9,122.7 L455.7,121.0 L456.4,119.1 L457.1,119.3 L457.9,117.5 L458.6,115.7 L459.3,116.6 L460.1,116.9 L460.8,116.9 L461.5,116.9 L462.2,116.5 L463.0,117.3 L463.7,116.8 L464.4,117.1 L465.2,117.0 L465.9,117.2 L466.6,116.5 L467.4,116.4 L468.1,118.6 L468.8,118.0 L469.6,117.7 L470.3,117.1 L471.0,117.0 L471.8,117.8 L472.5,119.7 L473.2,119.9 L473.6,120.1 L474.0,118.9 L474.7,118.9 L475.4,118.6 L476.2,117.5 L476.9,118.6 L477.6,115.8 L478.4,113.4 L479.1,113.4 L479.8,112.8 L480.6,111.7 L481.3,111.4 L482.0,111.3 L482.8,112.9 L483.5,112.0 L484.2,113.7 L484.6,114.5 L485.0,112.2 L485.7,110.0 L486.4,108.8 L487.2,108.2 L487.9,109.2 L488.6,108.0 L489.4,109.7 L490.1,109.1 L490.8,109.5 L491.5,107.9 L492.3,108.8 L493.0,109.9 L493.7,110.7 L494.5,110.5 L495.2,109.4 L495.9,109.8 L496.7,109.6 L497.4,109.7 L498.1,108.8 L498.9,108.0 L499.6,107.1 L500.3,107.4 L501.1,107.9 L501.8,108.1 L502.5,106.9 L503.3,107.5 L504.0,107.2" style="fill:none;stroke:var(--accent);stroke-width:1.9;stroke-linejoin:round"/><path d="M44.0,267.6 L44.7,268.7 L45.5,266.9 L46.2,264.4 L46.9,264.1 L47.7,263.7 L48.4,264.4 L49.1,262.5 L49.9,261.2 L50.6,260.6 L51.3,259.0 L52.1,259.8 L52.8,258.1 L53.5,256.9 L54.3,255.4 L55.0,254.0 L55.7,252.7 L56.5,253.1 L57.2,252.2 L57.9,252.2 L58.6,253.0 L59.4,251.4 L60.1,250.4 L60.8,251.5 L61.6,252.6 L62.3,252.8 L63.0,252.1 L63.8,249.8 L64.5,247.7 L65.2,246.9 L66.0,248.8 L66.7,248.2 L67.4,248.2 L68.2,247.3 L68.9,249.9 L69.6,249.6 L70.4,249.0 L71.1,251.4 L71.8,252.6 L72.6,250.1 L73.3,247.4 L74.0,246.5 L74.8,248.8 L75.5,250.8 L76.2,249.0 L77.0,249.9 L77.7,253.0 L78.4,251.9 L79.2,249.3 L79.9,250.6 L80.6,251.3 L81.4,252.3 L82.1,252.6 L82.8,250.7 L83.6,249.5 L84.3,249.2 L85.0,248.3 L85.8,249.4 L86.5,247.9 L87.2,247.2 L87.9,245.8 L88.7,246.7 L89.4,247.3 L90.1,245.2 L90.9,246.7 L91.6,246.2 L92.3,245.0 L93.1,244.4 L93.8,245.1 L94.5,244.6 L95.3,242.8 L96.0,241.6 L96.7,241.5 L97.5,241.9 L98.2,243.2 L98.9,244.8 L99.7,248.2 L100.4,244.4 L101.1,243.5 L101.9,245.6 L102.6,243.5 L103.3,242.4 L104.1,243.9 L104.8,248.0 L105.5,249.3 L106.3,249.4 L107.0,249.5 L107.7,247.7 L108.5,249.6 L109.2,250.5 L109.4,250.8 L109.9,250.6 L110.7,248.9 L111.4,249.2 L112.1,249.5 L112.9,249.5 L113.6,247.9 L114.3,247.6 L115.1,247.6 L115.8,246.4 L116.5,248.6 L117.2,248.8 L118.0,247.1 L118.7,245.4 L119.4,244.9 L120.2,242.2 L120.9,242.8 L121.6,239.6 L122.4,238.9 L123.1,239.1 L123.8,238.7 L124.6,237.4 L125.3,236.4 L126.0,238.5 L126.8,238.0 L127.5,239.7 L128.2,238.1 L129.0,237.2 L129.7,237.0 L130.4,241.3 L131.2,239.9 L131.9,239.3 L132.6,244.3 L133.4,243.3 L134.1,242.5 L134.8,246.0 L135.6,244.2 L136.3,245.1 L137.0,245.4 L137.8,247.7 L138.5,248.1 L138.9,249.3 L139.2,248.7 L140.0,247.9 L140.7,247.8 L141.4,246.1 L142.2,246.1 L142.9,245.8 L143.6,246.2 L144.4,245.0 L145.1,246.2 L145.8,245.9 L146.5,245.1 L147.3,245.0 L148.0,243.8 L148.7,244.0 L149.5,244.4 L150.2,242.7 L150.9,244.7 L151.7,245.1 L152.4,243.6 L153.1,243.3 L153.9,243.5 L154.6,241.4 L155.3,243.8 L156.1,243.0 L156.8,244.1 L157.5,242.3 L158.3,242.4 L159.0,244.0 L159.7,243.6 L160.5,242.5 L161.2,242.7 L161.9,241.1 L162.7,243.0 L163.4,242.4 L164.1,241.3 L164.9,240.4 L165.6,241.4 L166.3,240.5 L167.1,239.2 L167.8,243.0 L168.5,241.1 L169.3,239.6 L170.0,239.8 L170.7,242.2 L171.5,242.2 L172.2,241.1 L172.9,239.5 L173.6,240.1 L174.4,240.1 L175.1,242.2 L175.8,241.2 L176.6,239.4 L177.3,238.4 L178.0,237.8 L178.8,238.2 L179.5,236.1 L180.2,234.7 L181.0,233.2 L181.7,234.6 L182.4,234.0 L183.2,233.6 L183.9,232.4 L184.6,229.5 L185.4,228.1 L186.1,227.1 L186.8,225.3 L187.6,221.4 L188.3,220.1 L189.0,218.9 L189.8,219.4 L190.5,219.2 L191.2,218.1 L192.0,216.7 L192.7,215.9 L193.4,221.4 L193.6,224.5 L194.2,220.7 L194.9,219.8 L195.6,218.6 L196.4,217.7 L196.7,225.1 L197.1,223.4 L197.8,218.4 L198.6,216.2 L199.3,216.4 L200.0,211.9 L200.8,213.0 L201.5,211.8 L202.2,209.1 L202.9,206.1 L203.7,206.2 L204.4,206.6 L205.1,206.7 L205.9,205.2 L206.6,202.5 L207.3,205.1 L208.1,203.1 L208.8,201.1 L209.5,200.9 L210.3,198.8 L211.0,199.1 L211.7,198.0 L212.5,202.2 L213.2,201.0 L213.9,199.3 L214.7,200.4 L215.4,198.8 L216.1,194.8 L216.9,195.8 L217.6,196.0 L218.3,200.7 L219.1,206.2 L219.8,207.7 L220.2,210.7 L220.5,207.1 L221.3,207.0 L222.0,207.2 L222.7,205.3 L223.5,207.6 L224.2,206.6 L224.9,207.3 L225.7,205.0 L226.4,206.1 L227.1,204.3 L227.9,205.3 L228.6,205.3 L229.3,203.1 L230.1,204.4 L230.8,202.5 L231.5,202.4 L232.2,201.1 L233.0,205.6 L233.7,203.3 L234.4,201.3 L235.2,195.5 L235.9,195.5 L236.6,197.8 L237.4,194.9 L238.1,195.0 L238.8,196.8 L239.6,198.5 L240.3,200.2 L241.0,200.9 L241.8,202.5 L242.5,203.4 L243.1,205.3 L243.2,205.0 L244.0,204.1 L244.7,202.7 L245.4,201.1 L246.2,200.8 L246.9,201.3 L247.6,201.2 L248.4,200.6 L249.1,200.0 L249.8,199.6 L250.6,199.0 L251.3,198.4 L252.0,198.1 L252.8,194.8 L253.5,194.8 L254.2,194.8 L255.0,193.8 L255.7,193.8 L256.4,192.6 L257.2,192.1 L257.9,192.6 L258.6,190.3 L259.4,190.1 L260.1,187.8 L260.8,187.8 L261.5,186.9 L262.3,186.8 L263.0,186.8 L263.7,186.9 L264.5,188.8 L265.2,189.3 L265.9,191.3 L266.7,190.9 L267.4,191.4 L268.1,190.5 L268.9,190.5 L269.6,188.9 L270.3,189.6 L271.1,185.2 L271.8,183.1 L272.5,185.1 L273.3,185.0 L274.0,182.2 L274.7,183.1 L275.5,182.9 L276.2,180.6 L276.9,177.6 L277.7,178.4 L278.4,175.3 L279.1,175.4 L279.9,178.8 L280.6,177.8 L281.3,180.6 L282.1,182.8 L282.8,180.0 L283.5,181.6 L284.3,183.1 L285.0,181.9 L285.5,184.8 L285.7,181.2 L286.5,179.0 L287.2,181.2 L287.9,182.0 L288.6,176.6 L289.4,173.6 L290.1,171.9 L290.8,172.6 L291.6,172.5 L292.3,173.8 L293.0,177.4 L293.8,175.4 L294.5,174.2 L295.2,178.0 L296.0,178.3 L296.5,181.8 L296.7,181.2 L297.4,175.5 L298.2,174.3 L298.9,173.0 L299.6,178.8 L300.4,177.4 L301.1,174.1 L301.8,174.5 L302.6,170.1 L303.3,168.4 L304.0,168.2 L304.8,168.2 L305.5,166.8 L306.2,166.5 L307.0,166.7 L307.7,163.7 L308.4,164.7 L309.2,166.6 L309.9,170.1 L310.6,168.6 L311.4,170.2 L311.5,170.4 L312.1,169.8 L312.8,168.7 L313.6,168.0 L314.3,167.4 L315.0,164.9 L315.8,166.5 L316.5,161.9 L317.2,160.3 L317.9,165.7 L318.7,164.0 L319.4,164.7 L320.1,163.6 L320.9,164.3 L321.6,162.0 L322.3,164.3 L323.1,167.5 L323.8,167.5 L324.5,170.0 L325.3,171.6 L325.8,172.6 L326.0,172.2 L326.7,169.4 L327.5,168.7 L328.2,166.1 L328.9,164.4 L329.7,163.2 L330.4,163.0 L331.1,164.9 L331.9,166.6 L332.6,164.7 L333.3,166.6 L334.1,164.5 L334.8,160.2 L335.5,161.3 L336.3,159.7 L337.0,156.8 L337.7,156.0 L338.5,156.2 L339.2,155.6 L339.9,151.9 L340.7,151.1 L341.4,148.2 L342.1,147.4 L342.9,148.1 L343.6,146.6 L344.3,145.4 L345.1,145.9 L345.8,143.4 L346.5,143.3 L347.2,143.1 L348.0,142.1 L348.7,144.6 L349.4,142.0 L350.2,142.6 L350.9,141.7 L351.6,142.3 L352.4,140.2 L353.1,140.0 L353.8,141.2 L354.6,141.0 L355.3,137.6 L356.0,138.4 L356.8,137.1 L357.5,137.9 L358.2,141.1 L359.0,141.5 L359.7,140.3 L360.4,135.8 L361.2,132.8 L361.9,135.4 L362.6,139.1 L363.4,136.9 L364.1,131.4 L364.8,130.3 L365.6,130.7 L366.3,130.2 L367.0,131.6 L367.8,131.8 L368.5,130.5 L369.2,129.5 L370.0,130.0 L370.7,130.2 L371.4,130.2 L372.2,126.9 L372.9,125.6 L373.6,123.6 L374.4,124.3 L375.1,121.6 L375.8,119.5 L376.5,120.2 L377.3,118.4 L378.0,121.0 L378.7,121.7 L379.5,122.3 L380.2,121.1 L380.9,120.3 L381.7,118.6 L382.4,118.2 L383.1,118.9 L383.9,117.9 L384.6,120.7 L385.3,119.0 L386.1,117.1 L386.8,117.2 L387.5,117.9 L388.3,116.1 L389.0,116.0 L389.7,115.8 L390.5,114.3 L391.2,110.5 L391.9,108.3 L392.7,110.2 L393.4,110.3 L394.1,105.7 L394.9,105.6 L395.6,107.2 L396.3,109.9 L397.1,115.0 L397.8,116.7 L398.0,117.3 L398.5,113.5 L399.3,109.3 L400.0,107.2 L400.7,107.7 L401.5,108.1 L402.2,113.5 L402.9,111.4 L403.6,110.8 L404.4,109.9 L405.1,109.6 L405.8,110.1 L406.6,109.3 L407.3,108.4 L408.0,107.9 L408.8,108.3 L409.5,110.3 L410.2,107.8 L411.0,108.1 L411.7,106.9 L412.4,107.6 L413.2,105.6 L413.9,104.7 L414.6,101.3 L415.4,101.2 L416.1,98.0 L416.8,99.5 L417.6,99.7 L418.3,101.1 L419.0,102.1 L419.8,101.5 L420.5,99.9 L421.2,99.4 L422.0,99.8 L422.7,97.8 L423.4,98.8 L424.2,101.1 L424.9,101.2 L425.6,107.7 L426.4,106.1 L427.1,103.5 L427.8,104.0 L428.6,105.9 L428.9,108.6 L429.3,101.1 L430.0,101.1 L430.8,100.6 L431.5,98.5 L432.2,97.9 L432.9,98.5 L433.7,97.0 L434.4,97.3 L435.1,95.8 L435.9,96.4 L436.6,96.1 L437.3,97.8 L438.1,98.2 L438.8,97.9 L439.5,95.5 L440.3,95.7 L441.0,94.8 L441.7,93.7 L442.5,93.4 L443.2,95.1 L443.9,95.2 L444.7,92.1 L445.4,92.5 L446.1,93.2 L446.9,91.1 L447.6,87.8 L448.3,89.1 L449.1,86.1 L449.8,84.0 L450.5,84.5 L451.3,84.6 L452.0,83.4 L452.7,87.0 L453.5,84.2 L454.2,83.8 L454.9,80.6 L455.7,78.9 L456.4,75.6 L457.1,75.8 L457.9,73.4 L458.6,69.9 L459.3,71.0 L460.1,71.7 L460.8,72.1 L461.5,72.2 L462.2,71.3 L463.0,73.0 L463.7,72.5 L464.4,72.7 L465.2,73.6 L465.9,74.2 L466.6,71.7 L467.4,71.8 L468.1,77.1 L468.8,75.2 L469.6,74.2 L470.3,73.9 L471.0,72.6 L471.8,74.6 L472.5,77.4 L473.2,78.1 L473.6,80.0 L474.0,76.8 L474.7,76.5 L475.4,75.9 L476.2,73.0 L476.9,74.7 L477.6,70.0 L478.4,67.6 L479.1,67.5 L479.8,66.3 L480.6,63.3 L481.3,62.6 L482.0,62.4 L482.8,66.7 L483.5,65.4 L484.2,69.0 L484.6,71.2 L485.0,67.7 L485.7,63.0 L486.4,62.2 L487.2,60.3 L487.9,61.7 L488.6,59.1 L489.4,58.9 L490.1,57.4 L490.8,58.0 L491.5,55.4 L492.3,57.9 L493.0,58.8 L493.7,60.3 L494.5,59.0 L495.2,57.3 L495.9,58.4 L496.7,58.3 L497.4,58.3 L498.1,55.8 L498.9,55.8 L499.6,55.2 L500.3,55.2 L501.1,57.3 L501.8,56.9 L502.5,54.3 L503.3,56.2 L504.0,56.7" style="fill:none;stroke:var(--fw);stroke-width:2.2;stroke-linejoin:round"/><line x1="109.4" x2="109.4" y1="48" y2="250.8" style="stroke:var(--fw);stroke-width:.8;stroke-dasharray:1.5 3;stroke-opacity:.55"/><circle cx="109.4" cy="250.8" r="2.5" style="fill:var(--fw)"/><text x="109.4" y="26" text-anchor="middle" style="fill:var(--fw);font-weight:600">-19.2%</text><line x1="138.9" x2="138.9" y1="48" y2="249.3" style="stroke:var(--fw);stroke-width:.8;stroke-dasharray:1.5 3;stroke-opacity:.55"/><circle cx="138.9" cy="249.3" r="2.5" style="fill:var(--fw)"/><text x="138.9" y="26" text-anchor="middle" style="fill:var(--fw);font-weight:600">-23.7%</text><line x1="220.2" x2="220.2" y1="48" y2="210.7" style="stroke:var(--fw);stroke-width:.8;stroke-dasharray:1.5 3;stroke-opacity:.55"/><circle cx="220.2" cy="210.7" r="2.5" style="fill:var(--fw)"/><text x="220.2" y="26" text-anchor="middle" style="fill:var(--fw);font-weight:600">-28.0%</text><line x1="243.1" x2="243.1" y1="48" y2="205.3" style="stroke:var(--fw);stroke-width:.8;stroke-dasharray:1.5 3;stroke-opacity:.55"/><circle cx="243.1" cy="205.3" r="2.5" style="fill:var(--fw)"/><text x="243.1" y="26" text-anchor="middle" style="fill:var(--fw);font-weight:600">-22.0%</text><line x1="296.5" x2="296.5" y1="48" y2="181.8" style="stroke:var(--fw);stroke-width:.8;stroke-dasharray:1.5 3;stroke-opacity:.55"/><circle cx="296.5" cy="181.8" r="2.5" style="fill:var(--fw)"/><text x="296.5" y="26" text-anchor="middle" style="fill:var(--fw);font-weight:600">-19.5%</text><line x1="325.8" x2="325.8" y1="48" y2="172.6" style="stroke:var(--fw);stroke-width:.8;stroke-dasharray:1.5 3;stroke-opacity:.55"/><circle cx="325.8" cy="172.6" r="2.5" style="fill:var(--fw)"/><text x="325.8" y="26" text-anchor="middle" style="fill:var(--fw);font-weight:600">-22.3%</text><line x1="398.0" x2="398.0" y1="48" y2="117.3" style="stroke:var(--fw);stroke-width:.8;stroke-dasharray:1.5 3;stroke-opacity:.55"/><circle cx="398.0" cy="117.3" r="2.5" style="fill:var(--fw)"/><text x="398.0" y="26" text-anchor="middle" style="fill:var(--fw);font-weight:600">-24.0%</text><line x1="428.9" x2="428.9" y1="48" y2="108.6" style="stroke:var(--fw);stroke-width:.8;stroke-dasharray:1.5 3;stroke-opacity:.55"/><circle cx="428.9" cy="108.6" r="2.5" style="fill:var(--fw)"/><text x="428.9" y="26" text-anchor="middle" style="fill:var(--fw);font-weight:600">-19.9%</text><line x1="473.6" x2="473.6" y1="48" y2="80.0" style="stroke:var(--fw);stroke-width:.8;stroke-dasharray:1.5 3;stroke-opacity:.55"/><circle cx="473.6" cy="80.0" r="2.5" style="fill:var(--fw)"/><text x="473.6" y="26" text-anchor="middle" style="fill:var(--fw);font-weight:600">-20.1%</text><line x1="317.8" x2="317.8" y1="48" y2="227.3" style="stroke:var(--qqq);stroke-width:.8;stroke-dasharray:1.5 3;stroke-opacity:.55"/><circle cx="317.8" cy="227.3" r="2.5" style="fill:var(--qqq)"/><text x="317.8" y="40" text-anchor="middle" style="fill:var(--qqq);font-weight:600">QQQ -35.1%</text><text x="510" y="60.7" style="fill:var(--fw);font-weight:600">B3+FTNT $75.3</text><text x="510" y="111.2" style="fill:var(--accent);font-weight:600">A5+FTNT $26.8</text><text x="510" y="135.8" style="fill:var(--ink-2)">Ungated $16.2</text><text x="510" y="186.3" style="fill:var(--qqq)">QQQ $5.77</text></svg></div><div class="leg"><span><i class="ffw"></i>GLA-Overlay (B3 + FTNT, <= 200% cap)</span><span><i class="f1"></i>GLA-Core (A5 + FTNT, split gate)</span><span><i class="fe"></i>Ungated GLA-Core (A0)</span><span><i class="fgr"></i>QQQ</span></div><p class="fn">Over ten years, GLA-Overlay (B3 + FTNT) grew $1.00 to $75.25 (+54.2% annualized, Sharpe 1.48, max drawdown -28.0%) with zero overnight margin; unleveraged GLA-Core (A5 + FTNT) grew $1.00 to $26.81 (+39.1% annualized, Sharpe 1.88, max drawdown -20.4%) against $5.77 for QQQ (-35.1% drawdown in 2022).</p></div>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>Metric (through Nov 24, 2026)</th>
+  <th class="num">B3 + FTNT (Overlay &lt;=200%)</th>
+  <th class="num">B3 (No FTNT)</th>
+  <th class="num">A5 + FTNT (Core Split)</th>
+  <th class="num">A6 + FTNT (Core Dual)</th>
+  <th class="num">Ungated Core (A0)</th>
+  <th class="num">QQQ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>10Y Annual return</strong> (<code>Nov 2016–Nov 2026</code>)</td>
+  <td class="num"><strong>+54.23%</strong></td>
+  <td class="num">+49.11%</td>
+  <td class="num"><strong>+39.07%</strong></td>
+  <td class="num">+35.90%</td>
+  <td class="num">+32.77%</td>
+  <td class="num">+19.21%</td>
+</tr>
+<tr>
+  <td><strong>10Y Volatility</strong></td>
+  <td class="num">33.0%</td>
+  <td class="num">32.9%</td>
+  <td class="num"><strong>18.5%</strong></td>
+  <td class="num"><strong>17.4%</strong></td>
+  <td class="num">22.5%</td>
+  <td class="num">23.0%</td>
+</tr>
+<tr>
+  <td><strong>10Y Sharpe ratio</strong></td>
+  <td class="num"><strong>1.48</strong></td>
+  <td class="num">1.38</td>
+  <td class="num"><strong>1.88</strong></td>
+  <td class="num"><strong>1.85</strong></td>
+  <td class="num">1.37</td>
+  <td class="num">0.88</td>
+</tr>
+<tr>
+  <td><strong>10Y Maximum drawdown</strong></td>
+  <td class="num"><strong>−28.0%</strong></td>
+  <td class="num">−28.2%</td>
+  <td class="num"><strong>−20.4%</strong></td>
+  <td class="num"><strong>−20.5%</strong></td>
+  <td class="num">−25.5%</td>
+  <td class="num">−35.1%</td>
+</tr>
+<tr>
+  <td><strong>10Y Calmar ratio</strong></td>
+  <td class="num"><strong>1.94</strong></td>
+  <td class="num">1.74</td>
+  <td class="num"><strong>1.92</strong></td>
+  <td class="num">1.75</td>
+  <td class="num">1.28</td>
+  <td class="num">0.55</td>
+</tr>
+<tr>
+  <td><strong>10Y Worst month</strong></td>
+  <td class="num">−19.4%</td>
+  <td class="num">−19.7%</td>
+  <td class="num"><strong>−9.4%</strong></td>
+  <td class="num"><strong>−9.4%</strong></td>
+  <td class="num">−9.3%</td>
+  <td class="num">−13.6%</td>
+</tr>
+<tr>
+  <td><strong>10Y Worst day</strong></td>
+  <td class="num">−11.3%</td>
+  <td class="num">−11.3%</td>
+  <td class="num"><strong>−6.0%</strong></td>
+  <td class="num"><strong>−6.0%</strong></td>
+  <td class="num">−10.4%</td>
+  <td class="num">−12.0%</td>
+</tr>
+<tr>
+  <td><strong>10Y: $1 became</strong></td>
+  <td class="num"><strong>$75.25</strong></td>
+  <td class="num">$53.75</td>
+  <td class="num"><strong>$26.81</strong></td>
+  <td class="num">$21.31</td>
+  <td class="num">$16.89</td>
+  <td class="num">$5.77</td>
+</tr>
+<tr>
+  <td><strong>2020+ Algo Era</strong> (<code>Jan 2020–Nov 2026</code>)</td>
+  <td class="num"><strong>+65.62%</strong> (SR 1.57)</td>
+  <td class="num">+60.14% (SR 1.48)</td>
+  <td class="num"><strong>+41.42%</strong> (SR 1.86)</td>
+  <td class="num">+38.21% (SR 1.81)</td>
+  <td class="num">+34.38% (SR 1.33)</td>
+  <td class="num">+17.99% (SR 0.78)</td>
+</tr>
+<tr>
+  <td><strong>20Y Full cycle</strong> (<code>Nov 2006–Nov 2026</code>)</td>
+  <td class="num"><strong>+27.67%</strong> (SR 1.03)</td>
+  <td class="num">+24.43% (SR 0.94)</td>
+  <td class="num"><strong>+27.48%</strong> (SR 1.47)</td>
+  <td class="num">+25.87% (SR 1.49)</td>
+  <td class="num">+24.17% (SR 1.07)</td>
+  <td class="num">+15.14% (SR 0.74)</td>
+</tr>
+<tr>
+  <td><strong>20Y Maximum drawdown</strong> (incl. <code>2008</code>)</td>
+  <td class="num"><strong>−33.4%</strong></td>
+  <td class="num">−33.4%</td>
+  <td class="num"><strong>−27.4%</strong></td>
+  <td class="num"><strong>−20.5%</strong></td>
+  <td class="num">−54.6%</td>
+  <td class="num">−53.4%</td>
+</tr>
+<tr>
+  <td><strong>2008 Crisis return</strong></td>
+  <td class="num"><strong>−9.7%</strong></td>
+  <td class="num">−9.7%</td>
+  <td class="num">−16.4%</td>
+  <td class="num"><strong>−10.5%</strong></td>
+  <td class="num">−44.6%</td>
+  <td class="num">−41.7%</td>
+</tr>
+<tr>
+  <td><strong>Bootstrap P(Sharpe &gt; Ungated)</strong> (<code>21d</code> blocks)</td>
+  <td class="num"><strong>97.8%</strong> (20Y)</td>
+  <td class="num">93.0% (20Y)</td>
+  <td class="num"><strong>100.0%</strong> (10Y &amp; 20Y)</td>
+  <td class="num"><strong>99.9%</strong> (20Y)</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+</tr>
+</tbody>
+</table></div>
+<p>Adding the conditional <code>FTNT &lt;= −2%</code> reversal sleeve lifts <code>GLA-Core</code> (<code>A5</code>) annualized return by <code>+5.52</code> percentage points (<code>+33.55% → +39.07%</code>) and raises Sharpe from <code>1.69</code> to <code>1.88</code> while changing ten-year maximum drawdown by only <code>0.3</code> points (<code>−20.1% → −20.4%</code>). Inside <code>GLA-Overlay</code> (<code>B3</code>), slot-swapping half of daytime <code>AAPL</code> into <code>FTNT</code> on trigger mornings lifts ten-year annualized return by <code>+5.12</code> percentage points (<code>+49.11% → +54.23%</code>, <code>$53.8 → $75.3</code>) without breaching the <code>200%</code> intraday gross cap.</p>
+<div class="fig"><div class="fk">GLA · Figure 3</div><div class="ft">Calendar-year returns (2017 – 2026 YTD)</div><div class="fs">%, 2026 through Nov 24 · bars from the top: GLA-Overlay (B3 + FTNT), GLA-Core (A5 + FTNT), QQQ</div><div class="yb"><div class="yb-row"><div class="yb-y">2017</div><div class="yb-tr"><span class="z" style="left:23.53%"></span><i class="ffw a" style="left:23.53%;width:27.35%"></i><i class="f1 b" style="left:23.53%;width:20.35%"></i><i class="fgr c" style="left:23.53%;width:19.24%"></i></div><div class="yb-v">B3+F <b>+46.5</b><br>A5+F <b>+34.6</b><br>QQQ <b>+32.7</b></div></div><div class="yb-row"><div class="yb-y">2018</div><div class="yb-tr"><span class="z" style="left:23.53%"></span><i class="ffw a" style="left:21.77%;width:1.76%"></i><i class="f1 b" style="left:23.53%;width:17.65%"></i><i class="fgr c" style="left:23.47%;width:0.06%"></i></div><div class="yb-v">B3+F <b>-3.0</b><br>A5+F <b>+30.0</b><br>QQQ <b>-0.1</b></div></div><div class="yb-row"><div class="yb-y">2019</div><div class="yb-tr"><span class="z" style="left:23.53%"></span><i class="ffw a" style="left:23.53%;width:31.24%"></i><i class="f1 b" style="left:23.53%;width:20.24%"></i><i class="fgr c" style="left:23.53%;width:22.94%"></i></div><div class="yb-v">B3+F <b>+53.1</b><br>A5+F <b>+34.4</b><br>QQQ <b>+39.0</b></div></div><div class="yb-row"><div class="yb-y">2020</div><div class="yb-tr"><span class="z" style="left:23.53%"></span><i class="ffw a" style="left:23.53%;width:34.82%"></i><i class="f1 b" style="left:23.53%;width:26.24%"></i><i class="fgr c" style="left:23.53%;width:28.47%"></i></div><div class="yb-v">B3+F <b>+59.2</b><br>A5+F <b>+44.6</b><br>QQQ <b>+48.4</b></div></div><div class="yb-row"><div class="yb-y">2021</div><div class="yb-tr"><span class="z" style="left:23.53%"></span><i class="ffw a" style="left:23.53%;width:44.59%"></i><i class="f1 b" style="left:23.53%;width:38.47%"></i><i class="fgr c" style="left:23.53%;width:16.12%"></i></div><div class="yb-v">B3+F <b>+75.8</b><br>A5+F <b>+65.4</b><br>QQQ <b>+27.4</b></div></div><div class="yb-row"><div class="yb-y">2022</div><div class="yb-tr"><span class="z" style="left:23.53%"></span><i class="ffw a" style="left:23.53%;width:8.71%"></i><i class="f1 b" style="left:23.53%;width:4.71%"></i><i class="fgr c" style="left:4.35%;width:19.18%"></i></div><div class="yb-v">B3+F <b>+14.8</b><br>A5+F <b>+8.0</b><br>QQQ <b>-32.6</b></div></div><div class="yb-row"><div class="yb-y">2023</div><div class="yb-tr"><span class="z" style="left:23.53%"></span><i class="ffw a" style="left:23.53%;width:72.24%"></i><i class="f1 b" style="left:23.53%;width:30.88%"></i><i class="fgr c" style="left:23.53%;width:32.29%"></i></div><div class="yb-v">B3+F <b>+122.8</b><br>A5+F <b>+52.5</b><br>QQQ <b>+54.9</b></div></div><div class="yb-row"><div class="yb-y">2024</div><div class="yb-tr"><span class="z" style="left:23.53%"></span><i class="ffw a" style="left:23.53%;width:51.47%"></i><i class="f1 b" style="left:23.53%;width:26.88%"></i><i class="fgr c" style="left:23.53%;width:15.06%"></i></div><div class="yb-v">B3+F <b>+87.5</b><br>A5+F <b>+45.7</b><br>QQQ <b>+25.6</b></div></div><div class="yb-row"><div class="yb-y">2025</div><div class="yb-tr"><span class="z" style="left:23.53%"></span><i class="ffw a" style="left:23.53%;width:45.18%"></i><i class="f1 b" style="left:23.53%;width:32.82%"></i><i class="fgr c" style="left:23.53%;width:12.24%"></i></div><div class="yb-v">B3+F <b>+76.8</b><br>A5+F <b>+55.8</b><br>QQQ <b>+20.8</b></div></div><div class="yb-row"><div class="yb-y">2026*</div><div class="yb-tr"><span class="z" style="left:23.53%"></span><i class="ffw a" style="left:23.53%;width:20.94%"></i><i class="f1 b" style="left:23.53%;width:12.65%"></i><i class="fgr c" style="left:23.53%;width:2.47%"></i></div><div class="yb-v">B3+F <b>+35.6</b><br>A5+F <b>+21.5</b><br>QQQ <b>+4.2</b></div></div></div><div class="leg"><span><i class="ffw"></i>GLA-Overlay (B3 + FTNT)</span><span><i class="f1"></i>GLA-Core (A5 + FTNT)</span><span><i class="fgr"></i>QQQ</span></div></div>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>Calendar year</th>
+  <th class="num">B3 + FTNT (Overlay &lt;=200%)</th>
+  <th class="num">B3 (No FTNT)</th>
+  <th class="num">A5 + FTNT (Core Split)</th>
+  <th class="num">A6 + FTNT (Core Dual)</th>
+  <th class="num">Ungated Core (A0)</th>
+  <th class="num">QQQ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>2017</strong></td>
+  <td class="num"><strong>+46.5%</strong></td>
+  <td class="num">+44.9%</td>
+  <td class="num"><strong>+34.6%</strong></td>
+  <td class="num">+32.7%</td>
+  <td class="num">+33.6%</td>
+  <td class="num">+32.7%</td>
+</tr>
+<tr>
+  <td><strong>2018</strong></td>
+  <td class="num">−3.0%</td>
+  <td class="num">−10.8%</td>
+  <td class="num"><strong>+30.0%</strong></td>
+  <td class="num">+28.9%</td>
+  <td class="num">+10.7%</td>
+  <td class="num">−0.1%</td>
+</tr>
+<tr>
+  <td><strong>2019</strong></td>
+  <td class="num"><strong>+53.1%</strong></td>
+  <td class="num">+51.4%</td>
+  <td class="num">+34.4%</td>
+  <td class="num">+31.8%</td>
+  <td class="num">+43.1%</td>
+  <td class="num">+39.0%</td>
+</tr>
+<tr>
+  <td><strong>2020</strong></td>
+  <td class="num"><strong>+59.2%</strong></td>
+  <td class="num">+57.3%</td>
+  <td class="num">+44.6%</td>
+  <td class="num">+37.3%</td>
+  <td class="num">+51.7%</td>
+  <td class="num">+48.4%</td>
+</tr>
+<tr>
+  <td><strong>2021</strong></td>
+  <td class="num"><strong>+75.8%</strong></td>
+  <td class="num">+67.4%</td>
+  <td class="num"><strong>+65.4%</strong></td>
+  <td class="num">+68.7%</td>
+  <td class="num">+57.9%</td>
+  <td class="num">+27.4%</td>
+</tr>
+<tr>
+  <td><strong>2022</strong></td>
+  <td class="num"><strong>+14.8%</strong></td>
+  <td class="num">+8.6%</td>
+  <td class="num"><strong>+8.0%</strong></td>
+  <td class="num">+8.1%</td>
+  <td class="num">−13.2%</td>
+  <td class="num">−32.6%</td>
+</tr>
+<tr>
+  <td><strong>2023</strong></td>
+  <td class="num"><strong>+122.8%</strong></td>
+  <td class="num">+113.3%</td>
+  <td class="num"><strong>+52.5%</strong></td>
+  <td class="num">+47.1%</td>
+  <td class="num">+56.7%</td>
+  <td class="num">+54.9%</td>
+</tr>
+<tr>
+  <td><strong>2024</strong></td>
+  <td class="num"><strong>+87.5%</strong></td>
+  <td class="num">+82.1%</td>
+  <td class="num"><strong>+45.7%</strong></td>
+  <td class="num">+44.8%</td>
+  <td class="num">+36.3%</td>
+  <td class="num">+25.6%</td>
+</tr>
+<tr>
+  <td><strong>2025</strong></td>
+  <td class="num"><strong>+76.8%</strong></td>
+  <td class="num">+76.6%</td>
+  <td class="num"><strong>+55.8%</strong></td>
+  <td class="num">+43.2%</td>
+  <td class="num">+42.7%</td>
+  <td class="num">+20.8%</td>
+</tr>
+<tr>
+  <td><strong>2026 YTD</strong> (to Nov 24)</td>
+  <td class="num"><strong>+35.6%</strong></td>
+  <td class="num">+30.1%</td>
+  <td class="num"><strong>+21.5%</strong></td>
+  <td class="num">+21.4%</td>
+  <td class="num">+20.6%</td>
+  <td class="num">+4.2%</td>
+</tr>
+</tbody>
+</table></div>
+<p>Notice two stress years: in <strong><code>2022</code></strong>, when <code>QQQ</code> lost <code>−32.6%</code> and ungated <code>GLA-Core</code> lost <code>−13.2%</code>, <code>B3 + FTNT</code> finished <strong><code>+14.8%</code></strong> and <code>A5 + FTNT</code> finished <strong><code>+8.0%</code></strong>. In <strong><code>2026 YTD</code></strong> (through <code>Nov 24</code>, with <code>QQQ</code> at <code>+4.2%</code> and <code>6.6%</code> below its 200-day average), <code>B3 + FTNT</code> stands at <strong><code>+35.6%</code></strong> and <code>A5 + FTNT</code> at <strong><code>+21.5%</code></strong>.</p>
+<h2 id="what-makes-it-fragile">What makes it fragile<a class="anchor" href="#what-makes-it-fragile" aria-label="Link to this section">#</a></h2>
+<ul>
+<li><strong>Three-name selection hindsight.</strong> <code>GOOGL</code>, <code>LLY</code>, and <code>AAPL</code> were selected knowing their decade-long dominance in search, GLP-1 therapeutics, and consumer hardware. If <code>LLY</code> enters a patent cliff or clinical setback while <code>QQQ</code> is simultaneously below its 200-day line, <code>A5</code> takes a full one-third single-stock hit (which is why <code>B3</code> and <code>A6</code> retain <code>LLY</code>'s monthly 200-day trend filter).</li>
+<li><strong>The daytime AAPL regime flip (<code>2006–2015</code>).</strong> Between <code>2006</code> and <code>2015</code>, <code>AAPL</code> earned virtually all of its return overnight and lost <code>−9%</code> to <code>−10%</code> a year from open to close. Without kill switch <code>F-3</code>, <code>B2</code> drew down <code>−74.8%</code> across <code>2008</code>. Gating the <code>AAPL</code> daytime overlay on trailing 252-day <code>F-3 &gt; 0</code> (<code>B3 + FTNT</code>) cut <code>2008</code> losses to <strong><code>−9.7%</code></strong>, yet <code>B3 + FTNT</code> still trailed <code>A5 + FTNT</code> during the <code>2006–2016</code> decade (<code>+7.1%</code> vs <code>+19.1%</code> annualized).</li>
+<li><strong>Auction slippage on the daytime overlay.</strong> Because <code>GLA-Core</code> (<code>A5 + FTNT</code>) trades fewer than ten times a year, raising per-side costs from <code>1.2 bp</code> to <code>10 bp</code> barely dents its ten-year annualized return (<code>+39.07% → +38.80%</code>). By contrast, <code>B3 + FTNT</code> executes <code>500</code> <code>AAPL</code> auction orders a year: at <code>3 bp</code> per side its ten-year return eases from <code>+54.23%</code> to <code>+50.1%</code>, and at <code>5 bp</code> to <code>+45.6%</code>. Only exchange opening and closing auctions (<code>MOO</code> / <code>MOC</code>) are permitted.</li>
+<li><strong>Intraday buying-power ceiling.</strong> <code>B3 + FTNT</code> runs at <code>200%</code> gross exposure between <code>09:30 ET</code> and <code>16:00 ET</code> (<code>100%</code> core + <code>100%</code> daytime <code>AAPL</code> or <code>50% AAPL + 50% FTNT</code>). Accounts without <code>2x</code> Reg-T / portfolio intraday buying power should run <code>GLA-Core</code> (<code>A5 + FTNT</code>), which stays at <code>100%</code> on <code>97%</code> of sessions and peaks at <code>150%</code> only on the ~<code>7.5</code> <code>FTNT</code> sessions a year.</li>
+</ul>
+<h2 id="kill-switches-and-current-readings">Kill switches and current readings<a class="anchor" href="#kill-switches-and-current-readings" aria-label="Link to this section">#</a></h2>
+<p>Six mechanical falsification switches govern the strategy once armed:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+  <th>#</th>
+  <th>Condition</th>
+  <th>Mechanical action</th>
+  <th>Reading at the Nov 24, 2026 close</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>F-GLA-1</strong></td>
+  <td>Rolling 252 sessions: gated-out <strong>GOOGL</strong> return while <strong>QQQ &lt; 200d</strong> beats <strong>SGOV</strong> by more than +10% while lowering Sharpe</td>
+  <td>Downgrade GOOGL gate from daily QQQ 200d to monthly self-200d</td>
+  <td>10Y below-200d GOOGL: −6.8%/yr vs T-bills: clear</td>
+</tr>
+<tr>
+  <td><strong>F-GLA-2</strong></td>
+  <td><strong>LLY</strong> closes more than 15% below its 200-day average on a monthly first-day check (<code>A5</code> override)</td>
+  <td>Step LLY sleeve to SGOV until monthly close reclaims 200-day average</td>
+  <td>LLY $1,407.59 vs 200d $1,121.25 (+25.54%): clear</td>
+</tr>
+<tr>
+  <td><strong>F-GLA-3 / F-3</strong></td>
+  <td>Rolling 252 sessions: <strong>AAPL</strong> <code>MOO → MOC</code> net return falls to zero or below</td>
+  <td>Pause daytime AAPL leg (<code>0%</code> until F-3 &gt; 0)</td>
+  <td>+23.18% trailing 252d: open</td>
+</tr>
+<tr>
+  <td><strong>F-GLA-4</strong></td>
+  <td>Portfolio drawdown from live activation reaches −30% (<code>B3 + FTNT</code>) or −25% (<code>A5 + FTNT</code>)</td>
+  <td>Halt intraday overlays and revert to unleveraged 3-way monthly 200d core</td>
+  <td>Paper tracking since Nov 25, 2026</td>
+</tr>
+<tr>
+  <td><strong>F-5</strong></td>
+  <td>Rolling 20 open sessions: median <code>MOO</code>/<code>MOC</code> auction slippage exceeds 5 bp</td>
+  <td>Pause daytime AAPL rotation (<code>B3</code> reverts to <code>A6 + FTNT</code>)</td>
+  <td>Paper tracking</td>
+</tr>
+<tr>
+  <td><strong>F-6</strong></td>
+  <td>Rolling 20 <strong>FTNT</strong> triggers: win rate below 50% or net negative; or single trigger loses 8%</td>
+  <td>Disable FTNT intraday overlay</td>
+  <td>10Y hit rate 72.0% (+120 bp mean): clear</td>
+</tr>
+</tbody>
+</table></div>
+<p>Readings at the <strong>Nov 24, 2026</strong> US close (governing the <strong>Nov 25</strong> session):</p>
+<ul>
+<li><strong>QQQ 200-day tech gate:</strong> <strong>OFF</strong> (<code>QQQ</code> closed at <code>$638.10</code> vs 200-day <code>$683.39</code>, <code>−6.63%</code>; <code>GOOGL</code> at <code>$279.05</code> vs 200-day <code>$336.54</code>, <code>−17.08%</code> → parked in <code>SGOV</code>).</li>
+<li><strong>LLY anchor:</strong> <strong>ON</strong> (<code>LLY</code> closed at <code>$1,407.59</code> vs 200-day <code>$1,121.25</code>, <code>+25.54%</code>).</li>
+<li><strong>Daytime AAPL (<code>F-3</code>):</strong> <strong>OPEN</strong> (<code>AAPL</code> closed at <code>$354.07</code>, <code>+16.47%</code> above its 200-day average; trailing 252-day intraday net return <code>+23.18% &gt; 0</code>).</li>
+<li><strong>FTNT <code>&lt;= −2%</code> check:</strong> <strong>ARMED</strong> (<code>VIX</code> <code>26.36 &lt; 30</code>; triggers on Nov 25 only if <code>09:28 ET</code> indication is at or below <strong><code>$129.85</code></strong> against the <code>$132.50</code> prior close).</li>
+<li><strong>Target book for Nov 25:</strong> <strong><code>GLA-Overlay (B3 + FTNT)</code></strong> holds <strong><code>50% LLY + 50% SGOV</code></strong> all day / overnight, plus <strong><code>100% AAPL</code></strong> <code>MOO → MOC</code> (or <code>50% AAPL + 50% FTNT</code> if <code>FTNT &lt;= $129.85</code> at <code>09:28 ET</code>). <strong><code>GLA-Core (A5/A6 + FTNT)</code></strong> holds <strong><code>33.3% LLY + 66.7% SGOV</code></strong>, plus <code>+50% FTNT</code> intraday only on a <code>&lt;= $129.85</code> trigger.</li>
+</ul>
+<h2 class="section-label" id="disclosure">Disclosure</h2><div class="box"><span class="lab">Status of these rules</span>GLA (both GLA-Overlay B3 + FTNT and GLA-Core A5/A6 + FTNT) is a paper rule set registered on Nov 25, 2026; the active rule set in force on the US Account remains R1 v1.2 until any 30-day cooling period completes. Live readings and target weights below and on the homepage are research records, not investment advice.</div><p class="fine" style="margin-top:14px">Backtests are hypothetical: they use auction prices and stated costs, are fitted on data the author had already seen, and say nothing certain about the future. Notes on this site express the author&#x27;s opinions. They are based on public information believed to be reliable but not independently audited. Nothing here is investment advice or an offer to buy or sell any security.</p><h2 class="section-label" id="comments">Comments</h2><p class="fine">Comments run on GitHub Discussions through giscus; posting needs a GitHub account. Off-topic or abusive comments are removed.</p><div id="comments-box" class="giscus"></div><script>(function(){var d=document.documentElement,c={"data-repo": "Stevenkwo/canyon", "data-repo-id": "R_kgDOVVunOA", "data-category": "Announcements", "data-category-id": "DIC_kwDOVVunOM4DJiO-", "data-mapping": "pathname", "data-strict": "1", "data-reactions-enabled": "1", "data-emit-metadata": "0", "data-input-position": "top", "data-lang": "en", "data-loading": "lazy"};function th(){var t=d.getAttribute("data-theme");return t==="dark"?"dark":t==="light"?"light":"preferred_color_scheme"}var s=document.createElement("script");s.src="https://giscus.app/client.js";s.async=true;s.crossOrigin="anonymous";for(var k in c)s.setAttribute(k,c[k]);s.setAttribute("data-theme",th());document.getElementById("comments-box").appendChild(s);new MutationObserver(function(){var f=document.querySelector("iframe.giscus-frame");if(f)f.contentWindow.postMessage({giscus:{setConfig:{theme:th()}}},"https://giscus.app")}).observe(d,{attributes:true,attributeFilter:["data-theme"]})})();</script></article><nav class="pager" aria-label="More strategies"><div><span>Previous</span><a href="off-peak.html">CF · Barbell: Shaanxi Coal and the Nasdaq-100</a></div><div class="next"></div></nav></main><footer class="site"><span>© 2026 canyon</span><a href="https://x.com/stevenkwok20290">X @stevenkwok20290</a><a href="../feed.xml">RSS</a><a href="../strategies.html">Strategies</a><a href="../factors.html">Factors</a><a href="../reviews.html">Reviews</a><a href="../skills.html">Skills</a><span>Not investment advice</span></footer><script>
+(function(){
+  var root=document.documentElement,b=document.getElementById('theme-btn');
+  function save(v){try{v?localStorage.setItem('canyon-theme',v):localStorage.removeItem('canyon-theme')}catch(e){}}
+  function label(){if(!b)return;var v=root.getAttribute('data-theme');b.textContent=v==='dark'?'Dark':v==='light'?'Light':'Auto';b.setAttribute('aria-label','Colour theme: '+b.textContent)}
+  if(b){label();b.addEventListener('click',function(){var v=root.getAttribute('data-theme'),n=!v?'light':v==='light'?'dark':null;if(n)root.setAttribute('data-theme',n);else root.removeAttribute('data-theme');save(n);label()})}
+  var cv=document.getElementById('canyon-art');
+  if(cv&&cv.getContext){
+    /* Fly-through: a heightfield (plateau, terraced canyon, mesas) drawn as ridgelines back to front with paper fills
+       for hidden lines. The camera moves forward along the canyon; on load the scene zooms in from the vanishing point. */
+    var ctx=cv.getContext('2d'),W=0,H=0,dpr=1,ink='#1b1c1e',paper='#f7f6f2',stars=[],reduce=false;
+    try{reduce=matchMedia('(prefers-reduced-motion: reduce)').matches}catch(e){}
+    var hash=function(a,b){var h=(Math.imul(a|0,374761393)+Math.imul(b|0,668265263))|0;h=Math.imul(h^(h>>>13),1274126177);return((h^(h>>>16))>>>0)/4294967296};
+    var HALF=2.6,DEPTH=2.3,ST=5,SPEED=1.15;
+    var xc=function(z){return 2.2*Math.sin(z*0.115)+1.1*Math.sin(z*0.047+1.3)};
+    var mesasAt=function(z){var cz=Math.floor(z/7),out=[];for(var k=cz-1;k<=cz+1;k++){if(hash(k,17)<0.6){var mz=k*7+3.5+(hash(k,31)-0.5)*3,md=0.7+hash(k,43)*1.5,dz=Math.abs(z-mz)-md;if(dz<0.2){var side=hash(k,29)<0.5?-1:1;out.push([xc(mz)+side*(HALF*2+hash(k,37)*7),0.8+hash(k,41)*1.8,dz,0.6+hash(k,47)*1.2])}}}return out};
+    var ht=function(x,z,cz,ms){var g=0,u=Math.abs(x-cz)/HALF;if(u<1.45){var v=1-u/1.45,q=Math.floor(v*ST),f=v*ST-q;f=f*f*(3-2*f);f=f*f*f;g=Math.min(1,(q+f)/ST*1.1)}
+      var m=0;for(var i=0;i<ms.length;i++){var d=Math.max(Math.abs(x-ms[i][0])-ms[i][1],ms[i][2]);if(d<0.2)m=Math.max(m,ms[i][3]*Math.min(1,(0.2-d)/0.2))}
+      return 0.07*Math.sin(x*0.9+z*0.31)+0.05*Math.sin(x*0.37-z*0.53)+m-g*DEPTH};
+    var colors=function(){var cs=getComputedStyle(root);ink=cs.getPropertyValue('--ink').trim()||ink;paper=cs.getPropertyValue('--paper').trim()||paper};
+    var size=function(){dpr=Math.min(window.devicePixelRatio||1,1.75);W=cv.clientWidth;H=cv.clientHeight;cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);
+      stars=[];for(var i=0,n=Math.round(W*H*0.38/1500);i<n;i++)stars.push([hash(i,101)*W,hash(i,103)*H*0.36,0.07+hash(i,107)*0.22,hash(i,109)<0.12?1.6:1])};
+    var ease=function(k){k=Math.max(0,Math.min(1,k));return 1-Math.pow(1-k,3)};
+    var render=function(camZ,k){
+      if(!W||!H)return;var c=ctx,e=ease(k);c.setTransform(dpr,0,0,dpr,0,0);c.globalAlpha=1;c.fillStyle=paper;c.fillRect(0,0,W,H);
+      c.fillStyle=ink;for(var i=0;i<stars.length;i++){var s=stars[i];c.globalAlpha=s[2]*(0.25+0.75*e);c.fillRect(s[0],s[1],s[3],s[3])}
+      var mob=W<640,hy=H*0.40,f=H*1.2*(0.45+0.55*e),ext=(W/2+24)*ease(k*1.15),camX=xc(camZ+5)*0.8,camY=1.75;
+      var dz=mob?0.42:0.32,zN=0.75,zF=mob?24:30,step=mob?5:4,k0=Math.ceil((camZ+zN)/dz),k1=Math.floor((camZ+zF)/dz),pts=[];
+      for(var kk=k1;kk>=k0;kk--){
+        var zw=kk*dz,Zr=zw-camZ,nr=1-Zr/zF,al=Math.min(1,(zF-Zr)/(zF*0.25))*(0.16+0.78*nr*nr),cz=xc(zw),ms=mesasAt(zw);
+        var spx=f*camY*dz/(Zr*Zr),L=0,t2=kk;while(L<6&&t2!==0&&t2%2===0){t2/=2;L++}
+        var lod=Math.min(1,Math.max(0,(spx*Math.pow(2,L)-2.6)/2.6));if(lod<=0)continue;al*=lod;
+        pts.length=0;
+        for(var sx=-4;sx<=W+4;sx+=step){if(Math.abs(sx-W/2)>ext)continue;pts.push(sx,hy-(ht(camX+(sx-W/2)*Zr/f,zw,cz,ms)-camY)*f/Zr)}
+        if(pts.length<4)continue;
+        c.globalAlpha=1;c.fillStyle=paper;c.beginPath();c.moveTo(pts[0],H+4);for(var j=0;j<pts.length;j+=2)c.lineTo(pts[j],pts[j+1]);c.lineTo(pts[pts.length-2],H+4);c.closePath();c.fill();
+        c.strokeStyle=ink;c.globalAlpha=al;c.lineWidth=0.45+1.1*nr;c.beginPath();for(j=0;j<pts.length;j+=2){if(j)c.lineTo(pts[j],pts[j+1]);else c.moveTo(pts[j],pts[j+1])}c.stroke();
+        var half=Math.min(ext,W/2),gx=Math.max(0.12,Zr*0.011),xL=camX-half*Zr/f,xR=camX+half*Zr/f;c.fillStyle=ink;
+        for(var jj=Math.ceil(xL/gx),je=Math.floor(xR/gx);jj<=je;jj++){
+          var xw=jj*gx,dx=xw-cz;if(Math.abs(dx)>=HALF*1.5)continue;
+          var sl=Math.abs(ht(xw+0.04,zw,cz,ms)-ht(xw-0.04,zw,cz,ms))/0.08,px=W/2+(xw-camX)*f/Zr,py=hy-(ht(xw,zw,cz,ms)-camY)*f/Zr;
+          if(sl>0.5&&hash(kk*131+jj,5)<Math.min(0.9,sl*0.3)){c.globalAlpha=al*(dx<0?1:0.5);c.fillRect(px+(hash(kk,jj)-0.5)*2,py+1+hash(jj,kk)*(3+14*nr),1.1,1.1)}
+          if(Math.abs(dx)<0.22&&hash(kk*7+jj,9)<0.5){c.globalAlpha=Math.min(1,al*1.1);c.beginPath();c.arc(px,py+1.6,0.5+1.2*nr,0,6.283);c.fill()}
+        }
+      }
+      c.globalAlpha=1;
+    };
+    var camZ=0,start=0,last=0,running=false,raf=0,inView=true;
+    var loop=function(ts){if(!running)return;if(!start){start=ts;last=ts}
+      var el=ts-last;if(el>=24||ts===start){camZ+=Math.min(0.1,el/1000)*SPEED;last=ts;render(camZ,(ts-start)/1800)}raf=requestAnimationFrame(loop)};
+    var play=function(){if(running||reduce||!inView||document.hidden)return;running=true;last=0;if(start)start=performance.now()-1800;raf=requestAnimationFrame(function(ts){last=ts;loop(ts)})};
+    var stop=function(){running=false;cancelAnimationFrame(raf)};
+    colors();size();
+    if(reduce)render(0,1);else play();
+    window.addEventListener('resize',function(){size();if(!running)render(camZ,1)});
+    var retheme=function(){colors();if(!running)render(camZ,1)};
+    try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',retheme)}catch(e){}
+    try{new MutationObserver(retheme).observe(root,{attributes:true,attributeFilter:['data-theme']})}catch(e){}
+    document.addEventListener('visibilitychange',function(){if(document.hidden)stop();else play()});
+    try{new IntersectionObserver(function(en){inView=en[0].isIntersecting;if(inView)play();else stop()}).observe(cv)}catch(e){}
+  }
+  var chips=[].slice.call(document.querySelectorAll('[data-filter]'));
+  chips.forEach(function(c){c.addEventListener('click',function(){var d=c.getAttribute('data-filter');
+    chips.forEach(function(x){x.setAttribute('aria-pressed',String(x===c))});
+    [].slice.call(document.querySelectorAll('[data-domain]')).forEach(function(it){it.hidden=(d!=='all'&&it.getAttribute('data-domain')!==d)});
+    [].slice.call(document.querySelectorAll('.year')).forEach(function(y){y.hidden=![].slice.call(y.querySelectorAll('[data-domain]')).some(function(i){return !i.hidden})});
+  })});
+})();
+</script></body></html>

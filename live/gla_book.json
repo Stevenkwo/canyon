@@ -1,0 +1,164 @@
+{
+  "asof": "2026-11-24",
+  "next_session": "2026-11-25",
+  "updated_cst": "2026-11-25 11:12 CST",
+  "first_day_month": "2026-11-02",
+  "quotes_close": {
+    "LLY": 1407.59,
+    "GOOGL": 279.05,
+    "AAPL": 354.07,
+    "SGOV": 100.66,
+    "FTNT": 132.5,
+    "QQQ": 638.1
+  },
+  "gates": {
+    "qqq_close": 638.1,
+    "qqq_ma200": 683.39,
+    "qqq_pct_vs_ma200": -6.63,
+    "tech_gate_on": false,
+    "googl_close": 279.05,
+    "googl_ma200": 336.54,
+    "googl_pct_vs_ma200": -17.08,
+    "lly_close": 1407.59,
+    "lly_ma200": 1121.25,
+    "lly_pct_vs_ma200": 25.54,
+    "lly_monthly_on": true,
+    "aapl_close": 354.07,
+    "aapl_ma200": 303.99,
+    "f3_252d_pct": 23.18,
+    "f3_day_open": true,
+    "irx_yield_pct": 4.17,
+    "vix_close": 26.36,
+    "ftnt_prior_close": 132.5,
+    "ftnt_trigger_px": 129.85,
+    "ftnt_armed": true
+  },
+  "modes": {
+    "b3_ftnt": {
+      "label": "GLA-Overlay · B3 + FTNT (<= 200% Intraday Cap)",
+      "overnight_gross_pct": 100.0,
+      "day_gross_pct": 200.0,
+      "rows": [
+        {
+          "sym": "LLY",
+          "role": "All-day pharma anchor · monthly 200d check ON (2026-11-02)",
+          "day_pct": 50.0,
+          "night_pct": 50.0
+        },
+        {
+          "sym": "GOOGL",
+          "role": "All-day search/AI anchor · PARKED in SGOV (QQQ < 200d)",
+          "day_pct": 0.0,
+          "night_pct": 0.0
+        },
+        {
+          "sym": "SGOV",
+          "role": "0–3M US Treasury bill ETF (~4.17% yield · TLT strictly excluded)",
+          "day_pct": 50.0,
+          "night_pct": 50.0
+        },
+        {
+          "sym": "AAPL",
+          "role": "Daytime MOO → MOC overlay (F-3 +23.2% > 0 · 50% if FTNT fires)",
+          "day_pct": 100.0,
+          "night_pct": 0.0
+        },
+        {
+          "sym": "FTNT",
+          "role": "Conditional 09:28 ET gap <= -2% (<= $129.85) · swaps 50% AAPL → 50% FTNT (<= 200% cap)",
+          "day_pct": 0.0,
+          "night_pct": 0.0,
+          "cond_day": "+50% swap"
+        }
+      ],
+      "actions": [
+        "Standing overnight / all-day core (100% NAV, 0% margin): hold 50% LLY + 50% SGOV (0–3M T-bills).",
+        "09:28 ET check (2026-11-25): normal day buys 100% AAPL at MOO → sells at MOC; if FTNT indication <= $129.85, swap half the day slot to 50% AAPL + 50% FTNT MOO → MOC (200% gross intraday cap)."
+      ]
+    },
+    "a5_ftnt": {
+      "label": "GLA-Core · A5 + FTNT (Split Gate)",
+      "overnight_gross_pct": 100.0,
+      "day_gross_pct": 100.0,
+      "rows": [
+        {
+          "sym": "LLY",
+          "role": "1/3 counter-cyclical pharma sleeve · held across QQQ regimes",
+          "day_pct": 33.3,
+          "night_pct": 33.3
+        },
+        {
+          "sym": "GOOGL",
+          "role": "1/3 search/AI sleeve · PARKED in SGOV (QQQ < 200d)",
+          "day_pct": 0.0,
+          "night_pct": 0.0
+        },
+        {
+          "sym": "AAPL",
+          "role": "1/3 ecosystem sleeve · PARKED in SGOV (QQQ < 200d)",
+          "day_pct": 0.0,
+          "night_pct": 0.0
+        },
+        {
+          "sym": "SGOV",
+          "role": "0–3M US Treasury bill ETF (~4.17% yield · TLT strictly excluded)",
+          "day_pct": 66.7,
+          "night_pct": 66.7
+        },
+        {
+          "sym": "FTNT",
+          "role": "Conditional 09:28 ET gap <= -2% (<= $129.85) · +50% MOO → MOC intraday only",
+          "day_pct": 0.0,
+          "night_pct": 0.0,
+          "cond_day": "+50% MOO→MOC"
+        }
+      ],
+      "actions": [
+        "Unleveraged spot core (100% NAV): hold 33.3% LLY + 66.7% SGOV (rebalance on +-20% relative drift or QQQ 200d cross).",
+        "09:28 ET check (2026-11-25): no intraday order unless FTNT <= $129.85 (then buy +50% FTNT at MOO and sell at MOC)."
+      ]
+    },
+    "a6_ftnt": {
+      "label": "GLA-Core · A6 + FTNT (Dual Gate)",
+      "overnight_gross_pct": 100.0,
+      "day_gross_pct": 100.0,
+      "rows": [
+        {
+          "sym": "LLY",
+          "role": "1/3 pharma sleeve · monthly 200d ON",
+          "day_pct": 33.3,
+          "night_pct": 33.3
+        },
+        {
+          "sym": "GOOGL",
+          "role": "1/3 search/AI sleeve · PARKED in SGOV (QQQ < 200d)",
+          "day_pct": 0.0,
+          "night_pct": 0.0
+        },
+        {
+          "sym": "AAPL",
+          "role": "1/3 ecosystem sleeve · PARKED in SGOV (QQQ < 200d)",
+          "day_pct": 0.0,
+          "night_pct": 0.0
+        },
+        {
+          "sym": "SGOV",
+          "role": "0–3M US Treasury bill ETF (~4.17% yield · TLT strictly excluded)",
+          "day_pct": 66.7,
+          "night_pct": 66.7
+        },
+        {
+          "sym": "FTNT",
+          "role": "Conditional 09:28 ET gap <= -2% (<= $129.85) · +50% MOO → MOC intraday only",
+          "day_pct": 0.0,
+          "night_pct": 0.0,
+          "cond_day": "+50% MOO→MOC"
+        }
+      ],
+      "actions": [
+        "Unleveraged spot core (100% NAV): hold 33.3% LLY + 66.7% SGOV (rebalance on +-20% relative drift or QQQ 200d cross).",
+        "09:28 ET check (2026-11-25): no intraday order unless FTNT <= $129.85 (then buy +50% FTNT at MOO and sell at MOC)."
+      ]
+    }
+  }
+}
