@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-26T14:00+08:00",
+ "asof": "2026-11-26T15:00+08:00",
  "status": [
   "3 of 5 volatility lights are lit: the trim prompt is on"
  ],
@@ -104,6 +104,6 @@
  "fear_greed": {
   "score": 15.2253164556962,
   "rating": "Extreme fear",
-  "prev": 17.4212454212454
+  "prev": 15.2253164556962
  }
 }
