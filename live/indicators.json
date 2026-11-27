@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-28T03:00+08:00",
+ "asof": "2026-11-28T04:00+08:00",
  "status": [
   "3 of 5 volatility lights are lit: the trim prompt is on"
  ],
@@ -51,17 +51,17 @@
  },
  "rates": {
   "y10": {
-   "value": 4.934,
-   "d5": -13.600000000000012,
-   "d63": 29.40000000000005,
+   "value": 4.936,
+   "d5": -13.400000000000034,
+   "d63": 29.600000000000026,
    "pct": 98.35317460317461,
    "level": null,
    "date": "2026-11-27"
   },
   "y30": {
-   "value": 5.324,
-   "d5": -8.60000000000003,
-   "d63": 15.399999999999991,
+   "value": 5.325,
+   "d5": -8.499999999999996,
+   "d63": 15.500000000000025,
    "pct": 99.26587301587301,
    "level": "amber",
    "date": "2026-11-27"
@@ -93,7 +93,7 @@
   "flags": [
    {
     "level": "amber",
-    "text": "30-year 5.32 above 5%; the double hit still needs the 10-year"
+    "text": "30-year 5.33 above 5%; the double hit still needs the 10-year"
    },
    {
     "level": "red",
@@ -102,7 +102,7 @@
   ]
  },
  "fear_greed": {
-  "score": 24.5428571428571,
+  "score": 24.8285714285714,
   "rating": "Extreme fear",
   "prev": 15.5967450271248
  }
