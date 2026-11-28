@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-28T07:00+08:00",
+ "asof": "2026-11-28T08:03+08:00",
  "status": [
   "3 of 5 volatility lights are lit: the trim prompt is on"
  ],
@@ -36,12 +36,12 @@
   "asof": "2026-11-27"
  },
  "vix": {
-  "now": 23.81,
-  "chg": -2.990000000000002,
-  "close": 23.81,
-  "close_date": "2026-11-27",
-  "futures": 22.8402,
-  "vix_vix3m": 0.9995801847187237
+  "now": 26.8,
+  "chg": -1.4899999999999984,
+  "close": 26.8,
+  "close_date": "2026-11-26",
+  "futures": 25.0258,
+  "vix_vix3m": null
  },
  "ovx": {
   "now": 45.86,
