@@ -1,31 +1,31 @@
 {
-  "asof": "2026-11-25",
-  "next_session": "2026-11-27",
-  "updated_cst": "2026-11-28 10:11 CST",
+  "asof": "2026-11-27",
+  "next_session": "2026-11-30",
+  "updated_cst": "2026-11-28 11:24 CST",
   "first_day_month": "2026-11-02",
   "gates": {
-    "qqq_close": 633.93,
-    "qqq_ma200": 683.5,
-    "qqq_pct_vs_ma200": -7.25,
+    "qqq_close": 650.99,
+    "qqq_ma200": 683.69,
+    "qqq_pct_vs_ma200": -4.78,
     "night_gate_on": true,
-    "f3_252d_pct": 21.66,
+    "f3_252d_pct": 21.03,
     "f3_day_gate_on": true,
     "f5_lit": 2,
     "f5_lights": "②③",
-    "f5_src": "close",
+    "f5_src": "2026-11-25 latest",
     "g1_day_gate_on": false,
     "g1_in_force": false,
     "g1_effective": "2026-12-21",
-    "xom_close": 158.08,
-    "xom_ma200": 156.95,
+    "xom_close": 160.18,
+    "xom_ma200": 156.97,
     "xom_gate_on": true,
-    "ovx_close": 48.04,
+    "ovx_close": 45.86,
     "uso_gate_on": true,
-    "uso_session": 8,
+    "uso_session": 9,
     "uso_entry": "2026-11-16",
-    "vix_close": 28.29,
-    "ftnt_prior_close": 134.96,
-    "ftnt_trigger_px": 132.26,
+    "vix_close": 23.81,
+    "ftnt_prior_close": 139.48,
+    "ftnt_trigger_px": 136.69,
     "ftnt_armed": true
   },
   "monsters_active": [
@@ -36,74 +36,74 @@
   "pe_scanner": [
     {
       "sym": "GOOGL",
-      "close": 273.1,
+      "close": 274.96,
       "eps_ttm": 19.1503,
-      "pe_ttm": 14.26,
-      "sma200": 336.32,
+      "pe_ttm": 14.36,
+      "sma200": 336.14,
       "above_ma200": false,
       "under_20": true
     },
     {
       "sym": "NVDA",
-      "close": 149.3,
+      "close": 150.49,
       "eps_ttm": 9.3102,
-      "pe_ttm": 16.04,
-      "sma200": 202.87,
+      "pe_ttm": 16.16,
+      "sma200": 202.68,
       "above_ma200": false,
       "under_20": true
     },
     {
       "sym": "AMZN",
-      "close": 244.43,
+      "close": 254.12,
       "eps_ttm": 12.3702,
-      "pe_ttm": 19.76,
-      "sma200": 245.78,
-      "above_ma200": false,
-      "under_20": true
+      "pe_ttm": 20.54,
+      "sma200": 246.03,
+      "above_ma200": true,
+      "under_20": false
     },
     {
       "sym": "META",
-      "close": 609.89,
+      "close": 628.96,
       "eps_ttm": 29.3112,
-      "pe_ttm": 20.81,
-      "sma200": 627.53,
-      "above_ma200": false,
+      "pe_ttm": 21.46,
+      "sma200": 627.33,
+      "above_ma200": true,
       "under_20": false
     },
     {
       "sym": "MSFT",
-      "close": 489.93,
+      "close": 492.85,
       "eps_ttm": 19.1502,
-      "pe_ttm": 25.58,
-      "sma200": 444.89,
+      "pe_ttm": 25.74,
+      "sma200": 445.33,
       "above_ma200": true,
       "under_20": false
     },
     {
       "sym": "AAPL",
-      "close": 355.58,
+      "close": 358.54,
       "eps_ttm": 8.9801,
-      "pe_ttm": 39.6,
-      "sma200": 304.4,
+      "pe_ttm": 39.93,
+      "sma200": 304.82,
       "above_ma200": true,
       "under_20": false
     },
     {
       "sym": "LLY",
-      "close": 1392.22,
+      "close": 1392.38,
       "eps_ttm": 30.8103,
       "pe_ttm": 45.19,
-      "sma200": 1123.08,
+      "sma200": 1124.97,
       "above_ma200": true,
       "under_20": false
     },
     {
       "sym": "TSLA",
-      "close": 380.14,
+      "close": 400.0,
       "eps_ttm": 0.91,
-      "pe_ttm": 417.74,
-      "sma200": 381.15,
-      "above_ma200": false,
+      "pe_ttm": 439.56,
+      "sma200": 381.0,
+      "above_ma200": true,
       "under_20": false
     }
   ],
@@ -118,31 +118,31 @@
       "rows": [
         {
           "sym": "GOOGL",
-          "role": "Left Slot 1 · Long-term anchor (TTM PE 14.26)",
+          "role": "Left Slot 1 · Long-term anchor (TTM PE 14.36)",
           "day_pct": 27.5,
           "night_pct": 27.5
         },
         {
           "sym": "AMZN",
-          "role": "Left Slot 2 · Monster slot (TTM PE 19.76 < 20)",
+          "role": "Left Slot 2 · Monster slot (entered <20, riding trend · PE 20.54)",
           "day_pct": 9.2,
           "night_pct": 9.2
         },
         {
           "sym": "NVDA",
-          "role": "Left Slot 2 · Monster slot (TTM PE 16.04 < 20)",
+          "role": "Left Slot 2 · Monster slot (TTM PE 16.16 < 20)",
           "day_pct": 9.2,
           "night_pct": 9.2
         },
         {
           "sym": "META",
-          "role": "Left Slot 2 · Monster slot (entered <20, riding trend · PE 20.81)",
+          "role": "Left Slot 2 · Monster slot (entered <20, riding trend · PE 21.46)",
           "day_pct": 9.2,
           "night_pct": 9.2
         },
         {
           "sym": "AAPL",
-          "role": "Right day leg · MOO → MOC (F-3 +21.7% > 0 · G-1 clear)",
+          "role": "Right day leg · MOO → MOC (F-3 +21.0% > 0 · G-1 clear)",
           "day_pct": 27.0,
           "night_pct": 0.0
         },
@@ -154,7 +154,7 @@
         },
         {
           "sym": "USO",
-          "role": "Right OVX < 50 sleeve (session 8/21)",
+          "role": "Right OVX < 50 sleeve (session 9/21)",
           "day_pct": 9.0,
           "night_pct": 9.0
         },
@@ -168,7 +168,7 @@
       "actions": [
         "Open (MOO): buy 27.0% AAPL with right-bucket cash; Close (MOC): sell 27.0% AAPL",
         "Overnight: hold 27.0% right-bucket cash (NVDA paused while QQQ < 200d)",
-        "09:28 ET check: if FTNT ≤ $132.26, add +50% FTNT MOO → MOC"
+        "09:28 ET check: if FTNT ≤ $136.69, add +50% FTNT MOO → MOC"
       ]
     },
     "dual_40_60": {
@@ -181,31 +181,31 @@
       "rows": [
         {
           "sym": "GOOGL",
-          "role": "Left Slot 1 · Long-term anchor (TTM PE 14.26)",
+          "role": "Left Slot 1 · Long-term anchor (TTM PE 14.36)",
           "day_pct": 20.0,
           "night_pct": 20.0
         },
         {
           "sym": "AMZN",
-          "role": "Left Slot 2 · Monster slot (TTM PE 19.76 < 20)",
+          "role": "Left Slot 2 · Monster slot (entered <20, riding trend · PE 20.54)",
           "day_pct": 6.7,
           "night_pct": 6.7
         },
         {
           "sym": "NVDA",
-          "role": "Left Slot 2 · Monster slot (TTM PE 16.04 < 20)",
+          "role": "Left Slot 2 · Monster slot (TTM PE 16.16 < 20)",
           "day_pct": 6.7,
           "night_pct": 6.7
         },
         {
           "sym": "META",
-          "role": "Left Slot 2 · Monster slot (entered <20, riding trend · PE 20.81)",
+          "role": "Left Slot 2 · Monster slot (entered <20, riding trend · PE 21.46)",
           "day_pct": 6.7,
           "night_pct": 6.7
         },
         {
           "sym": "AAPL",
-          "role": "Right day leg · MOO → MOC (F-3 +21.7% > 0 · G-1 clear)",
+          "role": "Right day leg · MOO → MOC (F-3 +21.0% > 0 · G-1 clear)",
           "day_pct": 36.0,
           "night_pct": 0.0
         },
@@ -223,7 +223,7 @@
         },
         {
           "sym": "USO",
-          "role": "Right OVX < 50 sleeve (session 8/21)",
+          "role": "Right OVX < 50 sleeve (session 9/21)",
           "day_pct": 12.0,
           "night_pct": 12.0
         },
@@ -237,7 +237,7 @@
       "actions": [
         "Open (MOO): buy 36.0% AAPL with right-bucket cash; Close (MOC): sell 36.0% AAPL",
         "Overnight: hold 36.0% right-bucket cash (TSM paused while QQQ < 200d)",
-        "09:28 ET check: if FTNT ≤ $132.26, add +50% FTNT MOO → MOC"
+        "09:28 ET check: if FTNT ≤ $136.69, add +50% FTNT MOO → MOC"
       ]
     },
     "r1_live": {
@@ -256,7 +256,7 @@
         },
         {
           "sym": "AAPL",
-          "role": "Right day leg · MOO → MOC (F-3 +21.7% > 0 · G-1 clear)",
+          "role": "Right day leg · MOO → MOC (F-3 +21.0% > 0 · G-1 clear)",
           "day_pct": 60.0,
           "night_pct": 0.0
         },
@@ -268,7 +268,7 @@
         },
         {
           "sym": "USO",
-          "role": "Right OVX < 50 sleeve (session 8/21)",
+          "role": "Right OVX < 50 sleeve (session 9/21)",
           "day_pct": 20.0,
           "night_pct": 20.0
         },
@@ -282,7 +282,7 @@
       "actions": [
         "Open (MOO): buy 60.0% AAPL with right-bucket cash; Close (MOC): sell 60.0% AAPL",
         "Overnight: hold 60.0% right-bucket cash (NVDA paused while QQQ < 200d)",
-        "09:28 ET check: if FTNT ≤ $132.26, add +50% FTNT MOO → MOC"
+        "09:28 ET check: if FTNT ≤ $136.69, add +50% FTNT MOO → MOC"
       ]
     }
   }
